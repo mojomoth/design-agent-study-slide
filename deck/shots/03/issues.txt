@@ -1,0 +1,8 @@
+01: overflow canvas: <h2> CLAUDE CODE
+06: overflow canvas: <h2> BONUS
+08: overflow canvas: <h2> DO NOT COPY
+10: overflow canvas: <h2> SOUTHSIDE
+12: overflow canvas: <h2> BLACKWATER
+15: overflow canvas: <h2> THE BAR
+17: overflow canvas: <h2> CHECK
+19: overflow canvas: <h2> MORE

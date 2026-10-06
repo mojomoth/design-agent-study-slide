@@ -1,0 +1,209 @@
+[
+ {
+  "n": 1,
+  "title": "AI를 세계적인 수준의 디자이너로 만드는 방법",
+  "file": ".work/note/parts/part-01.md",
+  "figures": []
+ },
+ {
+  "n": 2,
+  "title": "AI로 만든 디자인 사례",
+  "file": ".work/note/parts/part-02.md",
+  "figures": [
+   {
+    "n": 1,
+    "path": "assets/how-to-turn-your-ai-into-a-world/figure-01-f7135ec6-882d-462e-9935-308206a97182_900x900.gif"
+   },
+   {
+    "n": 2,
+    "path": "assets/how-to-turn-your-ai-into-a-world/figure-02-c1445c00-4834-4a86-ab85-5e53ae87a652_900x528.gif"
+   },
+   {
+    "n": 3,
+    "path": "assets/how-to-turn-your-ai-into-a-world/figure-03-a3d78ad3-3100-4bf0-b6be-0fc4cfa07987_640x360.gif"
+   }
+  ]
+ },
+ {
+  "n": 3,
+  "title": "AI가 뻔한 디자인을 만드는 이유",
+  "file": ".work/note/parts/part-03.md",
+  "figures": [
+   {
+    "n": 4,
+    "path": "assets/how-to-turn-your-ai-into-a-world/figure-04-bc7e732b-64b8-4538-8b17-82290d34d032_1774x887.jpg"
+   }
+  ]
+ },
+ {
+  "n": 4,
+  "title": "3단계 디자인 프로세스",
+  "file": ".work/note/parts/part-04.md",
+  "figures": []
+ },
+ {
+  "n": 5,
+  "title": "Discover(발견): 가능성의 공간 탐색하기",
+  "file": ".work/note/parts/part-05.md",
+  "figures": []
+ },
+ {
+  "n": 6,
+  "title": "기법 1: 시드 문자열로 다양성 불어넣기",
+  "file": ".work/note/parts/part-06.md",
+  "figures": [
+   {
+    "n": 5,
+    "path": "assets/how-to-turn-your-ai-into-a-world/figure-05-7b59bdf3-8a82-46d1-94c2-4a1e60ea7cbf_1456x894.jpg"
+   },
+   {
+    "n": 6,
+    "path": "assets/how-to-turn-your-ai-into-a-world/figure-06-f37064a7-2853-4314-b175-aa65b8a13f43_1456x876.jpg"
+   },
+   {
+    "n": 7,
+    "path": "assets/how-to-turn-your-ai-into-a-world/figure-07-bcda7156-dbbd-4d18-a7fb-4cfc124563bf_1456x876.jpg"
+   }
+  ]
+ },
+ {
+  "n": 7,
+  "title": "기법 2: 훨씬 더 야심 찬 프롬프트 쓰기",
+  "file": ".work/note/parts/part-07.md",
+  "figures": [
+   {
+    "n": 8,
+    "path": "assets/how-to-turn-your-ai-into-a-world/figure-08-3d880aa5-5e31-45f5-99c4-8055dcb87f4a_640x360.gif"
+   },
+   {
+    "n": 9,
+    "path": "assets/how-to-turn-your-ai-into-a-world/figure-09-a7245156-8c71-4ecc-9897-5ce76e561faf_640x360.gif"
+   },
+   {
+    "n": 10,
+    "path": "assets/how-to-turn-your-ai-into-a-world/figure-10-220747d1-f561-405f-a95c-7b05fd64731b_640x360.gif"
+   },
+   {
+    "n": 11,
+    "path": "assets/how-to-turn-your-ai-into-a-world/figure-11-0e1d6d22-1828-47d5-b2f6-0d88fef90ae2_1456x571.png"
+   },
+   {
+    "n": 12,
+    "path": "assets/how-to-turn-your-ai-into-a-world/figure-12-0e7340b1-9a93-4d94-abc6-c6b386f3a36c_1456x449.png"
+   },
+   {
+    "n": 13,
+    "path": "assets/how-to-turn-your-ai-into-a-world/figure-13-4ca0ce7c-c730-443a-bde3-f62996b43c7d_1456x692.png"
+   }
+  ]
+ },
+ {
+  "n": 8,
+  "title": "Define(정의): 디자인 방향 심화하기",
+  "file": ".work/note/parts/part-08.md",
+  "figures": [
+   {
+    "n": 14,
+    "path": "assets/how-to-turn-your-ai-into-a-world/figure-14-25c296a8-ce8c-4633-ac96-2dcbad6d9430_1456x876.jpg"
+   }
+  ]
+ },
+ {
+  "n": 9,
+  "title": "기법 3: 서브에이전트로 긍정적 피드백 루프 만들기",
+  "file": ".work/note/parts/part-09.md",
+  "figures": [
+   {
+    "n": 15,
+    "path": "assets/how-to-turn-your-ai-into-a-world/figure-15-5e045d71-d5f7-436a-be1f-eb870df24062_1456x1861.jpg"
+   }
+  ]
+ },
+ {
+  "n": 10,
+  "title": "기법 4: 이미지 생성으로 디자인 풍부하게 만들기",
+  "file": ".work/note/parts/part-10.md",
+  "figures": [
+   {
+    "n": 16,
+    "path": "assets/how-to-turn-your-ai-into-a-world/figure-16-7e2a6925-7451-4abe-aaa8-bc92823dd69a_1456x399.gif"
+   },
+   {
+    "n": 17,
+    "path": "assets/how-to-turn-your-ai-into-a-world/figure-17-f4ae7b09-1555-4ade-850c-212cb0d089b2_1456x399.gif"
+   },
+   {
+    "n": 18,
+    "path": "assets/how-to-turn-your-ai-into-a-world/figure-18-7cd81d80-09c1-4244-9651-43bba85771a4_1456x399.gif"
+   },
+   {
+    "n": 19,
+    "path": "assets/how-to-turn-your-ai-into-a-world/figure-19-c02123f6-00f8-4063-8463-5050d2649647_1456x399.gif"
+   }
+  ]
+ },
+ {
+  "n": 11,
+  "title": "기법 5: 고급 모션에는 영상 생성 활용하기",
+  "file": ".work/note/parts/part-11.md",
+  "figures": [
+   {
+    "n": 20,
+    "path": "assets/how-to-turn-your-ai-into-a-world/figure-20-aa994e2f-caec-40bf-8cc5-8a1ef101dd21_1456x399.gif"
+   },
+   {
+    "n": 21,
+    "path": "assets/how-to-turn-your-ai-into-a-world/figure-21-2f3bb583-375b-4a12-aa57-64a10bf2d9e7_960x540.gif"
+   }
+  ]
+ },
+ {
+  "n": 12,
+  "title": "Deliver(전달): 사용자가 좋아할 디자인으로 다듬기",
+  "file": ".work/note/parts/part-12.md",
+  "figures": []
+ },
+ {
+  "n": 13,
+  "title": "기법 6: 가치를 더하지 않는 요소 덜어내기",
+  "file": ".work/note/parts/part-13.md",
+  "figures": [
+   {
+    "n": 22,
+    "path": "assets/how-to-turn-your-ai-into-a-world/figure-22-dc9186ef-2b04-42a0-a460-8898b0590797_1456x964.jpg"
+   },
+   {
+    "n": 23,
+    "path": "assets/how-to-turn-your-ai-into-a-world/figure-23-fdf80ee5-9f43-44e9-93cf-c477a9e49128_1456x964.jpg"
+   }
+  ]
+ },
+ {
+  "n": 14,
+  "title": "기법 7: AI 티 없애기",
+  "file": ".work/note/parts/part-14.md",
+  "figures": [
+   {
+    "n": 24,
+    "path": "assets/how-to-turn-your-ai-into-a-world/figure-24-65ceb75e-aeb7-411d-99fa-eacaad0dbdae_1456x2424.jpg"
+   }
+  ]
+ },
+ {
+  "n": 15,
+  "title": "기법 8: 카피는 직접 다시 쓰기",
+  "file": ".work/note/parts/part-15.md",
+  "figures": [
+   {
+    "n": 25,
+    "path": "assets/how-to-turn-your-ai-into-a-world/figure-25-3174cc8a-c197-4be5-991d-0834d05cfc42_1456x1949.png"
+   }
+  ]
+ },
+ {
+  "n": 16,
+  "title": "AI의 디자인 잠재력을 최대한 활용하기",
+  "file": ".work/note/parts/part-16.md",
+  "figures": []
+ }
+]

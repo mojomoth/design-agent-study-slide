@@ -1,0 +1,1405 @@
+{
+  "source": "guide/guide1.mov",
+  "source_sha256": "73f1c256622c11e30b99caae5618231c725ee0c024899e952d4d9c9c91c42870",
+  "duration_seconds": 35.448333,
+  "source_dimensions_px": [
+    2190,
+    1224
+  ],
+  "decoded_frames": 1074,
+  "audio_streams": 0,
+  "timestamp_note": "requested_seconds is the time listed in MOV_NOTE.md; frame_pts_seconds is the decoded frame actually used (first frame at or after the request, or the last frame).",
+  "crop_coordinate_convention": "[left, top, right, bottom], source pixels; right and bottom exclusive",
+  "processing": "Original decoded frames and rectangular crops only; no retouching, rotation, upscaling or background removal. The contact sheet alone is resized and labelled.",
+  "captures": [
+    {
+      "id": "01-trained-on-counter",
+      "title_ko": "학습량 카운터가 올라가는 장면",
+      "requested_seconds": 0.9,
+      "frame_pts_seconds": 0.916667,
+      "box_ltrb_px": [
+        0,
+        0,
+        2190,
+        1224
+      ],
+      "path": "captures/01-trained-on-counter.png",
+      "dimensions_px": [
+        2190,
+        1224
+      ],
+      "bytes": 784529,
+      "sha256": "7720a1c5338f0fcd2e101f2cd864cb818bc39e18f6be554f5446b92ff6e39eff"
+    },
+    {
+      "id": "02-millions-of-websites",
+      "title_ko": "수백만 개의 웹사이트로 학습",
+      "requested_seconds": 3.0,
+      "frame_pts_seconds": 3.0,
+      "box_ltrb_px": [
+        0,
+        0,
+        2190,
+        1224
+      ],
+      "path": "captures/02-millions-of-websites.png",
+      "dimensions_px": [
+        2190,
+        1224
+      ],
+      "bytes": 1219074,
+      "sha256": "bb0e2ed7db0178b9704d9cb62ac734d495b0ff2f58986559078b8929680ce0b3"
+    },
+    {
+      "id": "03-you-ask-for",
+      "title_ko": "현대적인 느낌의 웹사이트를 요청하는 프롬프트",
+      "requested_seconds": 4.85,
+      "frame_pts_seconds": 4.85,
+      "box_ltrb_px": [
+        0,
+        0,
+        2190,
+        1224
+      ],
+      "path": "captures/03-you-ask-for.png",
+      "dimensions_px": [
+        2190,
+        1224
+      ],
+      "bytes": 1392737,
+      "sha256": "449c1d8bdb5f4218b9d23c73e1ff3b4a1d9589ef589ec94047afc3f5d9cb831b"
+    },
+    {
+      "id": "04-press-crushing",
+      "title_ko": "프레스가 웹사이트를 짓누르는 장면",
+      "requested_seconds": 5.4,
+      "frame_pts_seconds": 5.433333,
+      "box_ltrb_px": [
+        0,
+        0,
+        2190,
+        1224
+      ],
+      "path": "captures/04-press-crushing.png",
+      "dimensions_px": [
+        2190,
+        1224
+      ],
+      "bytes": 1002526,
+      "sha256": "5d5878fa49a8615039f667f38036d093bc7a47c9db61df0969b24568c1c7a926"
+    },
+    {
+      "id": "05-average-of-everything",
+      "title_ko": "모든 것의 평균",
+      "requested_seconds": 7.0,
+      "frame_pts_seconds": 7.016667,
+      "box_ltrb_px": [
+        0,
+        0,
+        2190,
+        1224
+      ],
+      "path": "captures/05-average-of-everything.png",
+      "dimensions_px": [
+        2190,
+        1224
+      ],
+      "bytes": 541001,
+      "sha256": "0984ce9a4cc829899f01f17e73d0e2fc5e238cc8825ff3044f718f9a61d5738d"
+    },
+    {
+      "id": "06-most-important-thing",
+      "title_ko": "가장 중요한 것: 슬레이트와 ORYZO 레퍼런스",
+      "requested_seconds": 10.2,
+      "frame_pts_seconds": 10.216667,
+      "box_ltrb_px": [
+        0,
+        0,
+        2190,
+        1224
+      ],
+      "path": "captures/06-most-important-thing.png",
+      "dimensions_px": [
+        2190,
+        1224
+      ],
+      "bytes": 769396,
+      "sha256": "2fa97abb306da825ae681e91a3955051f5171660e3a3cf61f0bae4294af0d905"
+    },
+    {
+      "id": "07-character-with-reference",
+      "title_ko": "캐릭터가 ORYZO 레퍼런스를 들어 보이는 장면",
+      "requested_seconds": 12.45,
+      "frame_pts_seconds": 12.466667,
+      "box_ltrb_px": [
+        0,
+        0,
+        2190,
+        1224
+      ],
+      "path": "captures/07-character-with-reference.png",
+      "dimensions_px": [
+        2190,
+        1224
+      ],
+      "bytes": 964834,
+      "sha256": "06668bd0f7d64060f79d7f1ae910a6cf23a19b7cf69096700e68488e2b54a297"
+    },
+    {
+      "id": "08-loop-setup",
+      "title_ko": "반복 루프 다이어그램의 시작 상태",
+      "requested_seconds": 13.3,
+      "frame_pts_seconds": 13.3,
+      "box_ltrb_px": [
+        0,
+        0,
+        2190,
+        1224
+      ],
+      "path": "captures/08-loop-setup.png",
+      "dimensions_px": [
+        2190,
+        1224
+      ],
+      "bytes": 516173,
+      "sha256": "c67a755ecb52c929484f3dac2cfc332123d12fd217a6d6d16fd28ae20d7d1eba"
+    },
+    {
+      "id": "09-loop-iterating",
+      "title_ko": "반복이 진행 중인 루프 다이어그램",
+      "requested_seconds": 14.5,
+      "frame_pts_seconds": 14.5,
+      "box_ltrb_px": [
+        0,
+        0,
+        2190,
+        1224
+      ],
+      "path": "captures/09-loop-iterating.png",
+      "dimensions_px": [
+        2190,
+        1224
+      ],
+      "bytes": 597372,
+      "sha256": "27f8ee90df178563dd7a86d1d20e5172384a385283a6d0ed0f69440f40fcacc3"
+    },
+    {
+      "id": "10-loop-cleared",
+      "title_ko": "품질 기준선을 통과한 v4",
+      "requested_seconds": 16.4,
+      "frame_pts_seconds": 16.416667,
+      "box_ltrb_px": [
+        0,
+        0,
+        2190,
+        1224
+      ],
+      "path": "captures/10-loop-cleared.png",
+      "dimensions_px": [
+        2190,
+        1224
+      ],
+      "bytes": 622422,
+      "sha256": "c9a1b6aa72ae7326c29475e069298aa9c1618c394cf4fd1b02d6d7cfba9d0446"
+    },
+    {
+      "id": "11-not-a-mind-reader",
+      "title_ko": "독심술사가 아닙니다",
+      "requested_seconds": 17.75,
+      "frame_pts_seconds": 17.75,
+      "box_ltrb_px": [
+        0,
+        0,
+        2190,
+        1224
+      ],
+      "path": "captures/11-not-a-mind-reader.png",
+      "dimensions_px": [
+        2190,
+        1224
+      ],
+      "bytes": 601750,
+      "sha256": "a42cc11da68c24dc8d19c3350628d1e3e4469500206789dc3d2b3e75f5b49a55"
+    },
+    {
+      "id": "12-style-first-chips",
+      "title_ko": "스타일 형용사 칩이 쌓이기 시작하는 장면",
+      "requested_seconds": 20.6,
+      "frame_pts_seconds": 20.633333,
+      "box_ltrb_px": [
+        0,
+        0,
+        2190,
+        1224
+      ],
+      "path": "captures/12-style-first-chips.png",
+      "dimensions_px": [
+        2190,
+        1224
+      ],
+      "bytes": 415231,
+      "sha256": "f4d46fd6977edddad10bca79ec8eaae835e5060a9bd0f2a39be49116db36d2a2"
+    },
+    {
+      "id": "13-style-all-chips",
+      "title_ko": "형용사 칩 14개와 MEH에 머문 게이지",
+      "requested_seconds": 21.55,
+      "frame_pts_seconds": 21.55,
+      "box_ltrb_px": [
+        0,
+        0,
+        2190,
+        1224
+      ],
+      "path": "captures/13-style-all-chips.png",
+      "dimensions_px": [
+        2190,
+        1224
+      ],
+      "bytes": 780373,
+      "sha256": "cc1c6ddd96ed8a0c1a7b72098e19319e1fe7fd7947423531207c8f0923ae50f3"
+    },
+    {
+      "id": "14-chips-crumpled",
+      "title_ko": "형용사 카드를 구겨 버리는 장면",
+      "requested_seconds": 21.92,
+      "frame_pts_seconds": 21.916667,
+      "box_ltrb_px": [
+        0,
+        0,
+        2190,
+        1224
+      ],
+      "path": "captures/14-chips-crumpled.png",
+      "dimensions_px": [
+        2190,
+        1224
+      ],
+      "bytes": 487656,
+      "sha256": "55b8a9ac6102a469d99c2932c6f6e8e5c631f3eb9b9e1b8b85903f8565683274"
+    },
+    {
+      "id": "15-example-floema",
+      "title_ko": "FLOEMA 예시와 MUCH BETTER로 바뀐 게이지",
+      "requested_seconds": 23.7,
+      "frame_pts_seconds": 23.716667,
+      "box_ltrb_px": [
+        0,
+        0,
+        2190,
+        1224
+      ],
+      "path": "captures/15-example-floema.png",
+      "dimensions_px": [
+        2190,
+        1224
+      ],
+      "bytes": 890477,
+      "sha256": "48dcd6a9f583d5d79e9cff1148ca5a6c5018e452d4e2d9cbfd2a543fe00689f7"
+    },
+    {
+      "id": "16-example-son-daven",
+      "title_ko": "SON DAVEN 예시가 겹쳐진 장면",
+      "requested_seconds": 25.15,
+      "frame_pts_seconds": 25.166667,
+      "box_ltrb_px": [
+        0,
+        0,
+        2190,
+        1224
+      ],
+      "path": "captures/16-example-son-daven.png",
+      "dimensions_px": [
+        2190,
+        1224
+      ],
+      "bytes": 883939,
+      "sha256": "396ba451c686b49fbeda9f559c3b887e150829c319284ad6e6b7b7647bfd2d53"
+    },
+    {
+      "id": "17-example-studio",
+      "title_ko": "세 예시 사이트가 쌓인 장면",
+      "requested_seconds": 25.8,
+      "frame_pts_seconds": 25.8,
+      "box_ltrb_px": [
+        0,
+        0,
+        2190,
+        1224
+      ],
+      "path": "captures/17-example-studio.png",
+      "dimensions_px": [
+        2190,
+        1224
+      ],
+      "bytes": 878580,
+      "sha256": "8f13af4fbf172a4b59fac702d41256f99c2c447de77263d5592a64b3bfbabd94"
+    },
+    {
+      "id": "18-inspiration-sites",
+      "title_ko": "디자이너들이 영감을 얻는 사이트",
+      "requested_seconds": 30.0,
+      "frame_pts_seconds": 30.0,
+      "box_ltrb_px": [
+        0,
+        0,
+        2190,
+        1224
+      ],
+      "path": "captures/18-inspiration-sites.png",
+      "dimensions_px": [
+        2190,
+        1224
+      ],
+      "bytes": 1203552,
+      "sha256": "4ad0712cab5f17a646e7e5505ed4995e4710a48c8a16bafd1f4f76fe75c98953"
+    },
+    {
+      "id": "19-six-categories",
+      "title_ko": "6개 카테고리",
+      "requested_seconds": 32.3,
+      "frame_pts_seconds": 32.3,
+      "box_ltrb_px": [
+        0,
+        0,
+        2190,
+        1224
+      ],
+      "path": "captures/19-six-categories.png",
+      "dimensions_px": [
+        2190,
+        1224
+      ],
+      "bytes": 512556,
+      "sha256": "a9a661251d7e6961fc136513c6bf994f4482b4804d89e75a20c8e815e567be1a"
+    },
+    {
+      "id": "20-exactly-the-look",
+      "title_ko": "정확히 원하는 모습",
+      "requested_seconds": 34.0,
+      "frame_pts_seconds": 34.0,
+      "box_ltrb_px": [
+        0,
+        0,
+        2190,
+        1224
+      ],
+      "path": "captures/20-exactly-the-look.png",
+      "dimensions_px": [
+        2190,
+        1224
+      ],
+      "bytes": 700772,
+      "sha256": "dd440ff50d61ae04be8e5c1f6fd752118d2917969b7a976e72f14cd13ae50835"
+    },
+    {
+      "id": "21-in-action",
+      "title_ko": "실제 적용 사례",
+      "requested_seconds": 35.42,
+      "frame_pts_seconds": 35.416667,
+      "box_ltrb_px": [
+        0,
+        0,
+        2190,
+        1224
+      ],
+      "path": "captures/21-in-action.png",
+      "dimensions_px": [
+        2190,
+        1224
+      ],
+      "bytes": 851888,
+      "sha256": "a560359bce68905ccc563e4d51e211d04c39b1c75cefaf7da136e5aa67e93810"
+    }
+  ],
+  "crops": [
+    {
+      "id": "01-millions-of-websites-card",
+      "title_ko": "TRAINED ON MILLIONS OF WEBSITES 카드와 모델 배지",
+      "requested_seconds": 3.0,
+      "frame_pts_seconds": 3.0,
+      "box_ltrb_px": [
+        345,
+        205,
+        1590,
+        750
+      ],
+      "path": "crops/01-millions-of-websites-card.png",
+      "dimensions_px": [
+        1245,
+        545
+      ],
+      "bytes": 322492,
+      "sha256": "06fde07bb4a0eec8fe8c4e35cbb2e23862d19a2dcd10d549b3bc2836cc72de50"
+    },
+    {
+      "id": "02-you-ask-for-prompt",
+      "title_ko": "YOU ASK FOR 프롬프트 카드",
+      "requested_seconds": 4.85,
+      "frame_pts_seconds": 4.85,
+      "box_ltrb_px": [
+        355,
+        365,
+        1815,
+        830
+      ],
+      "path": "crops/02-you-ask-for-prompt.png",
+      "dimensions_px": [
+        1460,
+        465
+      ],
+      "bytes": 210271,
+      "sha256": "adde8139a4644dbf00498b376d5551a5c302680dc29071766d06c07697751aac"
+    },
+    {
+      "id": "03-press-crushing",
+      "title_ko": "웹사이트를 짓누르는 프레스",
+      "requested_seconds": 5.4,
+      "frame_pts_seconds": 5.433333,
+      "box_ltrb_px": [
+        35,
+        232,
+        2155,
+        985
+      ],
+      "path": "crops/03-press-crushing.png",
+      "dimensions_px": [
+        2120,
+        753
+      ],
+      "bytes": 961521,
+      "sha256": "261902350b3f5985eaf0d77511ce77737e539a104d5af37e6080796a5843a170"
+    },
+    {
+      "id": "04-average-website-mockup",
+      "title_ko": "흐릿한 평균적인 웹사이트 목업",
+      "requested_seconds": 6.6,
+      "frame_pts_seconds": 6.65,
+      "box_ltrb_px": [
+        610,
+        500,
+        1562,
+        1088
+      ],
+      "path": "crops/04-average-website-mockup.png",
+      "dimensions_px": [
+        952,
+        588
+      ],
+      "bytes": 57564,
+      "sha256": "1bdf1acf485e986dd4901423c0827213b4326287f61dfb287c4644696f8119c2"
+    },
+    {
+      "id": "05-average-of-everything-headline",
+      "title_ko": "THE AVERAGE OF EVERYTHING 제목",
+      "requested_seconds": 7.0,
+      "frame_pts_seconds": 7.016667,
+      "box_ltrb_px": [
+        435,
+        128,
+        1735,
+        503
+      ],
+      "path": "crops/05-average-of-everything-headline.png",
+      "dimensions_px": [
+        1300,
+        375
+      ],
+      "bytes": 285481,
+      "sha256": "341c938cc07b108984efb41a1acffd4bc0ffe5cd02c52b59c46e7d7d7c34dc82"
+    },
+    {
+      "id": "06-oryzo-hero",
+      "title_ko": "ORYZO 레퍼런스 카드의 첫 화면",
+      "requested_seconds": 7.8,
+      "frame_pts_seconds": 7.8,
+      "box_ltrb_px": [
+        155,
+        540,
+        800,
+        1002
+      ],
+      "path": "crops/06-oryzo-hero.png",
+      "dimensions_px": [
+        645,
+        462
+      ],
+      "bytes": 251721,
+      "sha256": "39d48d4d1d407c54916647b10f670cf944d2bcf78ba0d482a1c4c2d1f10d7ead"
+    },
+    {
+      "id": "07-most-important-thing-headline",
+      "title_ko": "SO WHAT DO YOU DO? THE MOST IMPORTANT THING 제목",
+      "requested_seconds": 10.2,
+      "frame_pts_seconds": 10.216667,
+      "box_ltrb_px": [
+        145,
+        95,
+        1175,
+        405
+      ],
+      "path": "crops/07-most-important-thing-headline.png",
+      "dimensions_px": [
+        1030,
+        310
+      ],
+      "bytes": 111331,
+      "sha256": "8d275f1c0629b7cd7938480165892fa84d46fa4aa8bef4279835d2d3eab4054c"
+    },
+    {
+      "id": "08-oryzo-reference-card",
+      "title_ko": "REFERENCE 01 ORYZO 카드",
+      "requested_seconds": 10.2,
+      "frame_pts_seconds": 10.216667,
+      "box_ltrb_px": [
+        165,
+        540,
+        790,
+        995
+      ],
+      "path": "crops/08-oryzo-reference-card.png",
+      "dimensions_px": [
+        625,
+        455
+      ],
+      "bytes": 139192,
+      "sha256": "4d9261afe48bdb40c5875fbb375ac4a2c7d21d631ae727b94fa76ad6d687eaff"
+    },
+    {
+      "id": "09-film-slate",
+      "title_ko": "작품, 감독, 출연이 적힌 영화 슬레이트",
+      "requested_seconds": 10.3,
+      "frame_pts_seconds": 10.3,
+      "box_ltrb_px": [
+        1195,
+        195,
+        1830,
+        655
+      ],
+      "path": "crops/09-film-slate.png",
+      "dimensions_px": [
+        635,
+        460
+      ],
+      "bytes": 129132,
+      "sha256": "1dd1d644c4b80814fc8dd48396a335811ef79935c8d77fd5b90952ac3d2565de"
+    },
+    {
+      "id": "10-character-holding-reference",
+      "title_ko": "ORYZO 레퍼런스를 들어 보이는 캐릭터",
+      "requested_seconds": 12.45,
+      "frame_pts_seconds": 12.466667,
+      "box_ltrb_px": [
+        66,
+        386,
+        1128,
+        1040
+      ],
+      "path": "crops/10-character-holding-reference.png",
+      "dimensions_px": [
+        1062,
+        654
+      ],
+      "bytes": 302579,
+      "sha256": "34ca93fc5c8736e799f4cbe06e7cb81e1b19c3b7983d6e55d39dc24af69ba699"
+    },
+    {
+      "id": "11-beer-site-annotation",
+      "title_ko": "맥주 사이트의 실제 레퍼런스라는 손글씨 주석",
+      "requested_seconds": 12.45,
+      "frame_pts_seconds": 12.466667,
+      "box_ltrb_px": [
+        1065,
+        715,
+        1693,
+        840
+      ],
+      "path": "crops/11-beer-site-annotation.png",
+      "dimensions_px": [
+        628,
+        125
+      ],
+      "bytes": 47800,
+      "sha256": "aa347836b57ace8c04cfc00a4f0c2c924719f90cd59a4619f73becf0f42a1d59"
+    },
+    {
+      "id": "12-loop-diagram-setup",
+      "title_ko": "반복 루프 다이어그램 시작 상태",
+      "requested_seconds": 13.3,
+      "frame_pts_seconds": 13.3,
+      "box_ltrb_px": [
+        140,
+        85,
+        1520,
+        905
+      ],
+      "path": "crops/12-loop-diagram-setup.png",
+      "dimensions_px": [
+        1380,
+        820
+      ],
+      "bytes": 152778,
+      "sha256": "4720093cbcf7e88457a349954b9d6759638b0e3752e2dbf5c7c697631ab3a953"
+    },
+    {
+      "id": "13-loop-diagram-iterating",
+      "title_ko": "반복 루프 다이어그램 2회 반복",
+      "requested_seconds": 14.5,
+      "frame_pts_seconds": 14.5,
+      "box_ltrb_px": [
+        140,
+        85,
+        1520,
+        905
+      ],
+      "path": "crops/13-loop-diagram-iterating.png",
+      "dimensions_px": [
+        1380,
+        820
+      ],
+      "bytes": 236526,
+      "sha256": "8708aed61baafde1d02bb518661496c6a91f3d5e911fcf849621273e1ca51d1e"
+    },
+    {
+      "id": "14-loop-diagram-cleared",
+      "title_ko": "반복 루프 다이어그램 4회 반복 후 통과",
+      "requested_seconds": 16.4,
+      "frame_pts_seconds": 16.416667,
+      "box_ltrb_px": [
+        140,
+        85,
+        1520,
+        905
+      ],
+      "path": "crops/14-loop-diagram-cleared.png",
+      "dimensions_px": [
+        1380,
+        820
+      ],
+      "bytes": 255086,
+      "sha256": "29a31f90e1ea5ef9755c8e8c1decf9029e3ae505cf8a8c680ba716002c984b6c"
+    },
+    {
+      "id": "15-not-a-mind-reader",
+      "title_ko": "수정 구슬을 든 캐릭터와 NOT A MIND READER",
+      "requested_seconds": 17.75,
+      "frame_pts_seconds": 17.75,
+      "box_ltrb_px": [
+        45,
+        290,
+        2150,
+        1110
+      ],
+      "path": "crops/15-not-a-mind-reader.png",
+      "dimensions_px": [
+        2105,
+        820
+      ],
+      "bytes": 499924,
+      "sha256": "18304525f791a2f7cade85ead32e2d5ab3dd50ccbb98405e2bd19d8a7e23d33e"
+    },
+    {
+      "id": "16-not-a-mind-reader-headline",
+      "title_ko": "NOT A MIND READER 제목",
+      "requested_seconds": 17.75,
+      "frame_pts_seconds": 17.75,
+      "box_ltrb_px": [
+        1175,
+        305,
+        2130,
+        920
+      ],
+      "path": "crops/16-not-a-mind-reader-headline.png",
+      "dimensions_px": [
+        955,
+        615
+      ],
+      "bytes": 154264,
+      "sha256": "49704bc5d5c4a758aef233c4aa7631815cf102ff9f96a0cd880583e023bafe9f"
+    },
+    {
+      "id": "17-what-style-label",
+      "title_ko": "WHAT STYLE DO YOU WANT? 라벨",
+      "requested_seconds": 20.6,
+      "frame_pts_seconds": 20.633333,
+      "box_ltrb_px": [
+        80,
+        55,
+        870,
+        130
+      ],
+      "path": "crops/17-what-style-label.png",
+      "dimensions_px": [
+        790,
+        75
+      ],
+      "bytes": 26434,
+      "sha256": "baff2e2a7222e4222535ebbd36ba6546d06a4f9d1e3e7b56f34de75abfed88aa"
+    },
+    {
+      "id": "18-style-adjective-chips",
+      "title_ko": "make it look… 형용사 칩 14개",
+      "requested_seconds": 21.55,
+      "frame_pts_seconds": 21.55,
+      "box_ltrb_px": [
+        150,
+        190,
+        1025,
+        930
+      ],
+      "path": "crops/18-style-adjective-chips.png",
+      "dimensions_px": [
+        875,
+        740
+      ],
+      "bytes": 354212,
+      "sha256": "51eaf1256cfb9f4bde9bb301f74919a103dc109b224e55fdaf8b7574e94bc41e"
+    },
+    {
+      "id": "19-results-gauge-meh",
+      "title_ko": "RESULTS 게이지: MEH",
+      "requested_seconds": 21.55,
+      "frame_pts_seconds": 21.55,
+      "box_ltrb_px": [
+        1265,
+        165,
+        1865,
+        650
+      ],
+      "path": "crops/19-results-gauge-meh.png",
+      "dimensions_px": [
+        600,
+        485
+      ],
+      "bytes": 59748,
+      "sha256": "e1e7b7a172147971f7ea6c393800b2ecbaa735d3e0094f240536cb43653523a0"
+    },
+    {
+      "id": "20-crumpled-paper-ball",
+      "title_ko": "구겨진 종이 뭉치",
+      "requested_seconds": 21.92,
+      "frame_pts_seconds": 21.916667,
+      "box_ltrb_px": [
+        659,
+        680,
+        949,
+        963
+      ],
+      "path": "crops/20-crumpled-paper-ball.png",
+      "dimensions_px": [
+        290,
+        283
+      ],
+      "bytes": 39481,
+      "sha256": "36cfc61b00c3bd5df25a5c98b12d7fa00b01b782979b396049efc3aefd23f812"
+    },
+    {
+      "id": "21-example-01-floema",
+      "title_ko": "EXAMPLE 01 FLOEMA 카드",
+      "requested_seconds": 23.7,
+      "frame_pts_seconds": 23.716667,
+      "box_ltrb_px": [
+        226,
+        338,
+        1112,
+        916
+      ],
+      "path": "crops/21-example-01-floema.png",
+      "dimensions_px": [
+        886,
+        578
+      ],
+      "bytes": 401530,
+      "sha256": "999332bfd46a92fd715508f5c9f379813dba4bf4a89a1b82cdb1ead1d80aa165"
+    },
+    {
+      "id": "22-results-gauge-much-better",
+      "title_ko": "RESULTS 게이지: MUCH BETTER",
+      "requested_seconds": 23.7,
+      "frame_pts_seconds": 23.716667,
+      "box_ltrb_px": [
+        1265,
+        165,
+        1865,
+        650
+      ],
+      "path": "crops/22-results-gauge-much-better.png",
+      "dimensions_px": [
+        600,
+        485
+      ],
+      "bytes": 71185,
+      "sha256": "1c7a871624af0e25568dfa383bbc232a37850875738689e0167f9df6199dbfa6"
+    },
+    {
+      "id": "23-example-02-son-daven",
+      "title_ko": "EXAMPLE 02 SON DAVEN 카드",
+      "requested_seconds": 25.15,
+      "frame_pts_seconds": 25.166667,
+      "box_ltrb_px": [
+        440,
+        200,
+        1210,
+        760
+      ],
+      "path": "crops/23-example-02-son-daven.png",
+      "dimensions_px": [
+        770,
+        560
+      ],
+      "bytes": 209385,
+      "sha256": "bf1e419d77d9c57fafec087c7ae08485ac7c7c308d99df6d45b0e5422a95917f"
+    },
+    {
+      "id": "24-example-03-studio",
+      "title_ko": "EXAMPLE 03 STUDIO 카드",
+      "requested_seconds": 25.8,
+      "frame_pts_seconds": 25.8,
+      "box_ltrb_px": [
+        584,
+        458,
+        1280,
+        948
+      ],
+      "path": "crops/24-example-03-studio.png",
+      "dimensions_px": [
+        696,
+        490
+      ],
+      "bytes": 195903,
+      "sha256": "b0141cafa92e12eae3af648e33d7a85779134ca4874bcdd3ea1aeb4de7650a37"
+    },
+    {
+      "id": "25-example-cards-stack",
+      "title_ko": "세 예시 사이트 카드 묶음",
+      "requested_seconds": 25.8,
+      "frame_pts_seconds": 25.8,
+      "box_ltrb_px": [
+        222,
+        205,
+        1280,
+        945
+      ],
+      "path": "crops/25-example-cards-stack.png",
+      "dimensions_px": [
+        1058,
+        740
+      ],
+      "bytes": 405742,
+      "sha256": "ffc51e813dbf126b80c3cb53576886510869bd07ab2faea2c1d454b59a0483cb"
+    },
+    {
+      "id": "26-site-awwwards",
+      "title_ko": "AWWWARDS 카드",
+      "requested_seconds": 26.13,
+      "frame_pts_seconds": 26.133333,
+      "box_ltrb_px": [
+        64,
+        680,
+        640,
+        1044
+      ],
+      "path": "crops/26-site-awwwards.png",
+      "dimensions_px": [
+        576,
+        364
+      ],
+      "bytes": 132344,
+      "sha256": "b0dc0eed79c10102ee619716c42acffbc65d602d008b0ed39d1fcc713f781882"
+    },
+    {
+      "id": "27-site-siteinspire",
+      "title_ko": "SITEINSPIRE 카드",
+      "requested_seconds": 26.22,
+      "frame_pts_seconds": 26.216667,
+      "box_ltrb_px": [
+        350,
+        690,
+        860,
+        1044
+      ],
+      "path": "crops/27-site-siteinspire.png",
+      "dimensions_px": [
+        510,
+        354
+      ],
+      "bytes": 116197,
+      "sha256": "8ef22eb07a20a6d9a4de8e1518695d512aee0e240f2925ef7e6a33481cd4029b"
+    },
+    {
+      "id": "28-site-lapa-ninja",
+      "title_ko": "LAPA NINJA 카드",
+      "requested_seconds": 26.33,
+      "frame_pts_seconds": 26.333333,
+      "box_ltrb_px": [
+        250,
+        600,
+        830,
+        1044
+      ],
+      "path": "crops/28-site-lapa-ninja.png",
+      "dimensions_px": [
+        580,
+        444
+      ],
+      "bytes": 226334,
+      "sha256": "2929a873dfbd0998f25481d53e8282779fb89783f272343eefe4523a2baa782b"
+    },
+    {
+      "id": "29-site-mobbin",
+      "title_ko": "MOBBIN 카드",
+      "requested_seconds": 26.47,
+      "frame_pts_seconds": 26.466667,
+      "box_ltrb_px": [
+        255,
+        515,
+        905,
+        1044
+      ],
+      "path": "crops/29-site-mobbin.png",
+      "dimensions_px": [
+        650,
+        529
+      ],
+      "bytes": 211844,
+      "sha256": "7837b7e4b6d26e0444fad21bb5157b58bc00b149fe621604bd6a5187bdfb062c"
+    },
+    {
+      "id": "30-site-refero",
+      "title_ko": "REFERO 카드",
+      "requested_seconds": 26.5,
+      "frame_pts_seconds": 26.5,
+      "box_ltrb_px": [
+        590,
+        685,
+        1065,
+        1044
+      ],
+      "path": "crops/30-site-refero.png",
+      "dimensions_px": [
+        475,
+        359
+      ],
+      "bytes": 116915,
+      "sha256": "c73d79a65cb6d534728ef19b6bf4cdf4dde8f6c27051ee51424caa384199bf6c"
+    },
+    {
+      "id": "31-site-21st-dev-react-bits",
+      "title_ko": "21ST.DEV와 REACT BITS 카드",
+      "requested_seconds": 26.73,
+      "frame_pts_seconds": 26.733333,
+      "box_ltrb_px": [
+        512,
+        445,
+        1190,
+        1020
+      ],
+      "path": "crops/31-site-21st-dev-react-bits.png",
+      "dimensions_px": [
+        678,
+        575
+      ],
+      "bytes": 259351,
+      "sha256": "735b59f6e7949e6a39696dd867985eec17e8236923eed7ac127d3d4621273c0c"
+    },
+    {
+      "id": "32-site-fonts-in-use",
+      "title_ko": "FONTS IN USE 카드",
+      "requested_seconds": 26.83,
+      "frame_pts_seconds": 26.833333,
+      "box_ltrb_px": [
+        700,
+        440,
+        1330,
+        942
+      ],
+      "path": "crops/32-site-fonts-in-use.png",
+      "dimensions_px": [
+        630,
+        502
+      ],
+      "bytes": 252322,
+      "sha256": "6b794f9636fd3234cfd47470c7ea2918aa072d043fbb4e3886b609afb87d3c2d"
+    },
+    {
+      "id": "33-site-google-fonts",
+      "title_ko": "GOOGLE FONTS 카드",
+      "requested_seconds": 26.93,
+      "frame_pts_seconds": 26.933333,
+      "box_ltrb_px": [
+        905,
+        555,
+        1455,
+        1000
+      ],
+      "path": "crops/33-site-google-fonts.png",
+      "dimensions_px": [
+        550,
+        445
+      ],
+      "bytes": 175897,
+      "sha256": "f63b3f0935d696f36018a7cd80950c3d171cfc741ff5e70068512c9d2c208b96"
+    },
+    {
+      "id": "34-site-coolors",
+      "title_ko": "COOLORS 카드",
+      "requested_seconds": 27.06,
+      "frame_pts_seconds": 27.066667,
+      "box_ltrb_px": [
+        1005,
+        575,
+        1590,
+        1040
+      ],
+      "path": "crops/34-site-coolors.png",
+      "dimensions_px": [
+        585,
+        465
+      ],
+      "bytes": 216403,
+      "sha256": "30b94d53a7c40af132652df7e14724cf2d2ebfaf24911cc8965752437087253d"
+    },
+    {
+      "id": "35-site-brandingstyleguides",
+      "title_ko": "BRANDINGSTYLEGUIDES 카드",
+      "requested_seconds": 27.13,
+      "frame_pts_seconds": 27.133333,
+      "box_ltrb_px": [
+        1100,
+        590,
+        1694,
+        1044
+      ],
+      "path": "crops/35-site-brandingstyleguides.png",
+      "dimensions_px": [
+        594,
+        454
+      ],
+      "bytes": 219806,
+      "sha256": "cf84e0855628b049be0a12c03dd7ae62f732f7aa28746c4858556cf066bcf767"
+    },
+    {
+      "id": "36-site-pinterest",
+      "title_ko": "PINTEREST 카드",
+      "requested_seconds": 27.22,
+      "frame_pts_seconds": 27.216667,
+      "box_ltrb_px": [
+        1060,
+        690,
+        1590,
+        1044
+      ],
+      "path": "crops/36-site-pinterest.png",
+      "dimensions_px": [
+        530,
+        354
+      ],
+      "bytes": 189475,
+      "sha256": "8f71120ce31495710f3d66962efa4ca22a4a2a076ca4065439d76c7143663bbf"
+    },
+    {
+      "id": "37-site-tooools-design",
+      "title_ko": "TOOOLS.DESIGN 카드",
+      "requested_seconds": 27.29,
+      "frame_pts_seconds": 27.3,
+      "box_ltrb_px": [
+        1050,
+        640,
+        1694,
+        1044
+      ],
+      "path": "crops/37-site-tooools-design.png",
+      "dimensions_px": [
+        644,
+        404
+      ],
+      "bytes": 270586,
+      "sha256": "f048c2cd6df3df74c8838e4d0a4d110bca121900c93936b39a302a04a8ed63b2"
+    },
+    {
+      "id": "38-in-this-video-headline",
+      "title_ko": "IN THIS VIDEO 제목",
+      "requested_seconds": 30.0,
+      "frame_pts_seconds": 30.0,
+      "box_ltrb_px": [
+        130,
+        85,
+        1360,
+        515
+      ],
+      "path": "crops/38-in-this-video-headline.png",
+      "dimensions_px": [
+        1230,
+        430
+      ],
+      "bytes": 186899,
+      "sha256": "61a6b30611e875d18bd02cf10b3966a835591d10be714f27a04a390a28607d6e"
+    },
+    {
+      "id": "39-inspiration-sites-fan",
+      "title_ko": "영감 사이트 13곳의 카드 부채꼴",
+      "requested_seconds": 30.0,
+      "frame_pts_seconds": 30.0,
+      "box_ltrb_px": [
+        63,
+        525,
+        1694,
+        1044
+      ],
+      "path": "crops/39-inspiration-sites-fan.png",
+      "dimensions_px": [
+        1631,
+        519
+      ],
+      "bytes": 667860,
+      "sha256": "f79f16e1305c739ea30db5edf2c477b0dd1ef423a1f4535250f71af2984d09f6"
+    },
+    {
+      "id": "40-six-categories-headline",
+      "title_ko": "BROKEN INTO 6 CATEGORIES 제목",
+      "requested_seconds": 32.3,
+      "frame_pts_seconds": 32.3,
+      "box_ltrb_px": [
+        85,
+        65,
+        1650,
+        390
+      ],
+      "path": "crops/40-six-categories-headline.png",
+      "dimensions_px": [
+        1565,
+        325
+      ],
+      "bytes": 110994,
+      "sha256": "65c97de2d6ce39d492565886813f4ebfa96b89a51045d46d84248c7ff554c219"
+    },
+    {
+      "id": "41-six-category-tiles",
+      "title_ko": "6개 카테고리 타일",
+      "requested_seconds": 32.3,
+      "frame_pts_seconds": 32.3,
+      "box_ltrb_px": [
+        15,
+        465,
+        2140,
+        855
+      ],
+      "path": "crops/41-six-category-tiles.png",
+      "dimensions_px": [
+        2125,
+        390
+      ],
+      "bytes": 327143,
+      "sha256": "68ebbc3ead1af0eb2fe2beb73bf1457966fed7fc951014b22779fd3892e4415e"
+    },
+    {
+      "id": "42-category-galleries",
+      "title_ko": "01 GALLERIES 타일",
+      "requested_seconds": 32.3,
+      "frame_pts_seconds": 32.3,
+      "box_ltrb_px": [
+        25,
+        470,
+        345,
+        850
+      ],
+      "path": "crops/42-category-galleries.png",
+      "dimensions_px": [
+        320,
+        380
+      ],
+      "bytes": 51451,
+      "sha256": "1cc392e92884c8b257dc1449005df5ca0719696c3f24079b2c2dab244465d531"
+    },
+    {
+      "id": "43-category-real-apps",
+      "title_ko": "02 REAL APPS 타일",
+      "requested_seconds": 32.3,
+      "frame_pts_seconds": 32.3,
+      "box_ltrb_px": [
+        385,
+        470,
+        705,
+        850
+      ],
+      "path": "crops/43-category-real-apps.png",
+      "dimensions_px": [
+        320,
+        380
+      ],
+      "bytes": 51952,
+      "sha256": "19991948c77e87db8af76d66e4c6d2c972742f9fc2f747502f79370f6ad8a28d"
+    },
+    {
+      "id": "44-category-components",
+      "title_ko": "03 COMPONENTS 타일",
+      "requested_seconds": 32.3,
+      "frame_pts_seconds": 32.3,
+      "box_ltrb_px": [
+        745,
+        470,
+        1065,
+        850
+      ],
+      "path": "crops/44-category-components.png",
+      "dimensions_px": [
+        320,
+        380
+      ],
+      "bytes": 59867,
+      "sha256": "eaf94353e3d17fee87479cffe558eef7a92ab2c56c674f929f3162a885851de3"
+    },
+    {
+      "id": "45-category-fonts",
+      "title_ko": "04 FONTS 타일",
+      "requested_seconds": 32.3,
+      "frame_pts_seconds": 32.3,
+      "box_ltrb_px": [
+        1105,
+        470,
+        1425,
+        850
+      ],
+      "path": "crops/45-category-fonts.png",
+      "dimensions_px": [
+        320,
+        380
+      ],
+      "bytes": 47807,
+      "sha256": "1ffb27803d81c15a23bc373457dd71cce2b71b7703ed49f9a9391c57cd3beaa5"
+    },
+    {
+      "id": "46-category-color",
+      "title_ko": "05 COLOR 타일",
+      "requested_seconds": 32.3,
+      "frame_pts_seconds": 32.3,
+      "box_ltrb_px": [
+        1465,
+        470,
+        1785,
+        850
+      ],
+      "path": "crops/46-category-color.png",
+      "dimensions_px": [
+        320,
+        380
+      ],
+      "bytes": 62769,
+      "sha256": "b8f4c0723ac5471eca861f0149e80c58bd123f89df0e146d8f5dbfe2454e4341"
+    },
+    {
+      "id": "47-category-systems",
+      "title_ko": "06 SYSTEMS 타일",
+      "requested_seconds": 32.3,
+      "frame_pts_seconds": 32.3,
+      "box_ltrb_px": [
+        1825,
+        470,
+        2145,
+        850
+      ],
+      "path": "crops/47-category-systems.png",
+      "dimensions_px": [
+        320,
+        380
+      ],
+      "bytes": 55989,
+      "sha256": "5e82a5ea58f278360b7772c215b258589d3aefc148e8521e3bc8e5fe9163ad4a"
+    },
+    {
+      "id": "48-explorer-exactly-the-look",
+      "title_ko": "탐험가 캐릭터와 EXACTLY THE LOOK 라벨",
+      "requested_seconds": 34.0,
+      "frame_pts_seconds": 34.0,
+      "box_ltrb_px": [
+        9,
+        465,
+        1415,
+        1135
+      ],
+      "path": "crops/48-explorer-exactly-the-look.png",
+      "dimensions_px": [
+        1406,
+        670
+      ],
+      "bytes": 383571,
+      "sha256": "816f71cb4406e18e323251657806d144f7f61c5b962953acf8655d6f9f998e47"
+    },
+    {
+      "id": "49-in-action-sites",
+      "title_ko": "실제 적용 사례 사이트 3개",
+      "requested_seconds": 35.0,
+      "frame_pts_seconds": 35.0,
+      "box_ltrb_px": [
+        30,
+        400,
+        2120,
+        1070
+      ],
+      "path": "crops/49-in-action-sites.png",
+      "dimensions_px": [
+        2090,
+        670
+      ],
+      "bytes": 538981,
+      "sha256": "dda312781414fdc3d68cbbee4970628c908f0bb392b0b027e755510d1711fd6f"
+    },
+    {
+      "id": "50-harbour-lane",
+      "title_ko": "HARBOUR LANE 사이트",
+      "requested_seconds": 35.0,
+      "frame_pts_seconds": 35.0,
+      "box_ltrb_px": [
+        30,
+        548,
+        540,
+        1000
+      ],
+      "path": "crops/50-harbour-lane.png",
+      "dimensions_px": [
+        510,
+        452
+      ],
+      "bytes": 151890,
+      "sha256": "0991c5d5d25e0dc5e142c1ef536e3fb0ac928131bb9d4c9591aeb125279ce9b0"
+    },
+    {
+      "id": "51-southside-brewing",
+      "title_ko": "SOUTHSIDE BREWING 사이트",
+      "requested_seconds": 35.0,
+      "frame_pts_seconds": 35.0,
+      "box_ltrb_px": [
+        530,
+        405,
+        1640,
+        1066
+      ],
+      "path": "crops/51-southside-brewing.png",
+      "dimensions_px": [
+        1110,
+        661
+      ],
+      "bytes": 266151,
+      "sha256": "e32cef3212ae3a517727a48c6ffd4bd048e0b2c069267188df2ea06d072648a0"
+    },
+    {
+      "id": "52-blackwater-cabins",
+      "title_ko": "BLACKWATER CABINS 사이트",
+      "requested_seconds": 35.0,
+      "frame_pts_seconds": 35.0,
+      "box_ltrb_px": [
+        1625,
+        565,
+        2120,
+        990
+      ],
+      "path": "crops/52-blackwater-cabins.png",
+      "dimensions_px": [
+        495,
+        425
+      ],
+      "bytes": 115986,
+      "sha256": "6a4a9601017562069d111adb3ebd3f98ca762fbbb76ed2d8d24e741585b820e8"
+    }
+  ]
+}

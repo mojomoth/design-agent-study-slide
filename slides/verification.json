@@ -1,0 +1,52 @@
+{
+  "source_order": [
+    "SLIDE1.md",
+    "NOTE2.md",
+    "HOW_DESIGN_FROM_CC.md"
+  ],
+  "slides": 36,
+  "keyboard": "passed",
+  "presenter_notes": "passed",
+  "video": "playing",
+  "inactive_video": "paused",
+  "responsive": "1440x810, 768x1024, 390x844 passed",
+  "external_requests": [],
+  "browser_errors": [],
+  "pdf_pages": 36,
+  "pptx_slides": 36,
+  "layout_issues": [],
+  "pptx_font_check": "Pretendard-Regular only",
+  "figure19_poster": "1.8s, complete headline",
+  "summaries": 36,
+  "prompt_blocks": 20,
+  "text_coverage": {
+    "pdf": {
+      "fonts": [
+        "AAAAAA+Pretendard-Medium",
+        "BAAAAA+Pretendard-Regular"
+      ],
+      "pages": 36,
+      "text": "36 titles, 36 summaries, 20 prompt blocks preserved"
+    },
+    "pptx_render": {
+      "fonts": [
+        "BAAAAA+Pretendard-Regular",
+        "CAAAAA+Pretendard-Regular"
+      ],
+      "pages": 36,
+      "text": "36 titles, 36 summaries, 20 prompt blocks preserved"
+    }
+  },
+  "style": {
+    "reference": "ref/",
+    "backgrounds": [
+      "#F6EFE2",
+      "#141412"
+    ],
+    "font": "Pretendard",
+    "title_size_px": 42,
+    "title_weight": 400
+  },
+  "title_check": "36 titles: Pretendard, 42px, weight 400",
+  "nominal_titles": "36 titles converted to noun phrases; HTML, PDF, editable PPTX verified"
+}

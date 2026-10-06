@@ -1,0 +1,2 @@
+clone/how-to-turn-your-ai-into-a-world/index.html filter=lfs diff=lfs merge=lfs -text
+guide/guide1.mov filter=lfs diff=lfs merge=lfs -text

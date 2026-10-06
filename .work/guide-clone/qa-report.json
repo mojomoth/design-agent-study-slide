@@ -1,0 +1,35 @@
+{
+  "source_anchor_count": 17,
+  "translation_blocks": 182,
+  "asset_hashes_match": 47,
+  "figure_hashes_match": 25,
+  "slide_count": 8,
+  "viewports": [
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "allImages": 28,
+      "loadedImages": 28,
+      "embeddedImages": 28,
+      "visibleBlocks": 182,
+      "figureTranslations": 5,
+      "overflowElements": []
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "allImages": 28,
+      "loadedImages": 28,
+      "embeddedImages": 28,
+      "visibleBlocks": 182,
+      "figureTranslations": 5,
+      "overflowElements": []
+    }
+  ],
+  "external_requests": 0,
+  "browser_errors": 0,
+  "output_html": "clone/how-to-turn-your-ai-into-a-world/index.html",
+  "output_sha256": "b06b02dbdf7a49fe6be5c4caca540146e9250e529564f36668767ef1fbf75090",
+  "output_bytes": 174138490,
+  "matches_browser_verified_preview": true
+}

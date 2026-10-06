@@ -1,0 +1,242 @@
+[
+  {
+    "slide": 1,
+    "title": "무작위 문자열을 활용한 다양한 시안 생성",
+    "source_blocks": [
+      "b022",
+      "b023",
+      "b024",
+      "b025",
+      "b026",
+      "b027",
+      "b028",
+      "b029",
+      "b030",
+      "b031",
+      "b032",
+      "b033",
+      "b034",
+      "b035",
+      "b036",
+      "b037",
+      "b038",
+      "b039",
+      "b040",
+      "b041",
+      "b042",
+      "b043",
+      "b044",
+      "b045"
+    ],
+    "figures": [
+      5,
+      6,
+      7
+    ],
+    "clone_anchor": "§technique-1-use-seed-strings-to-inject-variety"
+  },
+  {
+    "slide": 2,
+    "title": "구체적이고 과감한 프롬프트 작성",
+    "source_blocks": [
+      "b046",
+      "b047",
+      "b048",
+      "b049",
+      "b050",
+      "b051",
+      "b052",
+      "b053",
+      "b054",
+      "b055",
+      "b056",
+      "b057",
+      "b058",
+      "b059",
+      "b060",
+      "b061",
+      "b062",
+      "b063",
+      "b064"
+    ],
+    "figures": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "clone_anchor": "§technique-2-be-much-more-ambitious-with-your-prompts"
+  },
+  {
+    "slide": 3,
+    "title": "별도 에이전트의 평가를 통한 반복 개선",
+    "source_blocks": [
+      "b066",
+      "b067",
+      "b068",
+      "b069",
+      "b070",
+      "b071",
+      "b072",
+      "b073",
+      "b074",
+      "b075",
+      "b076",
+      "b077",
+      "b078",
+      "b079",
+      "b080",
+      "b081",
+      "b082",
+      "b083",
+      "b084",
+      "b085",
+      "b086",
+      "b087",
+      "b088",
+      "b089",
+      "b090",
+      "b091",
+      "b092",
+      "b093",
+      "b094",
+      "b095",
+      "b096",
+      "b097",
+      "b098"
+    ],
+    "figures": [
+      14,
+      15
+    ],
+    "clone_anchor": "§technique-3-create-positive-feedback-loops-with-subagents"
+  },
+  {
+    "slide": 4,
+    "title": "이미지 생성을 활용한 개성 표현",
+    "source_blocks": [
+      "b099",
+      "b100",
+      "b101",
+      "b102",
+      "b103",
+      "b104",
+      "b105",
+      "b106",
+      "b107",
+      "b108",
+      "b109",
+      "b110",
+      "b111",
+      "b112",
+      "b113",
+      "b114",
+      "b115",
+      "b116"
+    ],
+    "figures": [
+      16,
+      17,
+      18,
+      19
+    ],
+    "clone_anchor": "§technique-4-use-image-generation-to-enrich-designs"
+  },
+  {
+    "slide": 5,
+    "title": "영상 생성을 활용한 움직임 표현",
+    "source_blocks": [
+      "b117",
+      "b118",
+      "b119",
+      "b120",
+      "b121",
+      "b122",
+      "b123",
+      "b124",
+      "b125",
+      "b126",
+      "b127",
+      "b128",
+      "b129",
+      "b130",
+      "b131",
+      "b132",
+      "b133",
+      "b134",
+      "b135",
+      "b136",
+      "b137",
+      "b138",
+      "b139",
+      "b140",
+      "b141",
+      "b142",
+      "b143"
+    ],
+    "figures": [
+      20,
+      21
+    ],
+    "clone_anchor": "§technique-5-for-more-advanced-motion-use-video-generation"
+  },
+  {
+    "slide": 6,
+    "title": "쓸모없는 요소의 삭제",
+    "source_blocks": [
+      "b145",
+      "b146",
+      "b147",
+      "b148",
+      "b149",
+      "b150",
+      "b151",
+      "b152",
+      "b153",
+      "b154",
+      "b155",
+      "b156",
+      "b157",
+      "b158",
+      "b159",
+      "b160"
+    ],
+    "figures": [
+      22,
+      23
+    ],
+    "clone_anchor": "§technique-6-cut-out-elements-that-dont-add-value"
+  },
+  {
+    "slide": 7,
+    "title": "AI가 반복하는 표현 방식의 정리",
+    "source_blocks": [
+      "b161",
+      "b162",
+      "b163",
+      "b164",
+      "b165"
+    ],
+    "figures": [
+      24
+    ],
+    "clone_anchor": "§technique-7-remove-ai-tells"
+  },
+  {
+    "slide": 8,
+    "title": "사람이 직접 고치는 문구",
+    "source_blocks": [
+      "b166",
+      "b167",
+      "b168",
+      "b169",
+      "b170"
+    ],
+    "figures": [
+      25
+    ],
+    "clone_anchor": "§technique-8-rewrite-copy-by-hand"
+  }
+]

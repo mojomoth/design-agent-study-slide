@@ -1,0 +1,274 @@
+[
+  {
+    "slug": "oryzo",
+    "site": "oryzo",
+    "url": "https://oryzo.ai/",
+    "file": "slides/img/sites/oryzo.png",
+    "status": "ok",
+    "description_ko": "코르크 받침 3D 히어로와 큰 ORYZO 로고"
+  },
+  {
+    "slug": "oryzo-2",
+    "site": "oryzo",
+    "url": "https://oryzo.ai/",
+    "file": "slides/img/sites/oryzo-2.png",
+    "status": "ok",
+    "description_ko": "어두운 배경에 떠 있는 코르크 받침 3D"
+  },
+  {
+    "slug": "lusion",
+    "site": "lusion",
+    "url": "https://lusion.co/",
+    "file": "slides/img/sites/lusion.png",
+    "status": "ok",
+    "description_ko": "파랑 흑백 3D 부품이 쌓인 히어로"
+  },
+  {
+    "slug": "cafetechnica",
+    "site": "cafetechnica",
+    "url": "https://www.cafetechnica.com.au/",
+    "file": "slides/img/sites/cafetechnica.png",
+    "status": "ok",
+    "description_ko": "왼쪽 흰 패널과 커피 머신 영상 히어로"
+  },
+  {
+    "slug": "cafetechnica-2",
+    "site": "cafetechnica",
+    "url": "https://www.cafetechnica.com.au/",
+    "file": "slides/img/sites/cafetechnica-2.png",
+    "status": "ok",
+    "description_ko": "화면 전체로 커진 에스프레소 영상"
+  },
+  {
+    "slug": "lacolombe",
+    "site": "lacolombe",
+    "url": "https://www.lacolombe.com/",
+    "file": "slides/img/sites/lacolombe.png",
+    "status": "ok",
+    "description_ko": "말차 거품기 사진 히어로와 상품 카드"
+  },
+  {
+    "slug": "lacolombe-2",
+    "site": "lacolombe",
+    "url": "https://www.lacolombe.com/",
+    "file": "slides/img/sites/lacolombe-2.png",
+    "status": "ok",
+    "description_ko": "캔과 원두 봉투 상품 카드 격자"
+  },
+  {
+    "slug": "annajona",
+    "site": "annajona",
+    "url": "https://www.annajona.is/",
+    "file": "slides/img/sites/annajona.png",
+    "status": "ok",
+    "description_ko": "폐업 안내 문구와 분홍빛 바 영상"
+  },
+  {
+    "slug": "annajona-2",
+    "site": "annajona",
+    "url": "https://www.annajona.is/",
+    "file": "slides/img/sites/annajona-2.png",
+    "status": "ok",
+    "description_ko": "둥근 모서리 안의 분홍빛 바 실내 사진"
+  },
+  {
+    "slug": "nimmobay",
+    "site": "nimmobay",
+    "url": "https://www.nimmobay.com/",
+    "file": "slides/img/sites/nimmobay.png",
+    "status": "ok",
+    "description_ko": "안개 낀 섬 항공 사진과 가는 자간 제목"
+  },
+  {
+    "slug": "nimmobay-2",
+    "site": "nimmobay",
+    "url": "https://www.nimmobay.com/",
+    "file": "slides/img/sites/nimmobay-2.png",
+    "status": "ok",
+    "description_ko": "손그림 지도와 안개 숲 소개 구간"
+  },
+  {
+    "slug": "vipp",
+    "site": "vipp",
+    "url": "https://vipp.com/en/world-of-vipp/our-guesthouses",
+    "file": "slides/img/sites/vipp.png",
+    "status": "ok",
+    "description_ko": "호숫가 유리 객실 영상과 가운데 제목"
+  },
+  {
+    "slug": "vipp-2",
+    "site": "vipp",
+    "url": "https://vipp.com/en/world-of-vipp/our-guesthouses",
+    "file": "slides/img/sites/vipp-2.png",
+    "status": "ok",
+    "description_ko": "어두운 배경 세리프 문구와 객실 사진"
+  },
+  {
+    "slug": "amangiri",
+    "site": "amangiri",
+    "url": "https://www.aman.com/resorts/amangiri",
+    "file": "slides/img/sites/amangiri.png",
+    "status": "ok",
+    "description_ko": "크림 배경과 콘크리트 벽 사이 영상"
+  },
+  {
+    "slug": "amangiri-2",
+    "site": "amangiri",
+    "url": "https://www.aman.com/resorts/amangiri",
+    "file": "slides/img/sites/amangiri-2.png",
+    "status": "ok",
+    "description_ko": "사막 리조트 사진 카드가 흩어진 구간"
+  },
+  {
+    "slug": "awwwards",
+    "site": "awwwards",
+    "url": "https://www.awwwards.com/",
+    "file": "slides/img/sites/awwwards.png",
+    "status": "ok",
+    "description_ko": "오늘의 사이트 큰 제목과 미리보기"
+  },
+  {
+    "slug": "siteinspire",
+    "site": "siteinspire",
+    "url": "https://www.siteinspire.com/",
+    "file": "slides/img/sites/siteinspire.png",
+    "status": "ok",
+    "description_ko": "분류 태그와 사이트 썸네일 카드"
+  },
+  {
+    "slug": "lapaninja",
+    "site": "lapaninja",
+    "url": "https://www.lapa.ninja/",
+    "file": "slides/img/sites/lapaninja.png",
+    "status": "ok",
+    "description_ko": "랜딩 페이지 모음 제목과 카드 슬라이드"
+  },
+  {
+    "slug": "mobbin",
+    "site": "mobbin",
+    "url": "https://mobbin.com/",
+    "file": "slides/img/sites/mobbin.png",
+    "status": "ok",
+    "description_ko": "앱 아이콘이 섞인 큰 제목 히어로"
+  },
+  {
+    "slug": "refero",
+    "site": "refero",
+    "url": "https://refero.design/",
+    "file": "slides/img/sites/refero.png",
+    "status": "ok",
+    "description_ko": "세리프 질문 제목과 검색 입력창"
+  },
+  {
+    "slug": "referostyles",
+    "site": "referostyles",
+    "url": "https://styles.refero.design/",
+    "file": "slides/img/sites/referostyles.png",
+    "status": "ok",
+    "description_ko": "DESIGN.md 제목과 스타일 카드"
+  },
+  {
+    "slug": "21stdev",
+    "site": "21stdev",
+    "url": "https://21st.dev/",
+    "file": "slides/img/sites/21stdev.png",
+    "status": "ok",
+    "description_ko": "어두운 파랑 배경과 컴포넌트 미리보기"
+  },
+  {
+    "slug": "reactbits",
+    "site": "reactbits",
+    "url": "https://reactbits.dev/",
+    "file": "slides/img/sites/reactbits.png",
+    "status": "ok",
+    "description_ko": "보라 그라데이션 배경과 코드 카드"
+  },
+  {
+    "slug": "fontsinuse",
+    "site": "fontsinuse",
+    "url": "https://fontsinuse.com/",
+    "file": "slides/img/sites/fontsinuse.png",
+    "status": "ok",
+    "description_ko": "글꼴 사용 사례 사진 격자"
+  },
+  {
+    "slug": "googlefonts",
+    "site": "googlefonts",
+    "url": "https://fonts.google.com/",
+    "file": "slides/img/sites/googlefonts.png",
+    "status": "ok",
+    "description_ko": "글꼴 목록과 느낌별 필터"
+  },
+  {
+    "slug": "coolors",
+    "site": "coolors",
+    "url": "https://coolors.co/palettes/trending",
+    "file": "slides/img/sites/coolors.png",
+    "status": "ok",
+    "description_ko": "인기 팔레트 색 띠 카드 격자"
+  },
+  {
+    "slug": "brandingstyleguides",
+    "site": "brandingstyleguides",
+    "url": "https://brandingstyleguides.com/",
+    "file": "slides/img/sites/brandingstyleguides.png",
+    "status": "ok",
+    "description_ko": "회색 배경 큰 제목과 가이드 표지"
+  },
+  {
+    "slug": "pinterest",
+    "site": "pinterest",
+    "url": "https://www.pinterest.com/search/pins/?q=lake%20side%20cabin%20website",
+    "file": "slides/img/sites/pinterest.png",
+    "status": "ok",
+    "description_ko": "호숫가 오두막 웹사이트 핀 격자"
+  },
+  {
+    "slug": "toools",
+    "site": "toools",
+    "url": "https://www.toools.design/",
+    "file": "slides/img/sites/toools.png",
+    "status": "ok",
+    "description_ko": "자료 분류 타일과 도구 로고"
+  },
+  {
+    "slug": "bookofshapes",
+    "site": "bookofshapes",
+    "url": "https://www.bookofshapes.com/",
+    "file": "slides/img/sites/bookofshapes.png",
+    "status": "ok",
+    "description_ko": "검은 배경 제목과 SVG 패턴 카드"
+  },
+  {
+    "slug": "gofullpage",
+    "site": "gofullpage",
+    "url": "https://gofullpage.com/",
+    "file": "slides/img/sites/gofullpage.png",
+    "status": "ok",
+    "description_ko": "전체 캡처 확장 소개와 공지 상자"
+  },
+  {
+    "slug": "gauntlet",
+    "site": "gauntlet",
+    "url": "https://somethingbig.ai/gauntlet-loop",
+    "file": "slides/img/sites/gauntlet.png",
+    "status": "ok",
+    "description_ko": "Gauntlet Loop 글 제목과 본문 첫머리"
+  },
+  {
+    "slug": "claudedesign",
+    "site": "claudedesign",
+    "url": "https://claude.com/product/design",
+    "file": "slides/img/sites/claudedesign.png",
+    "status": "ok",
+    "description_ko": "세리프 제목과 Claude Design 화면"
+  },
+  {
+    "slug": "frontenddesign",
+    "site": "frontenddesign",
+    "url": "https://github.com/anthropics/skills/tree/main/skills/frontend-design",
+    "file": "slides/img/sites/frontenddesign.png",
+    "status": "ok",
+    "description_ko": "GitHub frontend-design 폴더 목록"
+  }
+]

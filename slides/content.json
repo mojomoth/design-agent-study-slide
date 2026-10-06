@@ -1,0 +1,1748 @@
+{
+  "title": "Claude의 디자인 안목",
+  "source_order": [
+    "SLIDE1.md",
+    "NOTE2.md",
+    "HOW_DESIGN_FROM_CC.md"
+  ],
+  "slides": [
+    {
+      "title": "Claude의 디자인 안목",
+      "images": [
+        {
+          "src": "assets/guide1-mov/crops/51-southside-brewing.png",
+          "x": 730,
+          "y": 163,
+          "w": 1190,
+          "h": 710
+        }
+      ],
+      "part": 1,
+      "kicker": "DESIGN EYE",
+      "caption": "",
+      "source": "SLIDE1.md · 도입",
+      "notes": "발표 순서: SLIDE1 → NOTE2 → HOW_DESIGN_FROM_CC.\n도입 출처: The AI Automators, Here’s How to Give Claude an Eye for Design (6 easy steps), 2026-09-07.\nhttps://www.youtube.com/watch?v=1Y8OlBgafdE\n표지 Figure: 영상 속 Southside Brewing 결과 화면.",
+      "texts": [],
+      "summary": "레퍼런스로 방향을 정하고, 반복과 비교로 완성도를 높인다.",
+      "theme": "paper",
+      "prompt_panel": "none",
+      "layout": "cover",
+      "display_title": "Claude의\n디자인 안목"
+    },
+    {
+      "title": "막연한 요청과 평균적 결과",
+      "images": [
+        {
+          "src": "assets/guide1-mov/crops/02-you-ask-for-prompt.png",
+          "x": 96,
+          "y": 238,
+          "w": 910,
+          "h": 245
+        },
+        {
+          "src": "assets/guide1-mov/crops/03-press-crushing.png",
+          "x": 96,
+          "y": 510,
+          "w": 1000,
+          "h": 355
+        },
+        {
+          "src": "assets/guide1-mov/crops/04-average-website-mockup.png",
+          "x": 1200,
+          "y": 365,
+          "w": 624,
+          "h": 470
+        }
+      ],
+      "part": 1,
+      "kicker": "",
+      "caption": "",
+      "source": "SLIDE1.md · §1",
+      "notes": "“현대적인 웹사이트”처럼 막연하게 요청하면 평균적인 디자인이 나온다는 영상의 프레스 비유. 학습 규모나 모델 이름은 원문의 주장이고 이 발표에서 별도로 검증한 실험 결과가 아니다.",
+      "texts": [
+        {
+          "text": "→",
+          "x": 1100,
+          "y": 527,
+          "w": 80,
+          "h": 90,
+          "size": 60,
+          "color": "#756F65",
+          "weight": 400
+        }
+      ],
+      "summary": "추상적인 요청은 익숙한 색과 구조로 수렴하기 쉽다.",
+      "theme": "paper",
+      "prompt_panel": "none"
+    },
+    {
+      "title": "사람의 방향 설정과 Claude의 구현",
+      "images": [
+        {
+          "src": "assets/guide1-mov/crops/09-film-slate.png",
+          "x": 96,
+          "y": 255,
+          "w": 770,
+          "h": 605,
+          "label": "DIRECTOR"
+        },
+        {
+          "src": "assets/guide1-mov/crops/10-character-holding-reference.png",
+          "x": 1000,
+          "y": 255,
+          "w": 824,
+          "h": 605,
+          "label": "REFERENCE"
+        }
+      ],
+      "part": 1,
+      "kicker": "",
+      "caption": "",
+      "source": "SLIDE1.md · §2",
+      "notes": "영화 감독과 배우의 비유. 사람은 레퍼런스로 방향을 정하고, Claude는 구현한다. ORYZO는 Southside Brewing의 움직임 참고 사이트다.",
+      "texts": [],
+      "summary": "사람이 레퍼런스로 방향을 정하고 Claude가 구현한다.",
+      "theme": "paper",
+      "prompt_panel": "none"
+    },
+    {
+      "title": "품질 기준과 반복 개선",
+      "images": [
+        {
+          "src": "assets/guide1-mov/crops/14-loop-diagram-cleared.png",
+          "x": 290,
+          "y": 236,
+          "w": 1340,
+          "h": 689
+        }
+      ],
+      "part": 1,
+      "kicker": "",
+      "caption": "",
+      "source": "SLIDE1.md · §2",
+      "notes": "영상은 v1~v3가 기준선에 미치지 못하고 v4가 통과하는 모습으로 반복을 설명한다. 네 번이면 반드시 통과한다는 의미가 아니다.",
+      "texts": [],
+      "summary": "결과를 비교하며 품질 기준을 넘을 때까지 다듬는다.",
+      "theme": "paper",
+      "prompt_panel": "none"
+    },
+    {
+      "title": "시각적 예시의 힘",
+      "images": [
+        {
+          "src": "assets/guide1-mov/crops/18-style-adjective-chips.png",
+          "x": 130,
+          "y": 260,
+          "w": 670,
+          "h": 440
+        },
+        {
+          "src": "assets/guide1-mov/crops/19-results-gauge-meh.png",
+          "x": 345,
+          "y": 732,
+          "w": 240,
+          "h": 190
+        },
+        {
+          "src": "assets/guide1-mov/crops/25-example-cards-stack.png",
+          "x": 1020,
+          "y": 240,
+          "w": 760,
+          "h": 455
+        },
+        {
+          "src": "assets/guide1-mov/crops/22-results-gauge-much-better.png",
+          "x": 1280,
+          "y": 727,
+          "w": 270,
+          "h": 190
+        }
+      ],
+      "part": 1,
+      "kicker": "",
+      "caption": "",
+      "source": "SLIDE1.md · §3",
+      "notes": "MODERN, CLEAN 같은 형용사만 쌓는 것보다 FLOEMA, SON DAVEN, STUDIO 같은 시각 예시가 원하는 모습을 더 직접적으로 전달한다.",
+      "texts": [
+        {
+          "text": "→",
+          "x": 874,
+          "y": 440,
+          "w": 90,
+          "h": 100,
+          "size": 60,
+          "color": "#756F65",
+          "weight": 400
+        }
+      ],
+      "summary": "스타일을 설명하는 형용사보다 실제 화면을 보여 준다.",
+      "theme": "paper",
+      "prompt_panel": "none"
+    },
+    {
+      "title": "디자인 영감의 다섯 가지 재료",
+      "images": [
+        {
+          "src": "assets/guide1-mov/crops/42-category-galleries.png",
+          "x": 115,
+          "y": 340,
+          "w": 145,
+          "h": 270
+        },
+        {
+          "src": "assets/guide1-mov/crops/43-category-real-apps.png",
+          "x": 270,
+          "y": 340,
+          "w": 145,
+          "h": 270
+        },
+        {
+          "src": "assets/guide1-mov/crops/44-category-components.png",
+          "x": 510,
+          "y": 340,
+          "w": 235,
+          "h": 270
+        },
+        {
+          "src": "assets/guide1-mov/crops/45-category-fonts.png",
+          "x": 865,
+          "y": 340,
+          "w": 235,
+          "h": 270
+        },
+        {
+          "src": "assets/guide1-mov/crops/46-category-color.png",
+          "x": 1220,
+          "y": 340,
+          "w": 235,
+          "h": 270
+        },
+        {
+          "src": "assets/guide1-mov/crops/47-category-systems.png",
+          "x": 1575,
+          "y": 340,
+          "w": 235,
+          "h": 270
+        }
+      ],
+      "part": 1,
+      "kicker": "",
+      "caption": "",
+      "source": "SLIDE1.md · §3",
+      "notes": "영상의 여섯 분류에서 웹사이트 갤러리와 실제 앱 화면을 Reference 하나로 묶어 다섯 분류로 정리한 SLIDE1의 구성을 따른다.",
+      "texts": [
+        {
+          "text": "Reference",
+          "x": 125,
+          "y": 700,
+          "w": 330,
+          "h": 60,
+          "size": 30,
+          "color": "#24231F",
+          "weight": 500
+        },
+        {
+          "text": "Component",
+          "x": 510,
+          "y": 700,
+          "w": 330,
+          "h": 60,
+          "size": 30,
+          "color": "#24231F",
+          "weight": 500
+        },
+        {
+          "text": "Font",
+          "x": 865,
+          "y": 700,
+          "w": 330,
+          "h": 60,
+          "size": 30,
+          "color": "#24231F",
+          "weight": 500
+        },
+        {
+          "text": "Color",
+          "x": 1220,
+          "y": 700,
+          "w": 330,
+          "h": 60,
+          "size": 30,
+          "color": "#24231F",
+          "weight": 500
+        },
+        {
+          "text": "Design System",
+          "x": 1530,
+          "y": 700,
+          "w": 330,
+          "h": 60,
+          "size": 30,
+          "color": "#24231F",
+          "weight": 500
+        }
+      ],
+      "summary": "화면과 부품, 글꼴, 색, 디자인 규칙으로 취향을 구체화한다.",
+      "theme": "paper",
+      "prompt_panel": "none"
+    },
+    {
+      "title": "무작위 요청의 한계",
+      "images": [
+        {
+          "src": "assets/how-to-turn-your-ai-into-a-world/figure-05-7b59bdf3-8a82-46d1-94c2-4a1e60ea7cbf_1456x894.jpg",
+          "x": 96,
+          "y": 255,
+          "w": 832,
+          "h": 485,
+          "label": "기본 프롬프트"
+        },
+        {
+          "src": "assets/how-to-turn-your-ai-into-a-world/figure-06-f37064a7-2853-4314-b175-aa65b8a13f43_1456x876.jpg",
+          "x": 992,
+          "y": 255,
+          "w": 832,
+          "h": 485,
+          "label": "“독특하고 무작위로”"
+        }
+      ],
+      "part": 2,
+      "kicker": "DISCOVER · 01",
+      "caption": "",
+      "source": "NOTE2.md · 기법 1",
+      "notes": "기법 파트 출처: Anshu Chimala, How to turn your AI into a world-class designer, Lenny’s Newsletter, 2026-09-01.\nhttps://www.lennysnewsletter.com/p/how-to-turn-your-ai-into-a-world\n\nFigure 5~6. 기본 생산성 앱 프롬프트는 보라색 UI로, 무작위로 만들라는 지시는 비슷한 오프화이트와 주황 계열로 수렴한 원문 사례. 모든 모델에 대한 일반적 정량 결과는 아니다.\n\nNOTE2 근거:\n- 같은 기본 프롬프트(`Build me a landing page for my productivity app.`)를 Claude Code 네 개에 주면, Claude Opus 5는 거의 매번 보랏빛 그라데이션에 왼쪽 텍스트와 오른쪽 그래픽이라는 같은 구조를 낸다(그림 5).\n- \"완전히 독특하게, 모든 결정을 무작위로\" 해 달라고 덧붙여도 결과끼리 닮았다. 색 조합과 구조, 어색한 도자기 비유까지 반복된다(그림 6). 모델이 진짜 무작위가 아니라 무작위처럼 들리는 토큰을 예측하기 때문이다.\n\n화면의 프롬프트는 NOTE2의 요지와 예시를 발표용 요청문으로 정리한 것이다.",
+      "texts": [],
+      "summary": "기본 요청도 무작위 요청도 결과끼리 닮았다.",
+      "prompt": "기본 요청: Build me a landing page for my productivity app.\n추가 요청: 완전히 독특하게, 모든 결정을 무작위로.",
+      "prompt_label": "프롬프트 요지",
+      "source_excerpt": "- 같은 기본 프롬프트(`Build me a landing page for my productivity app.`)를 Claude Code 네 개에 주면, Claude Opus 5는 거의 매번 보랏빛 그라데이션에 왼쪽 텍스트와 오른쪽 그래픽이라는 같은 구조를 낸다(그림 5).\n- \"완전히 독특하게, 모든 결정을 무작위로\" 해 달라고 덧붙여도 결과끼리 닮았다. 색 조합과 구조, 어색한 도자기 비유까지 반복된다(그림 6). 모델이 진짜 무작위가 아니라 무작위처럼 들리는 토큰을 예측하기 때문이다.",
+      "prompt_layout": "bottom",
+      "theme": "ink",
+      "prompt_panel": "none"
+    },
+    {
+      "title": "시드 문자열과 디자인 다양성",
+      "images": [
+        {
+          "src": "assets/how-to-turn-your-ai-into-a-world/figure-07-bcda7156-dbbd-4d18-a7fb-4cfc124563bf_1456x876.jpg",
+          "x": 96,
+          "y": 264,
+          "w": 1130,
+          "h": 660
+        }
+      ],
+      "part": 2,
+      "kicker": "DISCOVER · 01",
+      "caption": "",
+      "source": "NOTE2.md · 기법 1",
+      "notes": "Figure 7. 원문은 임의의 외부 시드 문자열을 디자인 방향 해석에 사용해 모델 밖에서 다양성을 공급하도록 제안한다. 시드는 제품명에 그대로 노출시키기 위한 문구가 아니다.\n\nNOTE2 근거:\n- 프롬프트 요지:\n  1. 셸 스크립트로 긴 무작위 영숫자 문자열을 만든다.\n  2. 문자열 속 하위 패턴이나 특별한 숫자까지 살펴 색 조합, 레이아웃, 타이포그래피 방향을 정한다.\n  3. 스스로 판단해 그 방향을 완성도 있게 구현하되, 문자열은 디자인에 드러내지 않는다.\n- 결과(그림 7): 색 조합, 글꼴, 아이디어가 확연히 다양해졌다. 누구나 얻는 기본 결과와 달리 실행할 때마다 다른 결과가 나온다.\n\n화면의 프롬프트는 NOTE2의 요지와 예시를 발표용 요청문으로 정리한 것이다.",
+      "texts": [],
+      "summary": "외부 시드가 색·글꼴·구성의 출발점을 바꾼다.",
+      "prompt": "셸 스크립트로 긴 무작위 영숫자 문자열을 만들어 줘.\n그 안의 패턴에서 색·레이아웃·글꼴의 영감을 찾아 생산성 앱 랜딩 페이지를 만들어 줘.\n문자열 자체는 화면에 드러내지 마.",
+      "prompt_label": "프롬프트 요지",
+      "source_excerpt": "- 프롬프트 요지:\n  1. 셸 스크립트로 긴 무작위 영숫자 문자열을 만든다.\n  2. 문자열 속 하위 패턴이나 특별한 숫자까지 살펴 색 조합, 레이아웃, 타이포그래피 방향을 정한다.\n  3. 스스로 판단해 그 방향을 완성도 있게 구현하되, 문자열은 디자인에 드러내지 않는다.\n- 결과(그림 7): 색 조합, 글꼴, 아이디어가 확연히 다양해졌다. 누구나 얻는 기본 결과와 달리 실행할 때마다 다른 결과가 나온다.",
+      "prompt_layout": "side",
+      "theme": "paper",
+      "prompt_panel": "ink"
+    },
+    {
+      "title": "픽셀 아트 테마",
+      "images": [
+        {
+          "src": "assets/how-to-turn-your-ai-into-a-world/figure-08-3d880aa5-5e31-45f5-99c4-8055dcb87f4a_640x360.gif",
+          "x": 96,
+          "y": 264,
+          "w": 1130,
+          "h": 660
+        }
+      ],
+      "part": 2,
+      "kicker": "DISCOVER · 02",
+      "caption": "",
+      "source": "NOTE2.md · 기법 2",
+      "notes": "Figure 8: QUESTLOG. 생산성 앱을 비디오 게임 장면 같은 픽셀 아트 세계로 구체화한 원문 데모.\n\nNOTE2 근거:\n- 구체적이고 대담한 프롬프트는 모델에게 즉흥적으로 고르는 대신 따를 비전을 준다.\n- 예시 1: 대담한 픽셀 아트 테마로, 각 섹션이 게임 속 한 장면 같으면서도 랜딩 페이지로 작동하게 한다(그림 8).\n\n화면의 프롬프트는 NOTE2의 요지와 예시를 발표용 요청문으로 정리한 것이다.",
+      "texts": [],
+      "summary": "구체적인 영감이 디자인의 방향을 만든다.",
+      "prompt": "생산성 앱 랜딩 페이지를 대담한 픽셀 아트 테마로 만들어 줘.\n각 섹션은 게임 속 한 장면처럼 느껴지되, 랜딩 페이지로 작동하게 해.",
+      "prompt_label": "프롬프트 요지",
+      "source_excerpt": "- 구체적이고 대담한 프롬프트는 모델에게 즉흥적으로 고르는 대신 따를 비전을 준다.\n- 예시 1: 대담한 픽셀 아트 테마로, 각 섹션이 게임 속 한 장면 같으면서도 랜딩 페이지로 작동하게 한다(그림 8).",
+      "prompt_layout": "side",
+      "theme": "paper",
+      "prompt_panel": "none"
+    },
+    {
+      "title": "아이소메트릭 3D 도시",
+      "images": [
+        {
+          "src": "assets/how-to-turn-your-ai-into-a-world/figure-09-a7245156-8c71-4ecc-9897-5ce76e561faf_640x360.gif",
+          "x": 96,
+          "y": 264,
+          "w": 1130,
+          "h": 660
+        }
+      ],
+      "part": 2,
+      "kicker": "DISCOVER · 02",
+      "caption": "",
+      "source": "NOTE2.md · 기법 2",
+      "notes": "Figure 9: SKYLINE. 작업과 프로젝트를 아이소메트릭 3D 도시의 건물과 층으로 표현한다.\n\nNOTE2 근거:\n- 예시 2: 기능을 동네나 건물로 표현한 아이소메트릭 3D 도시를 배경으로 삼는다(그림 9).\n\n화면의 프롬프트는 NOTE2의 요지와 예시를 발표용 요청문으로 정리한 것이다.",
+      "texts": [],
+      "summary": "제품의 기능을 도시의 공간으로 표현한다.",
+      "prompt": "아이소메트릭 3D 도시를 배경으로 생산성 앱 랜딩 페이지를 만들어 줘.\n각 기능을 동네나 건물로 표현해.",
+      "prompt_label": "프롬프트 요지",
+      "source_excerpt": "- 예시 2: 기능을 동네나 건물로 표현한 아이소메트릭 3D 도시를 배경으로 삼는다(그림 9).",
+      "prompt_layout": "side",
+      "theme": "paper",
+      "prompt_panel": "none"
+    },
+    {
+      "title": "비대칭 디자인",
+      "images": [
+        {
+          "src": "assets/how-to-turn-your-ai-into-a-world/figure-10-220747d1-f561-405f-a95c-7b05fd64731b_640x360.gif",
+          "x": 96,
+          "y": 264,
+          "w": 1130,
+          "h": 660
+        }
+      ],
+      "part": 2,
+      "kicker": "DISCOVER · 02",
+      "caption": "",
+      "source": "NOTE2.md · 기법 2",
+      "notes": "Figure 10: OFFCUT. 규칙 파괴, 비대칭 레이아웃, 넓은 여백을 방향으로 제시한다. 뒤의 세 장에서 아이디어 나열, 취향 반영, 제작 프롬프트 작성을 보여 준다. Figure 14는 Figure 7과 같은 시안이라 중복 생략했다.\n\nNOTE2 근거:\n- 예시 3: 극단적인 비대칭, 불협화음 같은 색과 타이포그래피, 불편한 여백으로 규칙을 다 깨되 보기 좋게 만든다(그림 10).\n\n화면의 프롬프트는 NOTE2의 요지와 예시를 발표용 요청문으로 정리한 것이다.",
+      "texts": [],
+      "summary": "낯선 조합도 구체적으로 요청해 본다.",
+      "prompt": "극단적으로 비대칭인 레이아웃, 불협화음 같은 색과 타이포그래피, 불편한 여백으로 생산성 앱 랜딩 페이지를 만들어 줘.\n규칙을 깨되 보기 좋게 만들어.",
+      "prompt_label": "프롬프트 요지",
+      "source_excerpt": "- 예시 3: 극단적인 비대칭, 불협화음 같은 색과 타이포그래피, 불편한 여백으로 규칙을 다 깨되 보기 좋게 만든다(그림 10).",
+      "prompt_layout": "side",
+      "theme": "paper",
+      "prompt_panel": "none"
+    },
+    {
+      "title": "디자인 아이디어의 폭넓은 탐색",
+      "images": [
+        {
+          "src": "assets/how-to-turn-your-ai-into-a-world/figure-11-0e1d6d22-1828-47d5-b2f6-0d88fef90ae2_1456x571.png",
+          "x": 96,
+          "y": 264,
+          "w": 1130,
+          "h": 660,
+          "label": "AI 답변"
+        }
+      ],
+      "part": 2,
+      "kicker": "DISCOVER · 02",
+      "caption": "",
+      "source": "NOTE2.md · 기법 2",
+      "notes": "Figure 11. NOTE2의 기법 2 대화 과정. 화면 왼쪽은 원문의 AI 답변이고 오른쪽은 사용자가 보내는 요청의 요지다.\n\nNOTE2 근거:\n- 대담하고 독특한 디자인 언어 아이디어를 짧은 설명과 함께, 깊이보다 폭 위주로 최대한 많이 달라고 한다.\n- AI 답변(그림 11): Brutalist Utility, Industrial Control Panel, Gel Interface, Cardboard Prototype, Comic Book UI 등.\n\n화면의 프롬프트는 NOTE2의 요지와 예시를 발표용 요청문으로 정리한 것이다.",
+      "texts": [],
+      "summary": "처음에는 깊이보다 폭을 넓힌다.",
+      "prompt": "제품을 위한 대담하고 독특한 디자인 언어를 찾고 싶어.\n짧은 설명을 붙여 아이디어를 최대한 많이 나열해 줘.\n세부 설계보다 방향의 다양성을 우선해.",
+      "prompt_label": "프롬프트 요지",
+      "source_excerpt": "- 대담하고 독특한 디자인 언어 아이디어를 짧은 설명과 함께, 깊이보다 폭 위주로 최대한 많이 달라고 한다.\n- AI 답변(그림 11): Brutalist Utility, Industrial Control Panel, Gel Interface, Cardboard Prototype, Comic Book UI 등.",
+      "prompt_layout": "side",
+      "theme": "paper",
+      "prompt_panel": "none"
+    },
+    {
+      "title": "취향 기반의 디자인 방향",
+      "images": [
+        {
+          "src": "assets/how-to-turn-your-ai-into-a-world/figure-12-0e7340b1-9a93-4d94-abc6-c6b386f3a36c_1456x449.png",
+          "x": 96,
+          "y": 264,
+          "w": 1130,
+          "h": 660,
+          "label": "AI 답변"
+        }
+      ],
+      "part": 2,
+      "kicker": "DISCOVER · 02",
+      "caption": "",
+      "source": "NOTE2.md · 기법 2",
+      "notes": "Figure 12. NOTE2의 기법 2 대화 과정. 화면 왼쪽은 원문의 AI 답변이고 오른쪽은 사용자가 보내는 요청의 요지다.\n\nNOTE2 근거:\n- 'Industrial Control Panel'에 대해 원하는 것(딸깍거리는 버튼과 소리 같은 촉감, 일관된 컴포넌트와 절제된 디테일, 질감과 약간의 색)과 피할 것(만화풍, 스큐어모픽, 밋밋한 회색 그라데이션)을 적어 취향에 맞게 다듬어 달라고 한다.\n\n화면의 프롬프트는 NOTE2의 요지와 예시를 발표용 요청문으로 정리한 것이다.",
+      "texts": [],
+      "summary": "원하는 느낌과 피할 느낌을 함께 전한다.",
+      "prompt": "Industrial Control Panel을 내 취향에 맞게 다듬어 줘.\n딸깍거리는 버튼·소리, 절제된 디테일, 질감과 약간의 색을 원해.\n만화풍·스큐어모픽·밋밋한 회색 그라데이션은 피해.",
+      "prompt_label": "프롬프트 요지",
+      "source_excerpt": "- 'Industrial Control Panel'에 대해 원하는 것(딸깍거리는 버튼과 소리 같은 촉감, 일관된 컴포넌트와 절제된 디테일, 질감과 약간의 색)과 피할 것(만화풍, 스큐어모픽, 밋밋한 회색 그라데이션)을 적어 취향에 맞게 다듬어 달라고 한다.",
+      "prompt_layout": "side",
+      "theme": "paper",
+      "prompt_panel": "none"
+    },
+    {
+      "title": "제작용 프롬프트 구성",
+      "images": [
+        {
+          "src": "assets/how-to-turn-your-ai-into-a-world/figure-13-4ca0ce7c-c730-443a-bde3-f62996b43c7d_1456x692.png",
+          "x": 96,
+          "y": 264,
+          "w": 1130,
+          "h": 660,
+          "label": "AI 답변"
+        }
+      ],
+      "part": 2,
+      "kicker": "DISCOVER · 02",
+      "caption": "",
+      "source": "NOTE2.md · 기법 2",
+      "notes": "Figure 13. NOTE2의 기법 2 대화 과정. 화면 왼쪽은 원문의 AI 답변이고 오른쪽은 사용자가 보내는 요청의 요지다.\n\nNOTE2 근거:\n- 마지막으로 이 방향으로 POC 페이지를 만들 간결한 프롬프트를 써 달라고 한다.\n- AI 답변(그림 13): \"Precision Industrial\" 제어판 디자인 언어를 보여 주는 단일 페이지 POC 제작 프롬프트다. 레트로, 만화풍, 과한 스큐어모픽은 피하라고 못 박는다.\n\n화면의 프롬프트는 NOTE2의 요지와 예시를 발표용 요청문으로 정리한 것이다.",
+      "texts": [],
+      "summary": "취향이 정해지면 실행할 요청으로 묶는다.",
+      "prompt": "지금 정한 Precision Industrial 방향으로 단일 POC 페이지를 만들 간결한 프롬프트를 써 줘.\n레트로·만화풍·과한 스큐어모픽은 피한다는 조건도 담아 줘.",
+      "prompt_label": "프롬프트 요지",
+      "source_excerpt": "- 마지막으로 이 방향으로 POC 페이지를 만들 간결한 프롬프트를 써 달라고 한다.\n- AI 답변(그림 13): \"Precision Industrial\" 제어판 디자인 언어를 보여 주는 단일 페이지 POC 제작 프롬프트다. 레트로, 만화풍, 과한 스큐어모픽은 피하라고 못 박는다.",
+      "prompt_layout": "side",
+      "theme": "paper",
+      "prompt_panel": "none"
+    },
+    {
+      "title": "구현자와 비평가의 역할 분리",
+      "images": [
+        {
+          "src": "assets/how-to-turn-your-ai-into-a-world/figure-15-5e045d71-d5f7-436a-be1f-eb870df24062_1456x1861.jpg",
+          "x": 96,
+          "y": 258,
+          "w": 1728,
+          "h": 523,
+          "crop": [
+            0,
+            0,
+            1456,
+            520
+          ]
+        }
+      ],
+      "part": 2,
+      "kicker": "DEFINE · 03",
+      "caption": "",
+      "source": "NOTE2.md · 기법 3",
+      "notes": "Figure 15의 Meridian 비교를 확대했다. 제작 대화와 분리된 비평가가 실제 스크린샷을 평가한다. 원문 기법의 9/10 점수 루프는 뒤에 나올 Claude Code의 레퍼런스 비교 방식과 구별한다.\n\nNOTE2 근거:\n- 그래서 '디자인 비평가(design critic)' 역할의 별도 에이전트가 완성도를 판단하게 한다. 비평가는 스크린샷만 보고, 구현 방식이나 들인 노력과 무관하게 품질 기준 충족 여부만 본다.\n  - 반복마다 스크린샷을 찍어, 코드나 이전 반복과 비평 없이 새 컨텍스트의 비평가에게 넘긴다.\n  - 비평가는 디자인이 노리는 미감과 최고 수준 스튜디오의 구현을 떠올려 가장 큰 격차를 짚고, 그 수준에 얼마나 가까운지 10점 만점으로 채점한다.\n\n화면의 프롬프트는 NOTE2의 요지와 예시를 발표용 요청문으로 정리한 것이다.",
+      "texts": [],
+      "summary": "구현자는 만들고, 별도 비평가는 화면만 본다.",
+      "prompt": "매 반복의 스크린샷을 새 컨텍스트의 디자인 비평가에게 넘겨 줘.\n코드·이전 반복·이전 비평은 주지 마.\n비평가는 최고 수준 스튜디오와의 가장 큰 격차를 짚고 10점 만점으로 채점해.",
+      "prompt_label": "프롬프트 요지",
+      "source_excerpt": "- 그래서 '디자인 비평가(design critic)' 역할의 별도 에이전트가 완성도를 판단하게 한다. 비평가는 스크린샷만 보고, 구현 방식이나 들인 노력과 무관하게 품질 기준 충족 여부만 본다.\n  - 반복마다 스크린샷을 찍어, 코드나 이전 반복과 비평 없이 새 컨텍스트의 비평가에게 넘긴다.\n  - 비평가는 디자인이 노리는 미감과 최고 수준 스튜디오의 구현을 떠올려 가장 큰 격차를 짚고, 그 수준에 얼마나 가까운지 10점 만점으로 채점한다.",
+      "prompt_layout": "bottom",
+      "theme": "paper",
+      "prompt_panel": "none"
+    },
+    {
+      "title": "반복 비평과 디자인 정체성",
+      "images": [
+        {
+          "src": "assets/how-to-turn-your-ai-into-a-world/figure-15-5e045d71-d5f7-436a-be1f-eb870df24062_1456x1861.jpg",
+          "x": 96,
+          "y": 258,
+          "w": 1728,
+          "h": 523,
+          "crop": [
+            0,
+            974,
+            1456,
+            405
+          ]
+        }
+      ],
+      "part": 2,
+      "kicker": "DEFINE · 03",
+      "caption": "",
+      "source": "NOTE2.md · 기법 3",
+      "notes": "Figure 15의 Quartz 행 확대. 왼쪽은 반복 전, 오른쪽은 반복 후다. 기존 디자인의 핵심 콘셉트를 더 대담한 화면으로 발전시킨 예시다.\n\nNOTE2 근거:\n  - 비평가 지침: 큰 구조와 세부를 함께 보고, 과하거나 AI 티 나는 패턴은 감점하며, 구체적이고 대담하게 판단한다.\n  - 비평가가 독립적으로 9/10 이상을 줘야 끝난다. 이 기준은 비평가에게 알리지 않고, 비평가 프롬프트는 매번 같게 쓴다.\n- 결과(그림 15): 판에 박은 레이아웃이 원래의 미감은 유지한 채 시안마다 다른 정체성을 갖게 됐다.\n\n화면의 프롬프트는 NOTE2의 요지와 예시를 발표용 요청문으로 정리한 것이다.",
+      "texts": [],
+      "summary": "같은 평가 기준으로 반복해 고유한 개성을 만든다.",
+      "prompt": "비평가에게 매번 같은 프롬프트를 줘.\n큰 구조·세부를 보고, 과하거나 AI 티 나는 패턴은 감점하게 해.\n독립적으로 9/10 이상을 줄 때 종료하되, 종료 점수는 비평가에게 알리지 마.",
+      "prompt_label": "프롬프트 요지",
+      "source_excerpt": "  - 비평가 지침: 큰 구조와 세부를 함께 보고, 과하거나 AI 티 나는 패턴은 감점하며, 구체적이고 대담하게 판단한다.\n  - 비평가가 독립적으로 9/10 이상을 줘야 끝난다. 이 기준은 비평가에게 알리지 않고, 비평가 프롬프트는 매번 같게 쓴다.\n- 결과(그림 15): 판에 박은 레이아웃이 원래의 미감은 유지한 채 시안마다 다른 정체성을 갖게 됐다.",
+      "prompt_layout": "bottom",
+      "theme": "paper",
+      "prompt_panel": "none"
+    },
+    {
+      "title": "생성 이미지의 시각적 효과",
+      "images": [
+        {
+          "src": "assets/how-to-turn-your-ai-into-a-world/figure-16-7e2a6925-7451-4abe-aaa8-bc92823dd69a_1456x399.gif",
+          "x": 96,
+          "y": 266,
+          "w": 1130,
+          "h": 302
+        },
+        {
+          "src": "assets/how-to-turn-your-ai-into-a-world/figure-17-f4ae7b09-1555-4ade-850c-212cb0d089b2_1456x399.gif",
+          "x": 96,
+          "y": 622,
+          "w": 1130,
+          "h": 302
+        }
+      ],
+      "part": 2,
+      "kicker": "DEFINE · 04",
+      "caption": "",
+      "source": "NOTE2.md · 기법 4",
+      "notes": "Figure 16~17: Meridian과 zylo. 왼쪽이 생성 이미지 적용 전, 오른쪽이 적용 후다. 이미지를 장식으로 추가하는 것보다 정해진 시각 방향을 강화한다.\n\nNOTE2 근거:\n- 프롬프트 요지: 밋밋한 디자인에 생성 이미지로 개성을 더하고, 셰이더나 3D 효과와의 조합도 고려하게 한다. API 키는 로컬에서만 쓰게 하고, 결과는 브라우저에서 프레임 단위로 확인하게 한다.\n- 결과(그림 16~19, Claude Opus 5 적용 전후): 짧은 시간에 개성이 크게 늘고, 겉핥기 이상의 공이 보여 AI 티가 줄어든다.\n\n화면의 프롬프트는 NOTE2의 요지와 예시를 발표용 요청문으로 정리한 것이다.",
+      "texts": [],
+      "summary": "생성 이미지는 디자인에 개성을 더한다.",
+      "prompt": "밋밋한 디자인에 생성 이미지로 개성을 더해 줘.\n더 흥미로운 비주얼을 위해 셰이더나 3D 효과와의 조합도 고려해.",
+      "prompt_label": "프롬프트 요지",
+      "source_excerpt": "- 프롬프트 요지: 밋밋한 디자인에 생성 이미지로 개성을 더하고, 셰이더나 3D 효과와의 조합도 고려하게 한다. API 키는 로컬에서만 쓰게 하고, 결과는 브라우저에서 프레임 단위로 확인하게 한다.\n- 결과(그림 16~19, Claude Opus 5 적용 전후): 짧은 시간에 개성이 크게 늘고, 겉핥기 이상의 공이 보여 AI 티가 줄어든다.",
+      "prompt_layout": "side",
+      "theme": "paper",
+      "prompt_panel": "ink"
+    },
+    {
+      "title": "생성 이미지의 적용과 검증",
+      "images": [
+        {
+          "src": "assets/how-to-turn-your-ai-into-a-world/figure-18-7cd81d80-09c1-4244-9651-43bba85771a4_1456x399.gif",
+          "x": 96,
+          "y": 266,
+          "w": 1130,
+          "h": 302
+        },
+        {
+          "src": "assets/how-to-turn-your-ai-into-a-world/figure-19-c02123f6-00f8-4063-8463-5050d2649647_1456x399.gif",
+          "x": 96,
+          "y": 622,
+          "w": 1130,
+          "h": 302
+        }
+      ],
+      "part": 2,
+      "kicker": "DEFINE · 04",
+      "caption": "",
+      "source": "NOTE2.md · 기법 4",
+      "notes": "Figure 18~19: Quartz와 Quanta. 원문 생성 이미지 비교이며 HTML에서는 움직임을 보존한다.\n\nNOTE2 근거:\n- 프롬프트 요지: 밋밋한 디자인에 생성 이미지로 개성을 더하고, 셰이더나 3D 효과와의 조합도 고려하게 한다. API 키는 로컬에서만 쓰게 하고, 결과는 브라우저에서 프레임 단위로 확인하게 한다.\n\n화면의 프롬프트는 NOTE2의 요지와 예시를 발표용 요청문으로 정리한 것이다.",
+      "texts": [],
+      "summary": "생성 결과는 실제 화면에서 확인한다.",
+      "prompt": "이미지 생성 도구를 사용해 디자인에 개성을 더해 줘.\nAPI 키는 로컬에서만 사용하고, 결과를 브라우저에서 프레임 단위로 확인해.",
+      "prompt_label": "프롬프트 요지",
+      "source_excerpt": "- 프롬프트 요지: 밋밋한 디자인에 생성 이미지로 개성을 더하고, 셰이더나 3D 효과와의 조합도 고려하게 한다. API 키는 로컬에서만 쓰게 하고, 결과는 브라우저에서 프레임 단위로 확인하게 한다.",
+      "prompt_layout": "side",
+      "theme": "paper",
+      "prompt_panel": "none"
+    },
+    {
+      "title": "정지 이미지의 루프 영상 전환",
+      "images": [
+        {
+          "src": "assets/how-to-turn-your-ai-into-a-world/figure-20-aa994e2f-caec-40bf-8cc5-8a1ef101dd21_1456x399.gif",
+          "x": 96,
+          "y": 258,
+          "w": 1728,
+          "h": 523
+        }
+      ],
+      "part": 2,
+      "kicker": "DEFINE · 05",
+      "caption": "",
+      "source": "NOTE2.md · 기법 5",
+      "notes": "Figure 20. Quartz의 크리스털 이미지를 반복 영상으로 확장한 원문 비교. HTML의 오른쪽 장면은 영상으로 움직이고 PDF/PPTX는 대표 정지 프레임이다.\n\nNOTE2 근거:\n- 프롬프트 요지: 페이지의 크리스털 이미지를, 쪼개지며 천천히 회전하고 배경을 굴절시키며 빛과 그림자를 드리우는 루프 영상으로 교체한다. 굴절이 자연스럽도록 페이지 배경색 위에서 먼저 렌더링한 뒤 매팅으로 배경을 지우고, 적합한 최신 모델은 fal.ai에서 찾게 한다.\n\n화면의 프롬프트는 NOTE2의 요지와 예시를 발표용 요청문으로 정리한 것이다.",
+      "texts": [],
+      "summary": "정지 이미지를 풍부한 루프 영상으로 확장한다.",
+      "prompt": "크리스털이 쪼개지며 천천히 회전하고, 배경을 굴절시키며 빛과 그림자를 드리우는 루프 영상을 만들어 줘.\n페이지 배경색 위에 렌더링한 뒤 매팅으로 배경을 지워.\n적합한 모델은 fal.ai에서 찾아 줘.",
+      "prompt_label": "프롬프트 요지",
+      "source_excerpt": "- 프롬프트 요지: 페이지의 크리스털 이미지를, 쪼개지며 천천히 회전하고 배경을 굴절시키며 빛과 그림자를 드리우는 루프 영상으로 교체한다. 굴절이 자연스럽도록 페이지 배경색 위에서 먼저 렌더링한 뒤 매팅으로 배경을 지우고, 적합한 최신 모델은 fal.ai에서 찾게 한다.",
+      "prompt_layout": "bottom",
+      "theme": "paper",
+      "prompt_panel": "none"
+    },
+    {
+      "title": "상태 간 전환과 스크롤 연동",
+      "images": [
+        {
+          "src": "assets/how-to-turn-your-ai-into-a-world/figure-21-2f3bb583-375b-4a12-aa57-64a10bf2d9e7_960x540.gif",
+          "x": 96,
+          "y": 264,
+          "w": 1130,
+          "h": 660
+        }
+      ],
+      "part": 2,
+      "kicker": "DEFINE · 05",
+      "caption": "",
+      "source": "NOTE2.md · 기법 5",
+      "notes": "Figure 21. 여행 가방의 상태 사이를 영상으로 만들고 스크롤에 맞춰 재생 위치를 바꾸는 원문 데모다. 발표의 영상은 이를 보여주는 녹화물이며 슬라이드에서 직접 스크롤에 반응하는 구현은 아니다.\n\nNOTE2 근거:\n- 프롬프트 요지: 공중에 뜬 가방, 바닥에 내려앉아 열리는 가방, 위에서 짐이 가지런히 담기는 가방의 세 상태를 스크롤에 맞는 세로 움직임으로 잇는다. 첫 프레임은 이미지 생성으로 만들고, 각 클립의 마지막 프레임을 다음 전환의 시작으로 써서 이음매 없이 연결한다. Seedance 2.5처럼 물리와 일관성이 강한 모델을 쓴다.\n\n화면의 프롬프트는 NOTE2의 요지와 예시를 발표용 요청문으로 정리한 것이다.",
+      "texts": [],
+      "summary": "앞 장면의 끝을 다음 장면의 시작으로 쓴다.",
+      "prompt": "뜬 가방 → 내려앉아 열림 → 위에서 짐 담김을 스크롤에 맞는 세로 움직임으로 이어 줘.\n첫 프레임은 이미지로 만들고, 각 클립의 마지막 프레임을 다음 시작으로 써.",
+      "prompt_label": "프롬프트 요지",
+      "source_excerpt": "- 프롬프트 요지: 공중에 뜬 가방, 바닥에 내려앉아 열리는 가방, 위에서 짐이 가지런히 담기는 가방의 세 상태를 스크롤에 맞는 세로 움직임으로 잇는다. 첫 프레임은 이미지 생성으로 만들고, 각 클립의 마지막 프레임을 다음 전환의 시작으로 써서 이음매 없이 연결한다. Seedance 2.5처럼 물리와 일관성이 강한 모델을 쓴다.",
+      "prompt_layout": "side",
+      "theme": "paper",
+      "prompt_panel": "ink"
+    },
+    {
+      "title": "불필요한 요소 제거",
+      "images": [
+        {
+          "src": "assets/how-to-turn-your-ai-into-a-world/figure-22-dc9186ef-2b04-42a0-a460-8898b0590797_1456x964.jpg",
+          "x": 96,
+          "y": 255,
+          "w": 832,
+          "h": 485,
+          "label": "BEFORE"
+        },
+        {
+          "src": "assets/how-to-turn-your-ai-into-a-world/figure-23-fdf80ee5-9f43-44e9-93cf-c477a9e49128_1456x964.jpg",
+          "x": 992,
+          "y": 255,
+          "w": 832,
+          "h": 485,
+          "label": "AFTER"
+        }
+      ],
+      "part": 2,
+      "kicker": "DELIVER · 06",
+      "caption": "",
+      "source": "NOTE2.md · 기법 6",
+      "notes": "Figure 22~23. 칼로리 앱에서 글로우, 불필요한 라벨, 커스텀 요소를 줄이고 이미지 그리드와 단순한 조작을 남긴 사례.\n\nNOTE2 근거:\n- 이미지 중심 그리드, 그라데이션과 글로우와 불필요한 컨테이너 제거, Apple 네이티브 같은 미니멀함을 요청한 결과(그림 23): 비주얼이 스스로 말하고, 네이티브 iOS 컴포넌트에 과한 색과 그라데이션이 사라졌으며, 텍스트는 작고 간결해졌다.\n- AI는 디자인을 걷어 내고 코드를 지우는 걸 위험하게 여겨 스스로 하지 않으니, 사람이 밀어 줘야 한다. 정말 필요한 것만 남기면 사용자를 압도하지 않고 주의를 붙잡아 더 많이 전달한다.\n\n화면의 프롬프트는 NOTE2의 요지와 예시를 발표용 요청문으로 정리한 것이다.",
+      "texts": [],
+      "summary": "필요한 것만 남기면 비주얼이 더 잘 전달된다.",
+      "prompt": "레이아웃을 이미지 중심 그리드로 단순화해 줘.\n그라데이션·글로우·불필요한 컨테이너를 없애고, Apple 네이티브처럼 미니멀하게 다듬어 줘.",
+      "prompt_label": "프롬프트 요지",
+      "source_excerpt": "- 이미지 중심 그리드, 그라데이션과 글로우와 불필요한 컨테이너 제거, Apple 네이티브 같은 미니멀함을 요청한 결과(그림 23): 비주얼이 스스로 말하고, 네이티브 iOS 컴포넌트에 과한 색과 그라데이션이 사라졌으며, 텍스트는 작고 간결해졌다.\n- AI는 디자인을 걷어 내고 코드를 지우는 걸 위험하게 여겨 스스로 하지 않으니, 사람이 밀어 줘야 한다. 정말 필요한 것만 남기면 사용자를 압도하지 않고 주의를 붙잡아 더 많이 전달한다.",
+      "prompt_layout": "bottom",
+      "theme": "paper",
+      "prompt_panel": "none"
+    },
+    {
+      "title": "중복 라벨 제거",
+      "images": [
+        {
+          "src": "assets/how-to-turn-your-ai-into-a-world/figure-24-65ceb75e-aeb7-411d-99fa-eacaad0dbdae_1456x2424.jpg",
+          "x": 96,
+          "y": 258,
+          "w": 1728,
+          "h": 523,
+          "crop": [
+            0,
+            182,
+            1456,
+            474
+          ]
+        }
+      ],
+      "part": 2,
+      "kicker": "DELIVER · 07",
+      "caption": "",
+      "source": "NOTE2.md · 기법 7",
+      "notes": "Figure 24의 첫 번째 비교. 당연한 내용을 되풀이하는 아이브로우 라벨을 덜어낸다. 왼쪽이 흔한 패턴, 오른쪽이 대안이다.\n\nNOTE2 근거:\n| 뻔한 내용을 반복하는 작은 아이브로우 텍스트 | 대부분 지워도 잃는 게 없다 |\n- 처음부터 프롬프트로 금지하는 건 권하지 않는다. 모든 그라데이션이나 카드가 나쁜 건 아니고, 금지하면 AI가 지나치게 고민해 더 이상한 패턴을 만들 수 있다. 다듬는 단계에서 이 목록으로 점검하고 대안을 시도해 비교한다.\n\n화면의 프롬프트는 NOTE2의 요지와 예시를 발표용 요청문으로 정리한 것이다.",
+      "texts": [],
+      "summary": "당연한 내용을 반복하는 라벨은 덜어낸다.",
+      "prompt": "현재 화면의 작은 라벨을 점검해 줘.\n제목이 이미 말하는 내용을 되풀이한다면 지우고, 전후를 비교해 줘.",
+      "prompt_label": "다듬기 요청 예시",
+      "source_excerpt": "| 뻔한 내용을 반복하는 작은 아이브로우 텍스트 | 대부분 지워도 잃는 게 없다 |\n- 처음부터 프롬프트로 금지하는 건 권하지 않는다. 모든 그라데이션이나 카드가 나쁜 건 아니고, 금지하면 AI가 지나치게 고민해 더 이상한 패턴을 만들 수 있다. 다듬는 단계에서 이 목록으로 점검하고 대안을 시도해 비교한다.",
+      "prompt_layout": "bottom",
+      "theme": "paper",
+      "prompt_panel": "none"
+    },
+    {
+      "title": "배경의 의도와 대안",
+      "images": [
+        {
+          "src": "assets/how-to-turn-your-ai-into-a-world/figure-24-65ceb75e-aeb7-411d-99fa-eacaad0dbdae_1456x2424.jpg",
+          "x": 96,
+          "y": 258,
+          "w": 1728,
+          "h": 523,
+          "crop": [
+            0,
+            790,
+            1456,
+            457
+          ]
+        }
+      ],
+      "part": 2,
+      "kicker": "DELIVER · 07",
+      "caption": "",
+      "source": "NOTE2.md · 기법 7",
+      "notes": "Figure 24의 두 번째 비교. 일반적인 배경 그라데이션 대신 해당 경험에 어울리는 이미지를 쓴 예다. 모든 그라데이션을 금지하라는 의미는 아니다.\n\nNOTE2 근거:\n| 흔한 배경 그라데이션 | 배경 이미지, 패턴, 단색 |\n- 처음부터 프롬프트로 금지하는 건 권하지 않는다. 모든 그라데이션이나 카드가 나쁜 건 아니고, 금지하면 AI가 지나치게 고민해 더 이상한 패턴을 만들 수 있다. 다듬는 단계에서 이 목록으로 점검하고 대안을 시도해 비교한다.\n\n화면의 프롬프트는 NOTE2의 요지와 예시를 발표용 요청문으로 정리한 것이다.",
+      "texts": [],
+      "summary": "배경도 목적에 맞춰 고른다.",
+      "prompt": "배경 그라데이션을 이미지·패턴·단색으로 바꾼 안을 시도해 줘.\n원래 안과 비교해 더 어울리는 쪽을 고르자.",
+      "prompt_label": "다듬기 요청 예시",
+      "source_excerpt": "| 흔한 배경 그라데이션 | 배경 이미지, 패턴, 단색 |\n- 처음부터 프롬프트로 금지하는 건 권하지 않는다. 모든 그라데이션이나 카드가 나쁜 건 아니고, 금지하면 AI가 지나치게 고민해 더 이상한 패턴을 만들 수 있다. 다듬는 단계에서 이 목록으로 점검하고 대안을 시도해 비교한다.",
+      "prompt_layout": "bottom",
+      "theme": "paper",
+      "prompt_panel": "none"
+    },
+    {
+      "title": "콘텐츠 중심의 평면 구성",
+      "images": [
+        {
+          "src": "assets/how-to-turn-your-ai-into-a-world/figure-24-65ceb75e-aeb7-411d-99fa-eacaad0dbdae_1456x2424.jpg",
+          "x": 96,
+          "y": 258,
+          "w": 1728,
+          "h": 523,
+          "crop": [
+            0,
+            1337,
+            1456,
+            473
+          ]
+        }
+      ],
+      "part": 2,
+      "kicker": "DELIVER · 07",
+      "caption": "",
+      "source": "NOTE2.md · 기법 7",
+      "notes": "Figure 24의 세 번째 비교. 모든 요소를 카드로 감싸기보다 평평한 그리드로 정리하는 대안을 보여 준다.\n\nNOTE2 근거:\n| 과도한 카드와 컨테이너 | 그리드나 타일 같은 평평한 레이아웃 |\n- 처음부터 프롬프트로 금지하는 건 권하지 않는다. 모든 그라데이션이나 카드가 나쁜 건 아니고, 금지하면 AI가 지나치게 고민해 더 이상한 패턴을 만들 수 있다. 다듬는 단계에서 이 목록으로 점검하고 대안을 시도해 비교한다.\n\n화면의 프롬프트는 NOTE2의 요지와 예시를 발표용 요청문으로 정리한 것이다.",
+      "texts": [],
+      "summary": "평평한 레이아웃으로 내용에 시선을 모은다.",
+      "prompt": "불필요한 카드와 컨테이너를 줄이고, 그리드나 타일처럼 평평한 레이아웃으로 정리해 줘.\n원래 안과 비교해 줘.",
+      "prompt_label": "다듬기 요청 예시",
+      "source_excerpt": "| 과도한 카드와 컨테이너 | 그리드나 타일 같은 평평한 레이아웃 |\n- 처음부터 프롬프트로 금지하는 건 권하지 않는다. 모든 그라데이션이나 카드가 나쁜 건 아니고, 금지하면 AI가 지나치게 고민해 더 이상한 패턴을 만들 수 있다. 다듬는 단계에서 이 목록으로 점검하고 대안을 시도해 비교한다.",
+      "prompt_layout": "bottom",
+      "theme": "paper",
+      "prompt_panel": "none"
+    },
+    {
+      "title": "글자 스타일의 절제",
+      "images": [
+        {
+          "src": "assets/how-to-turn-your-ai-into-a-world/figure-24-65ceb75e-aeb7-411d-99fa-eacaad0dbdae_1456x2424.jpg",
+          "x": 96,
+          "y": 258,
+          "w": 1728,
+          "h": 523,
+          "crop": [
+            0,
+            1945,
+            1456,
+            479
+          ]
+        }
+      ],
+      "part": 2,
+      "kicker": "DELIVER · 07",
+      "caption": "",
+      "source": "NOTE2.md · 기법 7",
+      "notes": "Figure 24의 네 번째 비교. 글꼴 1~2개와 스타일 2~4개로 시작하고, 강조색과 이탤릭을 절제하라는 원문 조언.\n\nNOTE2 근거:\n| 너무 많은 폰트, 스타일, 크기 단계 | 폰트 1~2개, 스타일 2~4개로 시작하고 강조색과 이탤릭은 아껴 쓴다 |\n- 처음부터 프롬프트로 금지하는 건 권하지 않는다. 모든 그라데이션이나 카드가 나쁜 건 아니고, 금지하면 AI가 지나치게 고민해 더 이상한 패턴을 만들 수 있다. 다듬는 단계에서 이 목록으로 점검하고 대안을 시도해 비교한다.\n\n화면의 프롬프트는 NOTE2의 요지와 예시를 발표용 요청문으로 정리한 것이다.",
+      "texts": [],
+      "summary": "적은 글꼴과 스타일로 화면을 정리한다.",
+      "prompt": "글꼴 1~2개, 스타일 2~4개로 정리해 줘.\n강조색과 이탤릭은 꼭 필요한 곳에만 남기고, 정리 전후를 비교해 줘.",
+      "prompt_label": "다듬기 요청 예시",
+      "source_excerpt": "| 너무 많은 폰트, 스타일, 크기 단계 | 폰트 1~2개, 스타일 2~4개로 시작하고 강조색과 이탤릭은 아껴 쓴다 |\n- 처음부터 프롬프트로 금지하는 건 권하지 않는다. 모든 그라데이션이나 카드가 나쁜 건 아니고, 금지하면 AI가 지나치게 고민해 더 이상한 패턴을 만들 수 있다. 다듬는 단계에서 이 목록으로 점검하고 대안을 시도해 비교한다.",
+      "prompt_layout": "bottom",
+      "theme": "paper",
+      "prompt_panel": "none"
+    },
+    {
+      "title": "카피의 직접 수정",
+      "images": [
+        {
+          "src": "assets/how-to-turn-your-ai-into-a-world/figure-25-3174cc8a-c197-4be5-991d-0834d05cfc42_1456x1949.png",
+          "x": 1040,
+          "y": 240,
+          "w": 690,
+          "h": 545
+        }
+      ],
+      "part": 2,
+      "kicker": "DELIVER · 08",
+      "caption": "",
+      "source": "NOTE2.md · 기법 8",
+      "notes": "Figure 25는 Claude의 Lantern 마케팅 카피와 저자의 수정본 비교다. 그림의 글을 전부 읽기보다 분량과 밀도 차이를 보여 준다. AI 초안은 자리표시자로 보고 사람이 한 줄씩 다시 읽고 고친다.\n세 단계 요약: 발견 → 정의 → 전달을 통해 제품만의 느낌을 만든다.\n\nNOTE2 근거:\n- AI 카피는 디자이너의 'Lorem ipsum'처럼 구조를 보기 위한 자리표시자로 보고, 사람이 모든 줄을 읽어 일관된 목소리로 다시 쓴다.\n- 비교(그림 25): 데이터베이스 쿼리 분석 제품 Lantern의 홍보 문구다. Claude 버전은 비유와 기술 세부를 길게 늘어놓고, 저자 버전은 제품이 무엇이고 무엇을 해 주는지만 짧게 말한 뒤 무료 연결을 권한다.\n\n화면의 프롬프트는 NOTE2의 요지와 예시를 발표용 요청문으로 정리한 것이다.",
+      "texts": [
+        {
+          "text": "4단락 → 2단락",
+          "x": 150,
+          "y": 383,
+          "w": 810,
+          "h": 125,
+          "size": 60,
+          "color": "#24231F",
+          "weight": 500
+        }
+      ],
+      "summary": "AI 초안은 사람이 읽고 자기 목소리로 다시 쓴다.",
+      "prompt": "AI 초안은 자리표시자로 보고, 내가 모든 줄을 읽고 다시 쓴다.\n제품이 무엇이며 무엇을 해 주는지 짧게 말하고, 일관된 목소리로 다듬는다.",
+      "prompt_label": "직접 다듬기",
+      "source_excerpt": "- AI 카피는 디자이너의 'Lorem ipsum'처럼 구조를 보기 위한 자리표시자로 보고, 사람이 모든 줄을 읽어 일관된 목소리로 다시 쓴다.\n- 비교(그림 25): 데이터베이스 쿼리 분석 제품 Lantern의 홍보 문구다. Claude 버전은 비유와 기술 세부를 길게 늘어놓고, 저자 버전은 제품이 무엇이고 무엇을 해 주는지만 짧게 말한 뒤 무료 연결을 권한다.",
+      "prompt_layout": "bottom",
+      "theme": "paper",
+      "prompt_panel": "none"
+    },
+    {
+      "title": "레퍼런스 기반의 제작 과정",
+      "kicker": "03 · CLAUDE CODE",
+      "caption": "",
+      "source": "HOW_DESIGN_FROM_CC.md · §1 전체 흐름",
+      "notes": "출처: HOW_DESIGN_FROM_CC.md §1. The AI Automators의 원문은 세 랜딩 페이지를 각각 프롬프트 하나로 만든 뒤 한두 번 수정했다고 설명한다. frontend-design 스킬과 gauntlet loop를 함께 사용했다는 원문의 설명을 요약한다. 진행 순서는 준비 → 참고 자료 수집 → 선호와 목표를 프롬프트로 전달 → 구현과 스크린샷 검토 → 수정 → 디자인 시스템 기록이다. 보이는 세 결과 이미지는 기존 영상에서 추출한 실제 Figure다. 원문: https://www.theaiautomators.com/claude-design-inspiration-all-the-links-from-the-video/",
+      "images": [
+        {
+          "src": "assets/guide1-mov/crops/49-in-action-sites.png",
+          "x": 0,
+          "y": 0,
+          "w": 1920,
+          "h": 616
+        }
+      ],
+      "texts": [
+        {
+          "text": "01",
+          "x": 996,
+          "y": 736,
+          "w": 160,
+          "h": 36,
+          "size": 20,
+          "color": "#ACA497"
+        },
+        {
+          "text": "찾기",
+          "x": 996,
+          "y": 801,
+          "w": 160,
+          "h": 55,
+          "size": 32,
+          "weight": 500,
+          "color": "#F6EFE2"
+        },
+        {
+          "text": "02",
+          "x": 1216,
+          "y": 736,
+          "w": 160,
+          "h": 36,
+          "size": 20,
+          "color": "#ACA497"
+        },
+        {
+          "text": "전달",
+          "x": 1216,
+          "y": 801,
+          "w": 160,
+          "h": 55,
+          "size": 32,
+          "weight": 500,
+          "color": "#F6EFE2"
+        },
+        {
+          "text": "03",
+          "x": 1436,
+          "y": 736,
+          "w": 160,
+          "h": 36,
+          "size": 20,
+          "color": "#ACA497"
+        },
+        {
+          "text": "비교",
+          "x": 1436,
+          "y": 801,
+          "w": 160,
+          "h": 55,
+          "size": 32,
+          "weight": 500,
+          "color": "#F6EFE2"
+        },
+        {
+          "text": "04",
+          "x": 1656,
+          "y": 736,
+          "w": 160,
+          "h": 36,
+          "size": 20,
+          "color": "#ACA497"
+        },
+        {
+          "text": "기록",
+          "x": 1656,
+          "y": 801,
+          "w": 160,
+          "h": 55,
+          "size": 32,
+          "weight": 500,
+          "color": "#F6EFE2"
+        }
+      ],
+      "summary": "참고 자료와 목표를 한 프롬프트에 담고, 화면을 보며 고친다.",
+      "part": 3,
+      "theme": "ink",
+      "prompt_panel": "none",
+      "layout": "case-opener"
+    },
+    {
+      "title": "목적별 디자인 참고 자료",
+      "kicker": "03 · REFERENCE",
+      "caption": "",
+      "source": "HOW_DESIGN_FROM_CC.md · §2 참고 자료 찾기",
+      "notes": "출처: HOW_DESIGN_FROM_CC.md §2. 슬라이드에서는 갤러리와 실제 제품 화면을 Reference로 묶어 다섯 범주로 간추렸다. Reference는 Awwwards·Siteinspire·Lapa Ninja에서 전체 구성과 분위기, Mobbin·Refero에서 실제 화면과 플로우를 찾는다. Component는 21st.dev·React Bits, Font는 Fonts In Use·Google Fonts, Color는 Coolors, System은 Branding Style Guides·Refero Styles를 참고한다. 이미지들은 보관된 사이트 캡처이며 영상 당시 모습과 같다고 주장하지 않는다. URL: https://www.awwwards.com/ ; https://mobbin.com/ ; https://21st.dev/ ; https://reactbits.dev/ ; https://fontsinuse.com/ ; https://fonts.google.com/ ; https://coolors.co/palettes/trending ; https://brandingstyleguides.com/ ; https://styles.refero.design/ . 사이트 가격·무료 한도·라이선스는 원문 노트에 남기고 발표 화면에서 생략한다.",
+      "images": [
+        {
+          "src": "slides/img/sites/awwwards.png",
+          "x": 96,
+          "y": 230,
+          "w": 552,
+          "h": 300,
+          "label": "Reference · Awwwards",
+          "crop": [
+            0,
+            0,
+            1600,
+            870
+          ]
+        },
+        {
+          "src": "slides/img/sites/21stdev.png",
+          "x": 684,
+          "y": 230,
+          "w": 552,
+          "h": 300,
+          "label": "Component · 21st.dev",
+          "crop": [
+            130,
+            100,
+            1350,
+            735
+          ]
+        },
+        {
+          "src": "slides/img/sites/fontsinuse.png",
+          "x": 1272,
+          "y": 230,
+          "w": 552,
+          "h": 300,
+          "label": "Font · Fonts In Use",
+          "crop": [
+            60,
+            10,
+            1480,
+            805
+          ]
+        },
+        {
+          "src": "slides/img/sites/coolors.png",
+          "x": 390,
+          "y": 610,
+          "w": 552,
+          "h": 280,
+          "label": "Color · Coolors",
+          "crop": [
+            55,
+            475,
+            1490,
+            440
+          ]
+        },
+        {
+          "src": "slides/img/sites/brandingstyleguides.png",
+          "x": 978,
+          "y": 610,
+          "w": 552,
+          "h": 280,
+          "label": "System · Branding Style Guides",
+          "crop": [
+            50,
+            430,
+            1470,
+            500
+          ]
+        }
+      ],
+      "summary": "화면, 부품, 글꼴, 색, 규칙에 맞는 자료를 따로 찾는다.",
+      "part": 3,
+      "theme": "paper",
+      "prompt_panel": "none"
+    },
+    {
+      "title": "선호 요소와 제외 요소",
+      "kicker": "03 · CAPTURE",
+      "caption": "",
+      "source": "HOW_DESIGN_FROM_CC.md · §3 참고 자료 전달",
+      "notes": "출처: HOW_DESIGN_FROM_CC.md §3. GoFullPage는 전체 페이지, macOS Command+Shift+4와 Windows Snipping Tool은 부분 캡처에 쓴다. 서브에이전트가 같은 자료를 열 수 있도록 ref/site1.png 같은 프로젝트 경로에 이미지를 저장한다. 메인 대화에 붙여 넣은 이미지는 서브에이전트에게 자동으로 전달되지 않는다는 문서의 설명을 반영했다. Blackwater 프롬프트는 Nimmo Bay의 사진 히어로와 낮은 제목 배치를 좋아하되, 색과 글꼴은 가져오지 않겠다고 명시했다. 원하는 것과 원하지 않는 것을 나눠 적고 복사하지 말라는 조건을 덧붙인다. URL: https://gofullpage.com/ ; https://www.nimmobay.com/ . GoFullPage 이미지는 소개 페이지 상단을 자른 실제 캡처다.",
+      "images": [
+        {
+          "src": "slides/img/sites/gofullpage.png",
+          "x": 96,
+          "y": 320,
+          "w": 670,
+          "h": 238,
+          "label": "GoFullPage",
+          "crop": [
+            230,
+            90,
+            1160,
+            412
+          ]
+        },
+        {
+          "src": "slides/img/sites/nimmobay.png",
+          "x": 956,
+          "y": 245,
+          "w": 868,
+          "h": 518,
+          "label": "사진 ✓   색·글꼴 ×",
+          "crop": [
+            0,
+            45,
+            1600,
+            955
+          ]
+        }
+      ],
+      "texts": [
+        {
+          "text": "ref/site1.png",
+          "x": 205,
+          "y": 665,
+          "w": 480,
+          "h": 60,
+          "size": 42,
+          "color": "#756F65",
+          "weight": 500
+        },
+        {
+          "text": "→",
+          "x": 805,
+          "y": 475,
+          "w": 100,
+          "h": 100,
+          "size": 60,
+          "color": "#756F65",
+          "weight": 500
+        }
+      ],
+      "summary": "이미지 경로와 함께 좋아하는 점과 피할 점을 적는다.",
+      "part": 3,
+      "theme": "paper",
+      "prompt_panel": "none"
+    },
+    {
+      "title": "디자인 브리프 구성",
+      "kicker": "03 · PROMPT",
+      "caption": "",
+      "source": "HOW_DESIGN_FROM_CC.md · §4 프롬프트 구성",
+      "notes": "출처: HOW_DESIGN_FROM_CC.md §4, §7. 오른쪽은 Blackwater 사례의 프롬프트 내용을 압축한 개념도이며 실제 도구 화면이 아니다. 참고 자료, 목표 행동, 구성, 분위기, 색, 글꼴, 여백, 움직임, 문구, 이미지·영상, 성능, 기술 조건, 검증 방법, 진행 방식을 한 프롬프트에 담는다. Blackwater의 목표는 빈 날짜 확인과 예약이다. 어둡고 영화 같고 조용한 호숫가, 차콜 배경, 따뜻한 오프화이트 글자, 버튼·링크·가격에만 앰버를 쓴다. 세리프 제목과 넉넉한 여백을 선택한다. 색상 칩의 HEX는 이 설명을 시각화한 예시이지 원문에 적힌 정확한 토큰이 아니다. 왼쪽은 참고 사이트 Nimmo Bay의 실제 캡처다: https://www.nimmobay.com/ . 일반적인 금지 목록을 외우기보다 자신의 의뢰에 필요한 결정을 명시한다.",
+      "images": [
+        {
+          "src": "slides/img/sites/nimmobay.png",
+          "x": 96,
+          "y": 280,
+          "w": 790,
+          "h": 471,
+          "label": "참고 화면",
+          "crop": [
+            0,
+            45,
+            1600,
+            955
+          ]
+        }
+      ],
+      "shapes": [
+        {
+          "kind": "rect",
+          "x": 1050,
+          "y": 235,
+          "w": 700,
+          "h": 650,
+          "fill": "#EFE6D7",
+          "stroke": "transparent"
+        },
+        {
+          "kind": "rect",
+          "x": 1110,
+          "y": 540,
+          "w": 150,
+          "h": 100,
+          "fill": "#242424",
+          "stroke": "#242424"
+        },
+        {
+          "kind": "rect",
+          "x": 1280,
+          "y": 540,
+          "w": 150,
+          "h": 100,
+          "fill": "#F5F1E6",
+          "stroke": "#D8D6CF"
+        },
+        {
+          "kind": "rect",
+          "x": 1450,
+          "y": 540,
+          "w": 150,
+          "h": 100,
+          "fill": "#BD7F36",
+          "stroke": "#BD7F36"
+        }
+      ],
+      "texts": [
+        {
+          "text": "→",
+          "x": 930,
+          "y": 480,
+          "w": 80,
+          "h": 90,
+          "size": 60,
+          "color": "#756F65",
+          "weight": 500
+        },
+        {
+          "text": "BRIEF",
+          "x": 1110,
+          "y": 290,
+          "w": 580,
+          "h": 55,
+          "size": 40,
+          "color": "#756F65",
+          "weight": 500
+        },
+        {
+          "text": "빈 날짜 확인",
+          "x": 1110,
+          "y": 390,
+          "w": 560,
+          "h": 65,
+          "size": 44,
+          "color": "#756F65",
+          "weight": 500
+        },
+        {
+          "text": "어둡고 조용한 호숫가",
+          "x": 1110,
+          "y": 463,
+          "w": 560,
+          "h": 50,
+          "size": 30,
+          "color": "#756F65",
+          "weight": 500
+        },
+        {
+          "text": "세리프 · 넓은 여백",
+          "x": 1110,
+          "y": 710,
+          "w": 560,
+          "h": 60,
+          "size": 36,
+          "color": "#756F65",
+          "weight": 500
+        },
+        {
+          "text": "화면마다 행동 하나",
+          "x": 1110,
+          "y": 790,
+          "w": 560,
+          "h": 50,
+          "size": 30,
+          "color": "#756F65",
+          "weight": 500
+        }
+      ],
+      "summary": "목표 행동부터 색과 여백, 검증 방법까지 미리 정한다.",
+      "part": 3,
+      "theme": "paper",
+      "prompt_panel": "none"
+    },
+    {
+      "title": "스크롤 모션의 응용",
+      "kicker": "03 · SOUTHSIDE BREWING",
+      "caption": "",
+      "source": "HOW_DESIGN_FROM_CC.md · §5.1 Southside Brewing",
+      "notes": "출처: HOW_DESIGN_FROM_CC.md §5.1. 참고 사이트는 Lusion이 만든 Oryzo다. 프롬프트는 스크롤에 따라 3D 물체가 움직이는 방식을 관찰하되, 물체·색·레이아웃은 Southside Brewing에 맞추라고 요청했다. 목표는 가까운 펍이나 판매처 찾기다. Three.js의 기본 도형으로 캔을 만들고, 라벨을 캔버스에 그려 적용한다. 캔의 회전·마우스 기울기와 첫 화면→맛 소개→판매처의 세 장면을 명시했다. 짙은 청록 배경, 탁한 호박색 캔, 오프화이트 글자, CTA에만 라임색을 쓴다. 움직임 줄이기와 WebGL 대체 화면도 지시한다. 오른쪽은 영상에서 추출한 실제 결과 Figure다. URL: https://oryzo.ai/ ; https://lusion.co/",
+      "images": [
+        {
+          "src": "slides/img/sites/oryzo-2.png",
+          "x": 96,
+          "y": 290,
+          "w": 770,
+          "h": 481,
+          "label": "Oryzo"
+        },
+        {
+          "src": "assets/guide1-mov/crops/51-southside-brewing.png",
+          "x": 980,
+          "y": 280,
+          "w": 844,
+          "h": 503,
+          "label": "Southside Brewing"
+        }
+      ],
+      "texts": [
+        {
+          "text": "→",
+          "x": 893,
+          "y": 483,
+          "w": 65,
+          "h": 80,
+          "size": 60,
+          "color": "#756F65",
+          "weight": 500
+        }
+      ],
+      "summary": "참고 사이트의 스크롤 효과를 맥주 캔에 맞게 바꾼다.",
+      "part": 3,
+      "theme": "paper",
+      "prompt_panel": "none"
+    },
+    {
+      "title": "영상, 색, 카드의 조합",
+      "kicker": "03 · HARBOUR LANE COFFEE",
+      "caption": "",
+      "source": "HOW_DESIGN_FROM_CC.md · §5.2 Harbour Lane Coffee",
+      "notes": "출처: HOW_DESIGN_FROM_CC.md §5.2. 세 참고 사이트의 스크린샷을 주고, 만들기 전에 취향부터 분석하라고 했다. Café Technica에서는 가로로 확장되는 영상 히어로, La Colombe에서는 색·큰 사진·카드, Anna Jóna에서는 큰 글자·이미지·스토리텔링을 참고했다. Anna Jóna의 애니메이션은 원하지 않는다고 명시했다. 슬라이드는 Café Technica와 La Colombe를 보여 주며 Anna Jóna의 현재 캡처는 폐업 안내가 있어 생략했다. 결과는 골웨이의 작은 커피 로스터를 위한 랜딩 페이지로, 동네 사람이 가게에 와서 원두를 사게 하는 것이 목표다. 시작 전에 필요한 질문을 하게 했고, 실제 사진을 넣을 자리와 생성할 영상을 구분해야 한다. 오른쪽 결과 Figure는 영상에서 추출한 510×452 이미지라 원본 크기에 가깝게 배치했다. URL: https://www.cafetechnica.com.au/ ; https://www.lacolombe.com/ ; https://www.annajona.is/",
+      "images": [
+        {
+          "src": "slides/img/sites/cafetechnica-2.png",
+          "x": 96,
+          "y": 335,
+          "w": 520,
+          "h": 390,
+          "label": "영상 · Café Technica",
+          "crop": [
+            260,
+            0,
+            1180,
+            900
+          ]
+        },
+        {
+          "src": "slides/img/sites/lacolombe-2.png",
+          "x": 650,
+          "y": 335,
+          "w": 520,
+          "h": 390,
+          "label": "색·카드 · La Colombe",
+          "crop": [
+            20,
+            220,
+            770,
+            570
+          ]
+        },
+        {
+          "src": "assets/guide1-mov/crops/50-harbour-lane.png",
+          "x": 1314,
+          "y": 300,
+          "w": 510,
+          "h": 452,
+          "label": "Harbour Lane"
+        }
+      ],
+      "texts": [
+        {
+          "text": "→",
+          "x": 1210,
+          "y": 488,
+          "w": 70,
+          "h": 80,
+          "size": 60,
+          "color": "#756F65",
+          "weight": 500
+        }
+      ],
+      "summary": "영상, 색, 카드의 참고 화면을 나눠 커피 브랜드에 적용한다.",
+      "part": 3,
+      "theme": "paper",
+      "prompt_panel": "none"
+    },
+    {
+      "title": "사진, 분위기, 여백의 조합",
+      "kicker": "03 · BLACKWATER CABINS",
+      "caption": "",
+      "source": "HOW_DESIGN_FROM_CC.md · §5.3 Blackwater Cabins",
+      "notes": "출처: HOW_DESIGN_FROM_CC.md §5.3. Nimmo Bay는 사진 히어로, Vipp Guesthouses는 어둡고 대비가 강한 분위기와 얇은 고정 메뉴, Aman Amangiri는 큰 사진·작은 라벨·세리프 제목·넉넉한 여백의 카드를 참고했다. 이 슬라이드의 참고 화면은 현재 보관된 사이트 캡처라 영상 당시 장면과 다를 수 있다. 목표는 호숫가 오두막 세 채의 빈 날짜 확인과 예약이다. 자신의 로고를 쓰고, 카드마다 이름·사진·정원·시작 가격을 넣도록 지시했다. 움직이는 구간과 조용한 구간을 번갈아 놓고, 어두운 배경의 글자 가독성을 스크린샷으로 확인한다. 오른쪽 Blackwater 결과는 기존 영상 Figure로, 원본 자체에서 왼쪽 헤드라인이 잘려 있어 보조 크기로 사용했다. URL: https://www.nimmobay.com/ ; https://vipp.com/en/world-of-vipp/our-guesthouses ; https://www.aman.com/resorts/amangiri",
+      "images": [
+        {
+          "src": "slides/img/sites/nimmobay.png",
+          "x": 96,
+          "y": 230,
+          "w": 496,
+          "h": 296,
+          "label": "사진 · Nimmo Bay",
+          "crop": [
+            0,
+            45,
+            1600,
+            955
+          ]
+        },
+        {
+          "src": "slides/img/sites/vipp-2.png",
+          "x": 624,
+          "y": 230,
+          "w": 496,
+          "h": 296,
+          "label": "분위기 · Vipp",
+          "crop": [
+            0,
+            43,
+            1600,
+            850
+          ]
+        },
+        {
+          "src": "slides/img/sites/amangiri-2.png",
+          "x": 96,
+          "y": 620,
+          "w": 1024,
+          "h": 290,
+          "label": "여백 · Amangiri",
+          "crop": [
+            80,
+            160,
+            1450,
+            410
+          ]
+        },
+        {
+          "src": "assets/guide1-mov/crops/52-blackwater-cabins.png",
+          "x": 1325,
+          "y": 345,
+          "w": 494,
+          "h": 425,
+          "label": "Blackwater Cabins"
+        }
+      ],
+      "texts": [
+        {
+          "text": "→",
+          "x": 1180,
+          "y": 490,
+          "w": 80,
+          "h": 80,
+          "size": 60,
+          "color": "#756F65",
+          "weight": 500
+        }
+      ],
+      "summary": "사진과 분위기, 카드의 여백을 각각 골라 숙소 페이지를 만든다.",
+      "part": 3,
+      "theme": "paper",
+      "prompt_panel": "none"
+    },
+    {
+      "title": "제작과 검증 환경",
+      "kicker": "03 · SETUP",
+      "caption": "",
+      "source": "HOW_DESIGN_FROM_CC.md · §6 실행 전 준비",
+      "notes": "출처: HOW_DESIGN_FROM_CC.md §6. frontend-design 설치 명령: claude plugin install frontend-design@claude-plugins-official . 세션에서 /model로 Opus를 선택하면 별도 설정이 없는 서브에이전트도 메인 모델을 따른다. 화면을 직접 열고 캡처할 도구로 Playwright 플러그인을 권하며 설치 명령은 claude plugin install playwright@claude-plugins-official 이다. 참고 자료와 로고는 ref/에 저장한다. 이미지·영상 생성은 별도 생성 도구가 필요하며 연결하지 않았다면 자리를 비우고 직접 자료를 넣는다. frontend-design은 계획을 세우고 스스로 화면을 검토하는 지침이다. 특정 글꼴·보라색을 금지한 것은 원문의 개별 의뢰이며 현재 스킬의 보편적 금지 규칙처럼 말하지 않는다. 오른쪽은 준비 항목을 나타낸 도식이다. URL: https://github.com/anthropics/skills/tree/main/skills/frontend-design ; https://code.claude.com/docs/en/discover-plugins ; https://code.claude.com/docs/en/model-config ; https://code.claude.com/docs/en/sub-agents",
+      "images": [
+        {
+          "src": "slides/img/sites/frontenddesign.png",
+          "x": 96,
+          "y": 285,
+          "w": 1050,
+          "h": 500,
+          "label": "frontend-design",
+          "crop": [
+            0,
+            0,
+            1600,
+            765
+          ]
+        }
+      ],
+      "shapes": [
+        {
+          "kind": "rect",
+          "x": 1260,
+          "y": 275,
+          "w": 564,
+          "h": 140,
+          "fill": "#EFE6D7",
+          "stroke": "transparent"
+        },
+        {
+          "kind": "rect",
+          "x": 1260,
+          "y": 485,
+          "w": 564,
+          "h": 140,
+          "fill": "#EFE6D7",
+          "stroke": "transparent"
+        },
+        {
+          "kind": "rect",
+          "x": 1260,
+          "y": 695,
+          "w": 564,
+          "h": 140,
+          "fill": "#EFE6D7",
+          "stroke": "transparent"
+        }
+      ],
+      "texts": [
+        {
+          "text": "Opus",
+          "x": 1320,
+          "y": 313,
+          "w": 440,
+          "h": 65,
+          "size": 44,
+          "color": "#756F65",
+          "weight": 500
+        },
+        {
+          "text": "Playwright",
+          "x": 1320,
+          "y": 523,
+          "w": 440,
+          "h": 65,
+          "size": 44,
+          "color": "#756F65",
+          "weight": 500
+        },
+        {
+          "text": "ref/",
+          "x": 1320,
+          "y": 733,
+          "w": 440,
+          "h": 65,
+          "size": 44,
+          "color": "#756F65",
+          "weight": 500
+        }
+      ],
+      "summary": "디자인 스킬과 Opus, 화면을 확인할 브라우저를 준비한다.",
+      "part": 3,
+      "theme": "paper",
+      "prompt_panel": "none"
+    },
+    {
+      "title": "실제 화면의 비교와 평가",
+      "kicker": "03 · VERIFY",
+      "caption": "",
+      "source": "HOW_DESIGN_FROM_CC.md · §7–8 실행과 검증",
+      "notes": "출처: HOW_DESIGN_FROM_CC.md §7–8. 이 슬라이드의 두 화면은 평가 방식 설명을 위한 참고·결과 Figure이며 실제 평가 점수나 승패를 주장하지 않는다. 프롬프트를 실행하고 workbench.md에 진행 상황을 기록한다. 목표를 따로 개선·평가 가능한 조각으로 나누고 제작자와 새 맥락의 평가자를 분리한다. 평가자는 제작자의 설명 대신 실제 스크린샷을 본다. 히어로는 히어로 참고 화면, 카드는 카드 참고 화면과 비교한다. 참고 사이트와 겉모습이 다르다는 이유로 패배 판정을 하지 않는다. 참고 사이트가 더 낫다면 가장 큰 차이 하나를 제작자에게 반환한다. 종료 기준: 우리 결과가 이기거나, 개선 폭이 매우 작아지거나, 사전에 정한 시간·비용 상한에 닿거나, 사용자가 중단할 때 멈춘다. 종료 시 남은 차이를 보고한다. 문서의 시간 상한 예시는 2시간이며 고정 규칙은 아니다. 데스크톱 1440px와 모바일 390px에서 맨 위·각 구간·맨 아래를 확인한다. 잘림, 가독성, 스크롤, 버튼, 강조색 규칙, 한 가지 CTA, reduced-motion, 3D·영상 대체 화면, 키보드 초점, 페이지 크기를 점검한다. 수정 요청은 위치·화면 크기·실제 문제·원하는 결과를 적고 한 번에 한 문제씩 전달한다. 루프 원문: https://somethingbig.ai/gauntlet-loop . 스크린샷을 통한 자체 검증이 가능하도록 브라우저 도구가 연결돼 있어야 한다.",
+      "images": [
+        {
+          "src": "slides/img/sites/oryzo-2.png",
+          "x": 96,
+          "y": 230,
+          "w": 780,
+          "h": 487,
+          "label": "참고 화면"
+        },
+        {
+          "src": "assets/guide1-mov/crops/51-southside-brewing.png",
+          "x": 1044,
+          "y": 230,
+          "w": 780,
+          "h": 465,
+          "label": "결과 화면"
+        }
+      ],
+      "texts": [
+        {
+          "text": "↔",
+          "x": 925,
+          "y": 435,
+          "w": 75,
+          "h": 90,
+          "size": 60,
+          "color": "#756F65",
+          "weight": 500
+        },
+        {
+          "text": "제작",
+          "x": 140,
+          "y": 854,
+          "w": 180,
+          "h": 65,
+          "size": 38,
+          "color": "#756F65",
+          "weight": 500
+        },
+        {
+          "text": "→",
+          "x": 340,
+          "y": 854,
+          "w": 70,
+          "h": 65,
+          "size": 38,
+          "color": "#756F65",
+          "weight": 500
+        },
+        {
+          "text": "캡처",
+          "x": 460,
+          "y": 854,
+          "w": 180,
+          "h": 65,
+          "size": 38,
+          "color": "#756F65",
+          "weight": 500
+        },
+        {
+          "text": "→",
+          "x": 660,
+          "y": 854,
+          "w": 70,
+          "h": 65,
+          "size": 38,
+          "color": "#756F65",
+          "weight": 500
+        },
+        {
+          "text": "평가",
+          "x": 780,
+          "y": 854,
+          "w": 180,
+          "h": 65,
+          "size": 38,
+          "color": "#756F65",
+          "weight": 500
+        },
+        {
+          "text": "→",
+          "x": 980,
+          "y": 854,
+          "w": 70,
+          "h": 65,
+          "size": 38,
+          "color": "#756F65",
+          "weight": 500
+        },
+        {
+          "text": "수정",
+          "x": 1100,
+          "y": 854,
+          "w": 180,
+          "h": 65,
+          "size": 38,
+          "color": "#756F65",
+          "weight": 500
+        },
+        {
+          "text": "1440 px / 390 px",
+          "x": 1405,
+          "y": 857,
+          "w": 420,
+          "h": 60,
+          "size": 32,
+          "color": "#756F65",
+          "weight": 500
+        }
+      ],
+      "summary": "제작자와 평가자를 나누고, 실제 화면에서 가장 큰 차이를 고친다.",
+      "part": 3,
+      "theme": "paper",
+      "prompt_panel": "none"
+    },
+    {
+      "title": "디자인 시스템의 기록과 재사용",
+      "kicker": "03 · DESIGN SYSTEM",
+      "caption": "",
+      "source": "HOW_DESIGN_FROM_CC.md · §9 디자인 시스템",
+      "notes": "출처: HOW_DESIGN_FROM_CC.md §9. 완성된 페이지의 색·글꼴·간격·컴포넌트·움직임 규칙을 디자인 시스템 문서로 정리하고 다음 작업에서 읽게 한다. Refero Styles는 디자인 시스템을 DESIGN.md 형식으로 제공한다. 원문은 같은 사이트의 DESIGN.md와 전체 페이지 캡처를 함께 주라고 권한다. 파일은 규칙을, 캡처는 실제 모습을 전달한다. 오른쪽은 이런 문서에 담기는 항목을 시각화한 개념도이며 Refero에서 다운로드한 파일 내용이나 공식 브랜드 가이드가 아니다. 색 칩은 앞의 Blackwater 설명을 표현한 예시다. Refero 문서는 공식 브랜드 가이드가 아님을 구분한다. Claude Code 또는 Claude Design에 직접 정리를 맡길 수도 있고, Branding Style Guides의 실제 가이드는 문서 구성 참고 자료로 쓴다. URL: https://styles.refero.design/ ; https://styles.refero.design/design-md/what-is-design-md ; https://claude.com/product/design ; https://brandingstyleguides.com/",
+      "images": [
+        {
+          "src": "slides/img/sites/referostyles.png",
+          "x": 96,
+          "y": 230,
+          "w": 1110,
+          "h": 694,
+          "label": "Refero Styles"
+        }
+      ],
+      "shapes": [
+        {
+          "kind": "rect",
+          "x": 1310,
+          "y": 280,
+          "w": 480,
+          "h": 555,
+          "fill": "#EFE6D7",
+          "stroke": "transparent"
+        },
+        {
+          "kind": "rect",
+          "x": 1365,
+          "y": 435,
+          "w": 108,
+          "h": 92,
+          "fill": "#242424",
+          "stroke": "#242424"
+        },
+        {
+          "kind": "rect",
+          "x": 1485,
+          "y": 435,
+          "w": 108,
+          "h": 92,
+          "fill": "#F5F1E6",
+          "stroke": "#D8D6CF"
+        },
+        {
+          "kind": "rect",
+          "x": 1605,
+          "y": 435,
+          "w": 108,
+          "h": 92,
+          "fill": "#BD7F36",
+          "stroke": "#BD7F36"
+        },
+        {
+          "kind": "rect",
+          "x": 1365,
+          "y": 674,
+          "w": 348,
+          "h": 5,
+          "fill": "#BEBEB8",
+          "stroke": "#BEBEB8"
+        },
+        {
+          "kind": "rect",
+          "x": 1365,
+          "y": 704,
+          "w": 256,
+          "h": 5,
+          "fill": "#BEBEB8",
+          "stroke": "#BEBEB8"
+        },
+        {
+          "kind": "rect",
+          "x": 1365,
+          "y": 734,
+          "w": 310,
+          "h": 5,
+          "fill": "#BEBEB8",
+          "stroke": "#BEBEB8"
+        }
+      ],
+      "texts": [
+        {
+          "text": "DESIGN.md",
+          "x": 1365,
+          "y": 332,
+          "w": 390,
+          "h": 60,
+          "size": 40,
+          "color": "#756F65",
+          "weight": 500
+        },
+        {
+          "text": "가나다  Aa",
+          "x": 1365,
+          "y": 566,
+          "w": 390,
+          "h": 70,
+          "size": 48,
+          "color": "#756F65",
+          "weight": 500
+        },
+        {
+          "text": "색 · 글꼴 · 간격 · 부품",
+          "x": 1310,
+          "y": 872,
+          "w": 510,
+          "h": 60,
+          "size": 30,
+          "color": "#756F65",
+          "weight": 500
+        }
+      ],
+      "summary": "확정한 색과 글꼴, 간격을 문서로 남겨 다음 작업에 재사용한다.",
+      "part": 3,
+      "theme": "paper",
+      "prompt_panel": "none"
+    }
+  ]
+}

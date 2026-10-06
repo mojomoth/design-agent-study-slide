@@ -1,0 +1,108 @@
+{
+ "accuracy": {
+  "issues": [
+   {
+    "severity": "must-fix",
+    "quote": "발표자는 영상의 사례 페이지를 만들 때 이 반복을 gauntlet loop 방식으로 실행했다(GAUNTLET_LOOP.md).",
+    "replacement": "발표자는 SOUTHSIDE BREWING을 포함한 랜딩 페이지 3개를 만들 때 이 반복을 gauntlet loop 방식으로 실행했다(HOW_DESIGN_FROM_CC.md 1절, GAUNTLET_LOOP.md).",
+    "reason": "There are two problems. First, '영상의 사례 페이지' points to the case-study pages from the dropped slide 8 (the old text said '8장의 사례'), so after the merge it refers to something the deck never shows. Second, the citation now points only to GAUNTLET_LOOP.md, which explains the method but never says the presenter used it. The source for that claim is HOW_DESIGN_FROM_CC.md 1절, and the merge dropped that citation.",
+    "evidence": "HOW_DESIGN_FROM_CC.md 1절: '원문은 세 페이지를 만든 방법을 한 문장으로 밝힙니다. 각 페이지는 프롬프트 하나로 만들었고, frontend-design 스킬과 함께 gauntlet loop로 실행한 다음 한두 번 고쳤다고 합니다.' GAUNTLET_LOOP.md never mentions the video, The AI Automators or the landing pages. The old slide 4 cited '(HOW_DESIGN_FROM_CC.md 1절, GAUNTLET_LOOP.md)' and said '8장의 사례를 만들 때'."
+   },
+   {
+    "severity": "should-fix",
+    "quote": "화면에서는 FLOEMA, SON DAVEN, STUDIO 사이트를 예시로 보여 주자 게이지가 MUCH BETTER(훨씬 나음)로 넘어간다.",
+    "replacement": "화면에서는 첫 예시 FLOEMA를 보여 주자마자 게이지가 MUCH BETTER(훨씬 나음)로 넘어가고, 이어서 SON DAVEN과 STUDIO 예시가 쌓인다.",
+    "reason": "The order is wrong. The current sentence says the gauge moves after all three examples appear, but on screen it flips to MUCH BETTER as soon as FLOEMA, the first example, appears. SON DAVEN and STUDIO stack on afterward.",
+    "evidence": "MOV_NOTE.md 장면 8: '형용사 대신 실제 웹사이트 스크린샷 카드가 날아 들어옵니다. 그러자 … 바늘이 오른쪽 끝으로 돌아갑니다. 이어서 SON DAVEN과 STUDIO 카드가 겹쳐 쌓입니다.' assets/guide1-mov/captures/15-example-floema.png shows only the EXAMPLE 01 FLOEMA card while the needle already points at MUCH BETTER."
+   },
+   {
+    "severity": "should-fix",
+    "quote": "![THE AVERAGE OF EVERYTHING 제목](assets/guide1-mov/crops/05-average-of-everything-headline.png)",
+    "replacement": "![프레스가 웹사이트 썸네일을 짓누르는 장면](assets/guide1-mov/crops/03-press-crushing.png)",
+    "reason": "Slide 1 describes the press metaphor in a bullet ('화면은 이 과정을 프레스 기계로 비유한다. 프레스가 … 짓눌러'), but the merge dropped the press image (03-press-crushing.png). The visual that explains 'average' is now missing. Image 05 is just the headline text, and that text is already listed in 화면 문구 ('THE AVERAGE OF EVERYTHING: 모든 것의 평균'). Swapping 05 for 03 keeps four images and puts them in scene order (01, 02, 03, 04).",
+    "evidence": "I opened 05-average-of-everything-headline.png: it contains only the words THE AVERAGE OF EVERYTHING. I opened 03-press-crushing.png: it shows the PRESS plates squeezing website thumbnails. MOV_NOTE.md 장면 2 uses this crop as '위아래 프레스 판이 웹사이트 썸네일을 짓누르는 장면'. The old slide 2 included it as '![프레스가 웹사이트 썸네일을 짓누르는 장면](assets/guide1-mov/crops/03-press-crushing.png)'."
+   },
+   {
+    "severity": "should-fix",
+    "quote": "이 영상은 예시를 찾을 곳으로, 디자이너들이 영감을 얻는 사이트를 6개 카테고리로 나눠 소개한다.",
+    "replacement": "이 영상은 원하는 모습을 정확히 가리킬 예시를 찾을 곳으로, 디자이너들이 영감을 얻는 사이트를 6개 카테고리로 나눠 소개한다.",
+    "reason": "The merge lost the purpose line from old slide 7 ('원하는 모습을 정확히 가리켜 Claude에게 보여 주는 것') and the explorer image. As a result, the 화면 문구 entry 'EXACTLY THE LOOK: 정확히 원하는 모습' is no longer tied to anything in the content. Adding a few words restores the point and gives the label context.",
+    "evidence": "MOV_NOTE.md, row 7 of the narration comparison: '`point Claude at exactly the look that you want`는 원하는 모습을 정확히 가리켜서 Claude가 그 모습을 겨냥하게 한다는 뜻입니다. 화면의 레이저 포인터와 EXACTLY THE LOOK 라벨이 이 표현을 그림으로 옮긴 것입니다.' Old slide 7: '이 사이트들을 소개하는 목적은 원하는 모습을 정확히 가리켜 Claude에게 보여 주는 것이다.'"
+   },
+   {
+    "severity": "should-fix",
+    "quote": "## 3. 말 대신 예시를 보여 준다",
+    "replacement": "## 3. 말 대신 예시를 보여 준다: 영감 사이트 6개 카테고리",
+    "reason": "Slide 3 now merges old slides 5–7, and more than half of its body is the six categories and their sites. The heading still names only the 'words vs examples' half. Slide 2's heading names both of its merged ideas, and the user described slide 3 as 'show examples instead of words + the 6 categories of inspiration sites'.",
+    "evidence": "In SLIDE1.md slide 3, the category bullets, the bonus line, the mapping note and the two category labels in 화면 문구 take up most of the content, but the heading mentions none of it. Slide 2's heading: '감독이 되어 방향을 정하고, 품질 기준선까지 반복하게 한다'."
+   },
+   {
+    "severity": "should-fix",
+    "quote": "- RESULTS, MEH, MUCH BETTER: 결과, 그저 그럼, 훨씬 나음",
+    "replacement": "",
+    "reason": "This line is redundant on the slide with the most text (about 22 lines plus 4 images). Delete the whole line. The bullets already translate each label inline: '결과 게이지', 'MEH(그저 그럼)', 'MUCH BETTER(훨씬 나음)'. Both gauge images also show RESULTS, MEH and MUCH BETTER.",
+    "evidence": "SLIDE1.md slide 3 bullets: '결과 게이지가 MEH(그저 그럼)에서 움직이지 않는다' and '게이지가 MUCH BETTER(훨씬 나음)로 넘어간다'. I opened 19-results-gauge-meh.png and 22-results-gauge-much-better.png, and both show the RESULTS, MEH and MUCH BETTER labels."
+   },
+   {
+    "severity": "should-fix",
+    "quote": "사이트와 카테고리는 사이트 카드의 색 띠와 카테고리 타일의 색이 같다는 점을 근거로 짝지었다. 각 사이트의 용도와 예시 페이지는 HOW_DESIGN_FROM_CC.md 2절에 정리되어 있다.",
+    "replacement": "사이트별 카테고리와 용도, 예시 페이지는 HOW_DESIGN_FROM_CC.md 2절에 정리되어 있다.",
+    "reason": "The colour-band sentence explains how the mapping was worked out. It is a research note, not something the presenter says, and it adds length to the most crowded slide. The mapping is still sourced without it: the chapter times are in parentheses, and HOW_DESIGN_FROM_CC.md 2.1–2.7 lists the sites under each category (2.7 is the bonus section).",
+    "evidence": "HOW_DESIGN_FROM_CC.md headings: 2.1 디자인 갤러리, 2.2 실제 앱과 웹사이트, 2.3 컴포넌트, 2.4 글꼴, 2.5 색, 2.6 디자인 시스템과 브랜드 가이드, 2.7 보너스 (Pinterest, toools.design). The chapter times in info.json (3:05, 7:48, 10:38, 12:06, 13:17, 14:03) match the slide."
+   }
+  ]
+ },
+ "style": {
+  "issues": [
+   {
+    "severity": "should-fix",
+    "quote": "## 2. 감독이 되어 방향을 정하고, 품질 기준선까지 반복하게 한다",
+    "replacement": "## 2. 레퍼런스로 방향을 정하고, 품질 기준선을 넘을 때까지 반복하게 한다",
+    "reason": "'품질 기준선까지 반복'에는 '넘다'라는 서술어가 빠져 있습니다. 기준선은 가서 닿는 지점이 아니라 넘어야 하는 가로대입니다. 제목의 '감독이 되어'는 비유인데, 이 비유는 본문 첫 bullet과 슬레이트 이미지가 이미 설명합니다. 그래서 제목에는 구체적인 수단인 레퍼런스를 쓰는 편이 슬라이드 범위('direct Claude with references and loop to the quality bar')에 더 잘 맞습니다.",
+    "evidence": "MOV_NOTE.md 표 3번: `loop until it hits that quality bar`. 장면 5: 'v4가 가로대를 넘고'. 이전 8장 버전 4장 제목: '품질 기준선을 넘을 때까지 반복한다'. 같은 슬라이드 line 39~40도 '기준선을 넘는다'로 씁니다."
+   },
+   {
+    "severity": "should-fix",
+    "quote": "## 1. AI 디자인이 평균에 머무는 이유",
+    "replacement": "## 1. 막연하게 요청하면 평균적인 결과가 나온다",
+    "reason": "제목 세 개의 형식이 맞지 않습니다. 2장과 3장은 '-다'로 끝나는 문장인데 1장만 '~이유'로 끝나는 명사구입니다. 1장을 문장으로 바꾸면 세 제목이 문제, 해법, 방법 순서로 같은 형식을 갖춥니다. 바꿀 문구는 저자가 이전 버전에서 직접 쓴 표현이라 새로 만든 말이 아닙니다.",
+    "evidence": "이전 8장 버전 1장 line 11: '문제: 막연하게 요청하면 평균적인 결과가 나온다(2장).' 현재 2장과 3장 제목은 모두 '-한다/-준다'로 끝납니다."
+   },
+   {
+    "severity": "should-fix",
+    "quote": "이 과정을 프레스 기계로 비유한다",
+    "replacement": "이 과정을 프레스 기계에 비유한다",
+    "reason": "'비유하다'의 표준 격틀은 'A를 B에 비유하다'입니다. 'B로 비유하다'는 조사를 잘못 쓴 것입니다.",
+    "evidence": "표준 용례는 '인생을 여행에 비유하다'입니다. SLIDE1.md line 11에서 이 동사가 쓰인 곳은 여기 한 곳뿐입니다."
+   },
+   {
+    "severity": "should-fix",
+    "quote": "영상 설명은 AI로 만든 결과물이 서로 비슷해 보이는 이유가 이 평균이라고 덧붙인다.",
+    "replacement": "영상 설명은 이 평균 때문에 AI로 만든 결과물이 서로 비슷해 보인다고 덧붙인다.",
+    "reason": "'이유가 평균이다'는 주어와 서술어가 의미상 맞지 않습니다. 이유를 원인으로 바꾸어 '평균 때문에 비슷해 보인다'로 쓰면 인과 관계가 바로 읽힙니다.",
+    "evidence": ".work/yt/info.json description: 'That average is why so much AI built work looks the same.'"
+   },
+   {
+    "severity": "should-fix",
+    "quote": "v1부터 v3까지 기준선에 걸려 탈락하고",
+    "replacement": "v1부터 v3까지는 기준선에 걸려 탈락하고",
+    "reason": "'탈락하다'의 주어 역할을 하는 '~까지' 뒤에 보조사 '는'이 빠졌습니다. 그래서 무엇이 탈락하는지가 흐리고, 뒤에 오는 'v4가'와 대비되는 관계도 드러나지 않습니다.",
+    "evidence": "이전 8장 버전 line 89: 'v1부터 v3까지는 기준선에 걸려 탈락한다.' MOV_NOTE.md 장면 5: 'v1부터 v3까지는 가로대에 부딪혀 떨어지고'."
+   },
+   {
+    "severity": "should-fix",
+    "quote": "발표자는 영상의 사례 페이지를 만들 때 이 반복을 gauntlet loop 방식으로 실행했다(GAUNTLET_LOOP.md).",
+    "replacement": "발표자는 SOUTHSIDE BREWING을 비롯한 랜딩 페이지 3개를 만들 때 이 반복을 gauntlet loop 방식으로 실행했다(HOW_DESIGN_FROM_CC.md 1절, GAUNTLET_LOOP.md).",
+    "reason": "8장을 삭제해서 '영상의 사례 페이지'가 무엇을 가리키는지 알 수 없게 되었습니다. 같은 슬라이드 line 37에 나오는 SOUTHSIDE BREWING과 연결하고, 용어는 MOV_NOTE.md의 '랜딩 페이지'로 통일해야 합니다. 또 이 bullet의 근거인 '영상에 딸린 글'(원문)은 HOW_DESIGN_FROM_CC.md 1절에 정리되어 있는데, 이전 버전에 있던 이 출처 표기가 빠졌습니다.",
+    "evidence": "HOW_DESIGN_FROM_CC.md 머리말: '원문은 The AI Automators가 올린 영상에 딸린 글'. 1절: '각 페이지는 프롬프트 하나로 만들었고, frontend-design 스킬과 함께 gauntlet loop로 실행'. MOV_NOTE.md 표 8번: '랜딩 페이지 세 개'. 이전 버전 line 91: '(HOW_DESIGN_FROM_CC.md 1절, GAUNTLET_LOOP.md)'."
+   },
+   {
+    "severity": "should-fix",
+    "quote": "이 영상은 예시를 찾을 곳으로, 디자이너들이 영감을 얻는 사이트를 6개 카테고리로 나눠 소개한다.",
+    "replacement": "이 영상은 디자이너들이 영감을 얻는 사이트를 6개 카테고리로 나눠 소개한다. 이 사이트에서 찾은 예시로 원하는 모습을 Claude에게 정확히 가리켜 보여 줄 수 있다.",
+    "reason": "한 문장 안에 '곳으로'와 '카테고리로'가 겹칩니다. 쉼표 때문에 '예시를 찾을 곳으로'가 서술어 '소개한다'와 멀어져서 어색하게 읽힙니다. 또 8장 버전에 있던 목적 bullet(원하는 모습을 정확히 가리킨다)을 줄이면서, 화면 문구 'EXACTLY THE LOOK: 정확히 원하는 모습'을 설명하는 본문이 사라졌습니다. 두 번째 문장이 그 라벨의 뜻을 다시 이어 줍니다.",
+    "evidence": "MOV_NOTE.md 표 7번: `point Claude at exactly the look that you want`는 원하는 모습을 정확히 가리켜 Claude가 겨냥하게 한다는 뜻. 이전 버전 line 156: '이 사이트들을 소개하는 목적은 원하는 모습을 정확히 가리켜 Claude에게 보여 주는 것이다.' 현재 line 82에는 EXACTLY THE LOOK 라벨만 남아 있습니다."
+   }
+  ]
+ }
+}

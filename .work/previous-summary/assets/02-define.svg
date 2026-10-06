@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="210" viewBox="0 0 960 210" role="img" aria-labelledby="title desc">
+  <title id="title">디자인 구체화</title>
+  <desc id="desc">화면 확인과 외부 평가를 거쳐 시안을 수정하고 다시 확인하는 과정</desc>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10" fill="none" stroke="#333" stroke-width="1.5"/></marker></defs>
+  <rect width="960" height="210" fill="white"/>
+  <g fill="none" stroke="#333" stroke-width="2">
+    <rect x="20" y="30" width="250" height="84"/>
+    <rect x="355" y="30" width="250" height="84"/>
+    <rect x="690" y="30" width="250" height="84"/>
+    <path d="M283 72 H338" marker-end="url(#arrow)"/>
+    <path d="M618 72 H673" marker-end="url(#arrow)"/>
+    <path d="M815 126 V174 H145 V130" marker-end="url(#arrow)"/>
+  </g>
+  <g fill="#111" font-family="Apple SD Gothic Neo, Malgun Gothic, sans-serif" font-size="28" text-anchor="middle">
+    <text x="145" y="82">화면 확인</text>
+    <text x="480" y="82">외부 평가</text>
+    <text x="815" y="82">시안 수정</text>
+  </g>
+</svg>

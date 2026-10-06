@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude의 디자인 안목</title>
+<link rel="stylesheet" href="deck.css">
+<link rel="stylesheet" href="figures.css">
+</head>
+<body>
+<main class="deck">
+<section class="slide minimal theme-paper layout-cover" data-hdr="none" data-part="1" aria-label="1. Claude의 디자인 안목">
+<p class="eyebrow">DESIGN EYE</p>
+<h1 class="figure-title" style="left:96px;top:286px;width:516px;height:170px;font-size:42px;line-height:1.35">Claude의<br>디자인 안목</h1>
+<figure class="figure-frame" style="left:730.00px;top:163.68px;width:1190.00px;height:708.64px"><img alt="51 southside brewing" src="../assets/guide1-mov/crops/51-southside-brewing.png" style="position:absolute;left:0.00px;top:0.00px;width:1190.00px;height:708.64px" loading="eager"></figure>
+<p class="diagram-text summary" style="left:96px;top:494px;width:490px;height:175px;font-size:28px;color:#756F65;font-weight:400;text-align:left;line-height:1.5">레퍼런스로 방향을 정하고, 반복과 비교로 완성도를 높인다.</p>
+<footer class="figure-footer"><span>DESIGN EYE</span><span>01  디자인 방향</span><span>01 / 36</span></footer>
+<aside class="speaker-notes"><b>SLIDE1.md · 도입</b><br>발표 순서: SLIDE1 → NOTE2 → HOW_DESIGN_FROM_CC.<br>도입 출처: The AI Automators, Here’s How to Give Claude an Eye for Design (6 easy steps), 2026-09-07.<br>https://www.youtube.com/watch?v=1Y8OlBgafdE<br>표지 Figure: 영상 속 Southside Brewing 결과 화면.</aside>
+</section>
+<section class="slide minimal theme-paper layout-standard" data-hdr="none" data-part="1" aria-label="2. 막연한 요청과 평균적 결과">
+<p class="eyebrow"></p>
+<h1 class="figure-title" style="left:96px;top:96px;width:1728px;height:65px;font-size:42px;line-height:1.25">막연한 요청과 평균적 결과</h1>
+<figure class="figure-frame" style="left:166.38px;top:238.00px;width:769.25px;height:245.00px"><img alt="02 you ask for prompt" src="../assets/guide1-mov/crops/02-you-ask-for-prompt.png" style="position:absolute;left:0.00px;top:0.00px;width:769.25px;height:245.00px" loading="eager"></figure>
+<figure class="figure-frame" style="left:96.27px;top:510.00px;width:999.47px;height:355.00px"><img alt="03 press crushing" src="../assets/guide1-mov/crops/03-press-crushing.png" style="position:absolute;left:0.00px;top:0.00px;width:999.47px;height:355.00px" loading="eager"></figure>
+<figure class="figure-frame" style="left:1200.00px;top:407.29px;width:624.00px;height:385.41px"><img alt="04 average website mockup" src="../assets/guide1-mov/crops/04-average-website-mockup.png" style="position:absolute;left:0.00px;top:0.00px;width:624.00px;height:385.41px" loading="eager"></figure>
+<p class="diagram-text " style="left:1100px;top:527px;width:80px;height:90px;font-size:60px;color:#756F65;font-weight:400;text-align:left;line-height:1.18">→</p>
+<p class="diagram-text summary" style="left:96px;top:165px;width:1728px;height:52px;font-size:28px;color:#756F65;font-weight:400;text-align:left;line-height:1.4">추상적인 요청은 익숙한 색과 구조로 수렴하기 쉽다.</p>
+<footer class="figure-footer"><span>DESIGN EYE</span><span>01  디자인 방향</span><span>02 / 36</span></footer>
+<aside class="speaker-notes"><b>SLIDE1.md · §1</b><br>“현대적인 웹사이트”처럼 막연하게 요청하면 평균적인 디자인이 나온다는 영상의 프레스 비유. 학습 규모나 모델 이름은 원문의 주장이고 이 발표에서 별도로 검증한 실험 결과가 아니다.</aside>
+</section>
+<section class="slide minimal theme-paper layout-standard" data-hdr="none" data-part="1" aria-label="3. 사람의 방향 설정과 Claude의 구현">
+<p class="eyebrow"></p>
+<h1 class="figure-title" style="left:96px;top:96px;width:1728px;height:65px;font-size:42px;line-height:1.25">사람의 방향 설정과 Claude의 구현</h1>
+<figure class="figure-frame" style="left:96.00px;top:278.60px;width:770.00px;height:557.80px"><img alt="DIRECTOR" src="../assets/guide1-mov/crops/09-film-slate.png" style="position:absolute;left:0.00px;top:0.00px;width:770.00px;height:557.80px" loading="eager"></figure><p class="figure-label" style="left:96px;top:872px;width:770px">DIRECTOR</p>
+<figure class="figure-frame" style="left:1000.00px;top:303.78px;width:824.00px;height:507.44px"><img alt="REFERENCE" src="../assets/guide1-mov/crops/10-character-holding-reference.png" style="position:absolute;left:0.00px;top:0.00px;width:824.00px;height:507.44px" loading="eager"></figure><p class="figure-label" style="left:1000px;top:872px;width:824px">REFERENCE</p>
+<p class="diagram-text summary" style="left:96px;top:165px;width:1728px;height:52px;font-size:28px;color:#756F65;font-weight:400;text-align:left;line-height:1.4">사람이 레퍼런스로 방향을 정하고 Claude가 구현한다.</p>
+<footer class="figure-footer"><span>DESIGN EYE</span><span>01  디자인 방향</span><span>03 / 36</span></footer>
+<aside class="speaker-notes"><b>SLIDE1.md · §2</b><br>영화 감독과 배우의 비유. 사람은 레퍼런스로 방향을 정하고, Claude는 구현한다. ORYZO는 Southside Brewing의 움직임 참고 사이트다.</aside>
+</section>
+<section class="slide minimal theme-paper layout-standard" data-hdr="none" data-part="1" aria-label="4. 품질 기준과 반복 개선">
+<p class="eyebrow"></p>
+<h1 class="figure-title" style="left:96px;top:96px;width:1728px;height:65px;font-size:42px;line-height:1.25">품질 기준과 반복 개선</h1>
+<figure class="figure-frame" style="left:380.23px;top:236.00px;width:1159.54px;height:689.00px"><img alt="14 loop diagram cleared" src="../assets/guide1-mov/crops/14-loop-diagram-cleared.png" style="position:absolute;left:0.00px;top:0.00px;width:1159.54px;height:689.00px" loading="eager"></figure>
+<p class="diagram-text summary" style="left:96px;top:165px;width:1728px;height:52px;font-size:28px;color:#756F65;font-weight:400;text-align:left;line-height:1.4">결과를 비교하며 품질 기준을 넘을 때까지 다듬는다.</p>
+<footer class="figure-footer"><span>DESIGN EYE</span><span>01  디자인 방향</span><span>04 / 36</span></footer>
+<aside class="speaker-notes"><b>SLIDE1.md · §2</b><br>영상은 v1~v3가 기준선에 미치지 못하고 v4가 통과하는 모습으로 반복을 설명한다. 네 번이면 반드시 통과한다는 의미가 아니다.</aside>
+</section>
+<section class="slide minimal theme-paper layout-standard" data-hdr="none" data-part="1" aria-label="5. 시각적 예시의 힘">
+<p class="eyebrow"></p>
+<h1 class="figure-title" style="left:96px;top:96px;width:1728px;height:65px;font-size:42px;line-height:1.25">시각적 예시의 힘</h1>
+<figure class="figure-frame" style="left:204.86px;top:260.00px;width:520.27px;height:440.00px"><img alt="18 style adjective chips" src="../assets/guide1-mov/crops/18-style-adjective-chips.png" style="position:absolute;left:0.00px;top:0.00px;width:520.27px;height:440.00px" loading="eager"></figure>
+<figure class="figure-frame" style="left:347.47px;top:732.00px;width:235.05px;height:190.00px"><img alt="19 results gauge meh" src="../assets/guide1-mov/crops/19-results-gauge-meh.png" style="position:absolute;left:0.00px;top:0.00px;width:235.05px;height:190.00px" loading="eager"></figure>
+<figure class="figure-frame" style="left:1074.74px;top:240.00px;width:650.53px;height:455.00px"><img alt="25 example cards stack" src="../assets/guide1-mov/crops/25-example-cards-stack.png" style="position:absolute;left:0.00px;top:0.00px;width:650.53px;height:455.00px" loading="eager"></figure>
+<figure class="figure-frame" style="left:1297.47px;top:727.00px;width:235.05px;height:190.00px"><img alt="22 results gauge much better" src="../assets/guide1-mov/crops/22-results-gauge-much-better.png" style="position:absolute;left:0.00px;top:0.00px;width:235.05px;height:190.00px" loading="eager"></figure>
+<p class="diagram-text " style="left:874px;top:440px;width:90px;height:100px;font-size:60px;color:#756F65;font-weight:400;text-align:left;line-height:1.18">→</p>
+<p class="diagram-text summary" style="left:96px;top:165px;width:1728px;height:52px;font-size:28px;color:#756F65;font-weight:400;text-align:left;line-height:1.4">스타일을 설명하는 형용사보다 실제 화면을 보여 준다.</p>
+<footer class="figure-footer"><span>DESIGN EYE</span><span>01  디자인 방향</span><span>05 / 36</span></footer>
+<aside class="speaker-notes"><b>SLIDE1.md · §3</b><br>MODERN, CLEAN 같은 형용사만 쌓는 것보다 FLOEMA, SON DAVEN, STUDIO 같은 시각 예시가 원하는 모습을 더 직접적으로 전달한다.</aside>
+</section>
+<section class="slide minimal theme-paper layout-standard" data-hdr="none" data-part="1" aria-label="6. 디자인 영감의 다섯 가지 재료">
+<p class="eyebrow"></p>
+<h1 class="figure-title" style="left:96px;top:96px;width:1728px;height:65px;font-size:42px;line-height:1.25">디자인 영감의 다섯 가지 재료</h1>
+<figure class="figure-frame" style="left:115.00px;top:388.91px;width:145.00px;height:172.19px"><img alt="42 category galleries" src="../assets/guide1-mov/crops/42-category-galleries.png" style="position:absolute;left:0.00px;top:0.00px;width:145.00px;height:172.19px" loading="eager"></figure>
+<figure class="figure-frame" style="left:270.00px;top:388.91px;width:145.00px;height:172.19px"><img alt="43 category real apps" src="../assets/guide1-mov/crops/43-category-real-apps.png" style="position:absolute;left:0.00px;top:0.00px;width:145.00px;height:172.19px" loading="eager"></figure>
+<figure class="figure-frame" style="left:513.82px;top:340.00px;width:227.37px;height:270.00px"><img alt="44 category components" src="../assets/guide1-mov/crops/44-category-components.png" style="position:absolute;left:0.00px;top:0.00px;width:227.37px;height:270.00px" loading="eager"></figure>
+<figure class="figure-frame" style="left:868.82px;top:340.00px;width:227.37px;height:270.00px"><img alt="45 category fonts" src="../assets/guide1-mov/crops/45-category-fonts.png" style="position:absolute;left:0.00px;top:0.00px;width:227.37px;height:270.00px" loading="eager"></figure>
+<figure class="figure-frame" style="left:1223.82px;top:340.00px;width:227.37px;height:270.00px"><img alt="46 category color" src="../assets/guide1-mov/crops/46-category-color.png" style="position:absolute;left:0.00px;top:0.00px;width:227.37px;height:270.00px" loading="eager"></figure>
+<figure class="figure-frame" style="left:1578.82px;top:340.00px;width:227.37px;height:270.00px"><img alt="47 category systems" src="../assets/guide1-mov/crops/47-category-systems.png" style="position:absolute;left:0.00px;top:0.00px;width:227.37px;height:270.00px" loading="eager"></figure>
+<p class="diagram-text " style="left:125px;top:700px;width:330px;height:60px;font-size:30px;color:#24231F;font-weight:500;text-align:left;line-height:1.18">Reference</p>
+<p class="diagram-text " style="left:510px;top:700px;width:330px;height:60px;font-size:30px;color:#24231F;font-weight:500;text-align:left;line-height:1.18">Component</p>
+<p class="diagram-text " style="left:865px;top:700px;width:330px;height:60px;font-size:30px;color:#24231F;font-weight:500;text-align:left;line-height:1.18">Font</p>
+<p class="diagram-text " style="left:1220px;top:700px;width:330px;height:60px;font-size:30px;color:#24231F;font-weight:500;text-align:left;line-height:1.18">Color</p>
+<p class="diagram-text " style="left:1530px;top:700px;width:330px;height:60px;font-size:30px;color:#24231F;font-weight:500;text-align:left;line-height:1.18">Design System</p>
+<p class="diagram-text summary" style="left:96px;top:165px;width:1728px;height:52px;font-size:28px;color:#756F65;font-weight:400;text-align:left;line-height:1.4">화면과 부품, 글꼴, 색, 디자인 규칙으로 취향을 구체화한다.</p>
+<footer class="figure-footer"><span>DESIGN EYE</span><span>01  디자인 방향</span><span>06 / 36</span></footer>
+<aside class="speaker-notes"><b>SLIDE1.md · §3</b><br>영상의 여섯 분류에서 웹사이트 갤러리와 실제 앱 화면을 Reference 하나로 묶어 다섯 분류로 정리한 SLIDE1의 구성을 따른다.</aside>
+</section>
+<section class="slide minimal theme-ink layout-standard" data-hdr="none" data-part="2" aria-label="7. 무작위 요청의 한계">
+<p class="eyebrow">DISCOVER · 01</p>
+<h1 class="figure-title" style="left:96px;top:96px;width:1728px;height:65px;font-size:42px;line-height:1.25">무작위 요청의 한계</h1>
+<svg class="diagram-line" style="left:96px;top:818px" width="1728" height="2"><line x1="0" y1="0" x2="1728" y2="0" stroke="#4E4A43" stroke-width="2"/></svg>
+<figure class="figure-frame" style="left:117.06px;top:255.00px;width:789.89px;height:485.00px"><img alt="기본 프롬프트" src="../assets/how-to-turn-your-ai-into-a-world/figure-05-7b59bdf3-8a82-46d1-94c2-4a1e60ea7cbf_1456x894.jpg" style="position:absolute;left:0.00px;top:0.00px;width:789.89px;height:485.00px" loading="eager"></figure><p class="figure-label" style="left:96px;top:752px;width:832px">기본 프롬프트</p>
+<figure class="figure-frame" style="left:1004.94px;top:255.00px;width:806.12px;height:485.00px"><img alt="“독특하고 무작위로”" src="../assets/how-to-turn-your-ai-into-a-world/figure-06-f37064a7-2853-4314-b175-aa65b8a13f43_1456x876.jpg" style="position:absolute;left:0.00px;top:0.00px;width:806.12px;height:485.00px" loading="eager"></figure><p class="figure-label" style="left:992px;top:752px;width:832px">“독특하고 무작위로”</p>
+<p class="diagram-text summary" style="left:96px;top:165px;width:1728px;height:52px;font-size:28px;color:#C3BBAE;font-weight:400;text-align:left;line-height:1.4">기본 요청도 무작위 요청도 결과끼리 닮았다.</p>
+<p class="diagram-text prompt-label" style="left:96px;top:848px;width:180px;height:92px;font-size:20px;color:#ACA497;font-weight:500;text-align:left;line-height:1.18">프롬프트 요지</p>
+<p class="diagram-text prompt-body" style="left:302px;top:840px;width:1522px;height:167px;font-size:30px;color:#F6EFE2;font-weight:400;text-align:left;line-height:1.35">기본 요청: Build me a landing page for my productivity app.<br>추가 요청: 완전히 독특하게, 모든 결정을 무작위로.</p>
+<footer class="figure-footer"><span>DESIGN EYE</span><span>02  여덟 가지 기법</span><span>07 / 36</span></footer>
+<aside class="speaker-notes"><b>NOTE2.md · 기법 1</b><br>기법 파트 출처: Anshu Chimala, How to turn your AI into a world-class designer, Lenny’s Newsletter, 2026-09-01.<br>https://www.lennysnewsletter.com/p/how-to-turn-your-ai-into-a-world<br><br>Figure 5~6. 기본 생산성 앱 프롬프트는 보라색 UI로, 무작위로 만들라는 지시는 비슷한 오프화이트와 주황 계열로 수렴한 원문 사례. 모든 모델에 대한 일반적 정량 결과는 아니다.<br><br>NOTE2 근거:<br>- 같은 기본 프롬프트(`Build me a landing page for my productivity app.`)를 Claude Code 네 개에 주면, Claude Opus 5는 거의 매번 보랏빛 그라데이션에 왼쪽 텍스트와 오른쪽 그래픽이라는 같은 구조를 낸다(그림 5).<br>- &quot;완전히 독특하게, 모든 결정을 무작위로&quot; 해 달라고 덧붙여도 결과끼리 닮았다. 색 조합과 구조, 어색한 도자기 비유까지 반복된다(그림 6). 모델이 진짜 무작위가 아니라 무작위처럼 들리는 토큰을 예측하기 때문이다.<br><br>화면의 프롬프트는 NOTE2의 요지와 예시를 발표용 요청문으로 정리한 것이다.</aside>
+</section>
+<section class="slide minimal theme-paper layout-standard" data-hdr="none" data-part="2" aria-label="8. 시드 문자열과 디자인 다양성">
+<p class="eyebrow">DISCOVER · 01</p>
+<h1 class="figure-title" style="left:96px;top:96px;width:1728px;height:65px;font-size:42px;line-height:1.25">시드 문자열과 디자인 다양성</h1>
+<div class="diagram-shape" style="left:1290px;top:245px;width:630px;height:750px;background:#141412;border:2px solid transparent;border-radius:0px"></div>
+<figure class="figure-frame" style="left:112.51px;top:264.00px;width:1096.99px;height:660.00px"><img alt="Figure 7" src="../assets/how-to-turn-your-ai-into-a-world/figure-07-bcda7156-dbbd-4d18-a7fb-4cfc124563bf_1456x876.jpg" style="position:absolute;left:0.00px;top:0.00px;width:1096.99px;height:660.00px" loading="eager"></figure>
+<p class="diagram-text summary" style="left:96px;top:165px;width:1728px;height:52px;font-size:28px;color:#756F65;font-weight:400;text-align:left;line-height:1.4">외부 시드가 색·글꼴·구성의 출발점을 바꾼다.</p>
+<p class="diagram-text prompt-label" style="left:1340px;top:295px;width:484px;height:70px;font-size:20px;color:#ACA497;font-weight:500;text-align:left;line-height:1.18">프롬프트 요지</p>
+<p class="diagram-text prompt-body" style="left:1340px;top:363px;width:484px;height:590px;font-size:30px;color:#F6EFE2;font-weight:400;text-align:left;line-height:1.46">셸 스크립트로 긴 무작위 영숫자 문자열을 만들어 줘.<br>그 안의 패턴에서 색·레이아웃·글꼴의 영감을 찾아 생산성 앱 랜딩 페이지를 만들어 줘.<br>문자열 자체는 화면에 드러내지 마.</p>
+<footer class="figure-footer"><span>DESIGN EYE</span><span>02  여덟 가지 기법</span><span>08 / 36</span></footer>
+<aside class="speaker-notes"><b>NOTE2.md · 기법 1</b><br>Figure 7. 원문은 임의의 외부 시드 문자열을 디자인 방향 해석에 사용해 모델 밖에서 다양성을 공급하도록 제안한다. 시드는 제품명에 그대로 노출시키기 위한 문구가 아니다.<br><br>NOTE2 근거:<br>- 프롬프트 요지:<br>  1. 셸 스크립트로 긴 무작위 영숫자 문자열을 만든다.<br>  2. 문자열 속 하위 패턴이나 특별한 숫자까지 살펴 색 조합, 레이아웃, 타이포그래피 방향을 정한다.<br>  3. 스스로 판단해 그 방향을 완성도 있게 구현하되, 문자열은 디자인에 드러내지 않는다.<br>- 결과(그림 7): 색 조합, 글꼴, 아이디어가 확연히 다양해졌다. 누구나 얻는 기본 결과와 달리 실행할 때마다 다른 결과가 나온다.<br><br>화면의 프롬프트는 NOTE2의 요지와 예시를 발표용 요청문으로 정리한 것이다.</aside>
+</section>
+<section class="slide minimal theme-paper layout-standard" data-hdr="none" data-part="2" aria-label="9. 픽셀 아트 테마">
+<p class="eyebrow">DISCOVER · 02</p>
+<h1 class="figure-title" style="left:96px;top:96px;width:1728px;height:65px;font-size:42px;line-height:1.25">픽셀 아트 테마</h1>
+<svg class="diagram-line" style="left:1285px;top:284px" width="2" height="640"><line x1="0" y1="0" x2="0" y2="640" stroke="#CDC4B6" stroke-width="2"/></svg>
+<figure class="figure-frame" style="left:96.00px;top:276.19px;width:1130.00px;height:635.62px"><img alt="Figure 8" src="../slides/media/figure-08.png" style="position:absolute;left:0.00px;top:0.00px;width:1130.00px;height:635.62px" loading="eager"><video class="figure-video" data-src="../slides/media/figure-08.mp4" muted loop playsinline preload="none" aria-label="움직이는 Figure" poster="../slides/media/figure-08.png"></video></figure>
+<p class="diagram-text summary" style="left:96px;top:165px;width:1728px;height:52px;font-size:28px;color:#756F65;font-weight:400;text-align:left;line-height:1.4">구체적인 영감이 디자인의 방향을 만든다.</p>
+<p class="diagram-text prompt-label" style="left:1340px;top:295px;width:484px;height:70px;font-size:20px;color:#817A6E;font-weight:500;text-align:left;line-height:1.18">프롬프트 요지</p>
+<p class="diagram-text prompt-body" style="left:1340px;top:363px;width:484px;height:590px;font-size:30px;color:#24231F;font-weight:400;text-align:left;line-height:1.46">생산성 앱 랜딩 페이지를 대담한 픽셀 아트 테마로 만들어 줘.<br>각 섹션은 게임 속 한 장면처럼 느껴지되, 랜딩 페이지로 작동하게 해.</p>
+<footer class="figure-footer"><span>DESIGN EYE</span><span>02  여덟 가지 기법</span><span>09 / 36</span></footer>
+<aside class="speaker-notes"><b>NOTE2.md · 기법 2</b><br>Figure 8: QUESTLOG. 생산성 앱을 비디오 게임 장면 같은 픽셀 아트 세계로 구체화한 원문 데모.<br><br>NOTE2 근거:<br>- 구체적이고 대담한 프롬프트는 모델에게 즉흥적으로 고르는 대신 따를 비전을 준다.<br>- 예시 1: 대담한 픽셀 아트 테마로, 각 섹션이 게임 속 한 장면 같으면서도 랜딩 페이지로 작동하게 한다(그림 8).<br><br>화면의 프롬프트는 NOTE2의 요지와 예시를 발표용 요청문으로 정리한 것이다.</aside>
+</section>
+<section class="slide minimal theme-paper layout-standard" data-hdr="none" data-part="2" aria-label="10. 아이소메트릭 3D 도시">
+<p class="eyebrow">DISCOVER · 02</p>
+<h1 class="figure-title" style="left:96px;top:96px;width:1728px;height:65px;font-size:42px;line-height:1.25">아이소메트릭 3D 도시</h1>
+<svg class="diagram-line" style="left:1285px;top:284px" width="2" height="640"><line x1="0" y1="0" x2="0" y2="640" stroke="#CDC4B6" stroke-width="2"/></svg>
+<figure class="figure-frame" style="left:96.00px;top:276.19px;width:1130.00px;height:635.62px"><img alt="Figure 9" src="../slides/media/figure-09.png" style="position:absolute;left:0.00px;top:0.00px;width:1130.00px;height:635.62px" loading="eager"><video class="figure-video" data-src="../slides/media/figure-09.mp4" muted loop playsinline preload="none" aria-label="움직이는 Figure" poster="../slides/media/figure-09.png"></video></figure>
+<p class="diagram-text summary" style="left:96px;top:165px;width:1728px;height:52px;font-size:28px;color:#756F65;font-weight:400;text-align:left;line-height:1.4">제품의 기능을 도시의 공간으로 표현한다.</p>
+<p class="diagram-text prompt-label" style="left:1340px;top:295px;width:484px;height:70px;font-size:20px;color:#817A6E;font-weight:500;text-align:left;line-height:1.18">프롬프트 요지</p>
+<p class="diagram-text prompt-body" style="left:1340px;top:363px;width:484px;height:590px;font-size:30px;color:#24231F;font-weight:400;text-align:left;line-height:1.46">아이소메트릭 3D 도시를 배경으로 생산성 앱 랜딩 페이지를 만들어 줘.<br>각 기능을 동네나 건물로 표현해.</p>
+<footer class="figure-footer"><span>DESIGN EYE</span><span>02  여덟 가지 기법</span><span>10 / 36</span></footer>
+<aside class="speaker-notes"><b>NOTE2.md · 기법 2</b><br>Figure 9: SKYLINE. 작업과 프로젝트를 아이소메트릭 3D 도시의 건물과 층으로 표현한다.<br><br>NOTE2 근거:<br>- 예시 2: 기능을 동네나 건물로 표현한 아이소메트릭 3D 도시를 배경으로 삼는다(그림 9).<br><br>화면의 프롬프트는 NOTE2의 요지와 예시를 발표용 요청문으로 정리한 것이다.</aside>
+</section>
+<section class="slide minimal theme-paper layout-standard" data-hdr="none" data-part="2" aria-label="11. 비대칭 디자인">
+<p class="eyebrow">DISCOVER · 02</p>
+<h1 class="figure-title" style="left:96px;top:96px;width:1728px;height:65px;font-size:42px;line-height:1.25">비대칭 디자인</h1>
+<svg class="diagram-line" style="left:1285px;top:284px" width="2" height="640"><line x1="0" y1="0" x2="0" y2="640" stroke="#CDC4B6" stroke-width="2"/></svg>
+<figure class="figure-frame" style="left:96.00px;top:276.19px;width:1130.00px;height:635.62px"><img alt="Figure 10" src="../slides/media/figure-10.png" style="position:absolute;left:0.00px;top:0.00px;width:1130.00px;height:635.62px" loading="eager"><video class="figure-video" data-src="../slides/media/figure-10.mp4" muted loop playsinline preload="none" aria-label="움직이는 Figure" poster="../slides/media/figure-10.png"></video></figure>
+<p class="diagram-text summary" style="left:96px;top:165px;width:1728px;height:52px;font-size:28px;color:#756F65;font-weight:400;text-align:left;line-height:1.4">낯선 조합도 구체적으로 요청해 본다.</p>
+<p class="diagram-text prompt-label" style="left:1340px;top:295px;width:484px;height:70px;font-size:20px;color:#817A6E;font-weight:500;text-align:left;line-height:1.18">프롬프트 요지</p>
+<p class="diagram-text prompt-body" style="left:1340px;top:363px;width:484px;height:590px;font-size:30px;color:#24231F;font-weight:400;text-align:left;line-height:1.46">극단적으로 비대칭인 레이아웃, 불협화음 같은 색과 타이포그래피, 불편한 여백으로 생산성 앱 랜딩 페이지를 만들어 줘.<br>규칙을 깨되 보기 좋게 만들어.</p>
+<footer class="figure-footer"><span>DESIGN EYE</span><span>02  여덟 가지 기법</span><span>11 / 36</span></footer>
+<aside class="speaker-notes"><b>NOTE2.md · 기법 2</b><br>Figure 10: OFFCUT. 규칙 파괴, 비대칭 레이아웃, 넓은 여백을 방향으로 제시한다. 뒤의 세 장에서 아이디어 나열, 취향 반영, 제작 프롬프트 작성을 보여 준다. Figure 14는 Figure 7과 같은 시안이라 중복 생략했다.<br><br>NOTE2 근거:<br>- 예시 3: 극단적인 비대칭, 불협화음 같은 색과 타이포그래피, 불편한 여백으로 규칙을 다 깨되 보기 좋게 만든다(그림 10).<br><br>화면의 프롬프트는 NOTE2의 요지와 예시를 발표용 요청문으로 정리한 것이다.</aside>
+</section>
+<section class="slide minimal theme-paper layout-standard" data-hdr="none" data-part="2" aria-label="12. 디자인 아이디어의 폭넓은 탐색">
+<p class="eyebrow">DISCOVER · 02</p>
+<h1 class="figure-title" style="left:96px;top:96px;width:1728px;height:65px;font-size:42px;line-height:1.25">디자인 아이디어의 폭넓은 탐색</h1>
+<svg class="diagram-line" style="left:1285px;top:284px" width="2" height="640"><line x1="0" y1="0" x2="0" y2="640" stroke="#CDC4B6" stroke-width="2"/></svg>
+<figure class="figure-frame" style="left:96.00px;top:372.42px;width:1130.00px;height:443.15px"><img alt="AI 답변" src="../assets/how-to-turn-your-ai-into-a-world/figure-11-0e1d6d22-1828-47d5-b2f6-0d88fef90ae2_1456x571.png" style="position:absolute;left:0.00px;top:0.00px;width:1130.00px;height:443.15px" loading="eager"></figure><p class="figure-label" style="left:96px;top:936px;width:1130px">AI 답변</p>
+<p class="diagram-text summary" style="left:96px;top:165px;width:1728px;height:52px;font-size:28px;color:#756F65;font-weight:400;text-align:left;line-height:1.4">처음에는 깊이보다 폭을 넓힌다.</p>
+<p class="diagram-text prompt-label" style="left:1340px;top:295px;width:484px;height:70px;font-size:20px;color:#817A6E;font-weight:500;text-align:left;line-height:1.18">프롬프트 요지</p>
+<p class="diagram-text prompt-body" style="left:1340px;top:363px;width:484px;height:590px;font-size:30px;color:#24231F;font-weight:400;text-align:left;line-height:1.46">제품을 위한 대담하고 독특한 디자인 언어를 찾고 싶어.<br>짧은 설명을 붙여 아이디어를 최대한 많이 나열해 줘.<br>세부 설계보다 방향의 다양성을 우선해.</p>
+<footer class="figure-footer"><span>DESIGN EYE</span><span>02  여덟 가지 기법</span><span>12 / 36</span></footer>
+<aside class="speaker-notes"><b>NOTE2.md · 기법 2</b><br>Figure 11. NOTE2의 기법 2 대화 과정. 화면 왼쪽은 원문의 AI 답변이고 오른쪽은 사용자가 보내는 요청의 요지다.<br><br>NOTE2 근거:<br>- 대담하고 독특한 디자인 언어 아이디어를 짧은 설명과 함께, 깊이보다 폭 위주로 최대한 많이 달라고 한다.<br>- AI 답변(그림 11): Brutalist Utility, Industrial Control Panel, Gel Interface, Cardboard Prototype, Comic Book UI 등.<br><br>화면의 프롬프트는 NOTE2의 요지와 예시를 발표용 요청문으로 정리한 것이다.</aside>
+</section>
+<section class="slide minimal theme-paper layout-standard" data-hdr="none" data-part="2" aria-label="13. 취향 기반의 디자인 방향">
+<p class="eyebrow">DISCOVER · 02</p>
+<h1 class="figure-title" style="left:96px;top:96px;width:1728px;height:65px;font-size:42px;line-height:1.25">취향 기반의 디자인 방향</h1>
+<svg class="diagram-line" style="left:1285px;top:284px" width="2" height="640"><line x1="0" y1="0" x2="0" y2="640" stroke="#CDC4B6" stroke-width="2"/></svg>
+<figure class="figure-frame" style="left:96.00px;top:419.77px;width:1130.00px;height:348.47px"><img alt="AI 답변" src="../assets/how-to-turn-your-ai-into-a-world/figure-12-0e7340b1-9a93-4d94-abc6-c6b386f3a36c_1456x449.png" style="position:absolute;left:0.00px;top:0.00px;width:1130.00px;height:348.47px" loading="eager"></figure><p class="figure-label" style="left:96px;top:936px;width:1130px">AI 답변</p>
+<p class="diagram-text summary" style="left:96px;top:165px;width:1728px;height:52px;font-size:28px;color:#756F65;font-weight:400;text-align:left;line-height:1.4">원하는 느낌과 피할 느낌을 함께 전한다.</p>
+<p class="diagram-text prompt-label" style="left:1340px;top:295px;width:484px;height:70px;font-size:20px;color:#817A6E;font-weight:500;text-align:left;line-height:1.18">프롬프트 요지</p>
+<p class="diagram-text prompt-body" style="left:1340px;top:363px;width:484px;height:590px;font-size:30px;color:#24231F;font-weight:400;text-align:left;line-height:1.46">Industrial Control Panel을 내 취향에 맞게 다듬어 줘.<br>딸깍거리는 버튼·소리, 절제된 디테일, 질감과 약간의 색을 원해.<br>만화풍·스큐어모픽·밋밋한 회색 그라데이션은 피해.</p>
+<footer class="figure-footer"><span>DESIGN EYE</span><span>02  여덟 가지 기법</span><span>13 / 36</span></footer>
+<aside class="speaker-notes"><b>NOTE2.md · 기법 2</b><br>Figure 12. NOTE2의 기법 2 대화 과정. 화면 왼쪽은 원문의 AI 답변이고 오른쪽은 사용자가 보내는 요청의 요지다.<br><br>NOTE2 근거:<br>- &#x27;Industrial Control Panel&#x27;에 대해 원하는 것(딸깍거리는 버튼과 소리 같은 촉감, 일관된 컴포넌트와 절제된 디테일, 질감과 약간의 색)과 피할 것(만화풍, 스큐어모픽, 밋밋한 회색 그라데이션)을 적어 취향에 맞게 다듬어 달라고 한다.<br><br>화면의 프롬프트는 NOTE2의 요지와 예시를 발표용 요청문으로 정리한 것이다.</aside>
+</section>
+<section class="slide minimal theme-paper layout-standard" data-hdr="none" data-part="2" aria-label="14. 제작용 프롬프트 구성">
+<p class="eyebrow">DISCOVER · 02</p>
+<h1 class="figure-title" style="left:96px;top:96px;width:1728px;height:65px;font-size:42px;line-height:1.25">제작용 프롬프트 구성</h1>
+<svg class="diagram-line" style="left:1285px;top:284px" width="2" height="640"><line x1="0" y1="0" x2="0" y2="640" stroke="#CDC4B6" stroke-width="2"/></svg>
+<figure class="figure-frame" style="left:96.00px;top:325.47px;width:1130.00px;height:537.06px"><img alt="AI 답변" src="../assets/how-to-turn-your-ai-into-a-world/figure-13-4ca0ce7c-c730-443a-bde3-f62996b43c7d_1456x692.png" style="position:absolute;left:0.00px;top:0.00px;width:1130.00px;height:537.06px" loading="eager"></figure><p class="figure-label" style="left:96px;top:936px;width:1130px">AI 답변</p>
+<p class="diagram-text summary" style="left:96px;top:165px;width:1728px;height:52px;font-size:28px;color:#756F65;font-weight:400;text-align:left;line-height:1.4">취향이 정해지면 실행할 요청으로 묶는다.</p>
+<p class="diagram-text prompt-label" style="left:1340px;top:295px;width:484px;height:70px;font-size:20px;color:#817A6E;font-weight:500;text-align:left;line-height:1.18">프롬프트 요지</p>
+<p class="diagram-text prompt-body" style="left:1340px;top:363px;width:484px;height:590px;font-size:30px;color:#24231F;font-weight:400;text-align:left;line-height:1.46">지금 정한 Precision Industrial 방향으로 단일 POC 페이지를 만들 간결한 프롬프트를 써 줘.<br>레트로·만화풍·과한 스큐어모픽은 피한다는 조건도 담아 줘.</p>
+<footer class="figure-footer"><span>DESIGN EYE</span><span>02  여덟 가지 기법</span><span>14 / 36</span></footer>
+<aside class="speaker-notes"><b>NOTE2.md · 기법 2</b><br>Figure 13. NOTE2의 기법 2 대화 과정. 화면 왼쪽은 원문의 AI 답변이고 오른쪽은 사용자가 보내는 요청의 요지다.<br><br>NOTE2 근거:<br>- 마지막으로 이 방향으로 POC 페이지를 만들 간결한 프롬프트를 써 달라고 한다.<br>- AI 답변(그림 13): &quot;Precision Industrial&quot; 제어판 디자인 언어를 보여 주는 단일 페이지 POC 제작 프롬프트다. 레트로, 만화풍, 과한 스큐어모픽은 피하라고 못 박는다.<br><br>화면의 프롬프트는 NOTE2의 요지와 예시를 발표용 요청문으로 정리한 것이다.</aside>
+</section>
+<section class="slide minimal theme-paper layout-standard" data-hdr="none" data-part="2" aria-label="15. 구현자와 비평가의 역할 분리">
+<p class="eyebrow">DEFINE · 03</p>
+<h1 class="figure-title" style="left:96px;top:96px;width:1728px;height:65px;font-size:42px;line-height:1.25">구현자와 비평가의 역할 분리</h1>
+<svg class="diagram-line" style="left:96px;top:818px" width="1728" height="2"><line x1="0" y1="0" x2="1728" y2="0" stroke="#CDC4B6" stroke-width="2"/></svg>
+<figure class="figure-frame" style="left:227.80px;top:258.00px;width:1464.40px;height:523.00px"><img alt="Figure 15" src="../assets/how-to-turn-your-ai-into-a-world/figure-15-5e045d71-d5f7-436a-be1f-eb870df24062_1456x1861.jpg" style="position:absolute;left:0.00px;top:0.00px;width:1464.40px;height:1871.74px" loading="eager"></figure>
+<p class="diagram-text summary" style="left:96px;top:165px;width:1728px;height:52px;font-size:28px;color:#756F65;font-weight:400;text-align:left;line-height:1.4">구현자는 만들고, 별도 비평가는 화면만 본다.</p>
+<p class="diagram-text prompt-label" style="left:96px;top:848px;width:180px;height:92px;font-size:20px;color:#817A6E;font-weight:500;text-align:left;line-height:1.18">프롬프트 요지</p>
+<p class="diagram-text prompt-body" style="left:302px;top:840px;width:1522px;height:167px;font-size:30px;color:#24231F;font-weight:400;text-align:left;line-height:1.35">매 반복의 스크린샷을 새 컨텍스트의 디자인 비평가에게 넘겨 줘.<br>코드·이전 반복·이전 비평은 주지 마.<br>비평가는 최고 수준 스튜디오와의 가장 큰 격차를 짚고 10점 만점으로 채점해.</p>
+<footer class="figure-footer"><span>DESIGN EYE</span><span>02  여덟 가지 기법</span><span>15 / 36</span></footer>
+<aside class="speaker-notes"><b>NOTE2.md · 기법 3</b><br>Figure 15의 Meridian 비교를 확대했다. 제작 대화와 분리된 비평가가 실제 스크린샷을 평가한다. 원문 기법의 9/10 점수 루프는 뒤에 나올 Claude Code의 레퍼런스 비교 방식과 구별한다.<br><br>NOTE2 근거:<br>- 그래서 &#x27;디자인 비평가(design critic)&#x27; 역할의 별도 에이전트가 완성도를 판단하게 한다. 비평가는 스크린샷만 보고, 구현 방식이나 들인 노력과 무관하게 품질 기준 충족 여부만 본다.<br>  - 반복마다 스크린샷을 찍어, 코드나 이전 반복과 비평 없이 새 컨텍스트의 비평가에게 넘긴다.<br>  - 비평가는 디자인이 노리는 미감과 최고 수준 스튜디오의 구현을 떠올려 가장 큰 격차를 짚고, 그 수준에 얼마나 가까운지 10점 만점으로 채점한다.<br><br>화면의 프롬프트는 NOTE2의 요지와 예시를 발표용 요청문으로 정리한 것이다.</aside>
+</section>
+<section class="slide minimal theme-paper layout-standard" data-hdr="none" data-part="2" aria-label="16. 반복 비평과 디자인 정체성">
+<p class="eyebrow">DEFINE · 03</p>
+<h1 class="figure-title" style="left:96px;top:96px;width:1728px;height:65px;font-size:42px;line-height:1.25">반복 비평과 디자인 정체성</h1>
+<svg class="diagram-line" style="left:96px;top:818px" width="1728" height="2"><line x1="0" y1="0" x2="1728" y2="0" stroke="#CDC4B6" stroke-width="2"/></svg>
+<figure class="figure-frame" style="left:96.00px;top:279.17px;width:1728.00px;height:480.66px"><img alt="Figure 15" src="../assets/how-to-turn-your-ai-into-a-world/figure-15-5e045d71-d5f7-436a-be1f-eb870df24062_1456x1861.jpg" style="position:absolute;left:0.00px;top:-1155.96px;width:1728.00px;height:2208.66px" loading="eager"></figure>
+<p class="diagram-text summary" style="left:96px;top:165px;width:1728px;height:52px;font-size:28px;color:#756F65;font-weight:400;text-align:left;line-height:1.4">같은 평가 기준으로 반복해 고유한 개성을 만든다.</p>
+<p class="diagram-text prompt-label" style="left:96px;top:848px;width:180px;height:92px;font-size:20px;color:#817A6E;font-weight:500;text-align:left;line-height:1.18">프롬프트 요지</p>
+<p class="diagram-text prompt-body" style="left:302px;top:840px;width:1522px;height:167px;font-size:30px;color:#24231F;font-weight:400;text-align:left;line-height:1.35">비평가에게 매번 같은 프롬프트를 줘.<br>큰 구조·세부를 보고, 과하거나 AI 티 나는 패턴은 감점하게 해.<br>독립적으로 9/10 이상을 줄 때 종료하되, 종료 점수는 비평가에게 알리지 마.</p>
+<footer class="figure-footer"><span>DESIGN EYE</span><span>02  여덟 가지 기법</span><span>16 / 36</span></footer>
+<aside class="speaker-notes"><b>NOTE2.md · 기법 3</b><br>Figure 15의 Quartz 행 확대. 왼쪽은 반복 전, 오른쪽은 반복 후다. 기존 디자인의 핵심 콘셉트를 더 대담한 화면으로 발전시킨 예시다.<br><br>NOTE2 근거:<br>  - 비평가 지침: 큰 구조와 세부를 함께 보고, 과하거나 AI 티 나는 패턴은 감점하며, 구체적이고 대담하게 판단한다.<br>  - 비평가가 독립적으로 9/10 이상을 줘야 끝난다. 이 기준은 비평가에게 알리지 않고, 비평가 프롬프트는 매번 같게 쓴다.<br>- 결과(그림 15): 판에 박은 레이아웃이 원래의 미감은 유지한 채 시안마다 다른 정체성을 갖게 됐다.<br><br>화면의 프롬프트는 NOTE2의 요지와 예시를 발표용 요청문으로 정리한 것이다.</aside>
+</section>
+<section class="slide minimal theme-paper layout-standard" data-hdr="none" data-part="2" aria-label="17. 생성 이미지의 시각적 효과">
+<p class="eyebrow">DEFINE · 04</p>
+<h1 class="figure-title" style="left:96px;top:96px;width:1728px;height:65px;font-size:42px;line-height:1.25">생성 이미지의 시각적 효과</h1>
+<div class="diagram-shape" style="left:1290px;top:245px;width:630px;height:750px;background:#141412;border:2px solid transparent;border-radius:0px"></div>
+<figure class="figure-frame" style="left:109.98px;top:266.00px;width:1102.04px;height:302.00px"><img alt="Figure 16" src="../slides/media/figure-16.png" style="position:absolute;left:0.00px;top:0.00px;width:1102.04px;height:302.00px" loading="eager"><video class="figure-video" data-src="../slides/media/figure-16.mp4" muted loop playsinline preload="none" aria-label="움직이는 Figure" poster="../slides/media/figure-16.png"></video></figure>
+<figure class="figure-frame" style="left:109.98px;top:622.00px;width:1102.04px;height:302.00px"><img alt="Figure 17" src="../slides/media/figure-17.png" style="position:absolute;left:0.00px;top:0.00px;width:1102.04px;height:302.00px" loading="eager"><video class="figure-video" data-src="../slides/media/figure-17.mp4" muted loop playsinline preload="none" aria-label="움직이는 Figure" poster="../slides/media/figure-17.png"></video></figure>
+<p class="diagram-text summary" style="left:96px;top:165px;width:1728px;height:52px;font-size:28px;color:#756F65;font-weight:400;text-align:left;line-height:1.4">생성 이미지는 디자인에 개성을 더한다.</p>
+<p class="diagram-text prompt-label" style="left:1340px;top:295px;width:484px;height:70px;font-size:20px;color:#ACA497;font-weight:500;text-align:left;line-height:1.18">프롬프트 요지</p>
+<p class="diagram-text prompt-body" style="left:1340px;top:363px;width:484px;height:590px;font-size:30px;color:#F6EFE2;font-weight:400;text-align:left;line-height:1.46">밋밋한 디자인에 생성 이미지로 개성을 더해 줘.<br>더 흥미로운 비주얼을 위해 셰이더나 3D 효과와의 조합도 고려해.</p>
+<footer class="figure-footer"><span>DESIGN EYE</span><span>02  여덟 가지 기법</span><span>17 / 36</span></footer>
+<aside class="speaker-notes"><b>NOTE2.md · 기법 4</b><br>Figure 16~17: Meridian과 zylo. 왼쪽이 생성 이미지 적용 전, 오른쪽이 적용 후다. 이미지를 장식으로 추가하는 것보다 정해진 시각 방향을 강화한다.<br><br>NOTE2 근거:<br>- 프롬프트 요지: 밋밋한 디자인에 생성 이미지로 개성을 더하고, 셰이더나 3D 효과와의 조합도 고려하게 한다. API 키는 로컬에서만 쓰게 하고, 결과는 브라우저에서 프레임 단위로 확인하게 한다.<br>- 결과(그림 16~19, Claude Opus 5 적용 전후): 짧은 시간에 개성이 크게 늘고, 겉핥기 이상의 공이 보여 AI 티가 줄어든다.<br><br>화면의 프롬프트는 NOTE2의 요지와 예시를 발표용 요청문으로 정리한 것이다.</aside>
+</section>
+<section class="slide minimal theme-paper layout-standard" data-hdr="none" data-part="2" aria-label="18. 생성 이미지의 적용과 검증">
+<p class="eyebrow">DEFINE · 04</p>
+<h1 class="figure-title" style="left:96px;top:96px;width:1728px;height:65px;font-size:42px;line-height:1.25">생성 이미지의 적용과 검증</h1>
+<svg class="diagram-line" style="left:1285px;top:284px" width="2" height="640"><line x1="0" y1="0" x2="0" y2="640" stroke="#CDC4B6" stroke-width="2"/></svg>
+<figure class="figure-frame" style="left:109.98px;top:266.00px;width:1102.04px;height:302.00px"><img alt="Figure 18" src="../slides/media/figure-18.png" style="position:absolute;left:0.00px;top:0.00px;width:1102.04px;height:302.00px" loading="eager"><video class="figure-video" data-src="../slides/media/figure-18.mp4" muted loop playsinline preload="none" aria-label="움직이는 Figure" poster="../slides/media/figure-18.png"></video></figure>
+<figure class="figure-frame" style="left:109.98px;top:622.00px;width:1102.04px;height:302.00px"><img alt="Figure 19" src="../slides/media/figure-19.png" style="position:absolute;left:0.00px;top:0.00px;width:1102.04px;height:302.00px" loading="eager"><video class="figure-video" data-src="../slides/media/figure-19.mp4" muted loop playsinline preload="none" aria-label="움직이는 Figure" poster="../slides/media/figure-19.png"></video></figure>
+<p class="diagram-text summary" style="left:96px;top:165px;width:1728px;height:52px;font-size:28px;color:#756F65;font-weight:400;text-align:left;line-height:1.4">생성 결과는 실제 화면에서 확인한다.</p>
+<p class="diagram-text prompt-label" style="left:1340px;top:295px;width:484px;height:70px;font-size:20px;color:#817A6E;font-weight:500;text-align:left;line-height:1.18">프롬프트 요지</p>
+<p class="diagram-text prompt-body" style="left:1340px;top:363px;width:484px;height:590px;font-size:30px;color:#24231F;font-weight:400;text-align:left;line-height:1.46">이미지 생성 도구를 사용해 디자인에 개성을 더해 줘.<br>API 키는 로컬에서만 사용하고, 결과를 브라우저에서 프레임 단위로 확인해.</p>
+<footer class="figure-footer"><span>DESIGN EYE</span><span>02  여덟 가지 기법</span><span>18 / 36</span></footer>
+<aside class="speaker-notes"><b>NOTE2.md · 기법 4</b><br>Figure 18~19: Quartz와 Quanta. 원문 생성 이미지 비교이며 HTML에서는 움직임을 보존한다.<br><br>NOTE2 근거:<br>- 프롬프트 요지: 밋밋한 디자인에 생성 이미지로 개성을 더하고, 셰이더나 3D 효과와의 조합도 고려하게 한다. API 키는 로컬에서만 쓰게 하고, 결과는 브라우저에서 프레임 단위로 확인하게 한다.<br><br>화면의 프롬프트는 NOTE2의 요지와 예시를 발표용 요청문으로 정리한 것이다.</aside>
+</section>
+<section class="slide minimal theme-paper layout-standard" data-hdr="none" data-part="2" aria-label="19. 정지 이미지의 루프 영상 전환">
+<p class="eyebrow">DEFINE · 05</p>
+<h1 class="figure-title" style="left:96px;top:96px;width:1728px;height:65px;font-size:42px;line-height:1.25">정지 이미지의 루프 영상 전환</h1>
+<svg class="diagram-line" style="left:96px;top:818px" width="1728" height="2"><line x1="0" y1="0" x2="1728" y2="0" stroke="#CDC4B6" stroke-width="2"/></svg>
+<figure class="figure-frame" style="left:96.00px;top:282.73px;width:1728.00px;height:473.54px"><img alt="Figure 20" src="../slides/media/figure-20.png" style="position:absolute;left:0.00px;top:0.00px;width:1728.00px;height:473.54px" loading="eager"><video class="figure-video" data-src="../slides/media/figure-20.mp4" muted loop playsinline preload="none" aria-label="움직이는 Figure" poster="../slides/media/figure-20.png"></video></figure>
+<p class="diagram-text summary" style="left:96px;top:165px;width:1728px;height:52px;font-size:28px;color:#756F65;font-weight:400;text-align:left;line-height:1.4">정지 이미지를 풍부한 루프 영상으로 확장한다.</p>
+<p class="diagram-text prompt-label" style="left:96px;top:848px;width:180px;height:92px;font-size:20px;color:#817A6E;font-weight:500;text-align:left;line-height:1.18">프롬프트 요지</p>
+<p class="diagram-text prompt-body" style="left:302px;top:840px;width:1522px;height:167px;font-size:30px;color:#24231F;font-weight:400;text-align:left;line-height:1.35">크리스털이 쪼개지며 천천히 회전하고, 배경을 굴절시키며 빛과 그림자를 드리우는 루프 영상을 만들어 줘.<br>페이지 배경색 위에 렌더링한 뒤 매팅으로 배경을 지워.<br>적합한 모델은 fal.ai에서 찾아 줘.</p>
+<footer class="figure-footer"><span>DESIGN EYE</span><span>02  여덟 가지 기법</span><span>19 / 36</span></footer>
+<aside class="speaker-notes"><b>NOTE2.md · 기법 5</b><br>Figure 20. Quartz의 크리스털 이미지를 반복 영상으로 확장한 원문 비교. HTML의 오른쪽 장면은 영상으로 움직이고 PDF/PPTX는 대표 정지 프레임이다.<br><br>NOTE2 근거:<br>- 프롬프트 요지: 페이지의 크리스털 이미지를, 쪼개지며 천천히 회전하고 배경을 굴절시키며 빛과 그림자를 드리우는 루프 영상으로 교체한다. 굴절이 자연스럽도록 페이지 배경색 위에서 먼저 렌더링한 뒤 매팅으로 배경을 지우고, 적합한 최신 모델은 fal.ai에서 찾게 한다.<br><br>화면의 프롬프트는 NOTE2의 요지와 예시를 발표용 요청문으로 정리한 것이다.</aside>
+</section>
+<section class="slide minimal theme-paper layout-standard" data-hdr="none" data-part="2" aria-label="20. 상태 간 전환과 스크롤 연동">
+<p class="eyebrow">DEFINE · 05</p>
+<h1 class="figure-title" style="left:96px;top:96px;width:1728px;height:65px;font-size:42px;line-height:1.25">상태 간 전환과 스크롤 연동</h1>
+<div class="diagram-shape" style="left:1290px;top:245px;width:630px;height:750px;background:#141412;border:2px solid transparent;border-radius:0px"></div>
+<figure class="figure-frame" style="left:96.00px;top:276.19px;width:1130.00px;height:635.62px"><img alt="Figure 21" src="../slides/media/figure-21.png" style="position:absolute;left:0.00px;top:0.00px;width:1130.00px;height:635.62px" loading="eager"><video class="figure-video" data-src="../slides/media/figure-21.mp4" muted loop playsinline preload="none" aria-label="움직이는 Figure" poster="../slides/media/figure-21.png"></video></figure>
+<p class="diagram-text summary" style="left:96px;top:165px;width:1728px;height:52px;font-size:28px;color:#756F65;font-weight:400;text-align:left;line-height:1.4">앞 장면의 끝을 다음 장면의 시작으로 쓴다.</p>
+<p class="diagram-text prompt-label" style="left:1340px;top:295px;width:484px;height:70px;font-size:20px;color:#ACA497;font-weight:500;text-align:left;line-height:1.18">프롬프트 요지</p>
+<p class="diagram-text prompt-body" style="left:1340px;top:363px;width:484px;height:590px;font-size:30px;color:#F6EFE2;font-weight:400;text-align:left;line-height:1.46">뜬 가방 → 내려앉아 열림 → 위에서 짐 담김을 스크롤에 맞는 세로 움직임으로 이어 줘.<br>첫 프레임은 이미지로 만들고, 각 클립의 마지막 프레임을 다음 시작으로 써.</p>
+<footer class="figure-footer"><span>DESIGN EYE</span><span>02  여덟 가지 기법</span><span>20 / 36</span></footer>
+<aside class="speaker-notes"><b>NOTE2.md · 기법 5</b><br>Figure 21. 여행 가방의 상태 사이를 영상으로 만들고 스크롤에 맞춰 재생 위치를 바꾸는 원문 데모다. 발표의 영상은 이를 보여주는 녹화물이며 슬라이드에서 직접 스크롤에 반응하는 구현은 아니다.<br><br>NOTE2 근거:<br>- 프롬프트 요지: 공중에 뜬 가방, 바닥에 내려앉아 열리는 가방, 위에서 짐이 가지런히 담기는 가방의 세 상태를 스크롤에 맞는 세로 움직임으로 잇는다. 첫 프레임은 이미지 생성으로 만들고, 각 클립의 마지막 프레임을 다음 전환의 시작으로 써서 이음매 없이 연결한다. Seedance 2.5처럼 물리와 일관성이 강한 모델을 쓴다.<br><br>화면의 프롬프트는 NOTE2의 요지와 예시를 발표용 요청문으로 정리한 것이다.</aside>
+</section>
+<section class="slide minimal theme-paper layout-standard" data-hdr="none" data-part="2" aria-label="21. 불필요한 요소 제거">
+<p class="eyebrow">DELIVER · 06</p>
+<h1 class="figure-title" style="left:96px;top:96px;width:1728px;height:65px;font-size:42px;line-height:1.25">불필요한 요소 제거</h1>
+<svg class="diagram-line" style="left:96px;top:818px" width="1728" height="2"><line x1="0" y1="0" x2="1728" y2="0" stroke="#CDC4B6" stroke-width="2"/></svg>
+<figure class="figure-frame" style="left:145.73px;top:255.00px;width:732.53px;height:485.00px"><img alt="BEFORE" src="../assets/how-to-turn-your-ai-into-a-world/figure-22-dc9186ef-2b04-42a0-a460-8898b0590797_1456x964.jpg" style="position:absolute;left:0.00px;top:0.00px;width:732.53px;height:485.00px" loading="eager"></figure><p class="figure-label" style="left:96px;top:752px;width:832px">BEFORE</p>
+<figure class="figure-frame" style="left:1041.73px;top:255.00px;width:732.53px;height:485.00px"><img alt="AFTER" src="../assets/how-to-turn-your-ai-into-a-world/figure-23-fdf80ee5-9f43-44e9-93cf-c477a9e49128_1456x964.jpg" style="position:absolute;left:0.00px;top:0.00px;width:732.53px;height:485.00px" loading="eager"></figure><p class="figure-label" style="left:992px;top:752px;width:832px">AFTER</p>
+<p class="diagram-text summary" style="left:96px;top:165px;width:1728px;height:52px;font-size:28px;color:#756F65;font-weight:400;text-align:left;line-height:1.4">필요한 것만 남기면 비주얼이 더 잘 전달된다.</p>
+<p class="diagram-text prompt-label" style="left:96px;top:848px;width:180px;height:92px;font-size:20px;color:#817A6E;font-weight:500;text-align:left;line-height:1.18">프롬프트 요지</p>
+<p class="diagram-text prompt-body" style="left:302px;top:840px;width:1522px;height:167px;font-size:30px;color:#24231F;font-weight:400;text-align:left;line-height:1.35">레이아웃을 이미지 중심 그리드로 단순화해 줘.<br>그라데이션·글로우·불필요한 컨테이너를 없애고, Apple 네이티브처럼 미니멀하게 다듬어 줘.</p>
+<footer class="figure-footer"><span>DESIGN EYE</span><span>02  여덟 가지 기법</span><span>21 / 36</span></footer>
+<aside class="speaker-notes"><b>NOTE2.md · 기법 6</b><br>Figure 22~23. 칼로리 앱에서 글로우, 불필요한 라벨, 커스텀 요소를 줄이고 이미지 그리드와 단순한 조작을 남긴 사례.<br><br>NOTE2 근거:<br>- 이미지 중심 그리드, 그라데이션과 글로우와 불필요한 컨테이너 제거, Apple 네이티브 같은 미니멀함을 요청한 결과(그림 23): 비주얼이 스스로 말하고, 네이티브 iOS 컴포넌트에 과한 색과 그라데이션이 사라졌으며, 텍스트는 작고 간결해졌다.<br>- AI는 디자인을 걷어 내고 코드를 지우는 걸 위험하게 여겨 스스로 하지 않으니, 사람이 밀어 줘야 한다. 정말 필요한 것만 남기면 사용자를 압도하지 않고 주의를 붙잡아 더 많이 전달한다.<br><br>화면의 프롬프트는 NOTE2의 요지와 예시를 발표용 요청문으로 정리한 것이다.</aside>
+</section>
+<section class="slide minimal theme-paper layout-standard" data-hdr="none" data-part="2" aria-label="22. 중복 라벨 제거">
+<p class="eyebrow">DELIVER · 07</p>
+<h1 class="figure-title" style="left:96px;top:96px;width:1728px;height:65px;font-size:42px;line-height:1.25">중복 라벨 제거</h1>
+<svg class="diagram-line" style="left:96px;top:818px" width="1728" height="2"><line x1="0" y1="0" x2="1728" y2="0" stroke="#CDC4B6" stroke-width="2"/></svg>
+<figure class="figure-frame" style="left:156.74px;top:258.00px;width:1606.51px;height:523.00px"><img alt="Figure 24" src="../assets/how-to-turn-your-ai-into-a-world/figure-24-65ceb75e-aeb7-411d-99fa-eacaad0dbdae_1456x2424.jpg" style="position:absolute;left:0.00px;top:-200.81px;width:1606.51px;height:2674.58px" loading="eager"></figure>
+<p class="diagram-text summary" style="left:96px;top:165px;width:1728px;height:52px;font-size:28px;color:#756F65;font-weight:400;text-align:left;line-height:1.4">당연한 내용을 반복하는 라벨은 덜어낸다.</p>
+<p class="diagram-text prompt-label" style="left:96px;top:848px;width:180px;height:92px;font-size:20px;color:#817A6E;font-weight:500;text-align:left;line-height:1.18">다듬기 요청 예시</p>
+<p class="diagram-text prompt-body" style="left:302px;top:840px;width:1522px;height:167px;font-size:30px;color:#24231F;font-weight:400;text-align:left;line-height:1.35">현재 화면의 작은 라벨을 점검해 줘.<br>제목이 이미 말하는 내용을 되풀이한다면 지우고, 전후를 비교해 줘.</p>
+<footer class="figure-footer"><span>DESIGN EYE</span><span>02  여덟 가지 기법</span><span>22 / 36</span></footer>
+<aside class="speaker-notes"><b>NOTE2.md · 기법 7</b><br>Figure 24의 첫 번째 비교. 당연한 내용을 되풀이하는 아이브로우 라벨을 덜어낸다. 왼쪽이 흔한 패턴, 오른쪽이 대안이다.<br><br>NOTE2 근거:<br>| 뻔한 내용을 반복하는 작은 아이브로우 텍스트 | 대부분 지워도 잃는 게 없다 |<br>- 처음부터 프롬프트로 금지하는 건 권하지 않는다. 모든 그라데이션이나 카드가 나쁜 건 아니고, 금지하면 AI가 지나치게 고민해 더 이상한 패턴을 만들 수 있다. 다듬는 단계에서 이 목록으로 점검하고 대안을 시도해 비교한다.<br><br>화면의 프롬프트는 NOTE2의 요지와 예시를 발표용 요청문으로 정리한 것이다.</aside>
+</section>
+<section class="slide minimal theme-paper layout-standard" data-hdr="none" data-part="2" aria-label="23. 배경의 의도와 대안">
+<p class="eyebrow">DELIVER · 07</p>
+<h1 class="figure-title" style="left:96px;top:96px;width:1728px;height:65px;font-size:42px;line-height:1.25">배경의 의도와 대안</h1>
+<svg class="diagram-line" style="left:96px;top:818px" width="1728" height="2"><line x1="0" y1="0" x2="1728" y2="0" stroke="#CDC4B6" stroke-width="2"/></svg>
+<figure class="figure-frame" style="left:126.86px;top:258.00px;width:1666.28px;height:523.00px"><img alt="Figure 24" src="../assets/how-to-turn-your-ai-into-a-world/figure-24-65ceb75e-aeb7-411d-99fa-eacaad0dbdae_1456x2424.jpg" style="position:absolute;left:0.00px;top:-904.09px;width:1666.28px;height:2774.07px" loading="eager"></figure>
+<p class="diagram-text summary" style="left:96px;top:165px;width:1728px;height:52px;font-size:28px;color:#756F65;font-weight:400;text-align:left;line-height:1.4">배경도 목적에 맞춰 고른다.</p>
+<p class="diagram-text prompt-label" style="left:96px;top:848px;width:180px;height:92px;font-size:20px;color:#817A6E;font-weight:500;text-align:left;line-height:1.18">다듬기 요청 예시</p>
+<p class="diagram-text prompt-body" style="left:302px;top:840px;width:1522px;height:167px;font-size:30px;color:#24231F;font-weight:400;text-align:left;line-height:1.35">배경 그라데이션을 이미지·패턴·단색으로 바꾼 안을 시도해 줘.<br>원래 안과 비교해 더 어울리는 쪽을 고르자.</p>
+<footer class="figure-footer"><span>DESIGN EYE</span><span>02  여덟 가지 기법</span><span>23 / 36</span></footer>
+<aside class="speaker-notes"><b>NOTE2.md · 기법 7</b><br>Figure 24의 두 번째 비교. 일반적인 배경 그라데이션 대신 해당 경험에 어울리는 이미지를 쓴 예다. 모든 그라데이션을 금지하라는 의미는 아니다.<br><br>NOTE2 근거:<br>| 흔한 배경 그라데이션 | 배경 이미지, 패턴, 단색 |<br>- 처음부터 프롬프트로 금지하는 건 권하지 않는다. 모든 그라데이션이나 카드가 나쁜 건 아니고, 금지하면 AI가 지나치게 고민해 더 이상한 패턴을 만들 수 있다. 다듬는 단계에서 이 목록으로 점검하고 대안을 시도해 비교한다.<br><br>화면의 프롬프트는 NOTE2의 요지와 예시를 발표용 요청문으로 정리한 것이다.</aside>
+</section>
+<section class="slide minimal theme-paper layout-standard" data-hdr="none" data-part="2" aria-label="24. 콘텐츠 중심의 평면 구성">
+<p class="eyebrow">DELIVER · 07</p>
+<h1 class="figure-title" style="left:96px;top:96px;width:1728px;height:65px;font-size:42px;line-height:1.25">콘텐츠 중심의 평면 구성</h1>
+<svg class="diagram-line" style="left:96px;top:818px" width="1728" height="2"><line x1="0" y1="0" x2="1728" y2="0" stroke="#CDC4B6" stroke-width="2"/></svg>
+<figure class="figure-frame" style="left:155.04px;top:258.00px;width:1609.91px;height:523.00px"><img alt="Figure 24" src="../assets/how-to-turn-your-ai-into-a-world/figure-24-65ceb75e-aeb7-411d-99fa-eacaad0dbdae_1456x2424.jpg" style="position:absolute;left:0.00px;top:-1478.33px;width:1609.91px;height:2680.24px" loading="eager"></figure>
+<p class="diagram-text summary" style="left:96px;top:165px;width:1728px;height:52px;font-size:28px;color:#756F65;font-weight:400;text-align:left;line-height:1.4">평평한 레이아웃으로 내용에 시선을 모은다.</p>
+<p class="diagram-text prompt-label" style="left:96px;top:848px;width:180px;height:92px;font-size:20px;color:#817A6E;font-weight:500;text-align:left;line-height:1.18">다듬기 요청 예시</p>
+<p class="diagram-text prompt-body" style="left:302px;top:840px;width:1522px;height:167px;font-size:30px;color:#24231F;font-weight:400;text-align:left;line-height:1.35">불필요한 카드와 컨테이너를 줄이고, 그리드나 타일처럼 평평한 레이아웃으로 정리해 줘.<br>원래 안과 비교해 줘.</p>
+<footer class="figure-footer"><span>DESIGN EYE</span><span>02  여덟 가지 기법</span><span>24 / 36</span></footer>
+<aside class="speaker-notes"><b>NOTE2.md · 기법 7</b><br>Figure 24의 세 번째 비교. 모든 요소를 카드로 감싸기보다 평평한 그리드로 정리하는 대안을 보여 준다.<br><br>NOTE2 근거:<br>| 과도한 카드와 컨테이너 | 그리드나 타일 같은 평평한 레이아웃 |<br>- 처음부터 프롬프트로 금지하는 건 권하지 않는다. 모든 그라데이션이나 카드가 나쁜 건 아니고, 금지하면 AI가 지나치게 고민해 더 이상한 패턴을 만들 수 있다. 다듬는 단계에서 이 목록으로 점검하고 대안을 시도해 비교한다.<br><br>화면의 프롬프트는 NOTE2의 요지와 예시를 발표용 요청문으로 정리한 것이다.</aside>
+</section>
+<section class="slide minimal theme-paper layout-standard" data-hdr="none" data-part="2" aria-label="25. 글자 스타일의 절제">
+<p class="eyebrow">DELIVER · 07</p>
+<h1 class="figure-title" style="left:96px;top:96px;width:1728px;height:65px;font-size:42px;line-height:1.25">글자 스타일의 절제</h1>
+<svg class="diagram-line" style="left:96px;top:818px" width="1728" height="2"><line x1="0" y1="0" x2="1728" y2="0" stroke="#CDC4B6" stroke-width="2"/></svg>
+<figure class="figure-frame" style="left:165.13px;top:258.00px;width:1589.75px;height:523.00px"><img alt="Figure 24" src="../assets/how-to-turn-your-ai-into-a-world/figure-24-65ceb75e-aeb7-411d-99fa-eacaad0dbdae_1456x2424.jpg" style="position:absolute;left:0.00px;top:-2123.66px;width:1589.75px;height:2646.66px" loading="eager"></figure>
+<p class="diagram-text summary" style="left:96px;top:165px;width:1728px;height:52px;font-size:28px;color:#756F65;font-weight:400;text-align:left;line-height:1.4">적은 글꼴과 스타일로 화면을 정리한다.</p>
+<p class="diagram-text prompt-label" style="left:96px;top:848px;width:180px;height:92px;font-size:20px;color:#817A6E;font-weight:500;text-align:left;line-height:1.18">다듬기 요청 예시</p>
+<p class="diagram-text prompt-body" style="left:302px;top:840px;width:1522px;height:167px;font-size:30px;color:#24231F;font-weight:400;text-align:left;line-height:1.35">글꼴 1~2개, 스타일 2~4개로 정리해 줘.<br>강조색과 이탤릭은 꼭 필요한 곳에만 남기고, 정리 전후를 비교해 줘.</p>
+<footer class="figure-footer"><span>DESIGN EYE</span><span>02  여덟 가지 기법</span><span>25 / 36</span></footer>
+<aside class="speaker-notes"><b>NOTE2.md · 기법 7</b><br>Figure 24의 네 번째 비교. 글꼴 1~2개와 스타일 2~4개로 시작하고, 강조색과 이탤릭을 절제하라는 원문 조언.<br><br>NOTE2 근거:<br>| 너무 많은 폰트, 스타일, 크기 단계 | 폰트 1~2개, 스타일 2~4개로 시작하고 강조색과 이탤릭은 아껴 쓴다 |<br>- 처음부터 프롬프트로 금지하는 건 권하지 않는다. 모든 그라데이션이나 카드가 나쁜 건 아니고, 금지하면 AI가 지나치게 고민해 더 이상한 패턴을 만들 수 있다. 다듬는 단계에서 이 목록으로 점검하고 대안을 시도해 비교한다.<br><br>화면의 프롬프트는 NOTE2의 요지와 예시를 발표용 요청문으로 정리한 것이다.</aside>
+</section>
+<section class="slide minimal theme-paper layout-standard" data-hdr="none" data-part="2" aria-label="26. 카피의 직접 수정">
+<p class="eyebrow">DELIVER · 08</p>
+<h1 class="figure-title" style="left:96px;top:96px;width:1728px;height:65px;font-size:42px;line-height:1.25">카피의 직접 수정</h1>
+<svg class="diagram-line" style="left:96px;top:818px" width="1728" height="2"><line x1="0" y1="0" x2="1728" y2="0" stroke="#CDC4B6" stroke-width="2"/></svg>
+<figure class="figure-frame" style="left:1181.43px;top:240.00px;width:407.14px;height:545.00px"><img alt="Figure 25" src="../assets/how-to-turn-your-ai-into-a-world/figure-25-3174cc8a-c197-4be5-991d-0834d05cfc42_1456x1949.png" style="position:absolute;left:0.00px;top:0.00px;width:407.14px;height:545.00px" loading="eager"></figure>
+<p class="diagram-text " style="left:150px;top:383px;width:810px;height:125px;font-size:60px;color:#24231F;font-weight:500;text-align:left;line-height:1.18">4단락 → 2단락</p>
+<p class="diagram-text summary" style="left:96px;top:165px;width:1728px;height:52px;font-size:28px;color:#756F65;font-weight:400;text-align:left;line-height:1.4">AI 초안은 사람이 읽고 자기 목소리로 다시 쓴다.</p>
+<p class="diagram-text prompt-label" style="left:96px;top:848px;width:180px;height:92px;font-size:20px;color:#817A6E;font-weight:500;text-align:left;line-height:1.18">직접 다듬기</p>
+<p class="diagram-text prompt-body" style="left:302px;top:840px;width:1522px;height:167px;font-size:30px;color:#24231F;font-weight:400;text-align:left;line-height:1.35">AI 초안은 자리표시자로 보고, 내가 모든 줄을 읽고 다시 쓴다.<br>제품이 무엇이며 무엇을 해 주는지 짧게 말하고, 일관된 목소리로 다듬는다.</p>
+<footer class="figure-footer"><span>DESIGN EYE</span><span>02  여덟 가지 기법</span><span>26 / 36</span></footer>
+<aside class="speaker-notes"><b>NOTE2.md · 기법 8</b><br>Figure 25는 Claude의 Lantern 마케팅 카피와 저자의 수정본 비교다. 그림의 글을 전부 읽기보다 분량과 밀도 차이를 보여 준다. AI 초안은 자리표시자로 보고 사람이 한 줄씩 다시 읽고 고친다.<br>세 단계 요약: 발견 → 정의 → 전달을 통해 제품만의 느낌을 만든다.<br><br>NOTE2 근거:<br>- AI 카피는 디자이너의 &#x27;Lorem ipsum&#x27;처럼 구조를 보기 위한 자리표시자로 보고, 사람이 모든 줄을 읽어 일관된 목소리로 다시 쓴다.<br>- 비교(그림 25): 데이터베이스 쿼리 분석 제품 Lantern의 홍보 문구다. Claude 버전은 비유와 기술 세부를 길게 늘어놓고, 저자 버전은 제품이 무엇이고 무엇을 해 주는지만 짧게 말한 뒤 무료 연결을 권한다.<br><br>화면의 프롬프트는 NOTE2의 요지와 예시를 발표용 요청문으로 정리한 것이다.</aside>
+</section>
+<section class="slide minimal theme-ink layout-case-opener" data-hdr="none" data-part="3" aria-label="27. 레퍼런스 기반의 제작 과정">
+<p class="eyebrow">03 · CLAUDE CODE</p>
+<h1 class="figure-title" style="left:96px;top:735px;width:720px;height:80px;font-size:42px;line-height:1.25">레퍼런스 기반의 제작 과정</h1>
+<figure class="figure-frame" style="left:0.00px;top:0.25px;width:1920.00px;height:615.50px"><img alt="49 in action sites" src="../assets/guide1-mov/crops/49-in-action-sites.png" style="position:absolute;left:0.00px;top:0.00px;width:1920.00px;height:615.50px" loading="eager"></figure>
+<p class="diagram-text " style="left:996px;top:736px;width:160px;height:36px;font-size:20px;color:#ACA497;font-weight:400;text-align:left;line-height:1.18">01</p>
+<p class="diagram-text " style="left:996px;top:801px;width:160px;height:55px;font-size:32px;color:#F6EFE2;font-weight:500;text-align:left;line-height:1.18">찾기</p>
+<p class="diagram-text " style="left:1216px;top:736px;width:160px;height:36px;font-size:20px;color:#ACA497;font-weight:400;text-align:left;line-height:1.18">02</p>
+<p class="diagram-text " style="left:1216px;top:801px;width:160px;height:55px;font-size:32px;color:#F6EFE2;font-weight:500;text-align:left;line-height:1.18">전달</p>
+<p class="diagram-text " style="left:1436px;top:736px;width:160px;height:36px;font-size:20px;color:#ACA497;font-weight:400;text-align:left;line-height:1.18">03</p>
+<p class="diagram-text " style="left:1436px;top:801px;width:160px;height:55px;font-size:32px;color:#F6EFE2;font-weight:500;text-align:left;line-height:1.18">비교</p>
+<p class="diagram-text " style="left:1656px;top:736px;width:160px;height:36px;font-size:20px;color:#ACA497;font-weight:400;text-align:left;line-height:1.18">04</p>
+<p class="diagram-text " style="left:1656px;top:801px;width:160px;height:55px;font-size:32px;color:#F6EFE2;font-weight:500;text-align:left;line-height:1.18">기록</p>
+<p class="diagram-text summary" style="left:96px;top:830px;width:680px;height:130px;font-size:28px;color:#C3BBAE;font-weight:400;text-align:left;line-height:1.45">참고 자료와 목표를 한 프롬프트에 담고, 화면을 보며 고친다.</p>
+<footer class="figure-footer"><span>DESIGN EYE</span><span>03  Claude Code 실전</span><span>27 / 36</span></footer>
+<aside class="speaker-notes"><b>HOW_DESIGN_FROM_CC.md · §1 전체 흐름</b><br>출처: HOW_DESIGN_FROM_CC.md §1. The AI Automators의 원문은 세 랜딩 페이지를 각각 프롬프트 하나로 만든 뒤 한두 번 수정했다고 설명한다. frontend-design 스킬과 gauntlet loop를 함께 사용했다는 원문의 설명을 요약한다. 진행 순서는 준비 → 참고 자료 수집 → 선호와 목표를 프롬프트로 전달 → 구현과 스크린샷 검토 → 수정 → 디자인 시스템 기록이다. 보이는 세 결과 이미지는 기존 영상에서 추출한 실제 Figure다. 원문: https://www.theaiautomators.com/claude-design-inspiration-all-the-links-from-the-video/</aside>
+</section>
+<section class="slide minimal theme-paper layout-standard" data-hdr="none" data-part="3" aria-label="28. 목적별 디자인 참고 자료">
+<p class="eyebrow">03 · REFERENCE</p>
+<h1 class="figure-title" style="left:96px;top:96px;width:1728px;height:65px;font-size:42px;line-height:1.25">목적별 디자인 참고 자료</h1>
+<figure class="figure-frame" style="left:96.14px;top:230.00px;width:551.72px;height:300.00px"><img alt="Reference · Awwwards" src="../slides/img/sites/awwwards.png" style="position:absolute;left:0.00px;top:0.00px;width:551.72px;height:344.83px" loading="eager"></figure><p class="figure-label" style="left:96px;top:542px;width:552px">Reference · Awwwards</p>
+<figure class="figure-frame" style="left:684.49px;top:230.00px;width:551.02px;height:300.00px"><img alt="Component · 21st.dev" src="../slides/img/sites/21stdev.png" style="position:absolute;left:-53.06px;top:-40.82px;width:653.06px;height:408.16px" loading="eager"></figure><p class="figure-label" style="left:684px;top:542px;width:552px">Component · 21st.dev</p>
+<figure class="figure-frame" style="left:1272.22px;top:230.00px;width:551.55px;height:300.00px"><img alt="Font · Fonts In Use" src="../slides/img/sites/fontsinuse.png" style="position:absolute;left:-22.36px;top:-3.73px;width:596.27px;height:372.67px" loading="eager"></figure><p class="figure-label" style="left:1272px;top:542px;width:552px">Font · Fonts In Use</p>
+<figure class="figure-frame" style="left:390.00px;top:668.50px;width:552.00px;height:163.01px"><img alt="Color · Coolors" src="../slides/img/sites/coolors.png" style="position:absolute;left:-20.38px;top:-175.97px;width:592.75px;height:370.47px" loading="eager"></figure><p class="figure-label" style="left:390px;top:902px;width:552px">Color · Coolors</p>
+<figure class="figure-frame" style="left:978.00px;top:656.12px;width:552.00px;height:187.76px"><img alt="System · Branding Style Guides" src="../slides/img/sites/brandingstyleguides.png" style="position:absolute;left:-18.78px;top:-161.47px;width:600.82px;height:375.51px" loading="eager"></figure><p class="figure-label" style="left:978px;top:902px;width:552px">System · Branding Style Guides</p>
+<p class="diagram-text summary" style="left:96px;top:165px;width:1728px;height:52px;font-size:28px;color:#756F65;font-weight:400;text-align:left;line-height:1.4">화면, 부품, 글꼴, 색, 규칙에 맞는 자료를 따로 찾는다.</p>
+<footer class="figure-footer"><span>DESIGN EYE</span><span>03  Claude Code 실전</span><span>28 / 36</span></footer>
+<aside class="speaker-notes"><b>HOW_DESIGN_FROM_CC.md · §2 참고 자료 찾기</b><br>출처: HOW_DESIGN_FROM_CC.md §2. 슬라이드에서는 갤러리와 실제 제품 화면을 Reference로 묶어 다섯 범주로 간추렸다. Reference는 Awwwards·Siteinspire·Lapa Ninja에서 전체 구성과 분위기, Mobbin·Refero에서 실제 화면과 플로우를 찾는다. Component는 21st.dev·React Bits, Font는 Fonts In Use·Google Fonts, Color는 Coolors, System은 Branding Style Guides·Refero Styles를 참고한다. 이미지들은 보관된 사이트 캡처이며 영상 당시 모습과 같다고 주장하지 않는다. URL: https://www.awwwards.com/ ; https://mobbin.com/ ; https://21st.dev/ ; https://reactbits.dev/ ; https://fontsinuse.com/ ; https://fonts.google.com/ ; https://coolors.co/palettes/trending ; https://brandingstyleguides.com/ ; https://styles.refero.design/ . 사이트 가격·무료 한도·라이선스는 원문 노트에 남기고 발표 화면에서 생략한다.</aside>
+</section>
+<section class="slide minimal theme-paper layout-standard" data-hdr="none" data-part="3" aria-label="29. 선호 요소와 제외 요소">
+<p class="eyebrow">03 · CAPTURE</p>
+<h1 class="figure-title" style="left:96px;top:96px;width:1728px;height:65px;font-size:42px;line-height:1.25">선호 요소와 제외 요소</h1>
+<figure class="figure-frame" style="left:96.00px;top:320.02px;width:670.00px;height:237.97px"><img alt="GoFullPage" src="../slides/img/sites/gofullpage.png" style="position:absolute;left:-132.84px;top:-51.98px;width:924.14px;height:577.59px" loading="eager"></figure><p class="figure-label" style="left:96px;top:570px;width:670px">GoFullPage</p>
+<figure class="figure-frame" style="left:956.07px;top:245.00px;width:867.85px;height:518.00px"><img alt="사진 ✓   색·글꼴 ×" src="../slides/img/sites/nimmobay.png" style="position:absolute;left:0.00px;top:-24.41px;width:867.85px;height:542.41px" loading="eager"></figure><p class="figure-label" style="left:956px;top:775px;width:868px">사진 ✓   색·글꼴 ×</p>
+<p class="diagram-text " style="left:205px;top:665px;width:480px;height:60px;font-size:42px;color:#756F65;font-weight:500;text-align:left;line-height:1.18">ref/site1.png</p>
+<p class="diagram-text " style="left:805px;top:475px;width:100px;height:100px;font-size:60px;color:#756F65;font-weight:500;text-align:left;line-height:1.18">→</p>
+<p class="diagram-text summary" style="left:96px;top:165px;width:1728px;height:52px;font-size:28px;color:#756F65;font-weight:400;text-align:left;line-height:1.4">이미지 경로와 함께 좋아하는 점과 피할 점을 적는다.</p>
+<footer class="figure-footer"><span>DESIGN EYE</span><span>03  Claude Code 실전</span><span>29 / 36</span></footer>
+<aside class="speaker-notes"><b>HOW_DESIGN_FROM_CC.md · §3 참고 자료 전달</b><br>출처: HOW_DESIGN_FROM_CC.md §3. GoFullPage는 전체 페이지, macOS Command+Shift+4와 Windows Snipping Tool은 부분 캡처에 쓴다. 서브에이전트가 같은 자료를 열 수 있도록 ref/site1.png 같은 프로젝트 경로에 이미지를 저장한다. 메인 대화에 붙여 넣은 이미지는 서브에이전트에게 자동으로 전달되지 않는다는 문서의 설명을 반영했다. Blackwater 프롬프트는 Nimmo Bay의 사진 히어로와 낮은 제목 배치를 좋아하되, 색과 글꼴은 가져오지 않겠다고 명시했다. 원하는 것과 원하지 않는 것을 나눠 적고 복사하지 말라는 조건을 덧붙인다. URL: https://gofullpage.com/ ; https://www.nimmobay.com/ . GoFullPage 이미지는 소개 페이지 상단을 자른 실제 캡처다.</aside>
+</section>
+<section class="slide minimal theme-paper layout-standard" data-hdr="none" data-part="3" aria-label="30. 디자인 브리프 구성">
+<p class="eyebrow">03 · PROMPT</p>
+<h1 class="figure-title" style="left:96px;top:96px;width:1728px;height:65px;font-size:42px;line-height:1.25">디자인 브리프 구성</h1>
+<div class="diagram-shape" style="left:1050px;top:235px;width:700px;height:650px;background:#EFE6D7;border:2px solid transparent;border-radius:0px"></div>
+<div class="diagram-shape" style="left:1110px;top:540px;width:150px;height:100px;background:#242424;border:2px solid #242424;border-radius:0px"></div>
+<div class="diagram-shape" style="left:1280px;top:540px;width:150px;height:100px;background:#F5F1E6;border:2px solid #D8D6CF;border-radius:0px"></div>
+<div class="diagram-shape" style="left:1450px;top:540px;width:150px;height:100px;background:#BD7F36;border:2px solid #BD7F36;border-radius:0px"></div>
+<figure class="figure-frame" style="left:96.45px;top:280.00px;width:789.11px;height:471.00px"><img alt="참고 화면" src="../slides/img/sites/nimmobay.png" style="position:absolute;left:0.00px;top:-22.19px;width:789.11px;height:493.19px" loading="eager"></figure><p class="figure-label" style="left:96px;top:763px;width:790px">참고 화면</p>
+<p class="diagram-text " style="left:930px;top:480px;width:80px;height:90px;font-size:60px;color:#756F65;font-weight:500;text-align:left;line-height:1.18">→</p>
+<p class="diagram-text " style="left:1110px;top:290px;width:580px;height:55px;font-size:40px;color:#756F65;font-weight:500;text-align:left;line-height:1.18">BRIEF</p>
+<p class="diagram-text " style="left:1110px;top:390px;width:560px;height:65px;font-size:44px;color:#756F65;font-weight:500;text-align:left;line-height:1.18">빈 날짜 확인</p>
+<p class="diagram-text " style="left:1110px;top:463px;width:560px;height:50px;font-size:30px;color:#756F65;font-weight:500;text-align:left;line-height:1.18">어둡고 조용한 호숫가</p>
+<p class="diagram-text " style="left:1110px;top:710px;width:560px;height:60px;font-size:36px;color:#756F65;font-weight:500;text-align:left;line-height:1.18">세리프 · 넓은 여백</p>
+<p class="diagram-text " style="left:1110px;top:790px;width:560px;height:50px;font-size:30px;color:#756F65;font-weight:500;text-align:left;line-height:1.18">화면마다 행동 하나</p>
+<p class="diagram-text summary" style="left:96px;top:165px;width:1728px;height:52px;font-size:28px;color:#756F65;font-weight:400;text-align:left;line-height:1.4">목표 행동부터 색과 여백, 검증 방법까지 미리 정한다.</p>
+<footer class="figure-footer"><span>DESIGN EYE</span><span>03  Claude Code 실전</span><span>30 / 36</span></footer>
+<aside class="speaker-notes"><b>HOW_DESIGN_FROM_CC.md · §4 프롬프트 구성</b><br>출처: HOW_DESIGN_FROM_CC.md §4, §7. 오른쪽은 Blackwater 사례의 프롬프트 내용을 압축한 개념도이며 실제 도구 화면이 아니다. 참고 자료, 목표 행동, 구성, 분위기, 색, 글꼴, 여백, 움직임, 문구, 이미지·영상, 성능, 기술 조건, 검증 방법, 진행 방식을 한 프롬프트에 담는다. Blackwater의 목표는 빈 날짜 확인과 예약이다. 어둡고 영화 같고 조용한 호숫가, 차콜 배경, 따뜻한 오프화이트 글자, 버튼·링크·가격에만 앰버를 쓴다. 세리프 제목과 넉넉한 여백을 선택한다. 색상 칩의 HEX는 이 설명을 시각화한 예시이지 원문에 적힌 정확한 토큰이 아니다. 왼쪽은 참고 사이트 Nimmo Bay의 실제 캡처다: https://www.nimmobay.com/ . 일반적인 금지 목록을 외우기보다 자신의 의뢰에 필요한 결정을 명시한다.</aside>
+</section>
+<section class="slide minimal theme-paper layout-standard" data-hdr="none" data-part="3" aria-label="31. 스크롤 모션의 응용">
+<p class="eyebrow">03 · SOUTHSIDE BREWING</p>
+<h1 class="figure-title" style="left:96px;top:96px;width:1728px;height:65px;font-size:42px;line-height:1.25">스크롤 모션의 응용</h1>
+<figure class="figure-frame" style="left:96.20px;top:290.00px;width:769.60px;height:481.00px"><img alt="Oryzo" src="../slides/img/sites/oryzo-2.png" style="position:absolute;left:0.00px;top:0.00px;width:769.60px;height:481.00px" loading="eager"></figure><p class="figure-label" style="left:96px;top:783px;width:770px">Oryzo</p>
+<figure class="figure-frame" style="left:980.00px;top:280.20px;width:844.00px;height:502.60px"><img alt="Southside Brewing" src="../assets/guide1-mov/crops/51-southside-brewing.png" style="position:absolute;left:0.00px;top:0.00px;width:844.00px;height:502.60px" loading="eager"></figure><p class="figure-label" style="left:980px;top:795px;width:844px">Southside Brewing</p>
+<p class="diagram-text " style="left:893px;top:483px;width:65px;height:80px;font-size:60px;color:#756F65;font-weight:500;text-align:left;line-height:1.18">→</p>
+<p class="diagram-text summary" style="left:96px;top:165px;width:1728px;height:52px;font-size:28px;color:#756F65;font-weight:400;text-align:left;line-height:1.4">참고 사이트의 스크롤 효과를 맥주 캔에 맞게 바꾼다.</p>
+<footer class="figure-footer"><span>DESIGN EYE</span><span>03  Claude Code 실전</span><span>31 / 36</span></footer>
+<aside class="speaker-notes"><b>HOW_DESIGN_FROM_CC.md · §5.1 Southside Brewing</b><br>출처: HOW_DESIGN_FROM_CC.md §5.1. 참고 사이트는 Lusion이 만든 Oryzo다. 프롬프트는 스크롤에 따라 3D 물체가 움직이는 방식을 관찰하되, 물체·색·레이아웃은 Southside Brewing에 맞추라고 요청했다. 목표는 가까운 펍이나 판매처 찾기다. Three.js의 기본 도형으로 캔을 만들고, 라벨을 캔버스에 그려 적용한다. 캔의 회전·마우스 기울기와 첫 화면→맛 소개→판매처의 세 장면을 명시했다. 짙은 청록 배경, 탁한 호박색 캔, 오프화이트 글자, CTA에만 라임색을 쓴다. 움직임 줄이기와 WebGL 대체 화면도 지시한다. 오른쪽은 영상에서 추출한 실제 결과 Figure다. URL: https://oryzo.ai/ ; https://lusion.co/</aside>
+</section>
+<section class="slide minimal theme-paper layout-standard" data-hdr="none" data-part="3" aria-label="32. 영상, 색, 카드의 조합">
+<p class="eyebrow">03 · HARBOUR LANE COFFEE</p>
+<h1 class="figure-title" style="left:96px;top:96px;width:1728px;height:65px;font-size:42px;line-height:1.25">영상, 색, 카드의 조합</h1>
+<figure class="figure-frame" style="left:100.33px;top:335.00px;width:511.33px;height:390.00px"><img alt="영상 · Café Technica" src="../slides/img/sites/cafetechnica-2.png" style="position:absolute;left:-112.67px;top:0.00px;width:693.33px;height:433.33px" loading="eager"></figure><p class="figure-label" style="left:96px;top:737px;width:520px">영상 · Café Technica</p>
+<figure class="figure-frame" style="left:650.00px;top:337.53px;width:520.00px;height:384.94px"><img alt="색·카드 · La Colombe" src="../slides/img/sites/lacolombe-2.png" style="position:absolute;left:-13.51px;top:-148.57px;width:1080.52px;height:675.32px" loading="eager"></figure><p class="figure-label" style="left:650px;top:737px;width:520px">색·카드 · La Colombe</p>
+<figure class="figure-frame" style="left:1314.00px;top:300.00px;width:510.00px;height:452.00px"><img alt="Harbour Lane" src="../assets/guide1-mov/crops/50-harbour-lane.png" style="position:absolute;left:0.00px;top:0.00px;width:510.00px;height:452.00px" loading="eager"></figure><p class="figure-label" style="left:1314px;top:764px;width:510px">Harbour Lane</p>
+<p class="diagram-text " style="left:1210px;top:488px;width:70px;height:80px;font-size:60px;color:#756F65;font-weight:500;text-align:left;line-height:1.18">→</p>
+<p class="diagram-text summary" style="left:96px;top:165px;width:1728px;height:52px;font-size:28px;color:#756F65;font-weight:400;text-align:left;line-height:1.4">영상, 색, 카드의 참고 화면을 나눠 커피 브랜드에 적용한다.</p>
+<footer class="figure-footer"><span>DESIGN EYE</span><span>03  Claude Code 실전</span><span>32 / 36</span></footer>
+<aside class="speaker-notes"><b>HOW_DESIGN_FROM_CC.md · §5.2 Harbour Lane Coffee</b><br>출처: HOW_DESIGN_FROM_CC.md §5.2. 세 참고 사이트의 스크린샷을 주고, 만들기 전에 취향부터 분석하라고 했다. Café Technica에서는 가로로 확장되는 영상 히어로, La Colombe에서는 색·큰 사진·카드, Anna Jóna에서는 큰 글자·이미지·스토리텔링을 참고했다. Anna Jóna의 애니메이션은 원하지 않는다고 명시했다. 슬라이드는 Café Technica와 La Colombe를 보여 주며 Anna Jóna의 현재 캡처는 폐업 안내가 있어 생략했다. 결과는 골웨이의 작은 커피 로스터를 위한 랜딩 페이지로, 동네 사람이 가게에 와서 원두를 사게 하는 것이 목표다. 시작 전에 필요한 질문을 하게 했고, 실제 사진을 넣을 자리와 생성할 영상을 구분해야 한다. 오른쪽 결과 Figure는 영상에서 추출한 510×452 이미지라 원본 크기에 가깝게 배치했다. URL: https://www.cafetechnica.com.au/ ; https://www.lacolombe.com/ ; https://www.annajona.is/</aside>
+</section>
+<section class="slide minimal theme-paper layout-standard" data-hdr="none" data-part="3" aria-label="33. 사진, 분위기, 여백의 조합">
+<p class="eyebrow">03 · BLACKWATER CABINS</p>
+<h1 class="figure-title" style="left:96px;top:96px;width:1728px;height:65px;font-size:42px;line-height:1.25">사진, 분위기, 여백의 조합</h1>
+<figure class="figure-frame" style="left:96.04px;top:230.00px;width:495.92px;height:296.00px"><img alt="사진 · Nimmo Bay" src="../slides/img/sites/nimmobay.png" style="position:absolute;left:0.00px;top:-13.95px;width:495.92px;height:309.95px" loading="eager"></figure><p class="figure-label" style="left:96px;top:538px;width:496px">사진 · Nimmo Bay</p>
+<figure class="figure-frame" style="left:624.00px;top:246.25px;width:496.00px;height:263.50px"><img alt="분위기 · Vipp" src="../slides/img/sites/vipp-2.png" style="position:absolute;left:0.00px;top:-13.33px;width:496.00px;height:310.00px" loading="eager"></figure><p class="figure-label" style="left:624px;top:538px;width:496px">분위기 · Vipp</p>
+<figure class="figure-frame" style="left:96.00px;top:620.23px;width:1024.00px;height:289.54px"><img alt="여백 · Amangiri" src="../slides/img/sites/amangiri-2.png" style="position:absolute;left:-56.50px;top:-112.99px;width:1129.93px;height:706.21px" loading="eager"></figure><p class="figure-label" style="left:96px;top:922px;width:1024px">여백 · Amangiri</p>
+<figure class="figure-frame" style="left:1325.00px;top:345.43px;width:494.00px;height:424.14px"><img alt="Blackwater Cabins" src="../assets/guide1-mov/crops/52-blackwater-cabins.png" style="position:absolute;left:0.00px;top:0.00px;width:494.00px;height:424.14px" loading="eager"></figure><p class="figure-label" style="left:1325px;top:782px;width:494px">Blackwater Cabins</p>
+<p class="diagram-text " style="left:1180px;top:490px;width:80px;height:80px;font-size:60px;color:#756F65;font-weight:500;text-align:left;line-height:1.18">→</p>
+<p class="diagram-text summary" style="left:96px;top:165px;width:1728px;height:52px;font-size:28px;color:#756F65;font-weight:400;text-align:left;line-height:1.4">사진과 분위기, 카드의 여백을 각각 골라 숙소 페이지를 만든다.</p>
+<footer class="figure-footer"><span>DESIGN EYE</span><span>03  Claude Code 실전</span><span>33 / 36</span></footer>
+<aside class="speaker-notes"><b>HOW_DESIGN_FROM_CC.md · §5.3 Blackwater Cabins</b><br>출처: HOW_DESIGN_FROM_CC.md §5.3. Nimmo Bay는 사진 히어로, Vipp Guesthouses는 어둡고 대비가 강한 분위기와 얇은 고정 메뉴, Aman Amangiri는 큰 사진·작은 라벨·세리프 제목·넉넉한 여백의 카드를 참고했다. 이 슬라이드의 참고 화면은 현재 보관된 사이트 캡처라 영상 당시 장면과 다를 수 있다. 목표는 호숫가 오두막 세 채의 빈 날짜 확인과 예약이다. 자신의 로고를 쓰고, 카드마다 이름·사진·정원·시작 가격을 넣도록 지시했다. 움직이는 구간과 조용한 구간을 번갈아 놓고, 어두운 배경의 글자 가독성을 스크린샷으로 확인한다. 오른쪽 Blackwater 결과는 기존 영상 Figure로, 원본 자체에서 왼쪽 헤드라인이 잘려 있어 보조 크기로 사용했다. URL: https://www.nimmobay.com/ ; https://vipp.com/en/world-of-vipp/our-guesthouses ; https://www.aman.com/resorts/amangiri</aside>
+</section>
+<section class="slide minimal theme-paper layout-standard" data-hdr="none" data-part="3" aria-label="34. 제작과 검증 환경">
+<p class="eyebrow">03 · SETUP</p>
+<h1 class="figure-title" style="left:96px;top:96px;width:1728px;height:65px;font-size:42px;line-height:1.25">제작과 검증 환경</h1>
+<div class="diagram-shape" style="left:1260px;top:275px;width:564px;height:140px;background:#EFE6D7;border:2px solid transparent;border-radius:0px"></div>
+<div class="diagram-shape" style="left:1260px;top:485px;width:564px;height:140px;background:#EFE6D7;border:2px solid transparent;border-radius:0px"></div>
+<div class="diagram-shape" style="left:1260px;top:695px;width:564px;height:140px;background:#EFE6D7;border:2px solid transparent;border-radius:0px"></div>
+<figure class="figure-frame" style="left:98.12px;top:285.00px;width:1045.75px;height:500.00px"><img alt="frontend-design" src="../slides/img/sites/frontenddesign.png" style="position:absolute;left:0.00px;top:0.00px;width:1045.75px;height:653.59px" loading="eager"></figure><p class="figure-label" style="left:96px;top:797px;width:1050px">frontend-design</p>
+<p class="diagram-text " style="left:1320px;top:313px;width:440px;height:65px;font-size:44px;color:#756F65;font-weight:500;text-align:left;line-height:1.18">Opus</p>
+<p class="diagram-text " style="left:1320px;top:523px;width:440px;height:65px;font-size:44px;color:#756F65;font-weight:500;text-align:left;line-height:1.18">Playwright</p>
+<p class="diagram-text " style="left:1320px;top:733px;width:440px;height:65px;font-size:44px;color:#756F65;font-weight:500;text-align:left;line-height:1.18">ref/</p>
+<p class="diagram-text summary" style="left:96px;top:165px;width:1728px;height:52px;font-size:28px;color:#756F65;font-weight:400;text-align:left;line-height:1.4">디자인 스킬과 Opus, 화면을 확인할 브라우저를 준비한다.</p>
+<footer class="figure-footer"><span>DESIGN EYE</span><span>03  Claude Code 실전</span><span>34 / 36</span></footer>
+<aside class="speaker-notes"><b>HOW_DESIGN_FROM_CC.md · §6 실행 전 준비</b><br>출처: HOW_DESIGN_FROM_CC.md §6. frontend-design 설치 명령: claude plugin install frontend-design@claude-plugins-official . 세션에서 /model로 Opus를 선택하면 별도 설정이 없는 서브에이전트도 메인 모델을 따른다. 화면을 직접 열고 캡처할 도구로 Playwright 플러그인을 권하며 설치 명령은 claude plugin install playwright@claude-plugins-official 이다. 참고 자료와 로고는 ref/에 저장한다. 이미지·영상 생성은 별도 생성 도구가 필요하며 연결하지 않았다면 자리를 비우고 직접 자료를 넣는다. frontend-design은 계획을 세우고 스스로 화면을 검토하는 지침이다. 특정 글꼴·보라색을 금지한 것은 원문의 개별 의뢰이며 현재 스킬의 보편적 금지 규칙처럼 말하지 않는다. 오른쪽은 준비 항목을 나타낸 도식이다. URL: https://github.com/anthropics/skills/tree/main/skills/frontend-design ; https://code.claude.com/docs/en/discover-plugins ; https://code.claude.com/docs/en/model-config ; https://code.claude.com/docs/en/sub-agents</aside>
+</section>
+<section class="slide minimal theme-paper layout-standard" data-hdr="none" data-part="3" aria-label="35. 실제 화면의 비교와 평가">
+<p class="eyebrow">03 · VERIFY</p>
+<h1 class="figure-title" style="left:96px;top:96px;width:1728px;height:65px;font-size:42px;line-height:1.25">실제 화면의 비교와 평가</h1>
+<figure class="figure-frame" style="left:96.40px;top:230.00px;width:779.20px;height:487.00px"><img alt="참고 화면" src="../slides/img/sites/oryzo-2.png" style="position:absolute;left:0.00px;top:0.00px;width:779.20px;height:487.00px" loading="eager"></figure><p class="figure-label" style="left:96px;top:729px;width:780px">참고 화면</p>
+<figure class="figure-frame" style="left:1044.00px;top:230.26px;width:780.00px;height:464.49px"><img alt="결과 화면" src="../assets/guide1-mov/crops/51-southside-brewing.png" style="position:absolute;left:0.00px;top:0.00px;width:780.00px;height:464.49px" loading="eager"></figure><p class="figure-label" style="left:1044px;top:707px;width:780px">결과 화면</p>
+<p class="diagram-text " style="left:925px;top:435px;width:75px;height:90px;font-size:60px;color:#756F65;font-weight:500;text-align:left;line-height:1.18">↔</p>
+<p class="diagram-text " style="left:140px;top:854px;width:180px;height:65px;font-size:38px;color:#756F65;font-weight:500;text-align:left;line-height:1.18">제작</p>
+<p class="diagram-text " style="left:340px;top:854px;width:70px;height:65px;font-size:38px;color:#756F65;font-weight:500;text-align:left;line-height:1.18">→</p>
+<p class="diagram-text " style="left:460px;top:854px;width:180px;height:65px;font-size:38px;color:#756F65;font-weight:500;text-align:left;line-height:1.18">캡처</p>
+<p class="diagram-text " style="left:660px;top:854px;width:70px;height:65px;font-size:38px;color:#756F65;font-weight:500;text-align:left;line-height:1.18">→</p>
+<p class="diagram-text " style="left:780px;top:854px;width:180px;height:65px;font-size:38px;color:#756F65;font-weight:500;text-align:left;line-height:1.18">평가</p>
+<p class="diagram-text " style="left:980px;top:854px;width:70px;height:65px;font-size:38px;color:#756F65;font-weight:500;text-align:left;line-height:1.18">→</p>
+<p class="diagram-text " style="left:1100px;top:854px;width:180px;height:65px;font-size:38px;color:#756F65;font-weight:500;text-align:left;line-height:1.18">수정</p>
+<p class="diagram-text " style="left:1405px;top:857px;width:420px;height:60px;font-size:32px;color:#756F65;font-weight:500;text-align:left;line-height:1.18">1440 px / 390 px</p>
+<p class="diagram-text summary" style="left:96px;top:165px;width:1728px;height:52px;font-size:28px;color:#756F65;font-weight:400;text-align:left;line-height:1.4">제작자와 평가자를 나누고, 실제 화면에서 가장 큰 차이를 고친다.</p>
+<footer class="figure-footer"><span>DESIGN EYE</span><span>03  Claude Code 실전</span><span>35 / 36</span></footer>
+<aside class="speaker-notes"><b>HOW_DESIGN_FROM_CC.md · §7–8 실행과 검증</b><br>출처: HOW_DESIGN_FROM_CC.md §7–8. 이 슬라이드의 두 화면은 평가 방식 설명을 위한 참고·결과 Figure이며 실제 평가 점수나 승패를 주장하지 않는다. 프롬프트를 실행하고 workbench.md에 진행 상황을 기록한다. 목표를 따로 개선·평가 가능한 조각으로 나누고 제작자와 새 맥락의 평가자를 분리한다. 평가자는 제작자의 설명 대신 실제 스크린샷을 본다. 히어로는 히어로 참고 화면, 카드는 카드 참고 화면과 비교한다. 참고 사이트와 겉모습이 다르다는 이유로 패배 판정을 하지 않는다. 참고 사이트가 더 낫다면 가장 큰 차이 하나를 제작자에게 반환한다. 종료 기준: 우리 결과가 이기거나, 개선 폭이 매우 작아지거나, 사전에 정한 시간·비용 상한에 닿거나, 사용자가 중단할 때 멈춘다. 종료 시 남은 차이를 보고한다. 문서의 시간 상한 예시는 2시간이며 고정 규칙은 아니다. 데스크톱 1440px와 모바일 390px에서 맨 위·각 구간·맨 아래를 확인한다. 잘림, 가독성, 스크롤, 버튼, 강조색 규칙, 한 가지 CTA, reduced-motion, 3D·영상 대체 화면, 키보드 초점, 페이지 크기를 점검한다. 수정 요청은 위치·화면 크기·실제 문제·원하는 결과를 적고 한 번에 한 문제씩 전달한다. 루프 원문: https://somethingbig.ai/gauntlet-loop . 스크린샷을 통한 자체 검증이 가능하도록 브라우저 도구가 연결돼 있어야 한다.</aside>
+</section>
+<section class="slide minimal theme-paper layout-standard" data-hdr="none" data-part="3" aria-label="36. 디자인 시스템의 기록과 재사용">
+<p class="eyebrow">03 · DESIGN SYSTEM</p>
+<h1 class="figure-title" style="left:96px;top:96px;width:1728px;height:65px;font-size:42px;line-height:1.25">디자인 시스템의 기록과 재사용</h1>
+<div class="diagram-shape" style="left:1310px;top:280px;width:480px;height:555px;background:#EFE6D7;border:2px solid transparent;border-radius:0px"></div>
+<div class="diagram-shape" style="left:1365px;top:435px;width:108px;height:92px;background:#242424;border:2px solid #242424;border-radius:0px"></div>
+<div class="diagram-shape" style="left:1485px;top:435px;width:108px;height:92px;background:#F5F1E6;border:2px solid #D8D6CF;border-radius:0px"></div>
+<div class="diagram-shape" style="left:1605px;top:435px;width:108px;height:92px;background:#BD7F36;border:2px solid #BD7F36;border-radius:0px"></div>
+<div class="diagram-shape" style="left:1365px;top:674px;width:348px;height:5px;background:#BEBEB8;border:2px solid #BEBEB8;border-radius:0px"></div>
+<div class="diagram-shape" style="left:1365px;top:704px;width:256px;height:5px;background:#BEBEB8;border:2px solid #BEBEB8;border-radius:0px"></div>
+<div class="diagram-shape" style="left:1365px;top:734px;width:310px;height:5px;background:#BEBEB8;border:2px solid #BEBEB8;border-radius:0px"></div>
+<figure class="figure-frame" style="left:96.00px;top:230.12px;width:1110.00px;height:693.75px"><img alt="Refero Styles" src="../slides/img/sites/referostyles.png" style="position:absolute;left:0.00px;top:0.00px;width:1110.00px;height:693.75px" loading="eager"></figure><p class="figure-label" style="left:96px;top:936px;width:1110px">Refero Styles</p>
+<p class="diagram-text " style="left:1365px;top:332px;width:390px;height:60px;font-size:40px;color:#756F65;font-weight:500;text-align:left;line-height:1.18">DESIGN.md</p>
+<p class="diagram-text " style="left:1365px;top:566px;width:390px;height:70px;font-size:48px;color:#756F65;font-weight:500;text-align:left;line-height:1.18">가나다  Aa</p>
+<p class="diagram-text " style="left:1310px;top:872px;width:510px;height:60px;font-size:30px;color:#756F65;font-weight:500;text-align:left;line-height:1.18">색 · 글꼴 · 간격 · 부품</p>
+<p class="diagram-text summary" style="left:96px;top:165px;width:1728px;height:52px;font-size:28px;color:#756F65;font-weight:400;text-align:left;line-height:1.4">확정한 색과 글꼴, 간격을 문서로 남겨 다음 작업에 재사용한다.</p>
+<footer class="figure-footer"><span>DESIGN EYE</span><span>03  Claude Code 실전</span><span>36 / 36</span></footer>
+<aside class="speaker-notes"><b>HOW_DESIGN_FROM_CC.md · §9 디자인 시스템</b><br>출처: HOW_DESIGN_FROM_CC.md §9. 완성된 페이지의 색·글꼴·간격·컴포넌트·움직임 규칙을 디자인 시스템 문서로 정리하고 다음 작업에서 읽게 한다. Refero Styles는 디자인 시스템을 DESIGN.md 형식으로 제공한다. 원문은 같은 사이트의 DESIGN.md와 전체 페이지 캡처를 함께 주라고 권한다. 파일은 규칙을, 캡처는 실제 모습을 전달한다. 오른쪽은 이런 문서에 담기는 항목을 시각화한 개념도이며 Refero에서 다운로드한 파일 내용이나 공식 브랜드 가이드가 아니다. 색 칩은 앞의 Blackwater 설명을 표현한 예시다. Refero 문서는 공식 브랜드 가이드가 아님을 구분한다. Claude Code 또는 Claude Design에 직접 정리를 맡길 수도 있고, Branding Style Guides의 실제 가이드는 문서 구성 참고 자료로 쓴다. URL: https://styles.refero.design/ ; https://styles.refero.design/design-md/what-is-design-md ; https://claude.com/product/design ; https://brandingstyleguides.com/</aside>
+</section>
+</main>
+<div class="progress"></div>
+<script src="deck.js"></script>
+</body>
+</html>

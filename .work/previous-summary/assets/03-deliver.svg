@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="180" viewBox="0 0 960 180" role="img" aria-labelledby="title desc">
+  <title id="title">마무리</title>
+  <desc id="desc">요소를 검토하고 군더더기를 삭제해 핵심에 집중하는 과정</desc>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10" fill="none" stroke="#333" stroke-width="1.5"/></marker></defs>
+  <rect width="960" height="180" fill="white"/>
+  <g fill="none" stroke="#333" stroke-width="2">
+    <rect x="20" y="48" width="250" height="84"/>
+    <rect x="355" y="48" width="250" height="84"/>
+    <rect x="690" y="48" width="250" height="84"/>
+    <path d="M283 90 H338" marker-end="url(#arrow)"/>
+    <path d="M618 90 H673" marker-end="url(#arrow)"/>
+  </g>
+  <g fill="#111" font-family="Apple SD Gothic Neo, Malgun Gothic, sans-serif" font-size="28" text-anchor="middle">
+    <text x="145" y="100">요소 검토</text>
+    <text x="480" y="100">군더더기 삭제</text>
+    <text x="815" y="100">핵심에 집중</text>
+  </g>
+</svg>

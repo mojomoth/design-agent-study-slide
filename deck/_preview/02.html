@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude에게 디자인 안목을 주는 방법</title>
+<link rel="stylesheet" href="../deck.css">
+<style>
+.p02 .n100 { font-family: var(--f-display); font-size: 100px; line-height: .84; margin: 0; letter-spacing: .01em; }
+.p02 .n150 { font-family: var(--f-display); font-size: 150px; line-height: .8; margin: 0; }
+.p02 .pin { position: absolute; width: 44px; height: 44px; background: var(--ink); color: var(--bg);
+  font: 26px/44px var(--f-display); text-align: center; }
+.p02 .pin.inv { background: #F2EBE0; color: #0D0D0D; outline: 2px solid #0D0D0D; }
+.p02 .step { display: flex; align-items: flex-start; gap: 26px; }
+.p02 .step .n100 { width: 62px; flex: none; }
+.p02 .step .lbl { padding-top: 22px; }
+.p02 .arrow { font-family: var(--f-display); line-height: 1; margin: 0; }
+.p02 .arrow.dn { transform: rotate(90deg); }
+.p02 .arrow.up { transform: rotate(-90deg); }
+.p02 .ul { text-decoration: underline; text-decoration-thickness: 4px; text-underline-offset: 10px; }
+.p02 .stack { line-height: .92; }
+.p02 .fig.line { outline: 1px solid #0D0D0D; }
+.p02 .chk { position: absolute; width: 80px; height: 160px; border-right: 28px solid var(--ink); border-bottom: 28px solid var(--ink); transform: rotate(45deg); }
+.p02 .ctr { text-align: center; }
+</style>
+</head>
+<body>
+<main class="deck">
+<section class="slide dark p02"><div class="hdr"><span class="brand"><span class="mark"></span>Design Eye for Claude</span><span>Part 02  8 Techniques</span><span>01 / 16</span></div>
+  <div class="rule abs" style="left:56px; top:150px; width:624px;"></div>
+  <p class="lbl abs" style="left:56px; top:172px;">DISCOVER 발견</p>
+  <p class="n100 abs" style="left:56px; top:172px; width:624px; text-align:right;">01 02</p>
+
+  <div class="rule abs" style="left:56px; top:297px; width:624px;"></div>
+  <p class="lbl abs" style="left:56px; top:319px;">DEFINE 정의</p>
+  <p class="n100 abs" style="left:56px; top:319px; width:624px; text-align:right;">03 04 05</p>
+
+  <div class="rule abs" style="left:56px; top:444px; width:624px;"></div>
+  <p class="lbl abs" style="left:56px; top:466px;">DELIVER 전달</p>
+  <p class="n100 abs" style="left:56px; top:466px; width:624px; text-align:right;">06 07 08</p>
+
+  <figure class="fig abs" style="left:760px; top:150px; width:1104px; height:400px;"><img src="../img/02/slop-curve-crop2.jpg" alt=""></figure>
+  <p class="cap abs" style="left:760px; top:562px; width:1104px;">How to turn your AI into a world-class designer&nbsp;&nbsp;/&nbsp;&nbsp;Anshu Chimala&nbsp;&nbsp;/&nbsp;&nbsp;2026.09.01</p>
+
+  <h2 class="d abs" style="left:40px; bottom:16px; font-size:360px;">8 Techniques</h2>
+</section>
+<section class="slide p02"><div class="hdr"><span class="brand"><span class="mark"></span>Design Eye for Claude</span><span>Part 02  8 Techniques</span><span>02 / 16</span></div>
+  <h2 class="d d-xl abs" style="left:48px; top:120px;">Same Again</h2>
+  <span class="tag fill abs" style="left:1444px; top:122px;">DISCOVER 01</span>
+  <p class="lead abs" style="left:1444px; top:182px; width:420px;">모델은 무작위처럼 들리는 토큰을 예측할 뿐</p>
+
+  <figure class="fig line abs" style="left:56px; top:450px; width:420px; height:236px;"><img src="../img/02/same-a1.jpg" alt=""></figure>
+  <figure class="fig line abs" style="left:492px; top:450px; width:420px; height:236px;"><img src="../img/02/same-a2.jpg" alt=""></figure>
+  <figure class="fig line abs" style="left:56px; top:702px; width:420px; height:236px;"><img src="../img/02/same-a3.jpg" alt=""></figure>
+  <figure class="fig line abs" style="left:492px; top:702px; width:420px; height:236px;"><img src="../img/02/same-a4.jpg" alt=""></figure>
+
+  <figure class="fig line top abs" style="left:1008px; top:450px; width:420px; height:236px;"><img src="../img/02/same-b1.jpg" alt=""></figure>
+  <figure class="fig line abs" style="left:1444px; top:450px; width:420px; height:236px;"><img src="../img/02/same-b2.jpg" alt=""></figure>
+  <figure class="fig line abs" style="left:1008px; top:702px; width:420px; height:236px;"><img src="../img/02/same-b3.jpg" alt=""></figure>
+  <figure class="fig line abs" style="left:1444px; top:702px; width:420px; height:236px;"><img src="../img/02/same-b4.jpg" alt=""></figure>
+
+  <p class="lbl abs" style="left:56px; top:962px; width:856px;">Claude Opus 5 기본 결과, 거의 매번 보랏빛</p>
+  <p class="lbl abs" style="left:1008px; top:962px; width:856px;">"모든 결정을 무작위로" 추가해도 닮은꼴</p>
+</section>
+<section class="slide p02"><div class="hdr"><span class="brand"><span class="mark"></span>Design Eye for Claude</span><span>Part 02  8 Techniques</span><span>03 / 16</span></div>
+  <figure class="fig line top abs" style="left:56px; top:120px; width:560px; height:300px;"><img src="../img/02/seed-1.jpg" alt=""></figure>
+  <figure class="fig line top abs" style="left:632px; top:120px; width:560px; height:300px;"><img src="../img/02/seed-2.jpg" alt=""></figure>
+  <figure class="fig line top abs" style="left:56px; top:436px; width:560px; height:300px;"><img src="../img/02/seed-3.jpg" alt=""></figure>
+  <figure class="fig line top abs" style="left:632px; top:436px; width:560px; height:300px;"><img src="../img/02/seed-4.jpg" alt=""></figure>
+
+  <div class="step abs" style="left:1250px; top:124px; width:614px;"><p class="n100">1</p><p class="lbl">셸 스크립트로 무작위 문자열</p></div>
+  <div class="step abs" style="left:1250px; top:320px; width:614px;"><p class="n100">2</p><p class="lbl">패턴 보고 색, 레이아웃, 서체 결정</p></div>
+  <div class="step abs" style="left:1250px; top:516px; width:614px;"><p class="n100">3</p><p class="lbl">문자열은 숨기고 구현</p></div>
+  <p class="cap abs" style="left:1338px; top:710px; width:526px;">Sakana AI의 String Seed of Thought</p>
+
+  <h2 class="d abs" style="left:24px; bottom:-28px; font-size:370px;">Seed Strings</h2>
+</section>
+<section class="slide dark p02"><div class="hdr"><span class="brand"><span class="mark"></span>Design Eye for Claude</span><span>Part 02  8 Techniques</span><span>04 / 16</span></div>
+  <figure class="fig abs" style="left:56px; top:130px; width:584px; height:328px;"><img src="../../assets/how-to-turn-your-ai-into-a-world/figure-08-3d880aa5-5e31-45f5-99c4-8055dcb87f4a_640x360.gif" alt=""></figure>
+  <figure class="fig abs" style="left:668px; top:130px; width:584px; height:328px;"><img src="../../assets/how-to-turn-your-ai-into-a-world/figure-09-a7245156-8c71-4ecc-9897-5ce76e561faf_640x360.gif" alt=""></figure>
+  <figure class="fig abs" style="left:1280px; top:130px; width:584px; height:328px;"><img src="../../assets/how-to-turn-your-ai-into-a-world/figure-10-220747d1-f561-405f-a95c-7b05fd64731b_640x360.gif" alt=""></figure>
+  <p class="txt abs" style="left:56px; top:476px; width:584px;">픽셀 아트 게임 장면</p>
+  <p class="txt abs" style="left:668px; top:476px; width:584px;">아이소메트릭 3D 도시</p>
+  <p class="txt abs" style="left:1280px; top:476px; width:584px;">규칙을 다 깬 레이아웃</p>
+
+  <span class="tag fill abs" style="left:56px; top:600px;">DISCOVER 02</span>
+  <p class="lead abs" style="left:228px; top:599px; width:1000px;">"이게 될 리 없어" 싶다면 제대로 가는 중</p>
+
+  <h2 class="d abs" style="left:40px; bottom:-30px; font-size:360px;">Be Ambitious</h2>
+</section>
+<section class="slide p02"><div class="hdr"><span class="brand"><span class="mark"></span>Design Eye for Claude</span><span>Part 02  8 Techniques</span><span>05 / 16</span></div>
+  <h2 class="d stack abs" style="left:48px; top:110px; font-size:340px;">Steer<br>It</h2>
+  <p class="lead abs" style="left:56px; top:836px; width:680px;">되먹이지 말고 직접 조종한다</p>
+
+  <p class="n100 abs" style="left:830px; top:150px;">1</p>
+  <p class="lbl abs" style="left:930px; top:156px;">세부 없이 아이디어 잔뜩</p>
+  <figure class="fig line bw abs" style="left:930px; top:216px; width:934px; height:86px;"><img src="../img/02/t2-s1.png" alt=""></figure>
+
+  <p class="n100 abs" style="left:830px; top:440px;">2</p>
+  <p class="lbl abs" style="left:930px; top:446px;">반응 적고 다듬기</p>
+  <figure class="fig line bw abs" style="left:930px; top:506px; width:934px; height:86px;"><img src="../img/02/t2-s2.png" alt=""></figure>
+
+  <p class="n100 abs" style="left:830px; top:730px;">3</p>
+  <p class="lbl abs" style="left:930px; top:736px;">제작 프롬프트 받기</p>
+  <figure class="fig line bw abs" style="left:930px; top:796px; width:934px; height:86px;"><img src="../img/02/t2-s3.png" alt=""></figure>
+</section>
+<section class="slide p02"><div class="hdr"><span class="brand"><span class="mark"></span>Design Eye for Claude</span><span>Part 02  8 Techniques</span><span>06 / 16</span></div>
+  <figure class="fig abs" style="left:56px; top:130px; width:656px; height:363px;"><img src="../img/02/define-zylo-hi.png" alt=""></figure>
+  <span class="pin inv" style="left:398px; top:130px;">1</span>
+  <span class="pin inv" style="left:338px; top:222px;">2</span>
+  <span class="pin inv" style="left:660px; top:178px;">3</span>
+
+  <p class="lead abs" style="left:800px; top:136px; width:1064px;">시드 문자열 시안도 결국 낡은 패턴</p>
+  <div class="abs row" style="left:800px; top:230px; gap:20px; align-items:center;"><span class="pin" style="position:static;">1</span><p class="lbl">상단 내비게이션</p></div>
+  <div class="abs row" style="left:800px; top:310px; gap:20px; align-items:center;"><span class="pin" style="position:static;">2</span><p class="lbl">왼쪽 텍스트와 CTA 버튼</p></div>
+  <div class="abs row" style="left:800px; top:390px; gap:20px; align-items:center;"><span class="pin" style="position:static;">3</span><p class="lbl">오른쪽 그래픽</p></div>
+
+  <h2 class="d abs" style="right:56px; bottom:-46px; font-size:500px;">Define</h2>
+</section>
+<section class="slide p02"><div class="hdr"><span class="brand"><span class="mark"></span>Design Eye for Claude</span><span>Part 02  8 Techniques</span><span>07 / 16</span></div>
+  <span class="tag fill abs" style="left:56px; top:120px;">DEFINE 03</span>
+  <h2 class="d d-l stack abs" style="left:48px; top:178px;">Critic<br>Loop</h2>
+  <p class="txt abs" style="left:56px; top:962px; width:600px;"><b>별도 비평가</b>는 스크린샷만 본다</p>
+
+  <div class="block-dark abs" style="left:700px; top:240px; width:300px; height:640px;">
+    <p class="lbl abs ctr" style="left:0; top:130px; width:300px;">BUILD</p>
+    <p class="txt abs ctr" style="left:0; top:170px; width:300px;">Claude Opus 5</p>
+    <p class="arrow dn abs" style="left:20px; top:240px; width:130px; text-align:center; font-size:160px;">→</p>
+    <p class="arrow up abs" style="left:150px; top:240px; width:130px; text-align:center; font-size:160px;">→</p>
+    <p class="lbl abs ctr" style="left:0; top:440px; width:300px;">CRITIC</p>
+    <p class="txt abs ctr" style="left:0; top:480px; width:300px;">Claude Fable 5</p>
+  </div>
+
+  <p class="lbl-s abs" style="left:1164px; top:122px;">BEFORE</p>
+  <figure class="fig line abs" style="left:1164px; top:152px; width:700px; height:396px;"><img src="../img/02/critic-quanta-before.jpg" alt=""></figure>
+  <p class="lbl-s abs" style="left:1164px; top:572px;">AFTER</p>
+  <figure class="fig line abs" style="left:1164px; top:602px; width:700px; height:396px;"><img src="../img/02/critic-quanta-after.jpg" alt=""></figure>
+</section>
+<section class="slide dark p02"><div class="hdr"><span class="brand"><span class="mark"></span>Design Eye for Claude</span><span>Part 02  8 Techniques</span><span>08 / 16</span></div>
+  <p class="lead abs" style="left:56px; top:150px; width:1100px;">9점 이상이면 끝, 기준은 비평가에게 비공개</p>
+
+  <p class="n150 abs" style="left:1280px; top:150px;">&lt;10%</p>
+  <p class="txt abs" style="left:1280px; top:296px; width:584px;">비평가 Fable의 출력 토큰 비중</p>
+  <div class="rule abs" style="left:1280px; top:376px; width:584px;"></div>
+  <p class="n150 abs" style="left:1280px; top:420px;">4+1</p>
+  <p class="txt abs" style="left:1280px; top:566px; width:584px;">전문가 디자인 4개에 우리 것 1개 섞어 순위</p>
+  <div class="rule abs" style="left:1280px; top:646px; width:584px;"></div>
+  <p class="n150 abs" style="left:1280px; top:690px;">1~2</p>
+  <p class="txt abs" style="left:1280px; top:836px; width:584px;">먼저 한두 번 돌려 수렴 확인</p>
+
+  <h2 class="d abs" style="left:40px; bottom:-60px; font-size:680px;">9/10</h2>
+</section>
+<section class="slide p02"><div class="hdr"><span class="brand"><span class="mark"></span>Design Eye for Claude</span><span>Part 02  8 Techniques</span><span>09 / 16</span></div>
+  <p class="lbl-s abs" style="left:56px; top:116px;">BEFORE</p>
+  <p class="lbl-s abs" style="left:662px; top:116px;">AFTER</p>
+  <figure class="fig line abs" style="left:56px; top:152px; width:590px; height:324px;"><img src="../img/02/imggen-mer-a.gif" alt=""></figure>
+  <figure class="fig line abs" style="left:662px; top:152px; width:590px; height:324px;"><img src="../img/02/imggen-mer-b.gif" alt=""></figure>
+  <figure class="fig abs" style="left:56px; top:492px; width:590px; height:324px;"><img src="../img/02/imggen-quartz-a.gif" alt=""></figure>
+  <figure class="fig abs" style="left:662px; top:492px; width:590px; height:324px;"><img src="../img/02/imggen-quartz-b.gif" alt=""></figure>
+
+  <span class="tag fill abs" style="left:1310px; top:492px;">DEFINE 04</span>
+  <p class="lead abs" style="left:1310px; top:550px; width:554px;">밋밋한 화면에 생성 이미지로 개성을</p>
+  <p class="cap abs" style="left:1310px; top:614px; width:554px;">Claude Opus 5 적용 전후</p>
+  <div class="rule abs" style="left:1310px; top:762px; width:554px;"></div>
+  <p class="cap abs" style="left:1310px; top:782px; width:554px;">API 키는 에이전트 전용, 지출 한도 낮게</p>
+
+  <h2 class="d abs" style="left:40px; bottom:-34px; font-size:300px;">Image Gen</h2>
+</section>
+<section class="slide dark p02"><div class="hdr"><span class="brand"><span class="mark"></span>Design Eye for Claude</span><span>Part 02  8 Techniques</span><span>10 / 16</span></div>
+  <h2 class="d abs" style="left:40px; top:120px; font-size:300px;">Video Gen</h2>
+  <span class="tag fill abs" style="left:1240px; top:130px;">DEFINE 05</span>
+  <p class="lead abs" style="left:1240px; top:190px; width:624px;">단색 배경 루프 영상에서 배경만 지운다</p>
+  <p class="lbl abs" style="left:1240px; top:260px; width:624px;">fal.ai 키 하나로 여러 모델 비교</p>
+
+  <p class="lbl-s abs" style="left:56px; top:504px;">BEFORE</p>
+  <figure class="fig abs" style="left:56px; top:540px; width:760px; height:423px;"><img src="../img/02/video-a.gif" alt=""></figure>
+  <p class="arrow abs" style="left:816px; top:691px; width:288px; text-align:center; font-size:120px;">→</p>
+  <p class="lbl-s abs" style="left:1104px; top:504px;">AFTER&nbsp;&nbsp;<span class="mute">GPT-5.6 Sol</span></p>
+  <figure class="fig abs" style="left:1104px; top:540px; width:760px; height:423px;"><img src="../img/02/video-b.gif" alt=""></figure>
+</section>
+<section class="slide p02" data-hdr="none">
+  <figure class="fig abs" style="left:720px; top:0; width:1200px; height:675px;"><img src="../../assets/how-to-turn-your-ai-into-a-world/figure-21-2f3bb583-375b-4a12-aa57-64a10bf2d9e7_960x540.gif" alt=""></figure>
+  <p class="lead abs" style="left:56px; top:470px; width:620px;">두 정지 이미지 사이를 영상으로 잇는다<br>스크롤에 맞춰 프레임 단위로 재생</p>
+  <p class="cap abs" style="left:56px; top:584px; width:584px;">Codex의 GPT-5.6 Sol로 프롬프트 한 번에</p>
+
+  <h2 class="d abs" style="left:40px; bottom:-30px; font-size:400px;">Transitions</h2>
+</section>
+<section class="slide dark p02"><div class="hdr"><span class="brand"><span class="mark"></span>Design Eye for Claude</span><span>Part 02  8 Techniques</span><span>12 / 16</span></div>
+  <span class="chk" style="left:101px; top:195px;"></span>
+  <p class="lbl abs" style="left:56px; top:400px; width:560px;">말이 되는가</p>
+  <span class="chk" style="left:705px; top:195px;"></span>
+  <p class="lbl abs" style="left:660px; top:400px; width:560px;">흐름이 자연스러운가</p>
+  <span class="chk" style="left:1309px; top:195px;"></span>
+  <p class="lbl abs" style="left:1264px; top:400px; width:560px;">실제로 쓸모 있는가</p>
+  <p class="txt abs" style="left:56px; top:966px; width:280px; color:#F2EBE0;">디테일을 다듬는 마지막<br>판단은 사람의 몫</p>
+
+  <h2 class="d abs" style="right:56px; bottom:-30px; font-size:540px;">Deliver</h2>
+</section>
+<section class="slide p02"><div class="hdr"><span class="brand"><span class="mark"></span>Design Eye for Claude</span><span>Part 02  8 Techniques</span><span>13 / 16</span></div>
+  <h2 class="d d-xl abs" style="left:48px; top:120px;">Subtract</h2>
+  <span class="tag fill abs" style="left:1180px; top:122px;">DELIVER 06</span>
+  <p class="lead abs" style="left:1180px; top:182px; width:684px;">빼기는 사람이 시켜야 한다</p>
+
+  <figure class="fig line abs" style="left:56px; top:430px; width:640px; height:575px;"><img src="../img/02/subtract-before-trim.jpg" alt=""></figure>
+  <p class="cap abs" style="left:720px; top:430px; width:250px;">"미니멀하게"<br>요청했는데도</p>
+  <p class="d d-xs ul abs" style="left:720px; top:936px;">Before</p>
+
+  <figure class="fig line abs" style="left:1000px; top:430px; width:640px; height:575px;"><img src="../img/02/subtract-after-trim.jpg" alt=""></figure>
+  <p class="cap abs" style="left:1664px; top:430px; width:200px;">이미지 그리드,<br>네이티브 iOS</p>
+  <p class="d d-xs ul abs" style="left:1664px; top:936px;">After</p>
+</section>
+<section class="slide p02"><div class="hdr"><span class="brand"><span class="mark"></span>Design Eye for Claude</span><span>Part 02  8 Techniques</span><span>14 / 16</span></div>
+  <span class="tag fill abs" style="left:56px; top:120px;">DELIVER 07</span>
+  <h2 class="d stack abs" style="left:48px; top:178px; font-size:288px;">AI<br>Tells</h2>
+  <p class="txt abs" style="left:56px; top:926px; width:560px;">모든 디자인에 보이면 <b>AI 슬롭</b>의 신호</p>
+
+  <figure class="fig abs" style="left:690px; top:150px; width:540px; height:331px;"><img src="../img/02/t7-gradient-before.png" alt=""></figure>
+  <p class="arrow abs" style="left:1230px; top:286px; width:94px; text-align:center; font-size:56px;">→</p>
+  <figure class="fig abs" style="left:1324px; top:150px; width:540px; height:331px;"><img src="../img/02/t7-gradient-after.png" alt=""></figure>
+  <p class="lbl-s abs" style="left:690px; top:500px;">배경 그라데이션 → 이미지, 패턴, 단색</p>
+
+  <figure class="fig line abs" style="left:690px; top:580px; width:540px; height:331px;"><img src="../img/02/t7-eyebrow-before.png" alt=""></figure>
+  <p class="arrow abs" style="left:1230px; top:716px; width:94px; text-align:center; font-size:56px;">→</p>
+  <figure class="fig line abs" style="left:1324px; top:580px; width:540px; height:331px;"><img src="../img/02/t7-eyebrow-after.png" alt=""></figure>
+  <p class="lbl-s abs" style="left:690px; top:930px;">제목 위 작은 문구 → 대부분 삭제</p>
+</section>
+<section class="slide dark p02"><div class="hdr"><span class="brand"><span class="mark"></span>Design Eye for Claude</span><span>Part 02  8 Techniques</span><span>15 / 16</span></div>
+  <p class="lbl-s abs" style="left:56px; top:116px;">BEFORE</p>
+  <p class="lbl-s abs" style="left:568px; top:116px;">AFTER</p>
+  <figure class="fig abs" style="left:56px; top:146px; width:512px; height:314px;"><img src="../img/02/t7-cards-before.png" alt=""></figure>
+  <figure class="fig abs" style="left:568px; top:146px; width:512px; height:314px;"><img src="../img/02/t7-cards-after.png" alt=""></figure>
+  <figure class="fig abs" style="left:56px; top:476px; width:512px; height:314px;"><img src="../img/02/t7-fonts-before.png" alt=""></figure>
+  <figure class="fig abs" style="left:568px; top:476px; width:512px; height:314px;"><img src="../img/02/t7-fonts-after.png" alt=""></figure>
+
+  <p class="lead abs" style="left:1140px; top:140px; width:724px;">일괄 금지 말고 의도적으로</p>
+  <p class="lbl-s abs" style="left:1140px; top:291px; width:724px;">카드와 컨테이너 과다 → 그리드, 타일</p>
+  <p class="lbl-s abs" style="left:1140px; top:621px; width:724px;">폰트와 스타일 과다 → 폰트 1~2개, 스타일 2~4개</p>
+
+  <h2 class="d abs" style="left:40px; bottom:-80px; font-size:400px;">On Purpose</h2>
+</section>
+<section class="slide p02"><div class="hdr"><span class="brand"><span class="mark"></span>Design Eye for Claude</span><span>Part 02  8 Techniques</span><span>16 / 16</span></div>
+  <h2 class="d stack abs" style="left:48px; top:110px; font-size:420px;">By<br>Hand</h2>
+  <span class="tag fill abs" style="left:56px; top:900px;">DELIVER 08</span>
+  <p class="lead abs" style="left:56px; top:950px; width:900px;">AI 카피는 Lorem ipsum 같은 자리표시자<br>사람이 쓴 버전이 거의 언제나 더 짧다</p>
+
+  <p class="lbl-s abs" style="left:1140px; top:118px;">Claude</p>
+  <figure class="fig line bw abs" style="left:1140px; top:150px; width:320px; height:876px;"><img src="../img/02/copy-claude.png" alt=""></figure>
+  <p class="lbl-s abs" style="left:1544px; top:118px;">저자</p>
+  <figure class="fig line bw abs" style="left:1544px; top:150px; width:320px; height:467px;"><img src="../img/02/copy-author.png" alt=""></figure>
+</section>
+</main>
+<div class="progress"></div>
+<script src="../deck.js"></script>
+</body>
+</html>

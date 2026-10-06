@@ -1,0 +1,991 @@
+{
+  "source_html": "guide/How to turn your AI into a world-class designer.html",
+  "source_sha256": "20095c9424d01104fbfc41b5bc39a33185297fc7808a88cea9c74011ca819741",
+  "source_url": "https://www.lennysnewsletter.com/p/how-to-turn-your-ai-into-a-world",
+  "output_html": "clone/how-to-turn-your-ai-into-a-world/index.html",
+  "output_bytes": 174138490,
+  "metadata": {
+    "title": "AI를 최고 수준의 디자이너로 만드는 방법",
+    "subtitle": "AI의 숨은 창의력을 활용하는 전체 디자인 과정",
+    "author": "Anshu Chimala",
+    "date": "2026년 9월 1일"
+  },
+  "translation_blocks_expected": 182,
+  "translation_blocks_applied": 182,
+  "article_figures": 25,
+  "saved_images": 47,
+  "animated_images": 12,
+  "scope": "Original publication header, article title/byline/date, complete article body. Comments, recommendations, subscription/account controls, contributor footer and active widgets removed.",
+  "offline_changes": [
+    "Saved stylesheets embedded in original order.",
+    "Uncaptured fonts and unused CSS resources disabled; system Korean fonts used.",
+    "All visible images embedded with their original bytes; all 47 saved images copied byte-for-byte to assets.",
+    "Captured scripts, trackers, frames and event handlers removed.",
+    "Original article hyperlinks retained; image navigation and remote srcset removed.",
+    "Source header position repaired after capture while scrolled."
+  ],
+  "stylesheets": [
+    {
+      "source_name": "87821.a7479592.css",
+      "sha256": "9d634544bf5ce9a007dbad17ca37d5135483f1d1db27eed688661c358dc55703",
+      "bytes": 164676
+    },
+    {
+      "source_name": "93934.4046d111.css",
+      "sha256": "923f90ee097781130f2c11ec30311022b6ddd285ab5b9b99074e61f5e8759ac5",
+      "bytes": 20828
+    },
+    {
+      "source_name": "21588.9d4e76e9.css",
+      "sha256": "c51e9ccd198869e62aa1d286df40e9c1505987d5649346673f9435b2eddb0283",
+      "bytes": 77340
+    },
+    {
+      "source_name": "26613.99d4e7f0.css",
+      "sha256": "774af54dd3c8da72cea2e949d1e00d3faf81ce7c708195871af4589b94f7f57d",
+      "bytes": 17551
+    },
+    {
+      "source_name": "83307.3c903d00.css",
+      "sha256": "f63bb9e96ff17ec981743dc44eaf185d3525d581ea1da8fe3683e5a207d260d1",
+      "bytes": 17413
+    },
+    {
+      "source_name": "6324.47bc0387.css",
+      "sha256": "08bd26acfc8d097190e528e89d7a9ece060b6f8f5340cba44c8324570ed3fbcd",
+      "bytes": 18193
+    },
+    {
+      "source_name": "30321.15b2c8ba.css",
+      "sha256": "a5923bfffb5d3800e1ba0fb5503a25048fdac0f14b0c4f9aada5c4ee21820bc1",
+      "bytes": 18879
+    },
+    {
+      "source_name": "38254.6c39962d.css",
+      "sha256": "aabc526e1b74ab51479c5621f5ce9695b377e68870d3cafee20ec3c9c2a49787",
+      "bytes": 21485
+    },
+    {
+      "source_name": "65520.eeafb842.css",
+      "sha256": "233713cb2870fc8b6d746a0d67de2a5200bc1cfb4dde8bda7602dfe05dc45346",
+      "bytes": 45118
+    },
+    {
+      "source_name": "31327.d7b1b1fa.css",
+      "sha256": "f256f7637a240347b573285379dea76b5abb1f39e1035de1e58e7c635415415e",
+      "bytes": 18797
+    },
+    {
+      "source_name": "63084.a8f0cad8.css",
+      "sha256": "1c1ec8449b41e2df6540d0f38ab3e0958472862f1ff8af31ebef9f3e99f2f7a5",
+      "bytes": 39268
+    },
+    {
+      "source_name": "77027.13a4fbb1.css",
+      "sha256": "8558602534f0d203ae71937488bba8a393e8d66e2b032ebb5ca741240883a3fc",
+      "bytes": 119772
+    },
+    {
+      "source_name": "75103.b6c65a18.css",
+      "sha256": "be2c6ebe817913664f4623098ae403fe812ade23d40d657c8bfdd705290dcfa8",
+      "bytes": 20307
+    },
+    {
+      "source_name": "76215.1c9048a6.css",
+      "sha256": "fda84ea309d921c959766be648a7d12f8119fe89edc775d6c18837c6f2f480bb",
+      "bytes": 21171
+    },
+    {
+      "source_name": "3615.e1f4a6dc.css",
+      "sha256": "518ce98ba3765a15ef2785498c298bbe1ca4ed886dc6f23a86948f1ff0576d81",
+      "bytes": 76777
+    },
+    {
+      "source_name": "44003.629f5822.css",
+      "sha256": "812fbf139c13c706380cfd7db1892d42713b94b59a61442f2a17b377f56d1b82",
+      "bytes": 31645
+    },
+    {
+      "source_name": "reactMain.ed048c2d.css",
+      "sha256": "0761814068265115622cea28817035af752fe763015cc1fa97812e946273c1d3",
+      "bytes": 14116
+    },
+    {
+      "source_name": "36579.f42f961f.css",
+      "sha256": "2a2cdf82672219796e599e3b67962a9288812c2d81227959cc661ef9cafa472f",
+      "bytes": 54888
+    },
+    {
+      "source_name": "93659.da0d43d2.css",
+      "sha256": "4bd1a09e69aeaa07e38d1efec37798dfe6de85323db07427795948350434e5a0",
+      "bytes": 22133
+    },
+    {
+      "source_name": "49127.8223a6e1.css",
+      "sha256": "cd51e2d90ef8084c8c4f9d8c8cae9dc3cd457651cad5d2c32b1edd5eee8c7d7b",
+      "bytes": 17801
+    },
+    {
+      "source_name": "main.6ce36c8ef0ba7f130cb1.css",
+      "sha256": "f372eb52916601fae907f00b50374fddbc328c34828c904b130aa46aea640ca1",
+      "bytes": 373621
+    },
+    {
+      "source_name": "7834.482b18ff.css",
+      "sha256": "063c7099482b3a4a7a53be658e384871d18de2cc6e849ad34d3a66c94d51c3d1",
+      "bytes": 19048
+    },
+    {
+      "source_name": "20048.9187a79c.css",
+      "sha256": "91b0f6df5fe622c0ec923013772b4772fbcb2a0dfe5e79ced959f1ed5afe89ef",
+      "bytes": 7441
+    },
+    {
+      "source_name": "27334.ca191e7d.css",
+      "sha256": "f7eab7e307f72a4258e54d8c90c279ba73abc0758e9fe5b7427473790b50227a",
+      "bytes": 15516
+    },
+    {
+      "source_name": "59930.7dcf1109.css",
+      "sha256": "db6b185758d795cfdfece12d3993a21d2290c33ece96d9c2d333e94a4fd99b05",
+      "bytes": 6545
+    },
+    {
+      "source_name": "63167.cc7bf729.css",
+      "sha256": "839c89ced5cb8fa76d45a43cff046f69de0fc433deaa75bb5184c312e91dbd96",
+      "bytes": 5586
+    }
+  ],
+  "disabled_css_resources": [
+    {
+      "stylesheet": "30321.15b2c8ba.css",
+      "url": "/img/reader/paywall-noise.png",
+      "resolution": "not captured; disabled for offline use"
+    },
+    {
+      "stylesheet": "63084.a8f0cad8.css",
+      "url": "/img/thefp/fp-icon-arrow.svg",
+      "resolution": "not captured; disabled for offline use"
+    },
+    {
+      "stylesheet": "63084.a8f0cad8.css",
+      "url": "/img/thefp/fp-icon-arrow-red.svg",
+      "resolution": "not captured; disabled for offline use"
+    },
+    {
+      "stylesheet": "63084.a8f0cad8.css",
+      "url": "/img/thefp/fp-icon-arrow.svg",
+      "resolution": "not captured; disabled for offline use"
+    },
+    {
+      "stylesheet": "63084.a8f0cad8.css",
+      "url": "/img/thefp/fp-icon-arrow-red.svg",
+      "resolution": "not captured; disabled for offline use"
+    },
+    {
+      "stylesheet": "36579.f42f961f.css",
+      "url": "/img/gifting/accept-bg.svg",
+      "resolution": "not captured; disabled for offline use"
+    },
+    {
+      "stylesheet": "inline",
+      "url": "https://fonts.gstatic.com/s/spectral/v13/rnCt-xNNww_2s0amA9M8on7mTNmnUHowCw.woff2",
+      "resolution": "not captured; disabled for offline use"
+    },
+    {
+      "stylesheet": "inline",
+      "url": "https://fonts.gstatic.com/s/spectral/v13/rnCt-xNNww_2s0amA9M8onXmTNmnUHowCw.woff2",
+      "resolution": "not captured; disabled for offline use"
+    },
+    {
+      "stylesheet": "inline",
+      "url": "https://fonts.gstatic.com/s/spectral/v13/rnCt-xNNww_2s0amA9M8onTmTNmnUHowCw.woff2",
+      "resolution": "not captured; disabled for offline use"
+    },
+    {
+      "stylesheet": "inline",
+      "url": "https://fonts.gstatic.com/s/spectral/v13/rnCt-xNNww_2s0amA9M8onrmTNmnUHo.woff2",
+      "resolution": "not captured; disabled for offline use"
+    },
+    {
+      "stylesheet": "inline",
+      "url": "https://fonts.gstatic.com/s/spectral/v13/rnCr-xNNww_2s0amA9M9knjsS_ulYHs.woff2",
+      "resolution": "not captured; disabled for offline use"
+    },
+    {
+      "stylesheet": "inline",
+      "url": "https://fonts.gstatic.com/s/spectral/v13/rnCr-xNNww_2s0amA9M2knjsS_ulYHs.woff2",
+      "resolution": "not captured; disabled for offline use"
+    },
+    {
+      "stylesheet": "inline",
+      "url": "https://fonts.gstatic.com/s/spectral/v13/rnCr-xNNww_2s0amA9M3knjsS_ulYHs.woff2",
+      "resolution": "not captured; disabled for offline use"
+    },
+    {
+      "stylesheet": "inline",
+      "url": "https://fonts.gstatic.com/s/spectral/v13/rnCr-xNNww_2s0amA9M5knjsS_ul.woff2",
+      "resolution": "not captured; disabled for offline use"
+    },
+    {
+      "stylesheet": "inline",
+      "url": "https://fonts.gstatic.com/s/spectral/v13/rnCs-xNNww_2s0amA9vmtm3FafaPWnIIMrY.woff2",
+      "resolution": "not captured; disabled for offline use"
+    },
+    {
+      "stylesheet": "inline",
+      "url": "https://fonts.gstatic.com/s/spectral/v13/rnCs-xNNww_2s0amA9vmtm3OafaPWnIIMrY.woff2",
+      "resolution": "not captured; disabled for offline use"
+    },
+    {
+      "stylesheet": "inline",
+      "url": "https://fonts.gstatic.com/s/spectral/v13/rnCs-xNNww_2s0amA9vmtm3PafaPWnIIMrY.woff2",
+      "resolution": "not captured; disabled for offline use"
+    },
+    {
+      "stylesheet": "inline",
+      "url": "https://fonts.gstatic.com/s/spectral/v13/rnCs-xNNww_2s0amA9vmtm3BafaPWnII.woff2",
+      "resolution": "not captured; disabled for offline use"
+    },
+    {
+      "stylesheet": "main.6ce36c8ef0ba7f130cb1.css",
+      "url": "https://substackcdn.com/img/twitter.white.svg?v=7347c44865f3ff8230ffdfb142b2c3ad",
+      "resolution": "not captured; disabled for offline use"
+    },
+    {
+      "stylesheet": "main.6ce36c8ef0ba7f130cb1.css",
+      "url": "https://substackcdn.com/img/twitter.white.svg?v=7347c44865f3ff8230ffdfb142b2c3ad",
+      "resolution": "not captured; disabled for offline use"
+    },
+    {
+      "stylesheet": "main.6ce36c8ef0ba7f130cb1.css",
+      "url": "https://substackcdn.com/image/fetch/$s_!50YO!,w_72,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack.com%2Fimg%2Fgoogle.png",
+      "resolution": "not captured; disabled for offline use"
+    },
+    {
+      "stylesheet": "main.6ce36c8ef0ba7f130cb1.css",
+      "url": "https://substackcdn.com/img/twitter.white.svg?v=7347c44865f3ff8230ffdfb142b2c3ad",
+      "resolution": "not captured; disabled for offline use"
+    },
+    {
+      "stylesheet": "main.6ce36c8ef0ba7f130cb1.css",
+      "url": "https://substackcdn.com/img/twitter.white.svg?v=7347c44865f3ff8230ffdfb142b2c3ad",
+      "resolution": "not captured; disabled for offline use"
+    },
+    {
+      "stylesheet": "main.6ce36c8ef0ba7f130cb1.css",
+      "url": "https://substackcdn.com/image/fetch/$s_!50YO!,w_72,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack.com%2Fimg%2Fgoogle.png",
+      "resolution": "not captured; disabled for offline use"
+    }
+  ],
+  "assets": [
+    {
+      "source_name": "03a3e981-eedb-4e04-bd13-d2bad043c189_701x701.jpg",
+      "source_path": "guide/How to turn your AI into a world-class designer_files/03a3e981-eedb-4e04-bd13-d2bad043c189_701x701.jpg",
+      "sha256": "55dd2b891c15875d1dbcd4a9036b19b1e7f597815573e73f307bd223662e235c",
+      "asset_path": "assets/how-to-turn-your-ai-into-a-world/03a3e981-eedb-4e04-bd13-d2bad043c189_701x701.jpg",
+      "bytes": 1152,
+      "mime_type": "image/jpeg",
+      "width": 32,
+      "height": 32,
+      "animated": false,
+      "frames": 1,
+      "figure_number": null,
+      "figure_id": null
+    },
+    {
+      "source_name": "05d5d17e-053e-4b41-bf16-243d1ee4b865_2912x1940.png",
+      "source_path": "guide/How to turn your AI into a world-class designer_files/05d5d17e-053e-4b41-bf16-243d1ee4b865_2912x1940.png",
+      "sha256": "d9c1d5ad49530f807789c8d651cf82a48d1bb1aaecbf908600007bc99ca65dd0",
+      "asset_path": "assets/how-to-turn-your-ai-into-a-world/05d5d17e-053e-4b41-bf16-243d1ee4b865_2912x1940.png",
+      "bytes": 36339,
+      "mime_type": "image/png",
+      "width": 320,
+      "height": 213,
+      "animated": false,
+      "frames": 1,
+      "figure_number": null,
+      "figure_id": null
+    },
+    {
+      "source_name": "0e1d6d22-1828-47d5-b2f6-0d88fef90ae2_1456x571.png",
+      "source_path": "guide/How to turn your AI into a world-class designer_files/0e1d6d22-1828-47d5-b2f6-0d88fef90ae2_1456x571.png",
+      "sha256": "9c27c9654d74ab46811cf2c1957fa42d9ee1365179d39f8a1ca25b4bdbb70219",
+      "asset_path": "assets/how-to-turn-your-ai-into-a-world/figure-11-0e1d6d22-1828-47d5-b2f6-0d88fef90ae2_1456x571.png",
+      "bytes": 292101,
+      "mime_type": "image/png",
+      "width": 1456,
+      "height": 571,
+      "animated": false,
+      "frames": 1,
+      "figure_number": 11,
+      "figure_id": "figure-11",
+      "preceding_text": "I want to come up with a bold, unique design language for my product. Can you list as many ideas as you can, with short, high-level descriptions? Go broad, not deep.",
+      "preceding_heading": "Technique 2: Be much more ambitious with your prompts"
+    },
+    {
+      "source_name": "0e7340b1-9a93-4d94-abc6-c6b386f3a36c_1456x449.png",
+      "source_path": "guide/How to turn your AI into a world-class designer_files/0e7340b1-9a93-4d94-abc6-c6b386f3a36c_1456x449.png",
+      "sha256": "628a712bf22fb6d79c10564c81730523837e7477fc8e11621bcd303cfd353db1",
+      "asset_path": "assets/how-to-turn-your-ai-into-a-world/figure-12-0e7340b1-9a93-4d94-abc6-c6b386f3a36c_1456x449.png",
+      "bytes": 44517,
+      "mime_type": "image/png",
+      "width": 1456,
+      "height": 449,
+      "animated": false,
+      "frames": 1,
+      "figure_number": 12,
+      "figure_id": "figure-12",
+      "preceding_text": "Can you sharpen this one based on my tastes?",
+      "preceding_heading": "Technique 2: Be much more ambitious with your prompts"
+    },
+    {
+      "source_name": "220747d1-f561-405f-a95c-7b05fd64731b_640x360.gif",
+      "source_path": "guide/How to turn your AI into a world-class designer_files/220747d1-f561-405f-a95c-7b05fd64731b_640x360.gif",
+      "sha256": "1784b6579de66fb819e2e9d467810fde29582c250586e85443577ea4742266e9",
+      "asset_path": "assets/how-to-turn-your-ai-into-a-world/figure-10-220747d1-f561-405f-a95c-7b05fd64731b_640x360.gif",
+      "bytes": 15595433,
+      "mime_type": "image/gif",
+      "width": 640,
+      "height": 360,
+      "animated": true,
+      "frames": 444,
+      "figure_number": 10,
+      "figure_id": "figure-10",
+      "preceding_text": "“Build me a landing page for my productivity app, with a radically asymmetric layout, dissonant colors and typography, and uncomfortable negative space. Break all the rules but still make it look good.”",
+      "preceding_heading": "Technique 2: Be much more ambitious with your prompts"
+    },
+    {
+      "source_name": "22ab6568-7231-4db5-9212-62cd9ff67569_1203x1203.jpg",
+      "source_path": "guide/How to turn your AI into a world-class designer_files/22ab6568-7231-4db5-9212-62cd9ff67569_1203x1203.jpg",
+      "sha256": "9a06ebd115ae6cca732ce2fce921f155e8323530d457ca7363ca0619dcfd296f",
+      "asset_path": "assets/how-to-turn-your-ai-into-a-world/22ab6568-7231-4db5-9212-62cd9ff67569_1203x1203.jpg",
+      "bytes": 1120,
+      "mime_type": "image/jpeg",
+      "width": 32,
+      "height": 32,
+      "animated": false,
+      "frames": 1,
+      "figure_number": null,
+      "figure_id": null
+    },
+    {
+      "source_name": "25c296a8-ce8c-4633-ac96-2dcbad6d9430_1456x876.jpg",
+      "source_path": "guide/How to turn your AI into a world-class designer_files/25c296a8-ce8c-4633-ac96-2dcbad6d9430_1456x876.jpg",
+      "sha256": "1d5498bff8f0d1417903385e5c58936667ddd0c67a5e448c7186c8af608293a9",
+      "asset_path": "assets/how-to-turn-your-ai-into-a-world/figure-14-25c296a8-ce8c-4633-ac96-2dcbad6d9430_1456x876.jpg",
+      "bytes": 110934,
+      "mime_type": "image/jpeg",
+      "width": 1456,
+      "height": 876,
+      "animated": false,
+      "frames": 1,
+      "figure_number": 14,
+      "figure_id": "figure-14",
+      "preceding_text": "For example, look at the designs we came up with using seed strings:",
+      "preceding_heading": "Define: Deepen your design direction"
+    },
+    {
+      "source_name": "263e0c31-8ed5-40d0-b3d3-2fff6ef4f129_2912x1858.jpg",
+      "source_path": "guide/How to turn your AI into a world-class designer_files/263e0c31-8ed5-40d0-b3d3-2fff6ef4f129_2912x1858.jpg",
+      "sha256": "adec5563f7ae909423295f5427a5c346c3237f4640b2d8cfe4e853db7ce4022e",
+      "asset_path": "assets/how-to-turn-your-ai-into-a-world/263e0c31-8ed5-40d0-b3d3-2fff6ef4f129_2912x1858.jpg",
+      "bytes": 29242,
+      "mime_type": "image/jpeg",
+      "width": 320,
+      "height": 213,
+      "animated": false,
+      "frames": 1,
+      "figure_number": null,
+      "figure_id": null
+    },
+    {
+      "source_name": "2f3bb583-375b-4a12-aa57-64a10bf2d9e7_960x540.gif",
+      "source_path": "guide/How to turn your AI into a world-class designer_files/2f3bb583-375b-4a12-aa57-64a10bf2d9e7_960x540.gif",
+      "sha256": "61af1dbdf63d4f1546a46621fa9b5f4c9819926e852c95f599f4e579352d8285",
+      "asset_path": "assets/how-to-turn-your-ai-into-a-world/figure-21-2f3bb583-375b-4a12-aa57-64a10bf2d9e7_960x540.gif",
+      "bytes": 15556990,
+      "mime_type": "image/gif",
+      "width": 960,
+      "height": 540,
+      "animated": true,
+      "frames": 88,
+      "figure_number": 21,
+      "figure_id": "figure-21",
+      "preceding_text": "GPT-5.6 Sol:",
+      "preceding_heading": "Technique 5: For more advanced motion, use video generation"
+    },
+    {
+      "source_name": "3174cc8a-c197-4be5-991d-0834d05cfc42_1456x1949.png",
+      "source_path": "guide/How to turn your AI into a world-class designer_files/3174cc8a-c197-4be5-991d-0834d05cfc42_1456x1949.png",
+      "sha256": "3d9393f1ea5e592fb35ca071719fe3f32e647441a955f58b4936874b777c9c07",
+      "asset_path": "assets/how-to-turn-your-ai-into-a-world/figure-25-3174cc8a-c197-4be5-991d-0834d05cfc42_1456x1949.png",
+      "bytes": 124869,
+      "mime_type": "image/png",
+      "width": 1456,
+      "height": 1949,
+      "animated": false,
+      "frames": 1,
+      "figure_number": 25,
+      "figure_id": "figure-25",
+      "preceding_text": "Here’s the difference that process can make:",
+      "preceding_heading": "Technique 8: Rewrite copy by hand"
+    },
+    {
+      "source_name": "3d880aa5-5e31-45f5-99c4-8055dcb87f4a_640x360.gif",
+      "source_path": "guide/How to turn your AI into a world-class designer_files/3d880aa5-5e31-45f5-99c4-8055dcb87f4a_640x360.gif",
+      "sha256": "0b430b6d9522a5a809e7d04978f627eba73008d2b2e9b3d1ce5add84c984b07b",
+      "asset_path": "assets/how-to-turn-your-ai-into-a-world/figure-08-3d880aa5-5e31-45f5-99c4-8055dcb87f4a_640x360.gif",
+      "bytes": 30982344,
+      "mime_type": "image/gif",
+      "width": 640,
+      "height": 360,
+      "animated": true,
+      "frames": 450,
+      "figure_number": 8,
+      "figure_id": "figure-08",
+      "preceding_text": "“Build me a landing page for my productivity app, with a bold pixel art theme and stunning graphics. Each section should feel like a still from a video game, yet somehow it should all function as a landing page.”",
+      "preceding_heading": "Technique 2: Be much more ambitious with your prompts"
+    },
+    {
+      "source_name": "441213db-4824-4e48-9d28-a3a18952cbfc_592x592.png",
+      "source_path": "guide/How to turn your AI into a world-class designer_files/441213db-4824-4e48-9d28-a3a18952cbfc_592x592.png",
+      "sha256": "8780eb0311dfd4b709489ccebfbbdc5253d59dbee2442bd4ab9d54ba9ac18a81",
+      "asset_path": "assets/how-to-turn-your-ai-into-a-world/441213db-4824-4e48-9d28-a3a18952cbfc_592x592.png",
+      "bytes": 3761,
+      "mime_type": "image/png",
+      "width": 40,
+      "height": 40,
+      "animated": false,
+      "frames": 1,
+      "figure_number": null,
+      "figure_id": null
+    },
+    {
+      "source_name": "4ca0ce7c-c730-443a-bde3-f62996b43c7d_1456x692.png",
+      "source_path": "guide/How to turn your AI into a world-class designer_files/4ca0ce7c-c730-443a-bde3-f62996b43c7d_1456x692.png",
+      "sha256": "0f230329cc267aee4e0710d6ff8c4aa22f3e15c6b2428496f47e32af0de1bba7",
+      "asset_path": "assets/how-to-turn-your-ai-into-a-world/figure-13-4ca0ce7c-c730-443a-bde3-f62996b43c7d_1456x692.png",
+      "bytes": 64345,
+      "mime_type": "image/png",
+      "width": 1456,
+      "height": 692,
+      "animated": false,
+      "frames": 1,
+      "figure_number": 13,
+      "figure_id": "figure-13",
+      "preceding_text": "Can you write a concise prompt that an AI agent could use to build an initial POC page with this?",
+      "preceding_heading": "Technique 2: Be much more ambitious with your prompts"
+    },
+    {
+      "source_name": "500dea51-b2ab-4b1b-b3db-e6d094da2d96_144x144.jpg",
+      "source_path": "guide/How to turn your AI into a world-class designer_files/500dea51-b2ab-4b1b-b3db-e6d094da2d96_144x144.jpg",
+      "sha256": "0187c0209ed2f6e919860a6479a89dacff44a0c8c4c82c6738aa6d3fed10d23f",
+      "asset_path": "assets/how-to-turn-your-ai-into-a-world/500dea51-b2ab-4b1b-b3db-e6d094da2d96_144x144.jpg",
+      "bytes": 1147,
+      "mime_type": "image/jpeg",
+      "width": 32,
+      "height": 32,
+      "animated": false,
+      "frames": 1,
+      "figure_number": null,
+      "figure_id": null
+    },
+    {
+      "source_name": "5e045d71-d5f7-436a-be1f-eb870df24062_1456x1861.jpg",
+      "source_path": "guide/How to turn your AI into a world-class designer_files/5e045d71-d5f7-436a-be1f-eb870df24062_1456x1861.jpg",
+      "sha256": "85d727818f792367444cdd71d313400420f8cc95873409b3d1496d0468fff3d5",
+      "asset_path": "assets/how-to-turn-your-ai-into-a-world/figure-15-5e045d71-d5f7-436a-be1f-eb870df24062_1456x1861.jpg",
+      "bytes": 228286,
+      "mime_type": "image/jpeg",
+      "width": 1456,
+      "height": 1861,
+      "animated": false,
+      "frames": 1,
+      "figure_number": 15,
+      "figure_id": "figure-15",
+      "preceding_text": "Claude Opus 5:",
+      "preceding_heading": "Technique 3: Create positive feedback loops with subagents"
+    },
+    {
+      "source_name": "65ceb75e-aeb7-411d-99fa-eacaad0dbdae_1456x2424.jpg",
+      "source_path": "guide/How to turn your AI into a world-class designer_files/65ceb75e-aeb7-411d-99fa-eacaad0dbdae_1456x2424.jpg",
+      "sha256": "e9e93ff8527c35f683f38d432eaec80716bbd784cf8d1a7a17746ee05142c94f",
+      "asset_path": "assets/how-to-turn-your-ai-into-a-world/figure-24-65ceb75e-aeb7-411d-99fa-eacaad0dbdae_1456x2424.jpg",
+      "bytes": 367823,
+      "mime_type": "image/jpeg",
+      "width": 1456,
+      "height": 2424,
+      "animated": false,
+      "frames": 1,
+      "figure_number": 24,
+      "figure_id": "figure-24",
+      "preceding_text": "",
+      "preceding_heading": "Technique 7: Remove AI tells"
+    },
+    {
+      "source_name": "6b68fd37-43ed-49a8-889d-7f49e6102eb0_1456x970.jpg",
+      "source_path": "guide/How to turn your AI into a world-class designer_files/6b68fd37-43ed-49a8-889d-7f49e6102eb0_1456x970.jpg",
+      "sha256": "1091a49c068addd5988458b9e1fb1283064f0a0f3c7f9ca8c1e87eef4411f4dd",
+      "asset_path": "assets/how-to-turn-your-ai-into-a-world/6b68fd37-43ed-49a8-889d-7f49e6102eb0_1456x970.jpg",
+      "bytes": 10684,
+      "mime_type": "image/jpeg",
+      "width": 320,
+      "height": 213,
+      "animated": false,
+      "frames": 1,
+      "figure_number": null,
+      "figure_id": null
+    },
+    {
+      "source_name": "6cd1c67c-d7e1-4fa0-a419-5b32141f6592_144x144.png",
+      "source_path": "guide/How to turn your AI into a world-class designer_files/6cd1c67c-d7e1-4fa0-a419-5b32141f6592_144x144.png",
+      "sha256": "c1545ea98e9ae3b11097452255b640d862204267cc929f0fa265a38a76070f78",
+      "asset_path": "assets/how-to-turn-your-ai-into-a-world/6cd1c67c-d7e1-4fa0-a419-5b32141f6592_144x144.png",
+      "bytes": 1846,
+      "mime_type": "image/png",
+      "width": 32,
+      "height": 32,
+      "animated": false,
+      "frames": 1,
+      "figure_number": null,
+      "figure_id": null
+    },
+    {
+      "source_name": "7b59bdf3-8a82-46d1-94c2-4a1e60ea7cbf_1456x894.jpg",
+      "source_path": "guide/How to turn your AI into a world-class designer_files/7b59bdf3-8a82-46d1-94c2-4a1e60ea7cbf_1456x894.jpg",
+      "sha256": "91dc83172e2d9fff45619f236e9affa237a3008dae71d91d5fef7b0cffa1448a",
+      "asset_path": "assets/how-to-turn-your-ai-into-a-world/figure-05-7b59bdf3-8a82-46d1-94c2-4a1e60ea7cbf_1456x894.jpg",
+      "bytes": 243795,
+      "mime_type": "image/jpeg",
+      "width": 1456,
+      "height": 894,
+      "animated": false,
+      "frames": 1,
+      "figure_number": 5,
+      "figure_id": "figure-05",
+      "preceding_text": "Claude Opus 5:",
+      "preceding_heading": "Technique 1: Use seed strings to inject variety"
+    },
+    {
+      "source_name": "7cd81d80-09c1-4244-9651-43bba85771a4_1456x399.gif",
+      "source_path": "guide/How to turn your AI into a world-class designer_files/7cd81d80-09c1-4244-9651-43bba85771a4_1456x399.gif",
+      "sha256": "9f5f1af00a610edaed1b9a2db4807d8aacbb91da69fd8b6e118db93cbede072d",
+      "asset_path": "assets/how-to-turn-your-ai-into-a-world/figure-18-7cd81d80-09c1-4244-9651-43bba85771a4_1456x399.gif",
+      "bytes": 9035847,
+      "mime_type": "image/gif",
+      "width": 1456,
+      "height": 399,
+      "animated": true,
+      "frames": 96,
+      "figure_number": 18,
+      "figure_id": "figure-18",
+      "preceding_text": "Claude Opus 5 (before and after):",
+      "preceding_heading": "Technique 4: Use image generation to enrich designs"
+    },
+    {
+      "source_name": "7e2a6925-7451-4abe-aaa8-bc92823dd69a_1456x399.gif",
+      "source_path": "guide/How to turn your AI into a world-class designer_files/7e2a6925-7451-4abe-aaa8-bc92823dd69a_1456x399.gif",
+      "sha256": "52eb686d234384bf42c00f531574653afa0054d77393535841f95d08fd5c9e42",
+      "asset_path": "assets/how-to-turn-your-ai-into-a-world/figure-16-7e2a6925-7451-4abe-aaa8-bc92823dd69a_1456x399.gif",
+      "bytes": 4856189,
+      "mime_type": "image/gif",
+      "width": 1456,
+      "height": 399,
+      "animated": true,
+      "frames": 84,
+      "figure_number": 16,
+      "figure_id": "figure-16",
+      "preceding_text": "Claude Opus 5 (before and after):",
+      "preceding_heading": "Technique 4: Use image generation to enrich designs"
+    },
+    {
+      "source_name": "7ecb0858-9e41-4246-a6cc-d6630193d513_1456x970.jpg",
+      "source_path": "guide/How to turn your AI into a world-class designer_files/7ecb0858-9e41-4246-a6cc-d6630193d513_1456x970.jpg",
+      "sha256": "2764594825018547d80de6e09e2b9ba147649ed28bfb44899c37c0c3a334864d",
+      "asset_path": "assets/how-to-turn-your-ai-into-a-world/7ecb0858-9e41-4246-a6cc-d6630193d513_1456x970.jpg",
+      "bytes": 10347,
+      "mime_type": "image/jpeg",
+      "width": 320,
+      "height": 213,
+      "animated": false,
+      "frames": 1,
+      "figure_number": null,
+      "figure_id": null
+    },
+    {
+      "source_name": "828cd7bf-7e57-4cc3-bb72-2bcbbf5cac9e_2912x1940.png",
+      "source_path": "guide/How to turn your AI into a world-class designer_files/828cd7bf-7e57-4cc3-bb72-2bcbbf5cac9e_2912x1940.png",
+      "sha256": "b916b56b42a80f69c9f07eff6eb7b4991547360308b21bc9f9aa8d0455a7339b",
+      "asset_path": "assets/how-to-turn-your-ai-into-a-world/828cd7bf-7e57-4cc3-bb72-2bcbbf5cac9e_2912x1940.png",
+      "bytes": 36100,
+      "mime_type": "image/png",
+      "width": 320,
+      "height": 213,
+      "animated": false,
+      "frames": 1,
+      "figure_number": null,
+      "figure_id": null
+    },
+    {
+      "source_name": "98b533e6-cb30-4846-828e-ba0471f5e19c_800x800.jpg",
+      "source_path": "guide/How to turn your AI into a world-class designer_files/98b533e6-cb30-4846-828e-ba0471f5e19c_800x800.jpg",
+      "sha256": "76346bb82d82e2a554daa6e01f10b0419f52b1a35efc4c16b992776195590de3",
+      "asset_path": "assets/how-to-turn-your-ai-into-a-world/98b533e6-cb30-4846-828e-ba0471f5e19c_800x800.jpg",
+      "bytes": 1363,
+      "mime_type": "image/jpeg",
+      "width": 32,
+      "height": 32,
+      "animated": false,
+      "frames": 1,
+      "figure_number": null,
+      "figure_id": null
+    },
+    {
+      "source_name": "99a8d727-c514-4cb1-8789-c062c30b9a40_2400x1260.jpg",
+      "source_path": "guide/How to turn your AI into a world-class designer_files/99a8d727-c514-4cb1-8789-c062c30b9a40_2400x1260.jpg",
+      "sha256": "cab3dc5b856d99c4b38cd163431406d569771d6227a8ce0a4f98ba35de3e5824",
+      "asset_path": "assets/how-to-turn-your-ai-into-a-world/99a8d727-c514-4cb1-8789-c062c30b9a40_2400x1260.jpg",
+      "bytes": 5902,
+      "mime_type": "image/jpeg",
+      "width": 320,
+      "height": 213,
+      "animated": false,
+      "frames": 1,
+      "figure_number": null,
+      "figure_id": null
+    },
+    {
+      "source_name": "a3d78ad3-3100-4bf0-b6be-0fc4cfa07987_640x360.gif",
+      "source_path": "guide/How to turn your AI into a world-class designer_files/a3d78ad3-3100-4bf0-b6be-0fc4cfa07987_640x360.gif",
+      "sha256": "f98ae1241f0f67f76c29826c367e2baf973bfa6a84265d050dc6b35e69d4b344",
+      "asset_path": "assets/how-to-turn-your-ai-into-a-world/figure-03-a3d78ad3-3100-4bf0-b6be-0fc4cfa07987_640x360.gif",
+      "bytes": 4422737,
+      "mime_type": "image/gif",
+      "width": 640,
+      "height": 360,
+      "animated": true,
+      "frames": 72,
+      "figure_number": 3,
+      "figure_id": "figure-03",
+      "preceding_text": "A dynamic landing page, built in three prompts with Claude Opus 5 + GPT-5.6 Sol:",
+      "preceding_heading": ""
+    },
+    {
+      "source_name": "a7245156-8c71-4ecc-9897-5ce76e561faf_640x360.gif",
+      "source_path": "guide/How to turn your AI into a world-class designer_files/a7245156-8c71-4ecc-9897-5ce76e561faf_640x360.gif",
+      "sha256": "6900b05bb2506b92fabcf4476cb68a4419322c631062932d01877be0ac9ca508",
+      "asset_path": "assets/how-to-turn-your-ai-into-a-world/figure-09-a7245156-8c71-4ecc-9897-5ce76e561faf_640x360.gif",
+      "bytes": 7724644,
+      "mime_type": "image/gif",
+      "width": 640,
+      "height": 360,
+      "animated": true,
+      "frames": 225,
+      "figure_number": 9,
+      "figure_id": "figure-09",
+      "preceding_text": "“Build me a landing page for my productivity app, set in an isometric living 3D city, where different features are somehow represented by neighborhoods or buildings.”",
+      "preceding_heading": "Technique 2: Be much more ambitious with your prompts"
+    },
+    {
+      "source_name": "aa994e2f-caec-40bf-8cc5-8a1ef101dd21_1456x399.gif",
+      "source_path": "guide/How to turn your AI into a world-class designer_files/aa994e2f-caec-40bf-8cc5-8a1ef101dd21_1456x399.gif",
+      "sha256": "a33475420f7cdfe49b91e19b4468c705b58debd03c7dd2353e2a7fa2a25c0649",
+      "asset_path": "assets/how-to-turn-your-ai-into-a-world/figure-20-aa994e2f-caec-40bf-8cc5-8a1ef101dd21_1456x399.gif",
+      "bytes": 4480912,
+      "mime_type": "image/gif",
+      "width": 1456,
+      "height": 399,
+      "animated": true,
+      "frames": 72,
+      "figure_number": 20,
+      "figure_id": "figure-20",
+      "preceding_text": "GPT-5.6 Sol (before and after):",
+      "preceding_heading": "Technique 5: For more advanced motion, use video generation"
+    },
+    {
+      "source_name": "acd78b4f-7ef1-4ab9-84a3-903e83308449_1456x970.jpg",
+      "source_path": "guide/How to turn your AI into a world-class designer_files/acd78b4f-7ef1-4ab9-84a3-903e83308449_1456x970.jpg",
+      "sha256": "ea829c1cf2f0aa3f0b50e1c8ea84a8ce64aa6d939a2c9db1af8cb2487820860d",
+      "asset_path": "assets/how-to-turn-your-ai-into-a-world/acd78b4f-7ef1-4ab9-84a3-903e83308449_1456x970.jpg",
+      "bytes": 15297,
+      "mime_type": "image/jpeg",
+      "width": 320,
+      "height": 213,
+      "animated": false,
+      "frames": 1,
+      "figure_number": null,
+      "figure_id": null
+    },
+    {
+      "source_name": "b0df2411-475d-41e8-a5c3-c61efbec2b9a_195x195.jpg",
+      "source_path": "guide/How to turn your AI into a world-class designer_files/b0df2411-475d-41e8-a5c3-c61efbec2b9a_195x195.jpg",
+      "sha256": "3c3edf4dfc4f5c007f3b6372ee5f82f1faa03fa3ca1e21af57d0c808d60366be",
+      "asset_path": "assets/how-to-turn-your-ai-into-a-world/b0df2411-475d-41e8-a5c3-c61efbec2b9a_195x195.jpg",
+      "bytes": 1126,
+      "mime_type": "image/jpeg",
+      "width": 32,
+      "height": 32,
+      "animated": false,
+      "frames": 1,
+      "figure_number": null,
+      "figure_id": null
+    },
+    {
+      "source_name": "b36cea07-5af5-4d24-8f3f-ced3769ca20b_1457x971.jpg",
+      "source_path": "guide/How to turn your AI into a world-class designer_files/b36cea07-5af5-4d24-8f3f-ced3769ca20b_1457x971.jpg",
+      "sha256": "a6b46db5d37701677ea3f7b528a19a01a152a4fce8137ef16784f119f9f529b4",
+      "asset_path": "assets/how-to-turn-your-ai-into-a-world/b36cea07-5af5-4d24-8f3f-ced3769ca20b_1457x971.jpg",
+      "bytes": 9880,
+      "mime_type": "image/jpeg",
+      "width": 320,
+      "height": 213,
+      "animated": false,
+      "frames": 1,
+      "figure_number": null,
+      "figure_id": null
+    },
+    {
+      "source_name": "bc7e732b-64b8-4538-8b17-82290d34d032_1774x887.jpg",
+      "source_path": "guide/How to turn your AI into a world-class designer_files/bc7e732b-64b8-4538-8b17-82290d34d032_1774x887.jpg",
+      "sha256": "f4346e269d6281be9ff0a0824e463a8f97007314452b2ec56016f5679748a2fa",
+      "asset_path": "assets/how-to-turn-your-ai-into-a-world/figure-04-bc7e732b-64b8-4538-8b17-82290d34d032_1774x887.jpg",
+      "bytes": 95442,
+      "mime_type": "image/jpeg",
+      "width": 1456,
+      "height": 728,
+      "animated": false,
+      "frames": 1,
+      "figure_number": 4,
+      "figure_id": "figure-04",
+      "preceding_text": "However, if we can get the model to reach beyond the most predictable choices, we can access a vast landscape of creative ideas that most people miss out on.",
+      "preceding_heading": ""
+    },
+    {
+      "source_name": "bcd19ce7-434e-44f4-b1c2-5ff42c4621b8_400x400(1).jpg",
+      "source_path": "guide/How to turn your AI into a world-class designer_files/bcd19ce7-434e-44f4-b1c2-5ff42c4621b8_400x400(1).jpg",
+      "sha256": "37f901cd6d1714edcd7e09dc0f21794d09d5d740044a8eb0a67c7a48dbb4747e",
+      "asset_path": "assets/how-to-turn-your-ai-into-a-world/bcd19ce7-434e-44f4-b1c2-5ff42c4621b8_400x400(1).jpg",
+      "bytes": 1829,
+      "mime_type": "image/jpeg",
+      "width": 52,
+      "height": 52,
+      "animated": false,
+      "frames": 1,
+      "figure_number": null,
+      "figure_id": null
+    },
+    {
+      "source_name": "bcd19ce7-434e-44f4-b1c2-5ff42c4621b8_400x400.jpg",
+      "source_path": "guide/How to turn your AI into a world-class designer_files/bcd19ce7-434e-44f4-b1c2-5ff42c4621b8_400x400.jpg",
+      "sha256": "a18ab875bd1bb8e74ad6a37ee4cdb8155d8de0a098d016b7d49c601b53933080",
+      "asset_path": "assets/how-to-turn-your-ai-into-a-world/bcd19ce7-434e-44f4-b1c2-5ff42c4621b8_400x400.jpg",
+      "bytes": 1390,
+      "mime_type": "image/jpeg",
+      "width": 36,
+      "height": 36,
+      "animated": false,
+      "frames": 1,
+      "figure_number": null,
+      "figure_id": null
+    },
+    {
+      "source_name": "bcda7156-dbbd-4d18-a7fb-4cfc124563bf_1456x876.jpg",
+      "source_path": "guide/How to turn your AI into a world-class designer_files/bcda7156-dbbd-4d18-a7fb-4cfc124563bf_1456x876.jpg",
+      "sha256": "1d5498bff8f0d1417903385e5c58936667ddd0c67a5e448c7186c8af608293a9",
+      "asset_path": "assets/how-to-turn-your-ai-into-a-world/figure-07-bcda7156-dbbd-4d18-a7fb-4cfc124563bf_1456x876.jpg",
+      "bytes": 110934,
+      "mime_type": "image/jpeg",
+      "width": 1456,
+      "height": 876,
+      "animated": false,
+      "frames": 1,
+      "figure_number": 7,
+      "figure_id": "figure-07",
+      "preceding_text": "Claude Opus 5:",
+      "preceding_heading": "Technique 1: Use seed strings to inject variety"
+    },
+    {
+      "source_name": "c02123f6-00f8-4063-8463-5050d2649647_1456x399.gif",
+      "source_path": "guide/How to turn your AI into a world-class designer_files/c02123f6-00f8-4063-8463-5050d2649647_1456x399.gif",
+      "sha256": "2d101383e072eea9c6e5c8930d2eed2e4203ff8195a62a6ecbac86ac06b59e26",
+      "asset_path": "assets/how-to-turn-your-ai-into-a-world/figure-19-c02123f6-00f8-4063-8463-5050d2649647_1456x399.gif",
+      "bytes": 427059,
+      "mime_type": "image/gif",
+      "width": 1456,
+      "height": 399,
+      "animated": true,
+      "frames": 36,
+      "figure_number": 19,
+      "figure_id": "figure-19",
+      "preceding_text": "Claude Opus 5 (before and after):",
+      "preceding_heading": "Technique 4: Use image generation to enrich designs"
+    },
+    {
+      "source_name": "c1445c00-4834-4a86-ab85-5e53ae87a652_900x528.gif",
+      "source_path": "guide/How to turn your AI into a world-class designer_files/c1445c00-4834-4a86-ab85-5e53ae87a652_900x528.gif",
+      "sha256": "baa65ec6d749711a55d513eaf6115dbea0b86e445263be355d882e3381894392",
+      "asset_path": "assets/how-to-turn-your-ai-into-a-world/figure-02-c1445c00-4834-4a86-ab85-5e53ae87a652_900x528.gif",
+      "bytes": 20291263,
+      "mime_type": "image/gif",
+      "width": 900,
+      "height": 528,
+      "animated": true,
+      "frames": 122,
+      "figure_number": 2,
+      "figure_id": "figure-02",
+      "preceding_text": "A space exploration game, built in two prompts with Claude Opus 5:",
+      "preceding_heading": ""
+    },
+    {
+      "source_name": "dc9186ef-2b04-42a0-a460-8898b0590797_1456x964.jpg",
+      "source_path": "guide/How to turn your AI into a world-class designer_files/dc9186ef-2b04-42a0-a460-8898b0590797_1456x964.jpg",
+      "sha256": "ed50e4ead9f5ef5df0b25f6db0573012eb29d7558bc8cb0178c2e4ed34610003",
+      "asset_path": "assets/how-to-turn-your-ai-into-a-world/figure-22-dc9186ef-2b04-42a0-a460-8898b0590797_1456x964.jpg",
+      "bytes": 87589,
+      "mime_type": "image/jpeg",
+      "width": 1456,
+      "height": 964,
+      "animated": false,
+      "frames": 1,
+      "figure_number": 22,
+      "figure_id": "figure-22",
+      "preceding_text": "When polishing AI designs, most of my effort goes into removing things. For example, when I was building my calorie tracking app, this was my initial design from Claude:",
+      "preceding_heading": "Technique 6: Cut out elements that don’t add value"
+    },
+    {
+      "source_name": "dd7a56c2-5569-4009-b5f1-9236f147451c_1456x970.png",
+      "source_path": "guide/How to turn your AI into a world-class designer_files/dd7a56c2-5569-4009-b5f1-9236f147451c_1456x970.png",
+      "sha256": "a2966f1a1af7ef9bd320499d5cd89da33ab05fda6cf0d214c47f1caa82cf58bb",
+      "asset_path": "assets/how-to-turn-your-ai-into-a-world/dd7a56c2-5569-4009-b5f1-9236f147451c_1456x970.png",
+      "bytes": 34886,
+      "mime_type": "image/png",
+      "width": 320,
+      "height": 213,
+      "animated": false,
+      "frames": 1,
+      "figure_number": null,
+      "figure_id": null
+    },
+    {
+      "source_name": "f37064a7-2853-4314-b175-aa65b8a13f43_1456x876.jpg",
+      "source_path": "guide/How to turn your AI into a world-class designer_files/f37064a7-2853-4314-b175-aa65b8a13f43_1456x876.jpg",
+      "sha256": "9e8de9fa5fb485c8ce9171dadfe024869532b1bb61898dabd7df32dd31caacca",
+      "asset_path": "assets/how-to-turn-your-ai-into-a-world/figure-06-f37064a7-2853-4314-b175-aa65b8a13f43_1456x876.jpg",
+      "bytes": 115211,
+      "mime_type": "image/jpeg",
+      "width": 1456,
+      "height": 876,
+      "animated": false,
+      "frames": 1,
+      "figure_number": 6,
+      "figure_id": "figure-06",
+      "preceding_text": "Claude Opus 5:",
+      "preceding_heading": "Technique 1: Use seed strings to inject variety"
+    },
+    {
+      "source_name": "f4ae7b09-1555-4ade-850c-212cb0d089b2_1456x399.gif",
+      "source_path": "guide/How to turn your AI into a world-class designer_files/f4ae7b09-1555-4ade-850c-212cb0d089b2_1456x399.gif",
+      "sha256": "67c331e5592330e01d587bfec0a6b48acce2c2e9660ec11dfa6fd3e072080d68",
+      "asset_path": "assets/how-to-turn-your-ai-into-a-world/figure-17-f4ae7b09-1555-4ade-850c-212cb0d089b2_1456x399.gif",
+      "bytes": 2582380,
+      "mime_type": "image/gif",
+      "width": 1456,
+      "height": 399,
+      "animated": true,
+      "frames": 101,
+      "figure_number": 17,
+      "figure_id": "figure-17",
+      "preceding_text": "Claude Opus 5 (before and after):",
+      "preceding_heading": "Technique 4: Use image generation to enrich designs"
+    },
+    {
+      "source_name": "f7135ec6-882d-462e-9935-308206a97182_900x900.gif",
+      "source_path": "guide/How to turn your AI into a world-class designer_files/f7135ec6-882d-462e-9935-308206a97182_900x900.gif",
+      "sha256": "8ca920e305030eed3c5a2473e8322b4064ef85fae9a9e021b3847d64aadf3154",
+      "asset_path": "assets/how-to-turn-your-ai-into-a-world/figure-01-f7135ec6-882d-462e-9935-308206a97182_900x900.gif",
+      "bytes": 11559069,
+      "mime_type": "image/gif",
+      "width": 900,
+      "height": 900,
+      "animated": true,
+      "frames": 99,
+      "figure_number": 1,
+      "figure_id": "figure-01",
+      "preceding_text": "A conversational calorie tracker, built in three prompts with Claude Fable 5:",
+      "preceding_heading": ""
+    },
+    {
+      "source_name": "fc7a28f8-6f65-4af1-ab97-dbe2d3ac7ac8_144x144.jpg",
+      "source_path": "guide/How to turn your AI into a world-class designer_files/fc7a28f8-6f65-4af1-ab97-dbe2d3ac7ac8_144x144.jpg",
+      "sha256": "0187c0209ed2f6e919860a6479a89dacff44a0c8c4c82c6738aa6d3fed10d23f",
+      "asset_path": "assets/how-to-turn-your-ai-into-a-world/fc7a28f8-6f65-4af1-ab97-dbe2d3ac7ac8_144x144.jpg",
+      "bytes": 1147,
+      "mime_type": "image/jpeg",
+      "width": 32,
+      "height": 32,
+      "animated": false,
+      "frames": 1,
+      "figure_number": null,
+      "figure_id": null
+    },
+    {
+      "source_name": "fce07243-d494-4f0a-b65b-3f70f90c987e_1456x970.jpg",
+      "source_path": "guide/How to turn your AI into a world-class designer_files/fce07243-d494-4f0a-b65b-3f70f90c987e_1456x970.jpg",
+      "sha256": "6366fe1f07558c845d044b544f4077c3581a886b9d58f875140ec5d6fefcb31d",
+      "asset_path": "assets/how-to-turn-your-ai-into-a-world/fce07243-d494-4f0a-b65b-3f70f90c987e_1456x970.jpg",
+      "bytes": 12569,
+      "mime_type": "image/jpeg",
+      "width": 320,
+      "height": 213,
+      "animated": false,
+      "frames": 1,
+      "figure_number": null,
+      "figure_id": null
+    },
+    {
+      "source_name": "fdf80ee5-9f43-44e9-93cf-c477a9e49128_1456x964.jpg",
+      "source_path": "guide/How to turn your AI into a world-class designer_files/fdf80ee5-9f43-44e9-93cf-c477a9e49128_1456x964.jpg",
+      "sha256": "f55b72ea83ff22e558e3693251dda6203bcf7d35098e1b5097a25745c3c0c6a9",
+      "asset_path": "assets/how-to-turn-your-ai-into-a-world/figure-23-fdf80ee5-9f43-44e9-93cf-c477a9e49128_1456x964.jpg",
+      "bytes": 182842,
+      "mime_type": "image/jpeg",
+      "width": 1456,
+      "height": 964,
+      "animated": false,
+      "frames": 1,
+      "figure_number": 23,
+      "figure_id": "figure-23",
+      "preceding_text": "This was the result:",
+      "preceding_heading": "Technique 6: Cut out elements that don’t add value"
+    },
+    {
+      "source_name": "https___substack-post-media.s3.amazonaws.com_public_images_bddbc549-6822-4b19-b62d-c7f01616a73e_5376x1024.png",
+      "source_path": "guide/How to turn your AI into a world-class designer_files/https___substack-post-media.s3.amazonaws.com_public_images_bddbc549-6822-4b19-b62d-c7f01616a73e_5376x1024.png",
+      "sha256": "4130e95e790f3d7ea13006508883e0d316eefbc561a75d8f909e23018ebca831",
+      "asset_path": "assets/how-to-turn-your-ai-into-a-world/https___substack-post-media.s3.amazonaws.com_public_images_bddbc549-6822-4b19-b62d-c7f01616a73e_5376x1024.png",
+      "bytes": 5839,
+      "mime_type": "image/png",
+      "width": 584,
+      "height": 72,
+      "animated": false,
+      "frames": 1,
+      "figure_number": null,
+      "figure_id": null
+    },
+    {
+      "source_name": "orange.png",
+      "source_path": "guide/How to turn your AI into a world-class designer_files/orange.png",
+      "sha256": "5fa4daae753720a75d615938dd9e0e12f1310cc92b1aba5f8c9d0cbf8ad1c461",
+      "asset_path": "assets/how-to-turn-your-ai-into-a-world/orange.png",
+      "bytes": 1895,
+      "mime_type": "image/png",
+      "width": 32,
+      "height": 32,
+      "animated": false,
+      "frames": 1,
+      "figure_number": null,
+      "figure_id": null
+    }
+  ]
+}

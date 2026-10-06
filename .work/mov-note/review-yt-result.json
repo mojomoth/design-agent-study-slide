@@ -1,0 +1,178 @@
+{
+ "accuracy": {
+  "issues": [
+   {
+    "severity": "should-fix",
+    "quote": "원래 내레이션은 YouTube 0:48.8까지 이어집니다.",
+    "replacement": "클립 뒤에서 잘린 문장은 YouTube 0:49.4쯤까지 이어집니다.",
+    "reason": "0:48.8 is when the last word starts, not when the sentence ends. Read literally, the sentence also says the whole narration stops at 0:48.8. It does not: the next sentence, which names the brewery, follows right after.",
+    "evidence": "subs.en-orig.json3, event 48000: 'using' 48.00, 'Fable' 48.40, '5.1.' 48.76, next word 'The' 49.76 (event continues 'The first is a 3D website for a local brewery called Southside Brewing', 49.76-53.80). Earlier in the video, '5.1' at 6.72 runs until 'and' at 7.60 (~0.9s), so the sentence-final '5.1.' ends around 49.3-49.5, not 48.8. The lens rule is end of last word, ~0.3s tolerance."
+   },
+   {
+    "severity": "should-fix",
+    "quote": "| 8 | 0:42.9~0:48.8 |",
+    "replacement": "| 8 | 0:42.9~0:49.4 |",
+    "reason": "The end time is the start of the last word ('5.1.' at 48.76), not its end. That is about 0.6s short, beyond the ~0.3s tolerance.",
+    "evidence": "json3 per-word starts: 'And' 42.88 ... 'Fable' 48.40, '5.1.' 48.76, next word 'The' 49.76. Saying 'five point one' takes ~0.6-0.9s (compare '5.1' 6.72 -> 'and' 7.60), so the last word ends ~49.4."
+   },
+   {
+    "severity": "should-fix",
+    "quote": "| 노트 범위 | YouTube 0:00~0:48.8 (클립 앞뒤에서 잘린 문장 포함) |",
+    "replacement": "| 노트 범위 | YouTube 0:00~0:49.4 (클립 앞뒤에서 잘린 문장 포함) |",
+    "reason": "Must match the corrected end of the cut-off closing sentence. The word '5.1.' only starts at 48.76, so a range ending at 0:48.8 does not include the whole sentence.",
+    "evidence": "json3: '5.1.' starts 48.76; next word 'The' 49.76."
+   },
+   {
+    "severity": "should-fix",
+    "quote": "0:43.1~0:48.8)의 화면은",
+    "replacement": "0:43.1~0:49.4)의 화면은",
+    "reason": "Same end-time error as the note range and comparison row 8. Keep all four 0:48.8 mentions consistent.",
+    "evidence": "json3: '5.1.' starts 48.76; next word 'The' 49.76."
+   },
+   {
+    "severity": "should-fix",
+    "quote": "| 1 | 0:05.8~0:09.5 |",
+    "replacement": "| 1 | 0:05.8~0:10.0 |",
+    "reason": "0:09.5 is when the last word 'websites,' starts (9.52), not when it ends. That is ~0.5s short, beyond the ~0.3s tolerance. Row 2 (end 0:14.2 for 'everything.' starting at 13.76) does use an estimated word end, so row 1 is also inconsistent with row 2.",
+    "evidence": "json3 event 9000: 'millions' 9.00, 'of' 9.44, 'websites,' 9.52, next word 'so' 10.44. The same word earlier ('websites,' 1.64 -> 'but' 2.56) gives a ~0.5s duration, so it ends ~10.0. Other rows also use the last word's start, but stay within ~0.3-0.4s (row 4 'reader,' 25.04 -> next 25.56; row 3 'bar.' 23.28 -> 24.04)."
+   },
+   {
+    "severity": "should-fix",
+    "quote": "Fable 5.1은 클립이 시작되기 직전에 말하기 때문에, 클립 첫 프레임의 자막에는 Opus만 남아 있습니다.",
+    "replacement": "클립 첫 프레임의 자막에는 Opus만 보입니다. Fable 5.1은 클립이 시작되기 직전에 말하므로, 자막에서도 이 부분이 클립 앞에서 잘렸을 가능성이 큽니다.",
+    "reason": "'남아 있습니다' states as fact that the Korean subtitle once contained Fable 5.1 and that part was pushed off. The evidence cannot show this. The line before 'Opus와' is not visible, and the clip's Korean subtitles come from a different translation than YouTube's Korean track, so we cannot check whether 'Fable 5.1' was in it or was dropped.",
+    "evidence": "Clip frame 0 (crop rendered to .work/mov-note/review-yt/first_subs.jpg) shows one bottom line, 'Opus와 같은 모델 들은'. The roll-up pattern (subs_0_9.jpg) shows the line above is removed before a lone bottom line appears, so the text before 'Opus와' is not visible. subs.ko.json3 (YouTube's own translation: '설계. 그러한 모델들, / Fable 5.1과 Opus처럼,') does not match the clip's wording."
+   }
+  ]
+ },
+ "style": {
+  "issues": [
+   {
+    "severity": "must-fix",
+    "quote": "원래 내레이션은 YouTube 0:48.8까지 이어집니다.",
+    "replacement": "클립 끝에서 `이…`로 시작한 문장은 YouTube 0:48.8까지 이어집니다.",
+    "reason": "지금 문장은 원래 내레이션 전체가 0:48.8에서 끝난다는 뜻으로 읽힙니다. 0:48.8에서 끝나는 것은 '이…'로 시작한 문장 하나이고, 다음 문장인 '이 문장에서 발표자는…'도 이 문장을 가리킵니다.",
+    "evidence": "subs.en-orig.json3: '... all created using Fable 5.1.'가 48.76초에 끝나고, 49.76초부터 'The first is a 3D website for a local brewery called ...'가 바로 이어집니다."
+   },
+   {
+    "severity": "must-fix",
+    "quote": "Fable 5.1은 클립이 시작되기 직전에 말하기 때문에, 클립 첫 프레임의 자막에는 Opus만 남아 있습니다.",
+    "replacement": "발표자가 Fable 5.1을 말하는 시점은 클립이 시작되기 직전이므로, 클립 첫 프레임의 자막에는 Opus만 남아 있는 것으로 보입니다.",
+    "reason": "'Fable 5.1은 … 말하기 때문에'에서는 Fable 5.1이 말하는 주체처럼 보이므로 주어와 목적어를 바로잡아야 합니다. 또 화면에서 확인한 사실이 아니라 추론이므로 단정하지 않는 편이 더 정확합니다.",
+    "evidence": "subs.en-orig.json3에서 'Fable'은 6.40초, '5.1'은 6.72초, 'and Opus'는 7.6~7.76초입니다. workflow-result.json의 first_frame_caption에 따르면 첫 프레임에는 'Opus와 같은 모델 들은' 한 줄만 보이므로, 앞부분이 잘렸다는 것은 추론입니다."
+   },
+   {
+    "severity": "should-fix",
+    "quote": "둘째, 슬라이드의 단어가 나타나는 순간이 영어 자막에서 그 단어를 말하는 시각과 맞습니다.",
+    "replacement": "둘째, 슬라이드에 단어가 나타나는 순간은 영어 자동 자막에 기록된 그 단어의 발화 시각과 일정한 간격을 두고 대응합니다.",
+    "reason": "두 시각은 같지 않고 약 7.6초씩 차이가 나므로, '맞습니다'는 실제 관계를 잘못 전달합니다. 또 말을 하는 것은 발표자이고 자막은 그 시각을 기록할 뿐이므로 주체도 어색합니다.",
+    "evidence": "바로 다음 문장에 '시차는 7.45~7.99초'라고 적혀 있습니다. 예를 들어 감독 칸은 클립 9.7초에 나타나고 'direct'는 YouTube 17.2초입니다."
+   },
+   {
+    "severity": "should-fix",
+    "quote": "본문과 표에 적힌 초 단위 시각은 따로 밝히지 않으면 클립 시각입니다.",
+    "replacement": "본문과 표에서 `4.30초`처럼 초로만 적은 시각은 클립 시각이고, `0:05.8`처럼 분과 초로 적은 시각은 YouTube 시각입니다.",
+    "reason": "새로 추가된 본문에는 장면 0의 '0:05.8부터는', 위치 섹션의 '(0:00~0:07.6, 0:43.1~0:48.8)', 장면 11의 '0:49 프레임'처럼 YouTube라고 따로 밝히지 않은 YouTube 시각이 있습니다. 이런 시각은 지금 규칙대로라면 클립 시각으로 오해될 수 있으므로, 표기 형식으로 두 시각을 구분하는 규칙을 적어야 합니다.",
+    "evidence": "MOV_NOTE.md 20, 71, 355행에서 m:ss 형식만으로 YouTube 시각을 적었습니다."
+   },
+   {
+    "severity": "should-fix",
+    "quote": "원래 문장은 `Fable 5.1 and Opus`처럼 두 모델을 함께 말합니다.",
+    "replacement": "원래 문장에서는 `Fable 5.1 and Opus`라고 두 모델을 함께 언급합니다.",
+    "reason": "인용한 구절이 원문 그대로이므로 비슷한 예를 드는 '처럼'은 맞지 않고, '라고'를 써야 합니다. 또 '문장은 … 말합니다'는 주어와 서술어가 어울리지 않습니다.",
+    "evidence": "subs.en-orig.json3 6.4~7.76초: 'Fable 5.1 and Opus'"
+   },
+   {
+    "severity": "should-fix",
+    "quote": "화면의 FABLE 5.1 배지와 OPUS 배지가 이 두 모델입니다.",
+    "replacement": "화면의 FABLE 5.1 배지와 OPUS 배지가 이 두 모델을 나타냅니다.",
+    "reason": "배지는 모델 자체가 아니라 모델을 표시하는 요소이므로, 'A가 B입니다'로 쓰면 의미 관계가 맞지 않습니다.",
+    "evidence": "장면 1 표의 'FABLE 5.1 / OPUS | 모델 이름 배지입니다.'"
+   },
+   {
+    "severity": "should-fix",
+    "quote": "약 10초 간격의 저해상도 미리보기인 YouTube 스토리보드로 0:00에 발표자만 화면에 나온다는 점을 확인했습니다.",
+    "replacement": "다만 약 10초 간격의 저해상도 미리보기인 YouTube 스토리보드에서, 0:00에는 발표자만 화면에 나오고 0:49에는 SOUTHSIDE BREWING 사이트가 화면 전체에 나온다는 점은 확인했습니다.",
+    "reason": "앞 문장의 '직접 확인하지 못했습니다'와 대조되는 내용인데 접속어가 없습니다. 또 장면 11에서는 같은 스토리보드의 0:49 프레임을 근거로 쓰므로, 이 섹션에서도 그 확인 범위를 함께 밝혀야 앞뒤가 맞습니다.",
+    "evidence": "sb0-M0.jpg 타일 0(0초)에는 발표자만 나오고, 타일 5(약 49.2초)에는 SOUTHSIDE의 'BIG HOPS. SHORT WALK.' 화면이 나옵니다. MOV_NOTE.md 355행에도 '스토리보드의 0:49 프레임에는'이라고 적혀 있습니다."
+   },
+   {
+    "severity": "should-fix",
+    "quote": "또 원본 영상의 영어 자동 자막과 영상 설명을 대조해서, 클립 자막이 원래 내레이션과 다른 부분을 표시했습니다.",
+    "replacement": "또 클립 자막을 원본 영상의 영어 자동 자막 및 영상 설명과 대조해서, 원래 내레이션과 뜻이 다른 부분을 표시했습니다.",
+    "reason": "지금 문장은 영어 자동 자막과 영상 설명을 서로 대조했다는 뜻으로 읽힙니다. 대조한 대상이 클립 자막이라는 점을 목적어로 밝혀야 합니다.",
+    "evidence": "'원래 내레이션과 비교' 섹션에서는 클립 자막과 영어 원문을 비교합니다."
+   },
+   {
+    "severity": "should-fix",
+    "quote": "자막과 뜻이 다른 부분에는 영어 원문의 해당 구절을 함께 적었습니다.",
+    "replacement": "클립 자막의 뜻이 원래 내레이션과 다른 부분에는 영어 원문의 해당 구절을 함께 적었습니다.",
+    "reason": "앞 문장에 '영어 자동 자막'이 나오므로 '자막'이 어느 자막인지 모호하고, 무엇이 무엇과 다른지도 드러나지 않습니다.",
+    "evidence": "같은 항목의 앞 문장이 'YouTube의 영어 자동 자막(단어별 시각 포함)과 영상 설명으로 확인했습니다'입니다."
+   },
+   {
+    "severity": "should-fix",
+    "quote": "0번과 8번의 나머지 부분은 클립에 없는 내레이션입니다.",
+    "replacement": "0번 문장 전체와 8번 문장에서 `이…` 뒤에 이어지는 부분은 클립에 없는 내레이션입니다.",
+    "reason": "'0번과 8번의 나머지 부분'은 0번에도 '나머지'가 걸리는 것처럼 읽힙니다. 0번은 전체가 클립에 없고 8번만 첫 글자가 클립에 있으므로, 이 차이를 구분해서 적어야 합니다.",
+    "evidence": "0번 행에는 '클립 앞에서 잘린 문장입니다'라고 적혀 있고, 클립 자막 8번은 '이…'입니다."
+   },
+   {
+    "severity": "should-fix",
+    "quote": "발표자는 실제 적용 사례로서 이 영상을 위해 직접 만든 랜딩 페이지 세 개를 보여 주겠다고 말하고",
+    "replacement": "발표자는 이 방법을 실제로 적용한 사례로 이 영상을 위해 직접 만든 랜딩 페이지 세 개를 보여 주겠다고 말하고",
+    "reason": "'실제 적용 사례로서'에는 무엇을 적용했는지가 빠져 있습니다. 원문의 'this in action'은 앞에서 설명한 방법을 실제로 적용한 모습을 가리킵니다.",
+    "evidence": "subs.en-orig.json3 42.88~46.44초: 'And to show you this in action, here are the three landing pages that I built for this video'"
+   },
+   {
+    "severity": "should-fix",
+    "quote": "여섯 카테고리는 원본 영상의 챕터 순서와 같습니다. 챕터 이름과 시작 시각은 영상 설명에 적힌 값입니다.",
+    "replacement": "6개 카테고리의 순서는 원본 영상의 챕터 1~6의 순서와 같습니다. 챕터 이름과 시작 시각은 영상 설명에 적힌 그대로 옮겼습니다.",
+    "reason": "'카테고리는 … 순서와 같습니다'는 비교 대상이 서로 맞지 않습니다. 또 노트의 다른 곳에서는 '6개 카테고리'라고 쓰므로 용어를 맞춰야 하고, 챕터 이름을 '값'이라고 부르는 것도 어색합니다.",
+    "evidence": "장면 10 제목과 표, 에셋 목록에서 '6개 카테고리'를 씁니다. info.json의 chapters와 영상 설명의 챕터 목록은 1. Design galleries부터 6. Design Systems까지입니다."
+   },
+   {
+    "severity": "should-fix",
+    "quote": "영상 설명은 세 사이트를 3D 양조장, 커피 로스터리, 오두막 숙소라고 소개합니다.",
+    "replacement": "영상 설명은 세 사이트를 3D로 만든 양조장 사이트, 커피 로스터리 사이트, 오두막 숙소 사이트라고 소개합니다.",
+    "reason": "'3D 양조장'은 양조장 자체가 3D라는 뜻으로 읽힙니다. 3D는 웹사이트의 특징이므로, 세 항목 모두 사이트를 가리킨다는 점을 분명히 해야 합니다.",
+    "evidence": "info.json description: 'the 3D brewery, the coffee roaster and the cabins'. subs.en-orig.json3 49.76초: 'The first is a 3D website for a local brewery'"
+   },
+   {
+    "severity": "should-fix",
+    "quote": "감독이 배우를 이끌듯 Claude를 이끈다는 뜻이며, 슬레이트의 DIRECTOR 칸과 같은 비유입니다.",
+    "replacement": "감독이 배우를 연출하듯 Claude를 지휘한다는 뜻이며, 슬레이트의 DIRECTOR 칸도 같은 비유를 그림으로 보여 줍니다.",
+    "reason": "'이끌듯 … 이끈다'는 같은 동사를 반복해서 비유의 내용이 흐려집니다. 또 '`direct Claude`는 … 칸과 같은 비유입니다'는 구절과 화면 요소를 같은 것으로 놓아서 주술 관계가 어색합니다.",
+    "evidence": "subs.en-orig.json3 17.2~17.76초: 'direct Claude'. 슬레이트에는 'DIRECTOR · YOU', 'TALENT · CLAUDE'라고 적혀 있습니다."
+   },
+   {
+    "severity": "should-fix",
+    "quote": "화면의 THEN LET IT LOOP, QUALITY BAR와 같은 표현이므로",
+    "replacement": "화면의 THEN LET IT LOOP, QUALITY BAR와 같은 단어를 쓰므로",
+    "reason": "원문 구절과 화면 문구는 표현 전체가 같지 않고 loop와 quality bar라는 단어만 같으므로, '같은 표현'은 실제보다 강한 주장입니다.",
+    "evidence": "원문은 'letting it loop until it hits that quality bar'이고, 화면 문구는 'THEN LET IT LOOP'와 'QUALITY BAR'입니다."
+   },
+   {
+    "severity": "should-fix",
+    "quote": "원문에 가깝게 읽으면",
+    "replacement": "원문에 가깝게 옮기면",
+    "reason": "영어 원문을 한국어로 옮긴 결과를 제시하는 문장이므로 '읽으면'보다 '옮기면'이 정확합니다. '읽으면 … 가 됩니다'는 서술 관계도 어색합니다.",
+    "evidence": "MOV_NOTE.md 59행: '원문에 가깝게 읽으면 '모든 것의 평균을 얻게 됩니다'가 됩니다.'"
+   },
+   {
+    "severity": "should-fix",
+    "quote": "클립 4.30초에 재생 위치가 `0:11 / 18:01`에서 `0:12 / 18:01`로 바뀝니다.",
+    "replacement": "클립 4.30초에 재생 위치가 `0:11 / 18:01`에서 `0:12 / 18:01`로 바뀝니다. 따라서 클립 4.30초는 YouTube 0:12.0 무렵에 해당합니다.",
+    "reason": "'두 가지 근거로 계산했습니다'라고 한 뒤 첫째 근거에서 관찰만 적고 결론을 생략해서, 이 관찰이 시차 계산과 어떻게 이어지는지 독자가 추론해야 합니다.",
+    "evidence": "4.30 + 7.6 = 11.9이므로 7.6초 차이와 0.4초 오차 범위 안에서 들어맞습니다."
+   },
+   {
+    "severity": "should-fix",
+    "quote": "의 도입부를 화면 녹화한",
+    "replacement": "의 도입부 일부를 화면 녹화한",
+    "reason": "이 클립은 도입부의 처음(0:00~0:07.6)과 끝부분을 포함하지 않으므로, '도입부를' 녹화했다고 쓰면 범위가 실제보다 넓게 전달됩니다.",
+    "evidence": "같은 노트의 표에 '클립 구간 | YouTube 약 0:07.6~0:43.1'이 있고, 첫 챕터 Design Inspiration은 0:00~3:05입니다."
+   }
+  ]
+ }
+}

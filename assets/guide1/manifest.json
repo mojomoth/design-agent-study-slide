@@ -1,0 +1,730 @@
+{
+  "source": "guide/guide1.mov",
+  "source_sha256": "73f1c256622c11e30b99caae5618231c725ee0c024899e952d4d9c9c91c42870",
+  "duration_seconds": 35.448333,
+  "source_dimensions_px": [
+    2190,
+    1224
+  ],
+  "audio_streams": 0,
+  "timestamp_note": "Requested seek time from source start; ffmpeg decodes the first available frame at or after that time.",
+  "crop_coordinate_convention": "[left, top, right, bottom], source pixels; right and bottom exclusive",
+  "processing": "Original decoded frames and rectangular crops only; no retouching, rotation, upscaling or background removal. Preview sheet alone is resized and labelled.",
+  "scenes": [
+    {
+      "id": "01-training",
+      "timestamp_seconds": 2.7,
+      "description_ko": "수백만 개의 웹사이트를 학습한 모델",
+      "capture": {
+        "path": "captures/01-training.png",
+        "dimensions_px": [
+          2190,
+          1224
+        ],
+        "bytes": 1360760,
+        "sha256": "5bbb29c06a553cdcbd97ff99190407819231972970fce06991bbe78de94fb0fe"
+      },
+      "crops": [
+        {
+          "id": "01-training-claim",
+          "description_ko": "모델 이름과 학습 규모",
+          "box_ltrb_px": [
+            410,
+            180,
+            1575,
+            750
+          ],
+          "path": "crops/01-training-claim.png",
+          "dimensions_px": [
+            1165,
+            570
+          ],
+          "bytes": 343093,
+          "sha256": "a13dcef823a52a6257974d90f3932e137931188f685821d2f147f5a4bd1d0130"
+        }
+      ]
+    },
+    {
+      "id": "02-request",
+      "timestamp_seconds": 4.8,
+      "description_ko": "현대적인 웹사이트를 요청하는 프롬프트",
+      "capture": {
+        "path": "captures/02-request.png",
+        "dimensions_px": [
+          2190,
+          1224
+        ],
+        "bytes": 1433441,
+        "sha256": "412499262e77d82d802b269eee7efc685f484358b766df4a25a6a63cef2b9f78"
+      },
+      "crops": [
+        {
+          "id": "02-modern-website-prompt",
+          "description_ko": "프롬프트 카드",
+          "box_ltrb_px": [
+            370,
+            365,
+            1795,
+            820
+          ],
+          "path": "crops/02-modern-website-prompt.png",
+          "dimensions_px": [
+            1425,
+            455
+          ],
+          "bytes": 184403,
+          "sha256": "b1b721f3d50288305de143ad4538b7e6f4a304ab4488e7a2422edad7f5407873"
+        }
+      ]
+    },
+    {
+      "id": "03-average",
+      "timestamp_seconds": 6.7,
+      "description_ko": "모든 것의 평균",
+      "capture": {
+        "path": "captures/03-average.png",
+        "dimensions_px": [
+          2190,
+          1224
+        ],
+        "bytes": 542414,
+        "sha256": "dfe218696fbba50ae953e178f6c5c9462ba40cf8b4e78d065e834acf38beb33e"
+      },
+      "crops": [
+        {
+          "id": "03-average-result",
+          "description_ko": "평균적인 결과물 도식",
+          "box_ltrb_px": [
+            440,
+            135,
+            1730,
+            1070
+          ],
+          "path": "crops/03-average-result.png",
+          "dimensions_px": [
+            1290,
+            935
+          ],
+          "bytes": 336173,
+          "sha256": "59787698e1c70180d4712bb7a24d4805d63e4157e5f767665476652df64843b2"
+        }
+      ]
+    },
+    {
+      "id": "04-reference",
+      "timestamp_seconds": 10.45,
+      "description_ko": "사용자가 방향을 정하고 Claude가 구현하는 역할",
+      "capture": {
+        "path": "captures/04-reference.png",
+        "dimensions_px": [
+          2190,
+          1224
+        ],
+        "bytes": 770958,
+        "sha256": "ed12fe13fa7bc757451f399674e7c97fb2c6cd61b443d4d362dc011dcb1a32ac"
+      },
+      "crops": [
+        {
+          "id": "04-oryzo-reference",
+          "description_ko": "ORYZO 참고 사이트",
+          "box_ltrb_px": [
+            175,
+            545,
+            800,
+            990
+          ],
+          "path": "crops/04-oryzo-reference.png",
+          "dimensions_px": [
+            625,
+            445
+          ],
+          "bytes": 126802,
+          "sha256": "4a2b0695301aeb26d75b564627220f03b28a9e378720ffd192a1d5d847eea815"
+        },
+        {
+          "id": "05-director-clapperboard",
+          "description_ko": "사용자와 Claude의 역할을 보여 주는 슬레이트",
+          "box_ltrb_px": [
+            1190,
+            195,
+            1845,
+            665
+          ],
+          "path": "crops/05-director-clapperboard.png",
+          "dimensions_px": [
+            655,
+            470
+          ],
+          "bytes": 131799,
+          "sha256": "b0700bc51a3d881008260bbb0e97739ae135d6bbbfb37f9c3199c16d09418698"
+        }
+      ]
+    },
+    {
+      "id": "05-direction",
+      "timestamp_seconds": 12.15,
+      "description_ko": "실제 참고 사이트를 제시하는 장면",
+      "capture": {
+        "path": "captures/05-direction.png",
+        "dimensions_px": [
+          2190,
+          1224
+        ],
+        "bytes": 941693,
+        "sha256": "a48392c41038014db67cda8a260fc23cecac641c8c3995894f05f5cd80b7f779"
+      },
+      "crops": [
+        {
+          "id": "06-claude-director",
+          "description_ko": "카메라와 모자를 착용한 캐릭터",
+          "box_ltrb_px": [
+            45,
+            575,
+            690,
+            1050
+          ],
+          "path": "crops/06-claude-director.png",
+          "dimensions_px": [
+            645,
+            475
+          ],
+          "bytes": 177553,
+          "sha256": "9e60b54a9ee4d53732cccdd7fd9e43729562a32d1842ea6d0afc3d02f8396a51"
+        }
+      ]
+    },
+    {
+      "id": "06-iterations",
+      "timestamp_seconds": 15.1,
+      "description_ko": "품질 기준에 도달하기 위한 반복",
+      "capture": {
+        "path": "captures/06-iterations.png",
+        "dimensions_px": [
+          2190,
+          1224
+        ],
+        "bytes": 628071,
+        "sha256": "87621d56700e1ce4cf794c9c730e44bb52450ceb84cc8b3c199bfcb976a16e93"
+      },
+      "crops": [
+        {
+          "id": "07-iteration-diagram",
+          "description_ko": "반복 작업과 품질 기준 도식",
+          "box_ltrb_px": [
+            140,
+            140,
+            1530,
+            960
+          ],
+          "path": "crops/07-iteration-diagram.png",
+          "dimensions_px": [
+            1390,
+            820
+          ],
+          "bytes": 242265,
+          "sha256": "ba70dec4a6073e72d4d371948e880dbd7fc7830534b110393fb17f41cc25ddf8"
+        }
+      ]
+    },
+    {
+      "id": "07-quality",
+      "timestamp_seconds": 16.05,
+      "description_ko": "네 번째 시도에서 품질 기준 통과",
+      "capture": {
+        "path": "captures/07-quality.png",
+        "dimensions_px": [
+          2190,
+          1224
+        ],
+        "bytes": 664431,
+        "sha256": "785494cf9959f98d8e7c5377509d15cff2e8dbc704ce4b02fb6f498e7edc39b7"
+      },
+      "crops": [
+        {
+          "id": "08-quality-cleared",
+          "description_ko": "품질 기준 통과 도식",
+          "box_ltrb_px": [
+            140,
+            140,
+            1530,
+            960
+          ],
+          "path": "crops/08-quality-cleared.png",
+          "dimensions_px": [
+            1390,
+            820
+          ],
+          "bytes": 281782,
+          "sha256": "1472885f03930f15641422b31b1ae36e8c1d8e166ce8a0bc84e9f0cbfd064dbf"
+        }
+      ]
+    },
+    {
+      "id": "08-mind-reader",
+      "timestamp_seconds": 17.5,
+      "description_ko": "Claude는 독심술사가 아니다",
+      "capture": {
+        "path": "captures/08-mind-reader.png",
+        "dimensions_px": [
+          2190,
+          1224
+        ],
+        "bytes": 602098,
+        "sha256": "b72ca88a22fcf6f80a2bac8c596ce57d90f120353b9f2d2df4ddb65e849fc3df"
+      },
+      "crops": [
+        {
+          "id": "09-not-a-mind-reader",
+          "description_ko": "독심술사 비유와 캐릭터",
+          "box_ltrb_px": [
+            55,
+            280,
+            2140,
+            1120
+          ],
+          "path": "crops/09-not-a-mind-reader.png",
+          "dimensions_px": [
+            2085,
+            840
+          ],
+          "bytes": 498006,
+          "sha256": "33e2459a501ad9fb160c1b977ce76186ec5db29bcfff56f21f169f7a68188911"
+        }
+      ]
+    },
+    {
+      "id": "09-adjectives",
+      "timestamp_seconds": 21.6,
+      "description_ko": "추상적인 스타일 단어로 요청한 결과",
+      "capture": {
+        "path": "captures/09-adjectives.png",
+        "dimensions_px": [
+          2190,
+          1224
+        ],
+        "bytes": 822267,
+        "sha256": "0340ebe25e4e2c0562a4a71567005d7039708dde9ccdb966f77cbf144eac53f8"
+      },
+      "crops": [
+        {
+          "id": "10-style-adjectives",
+          "description_ko": "스타일 형용사 카드",
+          "box_ltrb_px": [
+            175,
+            225,
+            1045,
+            970
+          ],
+          "path": "crops/10-style-adjectives.png",
+          "dimensions_px": [
+            870,
+            745
+          ],
+          "bytes": 382033,
+          "sha256": "a54d3f35cd9c0f016163c579598998b876e71412386f492aa9b08363efdb8760"
+        },
+        {
+          "id": "11-results-meh",
+          "description_ko": "추상적인 요청의 결과 게이지",
+          "box_ltrb_px": [
+            1260,
+            165,
+            1855,
+            655
+          ],
+          "path": "crops/11-results-meh.png",
+          "dimensions_px": [
+            595,
+            490
+          ],
+          "bytes": 59625,
+          "sha256": "616ec83c8f5cbf955dead1b680772754171ab4c3a349e404b4259fec3c066e8a"
+        }
+      ]
+    },
+    {
+      "id": "10-visual-example",
+      "timestamp_seconds": 23.3,
+      "description_ko": "구체적인 디자인 예시 FLOEMA",
+      "capture": {
+        "path": "captures/10-visual-example.png",
+        "dimensions_px": [
+          2190,
+          1224
+        ],
+        "bytes": 894171,
+        "sha256": "49fade38f6cc9425ab332f79b04f30f5e052bdfba91ac6cad8ce78893a202dbf"
+      },
+      "crops": [
+        {
+          "id": "12-floema-reference",
+          "description_ko": "FLOEMA 사이트 카드",
+          "box_ltrb_px": [
+            230,
+            350,
+            1110,
+            920
+          ],
+          "path": "crops/12-floema-reference.png",
+          "dimensions_px": [
+            880,
+            570
+          ],
+          "bytes": 392303,
+          "sha256": "06d336dd018e5b2bf99857a3751ab5b1dbd778e42e79b5aeba3dbb864436876f"
+        },
+        {
+          "id": "13-results-better",
+          "description_ko": "참고 이미지를 제시한 뒤의 결과 게이지",
+          "box_ltrb_px": [
+            1260,
+            165,
+            1855,
+            655
+          ],
+          "path": "crops/13-results-better.png",
+          "dimensions_px": [
+            595,
+            490
+          ],
+          "bytes": 70066,
+          "sha256": "62875dbb022090518957b862d26224644819ec9f57df432f3cca9d30cb26ec54"
+        }
+      ]
+    },
+    {
+      "id": "11-son-daven",
+      "timestamp_seconds": 24.9,
+      "description_ko": "구체적인 디자인 예시 SON DAVEN",
+      "capture": {
+        "path": "captures/11-son-daven.png",
+        "dimensions_px": [
+          2190,
+          1224
+        ],
+        "bytes": 896798,
+        "sha256": "02c651e86d44f4c4e8c58152f40f3938f5de6162c12f88298f8f4708a713a213"
+      },
+      "crops": [
+        {
+          "id": "14-son-daven-reference",
+          "description_ko": "SON DAVEN 사이트 카드",
+          "box_ltrb_px": [
+            410,
+            190,
+            1230,
+            760
+          ],
+          "path": "crops/14-son-daven-reference.png",
+          "dimensions_px": [
+            820,
+            570
+          ],
+          "bytes": 236510,
+          "sha256": "736be63a7bab6805ac3d57aa41f7ace45e0b83a6ed571789a8401d7df364c6ba"
+        }
+      ]
+    },
+    {
+      "id": "12-example-stack",
+      "timestamp_seconds": 25.6,
+      "description_ko": "FLOEMA, SON DAVEN, STUDIO 예시",
+      "capture": {
+        "path": "captures/12-example-stack.png",
+        "dimensions_px": [
+          2190,
+          1224
+        ],
+        "bytes": 870880,
+        "sha256": "7970f6d11259438b8b2bccf58a936d78aa9f9bdb0224110d20cb9d494c1a3173"
+      },
+      "crops": [
+        {
+          "id": "15-reference-stack",
+          "description_ko": "세 가지 웹사이트 예시 묶음",
+          "box_ltrb_px": [
+            220,
+            220,
+            1310,
+            985
+          ],
+          "path": "crops/15-reference-stack.png",
+          "dimensions_px": [
+            1090,
+            765
+          ],
+          "bytes": 412053,
+          "sha256": "72013bd24aafd8a6408aa41b030d57d073b41d7aed4fcd39dd31a85a90b203a7"
+        },
+        {
+          "id": "16-studio-reference",
+          "description_ko": "STUDIO 사이트 카드",
+          "box_ltrb_px": [
+            585,
+            460,
+            1300,
+            960
+          ],
+          "path": "crops/16-studio-reference.png",
+          "dimensions_px": [
+            715,
+            500
+          ],
+          "bytes": 201889,
+          "sha256": "1ca9e6edac3915c909db00179ddb3ee20d0164996560466dedc7064550ef567f"
+        }
+      ]
+    },
+    {
+      "id": "13-inspiration",
+      "timestamp_seconds": 29.8,
+      "description_ko": "디자이너가 영감을 얻는 사이트",
+      "capture": {
+        "path": "captures/13-inspiration.png",
+        "dimensions_px": [
+          2190,
+          1224
+        ],
+        "bytes": 1206667,
+        "sha256": "40630b8b51ff7cb622246163a77178c5574a8697e0d0f2124a4c56dc89c33a80"
+      },
+      "crops": [
+        {
+          "id": "17-inspiration-sites",
+          "description_ko": "디자인 참고 사이트 카드 모음",
+          "box_ltrb_px": [
+            65,
+            530,
+            1690,
+            1040
+          ],
+          "path": "crops/17-inspiration-sites.png",
+          "dimensions_px": [
+            1625,
+            510
+          ],
+          "bytes": 660987,
+          "sha256": "9c09ab55d26cfb0e93246489043124033bf1f06ddf150c012dfed6ba617e1f7f"
+        }
+      ]
+    },
+    {
+      "id": "14-categories",
+      "timestamp_seconds": 32.1,
+      "description_ko": "여섯 가지 디자인 참고 범주",
+      "capture": {
+        "path": "captures/14-categories.png",
+        "dimensions_px": [
+          2190,
+          1224
+        ],
+        "bytes": 515024,
+        "sha256": "4dd445d213eda89a1095c73a5229a9e3937301f6def131d8905bb2245717c643"
+      },
+      "crops": [
+        {
+          "id": "18-six-categories",
+          "description_ko": "여섯 가지 범주 전체",
+          "box_ltrb_px": [
+            20,
+            60,
+            2165,
+            860
+          ],
+          "path": "crops/18-six-categories.png",
+          "dimensions_px": [
+            2145,
+            800
+          ],
+          "bytes": 443063,
+          "sha256": "e07186a6184eb0bbef3c93992f123d3512bf8ee19e05180eb8e8b80af1a63d88"
+        },
+        {
+          "id": "19-category-galleries",
+          "description_ko": "01 갤러리",
+          "box_ltrb_px": [
+            25,
+            470,
+            345,
+            850
+          ],
+          "path": "crops/19-category-galleries.png",
+          "dimensions_px": [
+            320,
+            380
+          ],
+          "bytes": 51371,
+          "sha256": "f9d3ff0d66f3d8cda77b0c69e40b293500fb6b0a566dd386f82f28fe4d9ef0ba"
+        },
+        {
+          "id": "20-category-real-apps",
+          "description_ko": "02 실제 앱",
+          "box_ltrb_px": [
+            385,
+            470,
+            705,
+            850
+          ],
+          "path": "crops/20-category-real-apps.png",
+          "dimensions_px": [
+            320,
+            380
+          ],
+          "bytes": 51843,
+          "sha256": "ccbe75f8c944ec05cac3b1fe62ae01c7b1aa0157662596d56315006a44642037"
+        },
+        {
+          "id": "21-category-components",
+          "description_ko": "03 컴포넌트",
+          "box_ltrb_px": [
+            745,
+            470,
+            1065,
+            850
+          ],
+          "path": "crops/21-category-components.png",
+          "dimensions_px": [
+            320,
+            380
+          ],
+          "bytes": 59875,
+          "sha256": "5a2b7478d019661d1c98f8d580e4c320e0f29f6ced302e8df39ee0870b635ce4"
+        },
+        {
+          "id": "22-category-fonts",
+          "description_ko": "04 글꼴",
+          "box_ltrb_px": [
+            1105,
+            470,
+            1425,
+            850
+          ],
+          "path": "crops/22-category-fonts.png",
+          "dimensions_px": [
+            320,
+            380
+          ],
+          "bytes": 47874,
+          "sha256": "e33c0bd4a839844b9f1e19eaa0fd23bd5ff5deeb53b08756b4f79d130c97faf4"
+        },
+        {
+          "id": "23-category-color",
+          "description_ko": "05 색상",
+          "box_ltrb_px": [
+            1465,
+            470,
+            1785,
+            850
+          ],
+          "path": "crops/23-category-color.png",
+          "dimensions_px": [
+            320,
+            380
+          ],
+          "bytes": 62676,
+          "sha256": "b138ac4e49994d32d1baf1d6c60230d4acae40af60ac3170bbfe86d18dd1522c"
+        },
+        {
+          "id": "24-category-systems",
+          "description_ko": "06 시스템",
+          "box_ltrb_px": [
+            1825,
+            470,
+            2145,
+            850
+          ],
+          "path": "crops/24-category-systems.png",
+          "dimensions_px": [
+            320,
+            380
+          ],
+          "bytes": 55889,
+          "sha256": "ce8107680748b931cfd60684e2b6b767a9be99861534e81075b40fe69ba6dc3d"
+        }
+      ]
+    },
+    {
+      "id": "15-exact-look",
+      "timestamp_seconds": 34.4,
+      "description_ko": "원하는 디자인을 정확히 지시",
+      "capture": {
+        "path": "captures/15-exact-look.png",
+        "dimensions_px": [
+          2190,
+          1224
+        ],
+        "bytes": 716320,
+        "sha256": "f048b62b99b8acca3e67023e6d3f02268756ae72c430d688146b99e85c903f06"
+      },
+      "crops": [
+        {
+          "id": "25-exactly-the-look",
+          "description_ko": "원하는 모습 그대로라는 문구",
+          "box_ltrb_px": [
+            625,
+            860,
+            1200,
+            1025
+          ],
+          "path": "crops/25-exactly-the-look.png",
+          "dimensions_px": [
+            575,
+            165
+          ],
+          "bytes": 55410,
+          "sha256": "54ff6f7042ac26b8d8f90a1980b727dccc714c123a1ed2a7f89ba630b4f14c82"
+        }
+      ]
+    },
+    {
+      "id": "16-in-action",
+      "timestamp_seconds": 35.4,
+      "description_ko": "실제 적용 사례",
+      "capture": {
+        "path": "captures/16-in-action.png",
+        "dimensions_px": [
+          2190,
+          1224
+        ],
+        "bytes": 858998,
+        "sha256": "d34b728614c509274b2de9ec72a46f6a12e649b9f3054ea75c4935e322958719"
+      },
+      "crops": [
+        {
+          "id": "26-southside-brewing",
+          "description_ko": "SOUTHSIDE BREWING 웹사이트",
+          "box_ltrb_px": [
+            515,
+            375,
+            1415,
+            925
+          ],
+          "path": "crops/26-southside-brewing.png",
+          "dimensions_px": [
+            900,
+            550
+          ],
+          "bytes": 226314,
+          "sha256": "6fe814c6eae71e3ae097fa31929a1347c80fbbff49dc5d02b89ac72290fed1dc"
+        },
+        {
+          "id": "27-in-action-sites",
+          "description_ko": "HARBOUR LANE, SOUTHSIDE BREWING 등 적용 사례",
+          "box_ltrb_px": [
+            115,
+            370,
+            1690,
+            945
+          ],
+          "path": "crops/27-in-action-sites.png",
+          "dimensions_px": [
+            1575,
+            575
+          ],
+          "bytes": 445856,
+          "sha256": "ec90e1e097e633cf162def3b08d374dc1a3f75f073f4387c359749aaa6fa1dfa"
+        }
+      ]
+    }
+  ]
+}
