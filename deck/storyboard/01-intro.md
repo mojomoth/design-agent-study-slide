@@ -3,122 +3,101 @@
 ## S1. PORTFOLIO  (light)
 - headline: DESIGN EYE
 - text: Claude에게 디자인 안목을 주는 방법
-- labels: Here's How to Give Claude an Eye for Design, The AI Automators, 2026년 9월 7일
+- labels: Here's How to Give Claude an Eye for Design / The AI Automators, 2026년 9월 7일 / SOUTHSIDE BREWING의 실제 레퍼런스
 - images:
-  - assets/guide1-mov/crops/51-southside-brewing.png [cover] — SOUTHSIDE BREWING 랜딩 페이지(BIG HOPS. SHORT WALK. 헤드라인, IPA 캔, 아래 왼쪽 이름표). 칸 비율(1.68)이 원본과 같아 헤드라인 왼쪽 끝과 캔이 모두 남는다
-  - assets/guide1-mov/crops/06-oryzo-hero.png [cover, object-position left center] — REFERENCE 01 ORYZO 카드(초록 커팅 매트 위 주황 컵받침, ORYZO 로고). 왼쪽 기준으로 두어 이름표와 로고를 살리고 오른쪽 본문만 잘라 낸다
-  - assets/guide1-mov/crops/50-harbour-lane.png [cover] — Roasted by the Atlantic 세리프 헤드라인과 로스터 사진, HARBOUR LANE 이름표
-  - assets/guide1-mov/crops/23-example-02-son-daven.png [cover] — EXAMPLE 02 SON DAVEN 카드(황토색 바탕의 세리프 로고)
-  - assets/guide1-mov/crops/52-blackwater-cabins.png [cover] — 밤 호숫가 오두막 사진과 세리프 헤드라인, BLACKWATER CABINS 이름표
-- placement: data-hdr="bottom". DESIGN EYE를 d-l로 왼쪽 위(left 56, top 40). 오른쪽 위(left 1180, top 70, 폭 680)에 lead 한 줄. 큰 이미지는 왼쪽(left 0, top 260, 1060x631). 오른쪽 2x2 칸은 370x303 네 개를 (1100, 260) ORYZO, (1494, 260) HARBOUR LANE, (1100, 588) SON DAVEN, (1494, 588) BLACKWATER 순서로 둔다(아래 끝 891이 큰 이미지와 맞음). 큰 이미지 아래(left 56, top 918)에 lbl-s로 영상 제목, 그 아래(top 950)에 cap으로 채널과 게시일.
-- source: # Claude에게 디자인 안목을 주는 방법: 도입, ## 1 콘텐츠의 출처 항목. 이미지는 모두 같은 영상의 화면이다(ORYZO는 ## 2 레퍼런스 01, SOUTHSIDE BREWING은 ## 2의 맥주 사이트와 랜딩 페이지 3개, SON DAVEN은 ## 3 EXAMPLE 02).
+  - deck/img/01/51-southside-site.png [cover] — SOUTHSIDE BREWING 랜딩 페이지(BIG HOPS. SHORT WALK., IPA 캔)
+  - deck/img/sites/oryzo.png [cover, object-position left center] — ORYZO 랜딩 페이지의 평평한 원본 스크린샷(1600x1000). 기울어진 둥근 카드(06-oryzo-card)는 확대되어 흐리고 그림자가 있어 뺐다
+- placement: data-hdr="bottom". DESIGN EYE 260px(left 46, top 34). lead는 오른쪽 위(left 1126, top 62). 이미지 두 장 top 290, 높이 558: SOUTHSIDE(left 56, 폭 1030), ORYZO(left 1126, 폭 738), 사이 간격 40. 아래(top 878)에 왼쪽 lbl-s 영상 제목과 cap 채널/날짜, 오른쪽 cap ORYZO 설명.
+- source: 도입 제목, ## 1 출처, ## 2 레퍼런스 01 ORYZO와 맥주 사이트 SOUTHSIDE BREWING. ORYZO와 SOUTHSIDE를 잇는 문장은 이 슬라이드 캡션에만 있다.
 
-## S2. BEST CONCEPT  (dark)
-- headline: INTRO
-- text: 없음
-- labels: 막연한 요청은 평균으로, 레퍼런스로 방향, 반복으로 품질, 말 대신 예시
-- images: 없음(시각 장치: 큰 숫자 1 2 3)
-- placement: INTRO를 d-xxl로 왼쪽 위(left 40, top 140)에 크림색으로. 아래쪽(top 640)에 세 칸(left 56 / 676 / 1296, 각 폭 540)을 두고, 칸마다 .num 숫자 1, 2, 3과 그 오른쪽(padding-top 24)에 txt의 <b> 한 줄로 라벨을 둔다. 다른 글자는 넣지 않는다(PART 01 표기는 머리 라벨이 맡는다).
-- source: ## 1, ## 2, ## 3 제목(세 아이디어 미리 보기)
+## S2. OUR TRAM, 세 아이디어 미리 보기  (dark)
+- headline: 3 IDEAS (661px, 아래로 잘림)
+- labels: 01 막연하면 평균이 나온다 / 02 레퍼런스로 방향, 반복으로 품질 / 03 말보다 예시
+- images (각 576x379, top 124, left 56 / 672 / 1288):
+  - deck/img/01/05-average-frame-top.png [cover] — 05-average-frame.png(1394x968)의 아래 70px(검은 노트북 받침 막대)를 잘라 낸 1394x898
+  - deck/img/01/13-loop-iterating-wide.png [cover] — THEN LET IT LOOP, 02 LOOPS
+  - deck/img/01/25-example-cards-top.png [cover] — 25-example-cards-stack.png(1058x740)에서 y 0~694만 남겨 아래 거치대를 뺐다
+- placement: 라벨은 각 이미지 아래 top 528(lbl 숫자 + txt 굵게). 3 IDEAS는 left 43, top 616.
+- 메모: 이미지 없는 큰 숫자 INTRO 안은 폐기했다(이미지 우선 요구). 첫 칸을 글자만 남기는 크롭(05-average-type)도 시도했으나 글자 띠(3.6:1)가 칸 비율(1.52:1)과 맞지 않아 위쪽 그림자 경계선이 생기거나 칸 절반이 비어 보여 쓰지 않았다. 그래서 S4의 흐린 목업이 여기서 한 번 미리 보인다.
 
 ## S3. DESIGN IDEA  (light)
-- headline: TRAINED ON / MILLIONS
-- text: Claude는 보기 좋은 사이트를 만들지만 / 무엇이 뛰어난 디자인인지는 모른다
-- labels: 수백만 개의 웹사이트로 학습, 막연한 요청: 현대적인 느낌의 웹사이트
-- images:
-  - assets/guide1-mov/crops/01-millions-of-websites-card.png [cover] — FABLE 5.1, OPUS 배지와 TRAINED ON MILLIONS OF WEBSITES 카드 전체. 비율이 같아 배지와 MILLIONS가 모두 남는다
-  - assets/guide1-mov/crops/02-you-ask-for-prompt.png [cover] — YOU ASK FOR 카드의 > a modern looking website 한 줄 전체
-- placement: 헤드라인은 d-l 두 줄(TRAINED ON / MILLIONS)로 왼쪽 위(left 48, top 120). 텍스트 두 줄은 헤드라인 오른쪽(left 1100, top 300, 폭 700)에 lead로. 이미지 1은 left 56, top 560, 860x377. 이미지 2는 left 1000, top 610, 864x275. 각 이미지 아래(top 955)에 cap으로 라벨 하나씩.
-- source: ## 1. 막연하게 요청하면 평균적인 결과가 나온다 (Claude의 한계, Fable 5.1과 Opus의 학습 데이터, 막연한 요청)
+- headline: TRAINED ON / MILLIONS (250px, line-height .92, left 52, top 118)
+- text: Claude는 보기 좋은 사이트를 만들지만 / 무엇이 뛰어난 디자인인지는 모른다 (lead, left 1126, top 482, 마지막 줄이 MILLIONS 기준선과 맞음)
+- images (같은 폭 884, top 624, 높이 400):
+  - deck/img/01/01-millions-card.png [cover] — FABLE 5.1, OPUS 배지와 TRAINED ON MILLIONS OF WEBSITES (left 56)
+  - deck/img/01/03-you-ask-for-card.png [cover] — YOU ASK FOR > a modern looking website (left 980)
+- source: ## 1 (Claude의 한계, Fable 5.1과 Opus 학습 데이터, 막연한 요청)
 
-## S4. PHOTOGRAPHY  (light)
-- headline: AVERAGE
-- text: 막연한 요청은 모든 것의 평균으로 / AI 결과물이 서로 비슷해 보이는 이유
-- labels: 없음
+## S4. PHOTOGRAPHY  (dark)
+- headline: AVERAGE (578px, 크림색, left 40, bottom -60)
+- text: 막연한 요청의 결과는 모든 것의 평균 / AI 결과물이 다 비슷해 보이는 이유 (txt, left 1420, top 275, 폭 444)
 - images:
-  - assets/guide1-mov/crops/03-press-crushing.png [cover] — 위아래 PRESS 막대 사이에서 짓눌리는 웹사이트 썸네일. 칸 비율(2.82)이 원본과 같아 PRESS 라벨과 노란 경고 줄무늬가 모두 남는다
-  - assets/guide1-mov/crops/04-average-website-mockup.png [cover] — 프레스가 만들어 낸 흐릿한 회색 평균 랜딩 페이지. 비율이 같아 잘리지 않는다
-- placement: data-hdr="none". 프레스 이미지를 왼쪽 위 가장자리에 붙인다(left 0, top 0, 1380x490). 평균 목업은 오른쪽 위(left 1420, top 0, 444x274). 목업 아래(left 1420, top 310, 폭 444)에 txt 두 줄. AVERAGE는 d-xxl로 맨 아래 왼쪽(left 24, bottom -60)에 두어 아래로 살짝 잘리게 한다.
-- source: ## 1. 막연하게 요청하면 평균적인 결과가 나온다 (프레스 비유, 평균적인 웹사이트 목업, THE AVERAGE OF EVERYTHING, 결과물이 비슷해 보이는 이유)
+  - deck/img/01/03-press-body.png [cover] — PRESS 사이에서 짓눌리는 썸네일 (left 0, top 0, 1380x421). 검정 배경이라 위아래 검은 막대가 슬라이드에 녹는다
+  - deck/img/01/04-average-mockup-top.png [cover] — 04-average-website-mockup.png(952x588)에서 y 0~520만 남겨 검은 막대를 뺐다. 원본 비율 그대로 left 1420, top 0, 444x243(오른쪽 여백 1864에서 끝남)
+- placement: data-hdr="none". 검정 슬라이드로 바꿔 S3~S6의 크림 연속을 끊고, 크림 목업이 또렷한 직사각형으로 보이게 했다.
+- source: ## 1 (프레스 비유, 평균 목업, THE AVERAGE OF EVERYTHING, 결과물이 비슷해 보이는 이유)
 
 ## S5. MEET OUR LEADER  (light)
-- headline: DIRECTOR
-- text: 가장 중요한 일: 방향은 여러분, 구현은 Claude / ORYZO는 SOUTHSIDE BREWING의 실제 레퍼런스
-- labels: YOU, REFERENCE
+- headline: DIRECTOR (540px, left 35, top 131)
+- text: 가장 중요한 일: 레퍼런스 보여 주기 / 방향은 여러분, 구현은 Claude (txt, left 699, top 658, 폭 420)
 - images:
-  - assets/guide1-mov/crops/09-film-slate.png [cover] — 슬레이트의 PROD YOUR WEBSITE, DIRECTOR YOU, TALENT CLAUDE 세 줄과 TAKE 01. 비율이 같아 전부 남는다
-  - assets/guide1-mov/crops/10-character-holding-reference.png [cover] — 카메라를 멘 캐릭터가 REFERENCE 01 ORYZO 카드(it's wearable 화면)를 들어 보이는 장면 전체
-- placement: DIRECTOR를 d-xl로 왼쪽 위(left 56, top 110). 카드 1은 슬레이트(left 0, top 470, 600x435), 오른쪽 옆(left 640, top 480, 폭 260)에 첫 줄 txt, 아래(top 830)에 밑줄 d-xs YOU. 카드 2는 캐릭터(left 940, top 470, 600x370), 오른쪽 옆(left 1580, top 480, 폭 284)에 둘째 줄 txt, 아래(top 830)에 밑줄 d-xs REFERENCE.
-- source: ## 2. 레퍼런스로 방향을 정하고, 품질 기준선을 넘을 때까지 반복하게 한다 (가장 중요한 것, 감독과 배우 비유, 방향과 구현의 분담, 레퍼런스 ORYZO, 맥주 사이트 SOUTHSIDE BREWING의 실제 레퍼런스)
+  - deck/img/01/09-film-slate-card.png [cover] — 09-film-slate.png(635x460)에서 그림자 여백을 빼고 슬레이트 카드만 남긴 603x419(box 16, 13, 619, 432). 원본 크기 그대로 left 56, top 661에 두어 카드 왼쪽이 56 격자에 맞고 아래 가장자리로 이어진다
+  - deck/img/01/10-character-ref.png [cover] — REFERENCE 01 ORYZO 카드를 든 캐릭터 (left 1130, top 640, 790x440)
+- source: ## 2 (가장 중요한 것, 감독과 배우 비유, 방향과 구현의 분담, 레퍼런스 ORYZO)
 
 ## S6. OUR SERVICES  (light)
-- headline: LET IT / LOOP
-- text: 멈추는 기준은 횟수가 아니라 품질 기준선
-- labels: v1~v3 탈락, v4 통과, gauntlet loop, 발표자가 랜딩 페이지 3개에 쓴 방식
-- images:
-  - assets/guide1-mov/crops/13-loop-diagram-iterating.png [cover] — 02 LOOPS, v1이 X 표시와 함께 기준선 아래로 떨어지고 v2, v3가 도는 장면
-  - assets/guide1-mov/crops/14-loop-diagram-cleared.png [cover] — 04 LOOPS, 초록 QUALITY BAR와 CLEARED 표시, 기준선을 넘은 v4와 X 표시가 붙은 v1~v3 더미
-- placement: LET IT / LOOP를 d-l 두 줄로 왼쪽 위(left 48, top 120). 텍스트 한 줄은 그 아래(left 56, top 570)에 lead로. 이미지 1은 왼쪽 아래(left 56, top 650, 560x333). 그 오른쪽(left 660, top 860)에 .tag gauntlet loop, 그 아래(top 912, 폭 330)에 cap 한 줄. 오른쪽에 block-dark 패널(left 1020, top 380, 900x700, 오른쪽과 아래 가장자리까지). 패널 안 왼쪽 위(left 1060, top 420)에 크림색 lbl v1~v3 탈락, v4 통과. 이미지 2는 패널 안(left 1060, top 540, 820x488).
-- source: ## 2. 레퍼런스로 방향을 정하고, 품질 기준선을 넘을 때까지 반복하게 한다 (반복과 품질 기준선, v1~v3 탈락과 v4 통과, gauntlet loop 참고)
+- headline: LET IT / LOOP (250px, left 46, top 124)
+- text: 멈추는 기준은 횟수가 아니라 / 품질 기준선 (lead, left 56, top 868, 마지막 줄이 이미지 아래 끝 959와 맞음)
+- labels: v1~v3 탈락, v4 통과 (패널 안 크림색, left 640, top 172)
+- images: ../assets/guide1-mov/crops/14-loop-diagram-cleared.png [cover] — 04 LOOPS, QUALITY BAR, CLEARED (left 640, top 231, 1224x728, 오른쪽 끝 1864)
+- placement: block-dark 패널 left 600, top 112, 1320x968(오른쪽과 아래 가장자리까지). 이미지 위아래 여백이 약 120으로 같다. gauntlet loop tag와 cap은 뺐다(PART 03이 다룸).
+- source: ## 2 (반복과 품질 기준선, v1~v3 탈락과 v4 통과)
 
-## S7. STATEMENT SPLIT  (dark)
-- headline: NOT A / MIND / READER
-- text: 어떤 스타일을 원하는지 Claude는 모른다
-- labels: WHAT STYLE DO YOU WANT?
-- images:
-  - deck/img/01/15-mind-reader-character.png [cover] — 이미 만들어 둔 derived crop. 원본 assets/guide1-mov/crops/15-not-a-mind-reader.png에서 box [0, 0, 1148, 820]만 잘라 캐릭터와 물음표가 뜬 수정 구슬만 남겼다(NOT A의 N이 x 1150, READER의 R이 x 1158에서 시작하므로 그 앞에서 자름). 구슬 오른쪽 테두리가 조금 잘리는데, 이미지 오른쪽 끝과 맞물려 화면 밖으로 이어지는 것처럼 보인다
-- placement: 이미지를 왼쪽(left 0, top 160, 1080x770)에 슬라이드 왼쪽 가장자리까지 붙인다. NOT A / MIND / READER를 d-l 세 줄로 오른쪽(left 1150, top 140)에 크림색으로 쌓고, 그 아래(left 1150, top 760)에 lead 한 줄, 그 아래(top 830)에 lbl-s WHAT STYLE DO YOU WANT?.
-- source: ## 3. 말 대신 예시를 보여 준다: 영감 사이트 5개 카테고리 (독심술사가 아니다, 어떤 스타일을 원하나요?)
+## S7. STATEMENT SPLIT  (dark, 배경 #191310은 이미지 배경에 맞춘 이 슬라이드 전용 값)
+- headline: NOT A / MIND / READER (270px, 오른쪽 정렬 right 56, top 128)
+- text: 어떤 스타일을 원하는지 Claude는 모른다 (lead, right 56, top 900)
+- images: deck/img/01/15-mind-reader-ball.png [plain] — 캐릭터와 물음표 수정 구슬 (left 0, top 27, 1175x858). READER의 R과 구슬 사이 약 25px
+- source: ## 3 (독심술사가 아니다)
 
 ## S8. VISUAL DISPLAY, before and after  (light)
-- headline: MUCH BETTER
-- text: 형용사 14개를 쌓아도 게이지는 그대로 / 첫 예시를 보여 주자마자 게이지가 넘어간다
-- labels: 없음(예시 이름은 이미지의 EXAMPLE 01 FLOEMA 이름표가 맡는다)
-- images:
-  - assets/guide1-mov/crops/18-style-adjective-chips.png [contain] — make it look... 카드와 MODERN부터 NICE까지 형용사 칩 14개 전체(카드 밖 TRENDY, NICE 포함)
-  - assets/guide1-mov/crops/19-results-gauge-meh.png [contain] — 바늘이 MEH에 머문 RESULTS 게이지
-  - assets/guide1-mov/crops/21-example-01-floema.png [contain] — 게이지를 넘긴 첫 예시. EXAMPLE 01 FLOEMA 이름표와 숲속 다리 사진 히어로
-  - assets/guide1-mov/crops/22-results-gauge-much-better.png [contain] — 바늘이 MUCH BETTER로 넘어간 주황 게이지
-- placement: 위쪽을 세로선(.vrule, left 960, top 130, 높이 520)으로 나눈다. 왼쪽에 칩(left 56, top 130, 500x423)과 MEH 게이지(left 610, top 210, 300x243), 오른쪽에 FLOEMA(left 1000, top 150, 540x352)와 MUCH BETTER 게이지(left 1564, top 210, 300x243). 첫 줄 txt는 왼쪽 묶음 아래(left 56, top 590), 둘째 줄은 오른쪽 묶음 아래(left 1000, top 590). MUCH BETTER는 d-xl로 맨 아래(left 40, bottom -40)에 두어 아래로 살짝 잘리게 한다.
-- source: ## 3. 말 대신 예시를 보여 준다: 영감 사이트 5개 카테고리 (형용사 칩 14개와 MEH, 첫 예시 FLOEMA와 MUCH BETTER)
+- headline: MUCH BETTER (370px, left 42, bottom -40)
+- text: 형용사 14개를 쌓아도 MEH 그대로 / 첫 예시를 보여 주자마자 바늘이 넘어간다 (txt, top 605, left 56 / 986)
+- images (모두 contain, 세로 중심을 같은 선에 맞춤):
+  - ../assets/guide1-mov/crops/18-style-adjective-chips.png — left 56, top 165, 470x397
+  - deck/img/01/19-gauge-meh.png — left 536, top 203, 396x321
+  - deck/img/01/21-floema-trim.png — left 986, top 165, 470x397 (가운데 정렬)
+  - deck/img/01/22-gauge-much-better.png — left 1468, top 203, 396x321 (오른쪽 끝 1864)
+- placement: 세로선 left 959, top 165, 높이 480.
+- source: ## 3 (형용사 칩 14개와 MEH, 첫 예시 FLOEMA와 MUCH BETTER)
 
 ## S9. PRICING PLAN, columns  (dark)
-- headline: 5 CATEGORIES
-- text: 디자이너들이 영감을 얻는 사이트
-- labels: Reference, Component, Font, Color, Design System
-- images:
-  - assets/guide1-mov/crops/42-category-galleries.png [cover] — 01 GALLERIES 주황 타일
-  - assets/guide1-mov/crops/43-category-real-apps.png [cover] — 02 REAL APPS 청록 타일
-  - assets/guide1-mov/crops/44-category-components.png [cover] — 03 COMPONENTS 분홍 타일
-  - assets/guide1-mov/crops/45-category-fonts.png [cover] — 04 FONTS 보라 타일
-  - assets/guide1-mov/crops/46-category-color.png [cover] — 05 COLOR 노랑 타일
-  - assets/guide1-mov/crops/47-category-systems.png [cover] — 06 SYSTEMS 초록 타일
-- placement: 5 CATEGORIES를 d-l로 왼쪽 위(left 56, top 110)에 크림색으로, 텍스트 한 줄은 오른쪽 위(left 1300, top 250)에 lead로. 타일 6장을 271x322 크기로 top 440에 left 56 / 363 / 670 / 977 / 1284 / 1591로 나란히 둔다(원본 비율과 같아 잘리지 않음). 타일 1~2 아래에는 두 타일을 잇는 크림색 .rule(left 56~634, top 790)을 긋고 그 아래 가운데(top 810)에 lbl Reference를 두어 영상의 6개 중 둘을 하나로 묶었음을 보여 준다. 타일 3~6 아래(top 810)에는 각각 lbl Component, Font, Color, Design System. 열 사이(타일 2와 3 사이부터)에 크림색 .vrule을 넣어 PRICING PLAN처럼 칸을 나눈다. 설명 캡션과 직접 매긴 숫자는 넣지 않는다(타일의 01~06 배지와 겹치지 않게).
-- source: ## 3. 말 대신 예시를 보여 준다: 영감 사이트 5개 카테고리 (디자이너들이 영감을 얻는 사이트, 5개 카테고리, 6개를 5개로 묶은 이유)
+- headline: 5 CATEGORIES (280px, left 50, top 124)
+- text: 디자이너들이 / 영감을 얻는 사이트 (lead, 오른쪽 정렬 right 56, top 272)
+- labels: REFERENCE (tag.fill, 타일 1~2 위 가운데, top 512, 크림 막대 top 566 위에 얹힘)
+- images: ../assets/guide1-mov/crops/42~47 카테고리 타일 6장 [cover, bw], 274x326, top 580, left 56 / 330 / 645 / 960 / 1275 / 1590
+- placement: 01과 02를 REFERENCE 머리 아래 한 칸으로 묶어 5개 묶음이 먼저 읽히게 했다. 세로선 네 개와 아래 막대는 뺐다. 타일은 흑백으로 ref 팔레트에 맞췄다.
+- source: ## 3 (디자이너들이 영감을 얻는 사이트, 5개 카테고리, 6개를 5개로 묶음)
 
-## S10. PANORAMA  (light)
-- headline: EXACTLY THE LOOK
-- text: 찾은 예시로 원하는 모습을 정확히 가리킨다 / 사이트별 용도와 예시는 PART 03에서
-- labels: 없음
-- images:
-  - assets/guide1-mov/crops/39-inspiration-sites-fan.png [contain] — 부채꼴로 펼친 영감 사이트 카드 13장(AWWWARDS, SITEINSPIRE부터 TOOOLS.DESIGN까지). 배경이 크림이라 슬라이드 배경에 자연스럽게 녹아든다
-- placement: EXACTLY THE LOOK을 d-l 한 줄로 왼쪽 위(left 56, top 110). 텍스트 두 줄은 헤드라인 아래 오른쪽(left 1300, top 350, 폭 560)에 txt로. 부채꼴 이미지는 아래쪽 전체 폭(left 56, top 470, 1808x575)에 둔다.
-- source: ## 3. 말 대신 예시를 보여 준다: 영감 사이트 5개 카테고리 (영감 사이트, 정확히 원하는 모습, HOW_DESIGN_FROM_CC.md 2절로 연결)
+## S10. PANORAMA  (light, S9와 반대 배치)
+- headline: EXACTLY THE LOOK (274px, left 45, bottom -40, 아래로 잘림)
+- text: 찾은 예시로 Claude에게 / 원하는 모습을 짚어 준다 (lead, left 56, top 140)
+- images: deck/img/01/39-sites-fan.png [cover] — 부채꼴 영감 사이트 카드 13장. left 0, top 258, 1920x612로 좌우 가장자리까지 이어지고, 아래 끝(870)이 헤드라인 바로 위에 닿는다
+- source: ## 3 (영감 사이트, 원하는 모습을 Claude에게 정확히 가리켜 보여 줌)
 
 ## Coverage
-- # Claude에게 디자인 안목을 주는 방법: 도입 (문서 제목) → S1 lead, S2 INTRO.
-- ## 1. 막연하게 요청하면 평균적인 결과가 나온다 → S3, S4 (S2 숫자 1에서 미리 보기).
-  - ### 콘텐츠: 출처(채널, 영상 제목, 게시일) → S1 lbl-s와 cap. Claude의 한계 → S3 텍스트. Fable 5.1과 Opus, 수백만 개 웹사이트 학습 → S3 이미지 1(배지)과 첫 라벨. 막연한 요청 → S3 이미지 2와 둘째 라벨. 평균 → S4 헤드라인과 첫 줄. 프레스 비유 → S4 이미지 1. 흐릿한 평균 목업 → S4 이미지 2. 결과물이 비슷해 보임 → S4 둘째 줄. 화면 문구 TRAINED ON MILLIONS OF WEBSITES → S3 헤드라인, YOU ASK FOR → S3 이미지 2, THE AVERAGE OF EVERYTHING → S4 헤드라인 AVERAGE.
+- # Claude에게 디자인 안목을 주는 방법: 도입 (문서 제목) → S1 lead, S2 3 IDEAS.
+- ## 1. 막연하게 요청하면 평균적인 결과가 나온다 → S3, S4 (S2 첫 칸에서 미리 보기).
+  - ### 콘텐츠: 출처(채널, 영상 제목, 게시일) → S1 lbl-s와 cap. Claude의 한계 → S3 텍스트. Fable 5.1과 Opus, 수백만 개 웹사이트 학습 → S3 이미지 1(배지)과 첫 라벨. 막연한 요청 → S3 이미지 2와 둘째 라벨. 평균 → S4 헤드라인과 첫 줄. 프레스 비유 → S4 이미지 1. 흐릿한 평균 목업 → S4 이미지 2(S2 첫 칸에도 보임). 결과물이 비슷해 보임 → S4 둘째 줄. 화면 문구 TRAINED ON MILLIONS OF WEBSITES → S3 헤드라인, YOU ASK FOR → S3 이미지 2, THE AVERAGE OF EVERYTHING → S4 헤드라인 AVERAGE.
   - ### 관련 이미지: 01, 02 → S3. 03, 04 → S4.
   - 의도적 생략: 영상 길이(18분 2초), 영상 구간 타임스탬프, MOV_NOTE.md 장면 번호는 메타 정보라 넣지 않는다.
-- ## 2. 레퍼런스로 방향을 정하고, 품질 기준선을 넘을 때까지 반복하게 한다 → S5, S6 (S2 숫자 2에서 미리 보기, S1에 ORYZO와 SOUTHSIDE BREWING 화면).
-  - ### 콘텐츠: 가장 중요한 것 → S5 첫 줄 앞머리. 감독과 배우 비유 → S5 헤드라인과 슬레이트. 방향은 사람, 구현은 Claude → S5 첫 줄. 레퍼런스 01 ORYZO → S5 이미지 2(S1에도 ORYZO 히어로). 맥주 사이트의 실제 레퍼런스, 맥주 사이트 = SOUTHSIDE BREWING → S5 둘째 줄(S1 큰 이미지가 SOUTHSIDE BREWING). 반복과 품질 기준선 → S6 헤드라인과 lead. v1~v3 탈락, v4 통과 → S6 패널 라벨과 이미지 2. gauntlet loop 참고(발표자가 랜딩 페이지 3개에 씀) → S6 tag와 cap. 화면 문구 THE MOST IMPORTANT THING → S5 첫 줄의 가장 중요한 일, PROD/DIRECTOR/TALENT → S5 이미지 1, REFERENCE 01 ORYZO → S5 이미지 2, THEN LET IT LOOP → S6 헤드라인, QUALITY BAR / CLEARED → S6 이미지 2.
-  - ### 관련 이미지: 09, 10 → S5. 14 → S6 (진행 장면 13도 함께 사용).
+- ## 2. 레퍼런스로 방향을 정하고, 품질 기준선을 넘을 때까지 반복하게 한다 → S5, S6 (S2 둘째 칸에서 미리 보기, S1에 ORYZO와 SOUTHSIDE BREWING 화면).
+  - ### 콘텐츠: 가장 중요한 것 → S5 첫 줄 앞머리. 감독과 배우 비유 → S5 헤드라인과 슬레이트. 방향은 사람, 구현은 Claude → S5 첫 줄. 레퍼런스 01 ORYZO → S5 이미지 2(S1에도 ORYZO 랜딩 페이지). 맥주 사이트의 실제 레퍼런스, 맥주 사이트 = SOUTHSIDE BREWING → S1 캡션 "SOUTHSIDE BREWING의 실제 레퍼런스". 반복과 품질 기준선 → S6 헤드라인과 lead. v1~v3 탈락, v4 통과 → S6 패널 라벨과 이미지 2. gauntlet loop 참고 → PART 03이 다룬다(S6에서는 뺐다). 화면 문구 THE MOST IMPORTANT THING → S5 첫 줄의 가장 중요한 일, PROD/DIRECTOR/TALENT → S5 이미지 1, REFERENCE 01 ORYZO → S5 이미지 2, THEN LET IT LOOP → S6 헤드라인, QUALITY BAR / CLEARED → S6 이미지 2.
+  - ### 관련 이미지: 09, 10 → S5. 14 → S6 (진행 장면 13은 S2 둘째 칸).
   - 의도적 생략: HOW_DESIGN_FROM_CC.md 1절, 5.1절, GAUNTLET_LOOP.md 같은 다른 문서 참조 표기와 영상 구간 타임스탬프. ORYZO를 만든 스튜디오 Lusion은 글자 예산 때문에 텍스트로 넣지 않는다(S1의 ORYZO 히어로 화면에 DESIGNED BY LUSION이 작게 보인다).
-- ## 3. 말 대신 예시를 보여 준다: 영감 사이트 5개 카테고리 → S7, S8, S9, S10 (S2 숫자 3에서 미리 보기).
-  - ### 콘텐츠: 독심술사가 아니다, 원하는 스타일을 모른다 → S7. 형용사 칩 14개와 MEH → S8 왼쪽과 첫 줄. 첫 예시 FLOEMA와 MUCH BETTER → S8 오른쪽, 둘째 줄, 헤드라인. 디자이너들이 영감을 얻는 사이트 → S9 lead와 S10 부채꼴 이미지. 5개 카테고리(Reference, Component, Font, Color, Design System) → S9. 영상은 6개, 이 덱은 갤러리와 실제 앱을 Reference로 묶음 → S9 타일 1~2를 잇는 선과 Reference 라벨. 찾은 예시로 원하는 모습을 정확히 가리킴 → S10. 각 사이트의 용도와 예시는 HOW_DESIGN_FROM_CC.md 2절 → S10 둘째 줄의 PART 03 안내. 화면 문구 NOT A MIND READER → S7 헤드라인, WHAT STYLE DO YOU WANT? → S7 라벨, THE SITES WHERE DESIGNERS GET THEIR INSPIRATION → S9 lead, EXACTLY THE LOOK → S10 헤드라인.
+- ## 3. 말 대신 예시를 보여 준다: 영감 사이트 5개 카테고리 → S7, S8, S9, S10 (S2 셋째 칸에서 미리 보기).
+  - ### 콘텐츠: 독심술사가 아니다, 원하는 스타일을 모른다 → S7. 형용사 칩 14개와 MEH → S8 왼쪽과 첫 줄. 첫 예시 FLOEMA와 MUCH BETTER → S8 오른쪽, 둘째 줄, 헤드라인. 디자이너들이 영감을 얻는 사이트 → S9 lead와 S10 부채꼴 이미지. 5개 카테고리(Reference, Component, Font, Color, Design System) → S9. 영상은 6개, 이 덱은 갤러리와 실제 앱을 Reference로 묶음 → S9 타일 1~2 위의 REFERENCE 머리와 막대. 찾은 예시로 원하는 모습을 정확히 가리킴 → S10. 각 사이트의 용도와 예시는 HOW_DESIGN_FROM_CC.md 2절 → PART 03. 화면 문구 NOT A MIND READER → S7 헤드라인, WHAT STYLE DO YOU WANT?는 글자 예산 때문에 뺐다, THE SITES WHERE DESIGNERS GET THEIR INSPIRATION → S9 lead, EXACTLY THE LOOK → S10 헤드라인.
   - ### 관련 이미지: 19, 22 → S8. 39 → S10. 25(세 예시 겹침) 대신 첫 예시 단독 장면 21을 S8에 쓴다. 게이지를 넘긴 것이 첫 예시라는 점이 더 분명하다.
-  - 의도적 생략: 이어서 SON DAVEN과 STUDIO 예시가 쌓이는 장면(SON DAVEN 화면은 S1 그리드에 있음). 카테고리별 사이트 이름(Awwwards, Siteinspire, Lapa Ninja, Mobbin, Refero, Pinterest, toools.design, 21st.dev, React Bits, Fonts In Use, Google Fonts, Coolors, Branding Style Guides)은 S10 부채꼴 카드에만 시각적으로 등장하고, 사이트별 소개는 실제 스크린샷이 있는 PART 03이 맡는다(중복 방지). 영상 챕터 시각(3:05, 7:48, 10:38, 12:06, 13:17, 14:03, 16:14)과 영상 구간 타임스탬프는 메타 정보라 넣지 않는다.
+  - 의도적 생략: 이어서 SON DAVEN과 STUDIO 예시가 쌓이는 장면(SON DAVEN과 STUDIO는 S2 셋째 칸에만 보임). 카테고리별 사이트 이름(Awwwards, Siteinspire, Lapa Ninja, Mobbin, Refero, Pinterest, toools.design, 21st.dev, React Bits, Fonts In Use, Google Fonts, Coolors, Branding Style Guides)은 S10 부채꼴 카드에만 시각적으로 등장하고, 사이트별 소개는 실제 스크린샷이 있는 PART 03이 맡는다(중복 방지). 영상 챕터 시각(3:05, 7:48, 10:38, 12:06, 13:17, 14:03, 16:14)과 영상 구간 타임스탬프는 메타 정보라 넣지 않는다.
 
 ## Review log
 - S1 출처 오표기 수정: Lenny's Newsletter 그림 2장(figure-02 VERUXNIS, figure-21 Waymark)이 "영상 출처: The AI Automators" 캡션 옆에 놓여 영상 화면처럼 보였다. 둘 다 SLIDE1과 무관하고 figure-21은 NOTE2(PART 02) 기법 5의 그림이라 덱 안에서 중복될 자리였다. 영상 화면인 ORYZO 히어로(06)와 SON DAVEN(23)으로 바꿔 그리드 다섯 장을 모두 영상 출처로 맞췄다.
@@ -134,3 +113,4 @@
 - S9: 글자 예산을 넘어 묶음 설명 cap을 뺐다. 6개를 5개로 묶었다는 점은 타일 1~2를 잇는 선과 Reference 라벨이 보여 준다.
 - S10: "사이트별 사례는 PART 03에서"를 "사이트별 용도와 예시는 PART 03에서"로 고쳤다(원문은 HOW_DESIGN_FROM_CC.md 2절의 용도와 예시 페이지를 가리키며, PART 03의 "사례"는 5절의 세 사례를 뜻해 혼동된다).
 - 리듬: 검정 슬라이드 3장(S2, S7, S9), 연속으로 반복되는 배치 없음. 이미지를 쓴 슬라이드 9/10, 나머지 1장(S2)은 큰 숫자를 쓴다. 이미지 항목 25개의 경로는 모두 있는지 ls로 확인했고, 파트 안에서 같은 파일은 두 번 쓰지 않는다. 가운뎃점 문자는 쓰지 않았다.
+- Round 3: S1 ORYZO를 평평한 원본 스크린샷으로 교체, 이미지 간격 40. S2 첫 칸과 셋째 칸에서 노트북 받침과 거치대를 잘라 냄. S3 이미지 폭 884로 통일, 헤드라인 250px. S4 검정 슬라이드로 바꾸고 목업 막대 제거, 목업 전체가 보이게 원본 비율 444x243, 첫 줄 "막연한 요청의 결과는 모든 것의 평균". S5 슬레이트 카드만 잘라 56 격자에 맞춤, 첫 줄 "가장 중요한 일: 레퍼런스 보여 주기". S6 lead를 아래로, 이미지 폭 1224. S7 헤드라인 270px. S8 이미지 띠를 위로 올리고 키움, FLOEMA 가운데 정렬. S9 세로선과 아래 막대 제거, REFERENCE를 머리로, 타일 흑백. S10 배치를 뒤집어 이미지 위, 헤드라인 아래, 문장에 "Claude에게" 추가.

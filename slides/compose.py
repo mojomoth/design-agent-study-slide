@@ -3,6 +3,7 @@
 import json
 from copy import deepcopy
 from style_deck import restyle
+from article_content import apply_article
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -28,14 +29,10 @@ def slide(title, images, section, *, part=1, kicker='', caption='', notes='', te
                 notes=notes, texts=texts or [])
 
 
-def add_prompt_layout(s, copy):
+def add_prompt_layout(s):
     """Keep wide before/after Figures large; place tall demonstrations beside prompts."""
     s = deepcopy(s)
-    s.update({k:copy[k] for k in ['summary','prompt','prompt_label']})
     s['caption'] = ''
-    s['notes'] += '\n\nNOTE2 근거:\n' + copy.get('source_excerpt','')
-    s['notes'] += '\n\n화면의 프롬프트는 NOTE2의 요지와 예시를 발표용 요청문으로 정리한 것이다.'
-    s['source_excerpt'] = copy.get('source_excerpt','')
     figures = s['images']
     numbers = [int(Path(i['src']).name.split('-')[1]) for i in figures]
     bottom = any(n in [5,6,15,20,22,23,24,25] for n in numbers)
@@ -146,19 +143,17 @@ def main():
     techniques[0]['notes'] = '기법 파트 출처: Anshu Chimala, How to turn your AI into a world-class designer, Lenny’s Newsletter, 2026-09-01.\nhttps://www.lennysnewsletter.com/p/how-to-turn-your-ai-into-a-world\n\n' + techniques[0]['notes']
     intro[0]['notes'] = intro[0]['notes'].replace('NOTE1(폴더의 NOTE.md로 해석)', 'NOTE2')
     techniques[-1]['notes'] = techniques[-1]['notes'].replace('NOTE의 결론:', '세 단계 요약:')
-    copy = json.loads((OUT/'note2-copy.json').read_text())
     updated = []
     for item in techniques:
         if item['title'] == '더 대담하게: 비대칭':
             item['notes'] = 'Figure 10: OFFCUT. 규칙 파괴, 비대칭 레이아웃, 넓은 여백을 방향으로 제시한다. 뒤의 세 장에서 아이디어 나열, 취향 반영, 제작 프롬프트 작성을 보여 준다. Figure 14는 Figure 7과 같은 시안이라 중복 생략했다.'
-        updated.append(add_prompt_layout(item, copy['existing'][item['title']]))
+        updated.append(add_prompt_layout(item))
         if item['title'] == '더 대담하게: 비대칭':
-            for step in copy['additional']:
-                figure_number = int(Path(step['figure']).name.split('-')[1])
-                new = slide(step['title'],[img(step['figure'],label='AI 답변')],'기법 2',part=2,kicker='DISCOVER · 02',
-                            notes=f'Figure {figure_number}. NOTE2의 기법 2 대화 과정. 화면 왼쪽은 원문의 AI 답변이고 오른쪽은 사용자가 보내는 요청의 요지다.')
+            for figure_number, title in [(11,'많은 아이디어, 짧은 설명'),(12,'취향으로 방향 좁히기'),(13,'제작용 프롬프트로 정리하기')]:
+                new = slide(title,[img(figure_number,label='AI 답변')],'기법 2',part=2,kicker='DISCOVER · 02',
+                            notes=f'Figure {figure_number}. 한국어 번역문은 clone/how-to-turn-your-ai-into-a-world/index.html 참조.')
                 new['source'] = 'NOTE2.md · 기법 2'
-                updated.append(add_prompt_layout(new, step))
+                updated.append(add_prompt_layout(new))
     summaries = [
         '레퍼런스로 방향을 정하고, 반복과 비교로 완성도를 높인다.',
         '추상적인 요청은 익숙한 색과 구조로 수렴하기 쉽다.',
@@ -172,14 +167,16 @@ def main():
         item['caption'] = ''
     intro[3]['images'][0].update(y=236,h=689)
     slides = restyle(intro + updated + cc)
+    slides = apply_article(slides)
     titles = json.loads((OUT/'titles.json').read_text())
     for item in slides:
-        item['title'] = titles[item['title']]
+        item['title'] = titles.get(item['title'], item['title'])
     slides[0]['display_title'] = 'Claude의\n디자인 안목'
     result = dict(title='Claude의 디자인 안목', source_order=['SLIDE1.md','NOTE2.md','HOW_DESIGN_FROM_CC.md'],
+                  note2_text_source='clone/how-to-turn-your-ai-into-a-world/index.html',
                   slides=slides)
     (OUT/'content.json').write_text(json.dumps(result, ensure_ascii=False, indent=2)+'\n')
-    print(f'content.json: {len(slides)} slides ({len(intro)} + {len(updated)} + {len(cc)})')
+    print(f'content.json: {len(slides)} slides ({len(intro)} + {sum(s["part"]==2 for s in slides)} + {len(cc)})')
 
 
 if __name__ == '__main__':

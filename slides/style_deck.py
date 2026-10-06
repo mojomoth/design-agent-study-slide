@@ -1,7 +1,7 @@
 """Adapt the local ref/ slides' paper/ink palette and asymmetric image layouts.
 
 References: set2_slide_05/08/09 and set3_slide_01/03/04.
-The user's quieter Pretendard titles take precedence over the references' display type.
+Heavy Pretendard titles echo the references' bold display typography.
 """
 from copy import deepcopy
 
@@ -19,18 +19,18 @@ def palette(s):
 
 def title_box(s):
     if s.get('layout') == 'cover':
-        return dict(x=96,y=286,w=516,h=170,size=42,weight=400,line_height=1.35)
+        return dict(x=96,y=270,w=570,h=220,size=88,weight=900,line_height=1.1)
     if s.get('layout') == 'case-opener':
-        return dict(x=96,y=735,w=720,h=80,size=42,weight=400,line_height=1.25)
-    return dict(x=96,y=96,w=1728,h=65,size=42,weight=400,line_height=1.25)
+        return dict(x=96,y=726,w=852,h=90,size=68,weight=900,line_height=1.1)
+    return dict(x=96,y=88,w=1728,h=82,size=68,weight=900,line_height=1.08)
 
 
 def summary_box(s):
     if s.get('layout') == 'cover':
-        return dict(x=96,y=494,w=490,h=175,size=28,line_height=1.5)
+        return dict(x=96,y=530,w=490,h=175,size=28,line_height=1.5)
     if s.get('layout') == 'case-opener':
         return dict(x=96,y=830,w=680,h=130,size=28,line_height=1.45)
-    return dict(x=96,y=165,w=1728,h=52,size=28,line_height=1.4)
+    return dict(x=96,y=184,w=1728,h=44,size=28,line_height=1.4)
 
 
 def restyle(slides):

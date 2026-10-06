@@ -4,7 +4,7 @@
     "NOTE2.md",
     "HOW_DESIGN_FROM_CC.md"
   ],
-  "slides": 36,
+  "slides": 38,
   "keyboard": "passed",
   "presenter_notes": "passed",
   "video": "playing",
@@ -12,29 +12,31 @@
   "responsive": "1440x810, 768x1024, 390x844 passed",
   "external_requests": [],
   "browser_errors": [],
-  "pdf_pages": 36,
-  "pptx_slides": 36,
+  "pdf_pages": 38,
+  "pptx_slides": 38,
   "layout_issues": [],
-  "pptx_font_check": "Pretendard-Regular only",
+  "pptx_font_check": "Pretendard-Regular / Pretendard-Bold; editable matching-color title outline exported; LibreOffice renders Bold without the outline",
   "figure19_poster": "1.8s, complete headline",
-  "summaries": 36,
-  "prompt_blocks": 20,
+  "summaries": 38,
   "text_coverage": {
     "pdf": {
       "fonts": [
-        "AAAAAA+Pretendard-Medium",
-        "BAAAAA+Pretendard-Regular"
+        "Pretendard-Black",
+        "Pretendard-Medium",
+        "Pretendard-Regular"
       ],
-      "pages": 36,
-      "text": "36 titles, 36 summaries, 20 prompt blocks preserved"
+      "pages": 38,
+      "translated_blocks": 71,
+      "text": "38 titles, 38 summaries and all displayed translation blocks preserved"
     },
     "pptx_render": {
       "fonts": [
-        "BAAAAA+Pretendard-Regular",
-        "CAAAAA+Pretendard-Regular"
+        "Pretendard-Bold",
+        "Pretendard-Regular"
       ],
-      "pages": 36,
-      "text": "36 titles, 36 summaries, 20 prompt blocks preserved"
+      "pages": 38,
+      "translated_blocks": 71,
+      "text": "38 titles, 38 summaries and all displayed translation blocks preserved"
     }
   },
   "style": {
@@ -44,9 +46,16 @@
       "#141412"
     ],
     "font": "Pretendard",
-    "title_size_px": 42,
-    "title_weight": 400
+    "title_size_px": 68,
+    "title_weight": 900,
+    "cover_title_size_px": 88
   },
-  "title_check": "36 titles: Pretendard, 42px, weight 400",
-  "nominal_titles": "36 titles converted to noun phrases; HTML, PDF, editable PPTX verified"
+  "title_check": "HTML/PDF: Pretendard Black 900; 68px, cover 88px",
+  "nominal_titles": "38 noun-phrase titles; NOTE2 titles use the translated article vocabulary",
+  "note2_text_source": "clone/how-to-turn-your-ai-into-a-world/index.html",
+  "note2_slides": 22,
+  "source_prompt_coverage": "19 complete source prompts/examples + 1 source-truncated AI prompt excerpt, exact match",
+  "translated_blocks": 71,
+  "source_prompts_and_examples": 19,
+  "source_truncated_ai_prompt_excerpts": 1
 }

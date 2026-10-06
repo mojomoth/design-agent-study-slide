@@ -4,16 +4,17 @@
 .p03 .fig.mono figcaption { font-family: var(--f-mono); font-size: 16px; }
 .p03 .fig.capt figcaption { top: 0; bottom: auto; }
 .p03 .fig.mul > img { mix-blend-mode: multiply; filter: grayscale(1) contrast(1.06) brightness(1.06); }
-.p03 .num { width: 110px; flex: none; text-align: left; }
+.p03 .num { width: 110px; flex: none; text-align: left; font-size: 180px; }
 .p03 .blk { position: absolute; width: 300px; height: 96px; border: 2px solid var(--ink); display: flex; align-items: center; padding: 0 22px; font: 30px/1.1 'BHS', sans-serif; letter-spacing: -.02em; word-break: keep-all; }
-.p03 .blk:not(.on) { opacity: .35; border-width: 1px; }
+.p03 .blk:not(.on) { color: var(--mute); border-color: rgba(13,13,13,.28); }
+.p03 .blk i { display: block; width: 110px; height: 12px; background: currentColor; opacity: .5; }
 .p03 .blk.on { background: var(--ink); color: var(--bg); }
 .p03 .bar { position: absolute; left: 56px; width: 824px; height: 64px; border: 2px solid var(--ink); display: flex; align-items: center; padding-left: 16px; }
 .p03 .bar::after { content: ''; position: absolute; left: 362px; top: 23px; width: 440px; height: 14px; background: currentColor; opacity: .12; }
 .p03 .bar i { display: block; width: 170px; height: 14px; background: currentColor; opacity: .22; }
 .p03 .bar.on { background: var(--ink); color: var(--bg); }
 .p03 .bar.on::after { opacity: .25; }
-.p03 .code.sm { font-size: 20px; padding: 24px 28px; min-height: 180px; word-break: normal; overflow-wrap: anywhere; }
+.p03 .code.sm { font-size: 20px; padding: 24px 28px; min-height: 0; word-break: normal; overflow-wrap: anywhere; }
 .p03 .loop { position: absolute; display: flex; align-items: center; justify-content: center; height: 46px; border: 2px solid var(--cream); color: var(--cream); font: 22px/1 var(--f-label); }
 .p03 .loop.fill { background: var(--cream); color: var(--black); }
 .p03 .arrow { position: absolute; width: 0; height: 0; border-top: 9px solid transparent; border-bottom: 9px solid transparent; border-left: 14px solid var(--ink); }
@@ -22,97 +23,100 @@
 .p03 .stp { padding-top: 20px; }
 .p03 .ko.x { font-size: 54px; }
 .p03 .ko.x::after { top: 46%; }
+.p03 .fig.capt.inv figcaption { background: var(--ink); color: var(--bg); }
 </style>
 
 <!-- S1. OUR TRAM: 파트 표지 -->
 <section class="slide dark p03">
-  <figure class="fig bw abs" style="left:56px; top:140px; width:560px; height:364px;"><img src="../assets/guide1-mov/crops/26-site-awwwards.png" style="object-position:20% center"></figure>
-  <figure class="fig bw abs top" style="left:680px; top:140px; width:560px; height:364px;"><img src="../assets/guide1-mov/crops/31-site-21st-dev-react-bits.png"></figure>
-  <figure class="fig bw abs top" style="left:1304px; top:140px; width:560px; height:364px;"><img src="img/03/coolors-card.png"></figure>
-  <p class="lead abs" style="left:56px; top:584px;">영상 속 사이트와 프롬프트로 랜딩 페이지 만들기</p>
-  <p class="cap abs" style="left:56px; top:640px;">원문: The AI Automators, 2026년 9월 7일</p>
-  <h2 class="d abs" style="left:28px; bottom:-40px; font-size:380px;">Claude Code</h2>
+  <figure class="fig abs" style="left:56px; top:140px; width:560px; height:400px;"><img src="img/sites/lacolombe-2.png"></figure>
+  <figure class="fig abs" style="left:680px; top:140px; width:560px; height:400px;"><img src="img/sites/vipp.png"></figure>
+  <figure class="fig abs" style="left:1304px; top:140px; width:560px; height:400px;"><img src="img/sites/amangiri.png"></figure>
+  <p class="lead abs" style="left:56px; top:610px;">영상 속 사이트와 프롬프트로 랜딩 페이지 만들기</p>
+  <p class="cap abs" style="left:56px; top:666px;">원문: The AI Automators, 2026년 9월 7일</p>
+  <h2 class="d abs" style="left:28px; bottom:14px; font-size:380px;">Claude Code</h2>
 </section>
 
 <!-- S2. BEST CONCEPT: 8단계 -->
 <section class="slide p03">
   <h2 class="d d-xxl abs" style="left:40px; top:130px;">8 Steps</h2>
-  <p class="lead abs" style="left:1300px; top:230px; width:560px;">페이지마다 프롬프트 하나,<br>수정은 한두 번</p>
-  <div class="abs row" style="left:56px; top:548px; gap:24px;"><p class="num">1</p><p class="lbl stp">준비</p></div>
-  <div class="abs row" style="left:516px; top:548px; gap:24px;"><p class="num">2</p><p class="lbl stp">찾기</p></div>
-  <div class="abs row" style="left:976px; top:548px; gap:24px;"><p class="num">3</p><p class="lbl stp">모으기</p></div>
-  <div class="abs row" style="left:1436px; top:548px; gap:24px;"><p class="num">4</p><p class="lbl stp">프롬프트</p></div>
-  <div class="abs row" style="left:56px; top:818px; gap:24px;"><p class="num">5</p><p class="lbl stp">실행</p></div>
-  <div class="abs row" style="left:516px; top:818px; gap:24px;"><p class="num">6</p><p class="lbl stp">스스로 확인</p></div>
-  <div class="abs row" style="left:976px; top:818px; gap:24px;"><p class="num">7</p><p class="lbl stp">수정</p></div>
-  <div class="abs row" style="left:1436px; top:818px; gap:24px;"><p class="num">8</p><p class="lbl stp">디자인 시스템</p></div>
+  <p class="lead abs" style="left:1300px; top:380px; width:560px;">페이지마다 프롬프트 하나,<br>수정은 한두 번</p>
+  <div class="abs row" style="left:56px; top:560px; gap:24px;"><p class="num">1</p><p class="lbl stp">준비</p></div>
+  <div class="abs row" style="left:516px; top:560px; gap:24px;"><p class="num">2</p><p class="lbl stp">찾기</p></div>
+  <div class="abs row" style="left:976px; top:560px; gap:24px;"><p class="num">3</p><p class="lbl stp">캡처</p></div>
+  <div class="abs row" style="left:1436px; top:560px; gap:24px;"><p class="num">4</p><p class="lbl stp">프롬프트</p></div>
+  <div class="abs row" style="left:56px; top:800px; gap:24px;"><p class="num">5</p><p class="lbl stp">실행</p></div>
+  <div class="abs row" style="left:516px; top:800px; gap:24px;"><p class="num">6</p><p class="lbl stp">스스로 확인</p></div>
+  <div class="abs row" style="left:976px; top:800px; gap:24px;"><p class="num">7</p><p class="lbl stp">수정</p></div>
+  <div class="abs row" style="left:1436px; top:800px; gap:24px;"><p class="num">8</p><p class="lbl stp">디자인 시스템</p></div>
 </section>
 
 <!-- S3. PORTFOLIO: 참고 자료 (갤러리 묶음 | 실제 앱 묶음) -->
 <section class="slide p03" data-hdr="bottom">
   <h2 class="d d-xl abs" style="left:40px; top:30px;">Reference</h2>
+  <span class="tag fill abs" style="left:1250px; top:40px;">01 02</span>
   <p class="lbl abs" style="left:56px; top:358px;">갤러리: 구성과 분위기</p>
   <p class="lbl abs" style="left:1464px; top:358px;">실제 앱: 가입 화면, 가격표</p>
-  <div class="rule abs" style="left:56px; top:396px; width:1384px;"></div>
+  <div class="rule abs" style="left:56px; top:396px; width:1360px;"></div>
   <div class="rule abs" style="left:1464px; top:396px; width:400px;"></div>
-  <figure class="fig abs top" style="left:56px; top:416px; width:944px; height:520px;"><img src="img/sites/siteinspire.png"><figcaption>Siteinspire</figcaption></figure>
-  <figure class="fig abs top" style="left:1040px; top:416px; width:400px; height:250px;"><img src="img/sites/awwwards.png"><figcaption>Awwwards</figcaption></figure>
-  <figure class="fig abs" style="left:1040px; top:686px; width:400px; height:250px;"><img src="img/03/lapaninja-top.png"><figcaption>Lapa Ninja</figcaption></figure>
-  <figure class="fig abs" style="left:1464px; top:416px; width:400px; height:250px;"><img src="img/sites/mobbin.png"><figcaption>Mobbin + MCP</figcaption></figure>
-  <figure class="fig abs" style="left:1464px; top:686px; width:400px; height:250px;"><img src="img/sites/refero.png"><figcaption>Refero</figcaption></figure>
+  <figure class="fig abs top" style="left:56px; top:416px; width:960px; height:500px;"><img src="img/sites/siteinspire.png"><figcaption>Siteinspire</figcaption></figure>
+  <figure class="fig abs top" style="left:1040px; top:416px; width:376px; height:240px;"><img src="img/sites/awwwards.png"><figcaption>Awwwards</figcaption></figure>
+  <figure class="fig abs" style="left:1040px; top:676px; width:376px; height:240px;"><img src="img/03/lapaninja-top.png"><figcaption>Lapa Ninja</figcaption></figure>
+  <figure class="fig abs" style="left:1464px; top:416px; width:400px; height:240px;"><img src="img/sites/mobbin.png"><figcaption>Mobbin + MCP</figcaption></figure>
+  <figure class="fig abs" style="left:1464px; top:676px; width:400px; height:240px;"><img src="img/sites/refero.png"><figcaption>Refero</figcaption></figure>
 </section>
 
 <!-- S4. OUR SERVICES: 컴포넌트 -->
 <section class="slide p03">
-  <h2 class="d d-l abs" style="left:48px; top:130px;">Component</h2>
-  <p class="lead abs" style="right:56px; top:160px; text-align:right;"><b>Copy prompt</b> → Claude Code에 붙여 넣기</p>
-  <p class="lbl abs" style="left:56px; top:420px;">React Bits</p>
-  <p class="lbl abs" style="left:984px; top:420px;">21st.dev</p>
-  <div class="rule abs" style="left:56px; top:458px; width:880px;"></div>
-  <div class="rule abs" style="left:984px; top:458px; width:880px;"></div>
-  <figure class="fig abs" style="left:56px; top:478px; width:880px; height:542px;"><img src="img/sites/reactbits.png"></figure>
-  <figure class="fig abs top" style="left:984px; top:478px; width:880px; height:542px;"><img src="img/sites/21stdev.png"></figure>
+  <h2 class="d abs" style="left:44px; top:126px; font-size:250px;">Component</h2>
+  <span class="tag fill abs" style="left:1190px; top:128px;">03</span>
+  <p class="lbl abs" style="left:56px; top:400px;">React Bits</p>
+  <p class="lbl abs" style="left:984px; top:400px;">21st.dev: Copy prompt → Claude Code에 붙여 넣기</p>
+  <div class="rule abs" style="left:56px; top:438px; width:880px;"></div>
+  <div class="rule abs" style="left:984px; top:438px; width:880px;"></div>
+  <figure class="fig abs" style="left:56px; top:458px; width:880px; height:562px;"><img src="img/sites/reactbits.png"></figure>
+  <figure class="fig abs top" style="left:984px; top:458px; width:880px; height:562px;"><img src="img/sites/21stdev.png"></figure>
 </section>
 
 <!-- S5. DESIGN IDEA: 글꼴과 색 -->
 <section class="slide dark p03">
-  <h2 class="d d-xl abs" style="left:40px; top:120px;">Font + Color</h2>
-  <div class="rule abs" style="left:56px; top:450px; width:580px;"></div>
-  <div class="rule abs" style="left:670px; top:450px; width:580px;"></div>
-  <div class="rule abs" style="left:1284px; top:450px; width:580px;"></div>
-  <figure class="fig abs" style="left:56px; top:475px; width:580px; height:460px;"><img src="img/sites/fontsinuse.png" style="object-position:left top"></figure>
-  <figure class="fig abs" style="left:670px; top:475px; width:580px; height:460px;"><img src="img/sites/googlefonts.png"></figure>
-  <figure class="fig abs" style="left:1284px; top:475px; width:580px; height:460px;"><img src="img/sites/coolors.png" style="object-position:left center"></figure>
-  <p class="lbl abs" style="left:56px; top:962px;">Fonts In Use</p>
-  <p class="lbl abs" style="left:670px; top:962px;">Google Fonts: Inter는 피하기</p>
-  <p class="lbl abs" style="left:1284px; top:962px;">Coolors: trending 목록</p>
+  <h2 class="d d-xl abs" style="left:40px; top:108px;">Font + Color</h2>
+  <span class="tag fill abs" style="left:1540px; top:118px;">04 05</span>
+  <p class="lbl abs" style="left:56px; top:405px;">Fonts In Use</p>
+  <p class="lbl abs" style="left:670px; top:405px;">Google Fonts (원문: Inter 피하기)</p>
+  <p class="lbl abs" style="left:1284px; top:405px;">Coolors: trending 목록</p>
+  <div class="rule abs" style="left:56px; top:443px; width:580px;"></div>
+  <div class="rule abs" style="left:670px; top:443px; width:580px;"></div>
+  <div class="rule abs" style="left:1284px; top:443px; width:580px;"></div>
+  <figure class="fig abs" style="left:56px; top:463px; width:580px; height:500px;"><img src="img/sites/fontsinuse.png" style="object-position:left top"></figure>
+  <figure class="fig abs" style="left:670px; top:463px; width:580px; height:500px;"><img src="img/sites/googlefonts.png" style="object-position:left center"></figure>
+  <figure class="fig abs" style="left:1284px; top:463px; width:580px; height:500px;"><img src="img/sites/coolors.png" style="object-position:left center"></figure>
 </section>
 
 <!-- S6. PHOTOGRAPHY: 보너스 -->
 <section class="slide p03" data-hdr="none">
   <figure class="fig abs top" style="left:0; top:0; width:1060px; height:640px;"><img src="img/sites/pinterest.png"></figure>
-  <figure class="fig abs" style="left:1120px; top:0; width:360px; height:512px;"><img src="img/03/toools-cards.png"></figure>
-  <figure class="fig abs" style="left:1504px; top:0; width:360px; height:512px;"><img src="img/sites/bookofshapes.png" style="object-position:left center"></figure>
-  <p class="lbl abs" style="left:1120px; top:540px;">toools.design</p>
-  <p class="lbl abs" style="left:1504px; top:540px;">Book of Shapes</p>
-  <p class="lbl abs" style="left:1120px; top:820px;">Pinterest</p>
-  <p class="txt abs" style="left:1120px; top:862px; width:740px;">주제 뒤에 <b>website</b>를 붙여 검색</p>
+  <figure class="fig abs top" style="left:1120px; top:0; width:440px; height:640px;"><img src="img/03/toools-col.png"></figure>
+  <figure class="fig abs" style="left:1584px; top:0; width:336px; height:640px;"><img src="img/sites/bookofshapes.png" style="object-position:left center"></figure>
+  <p class="lbl abs" style="left:56px; top:668px;">Pinterest</p>
+  <p class="txt abs" style="left:56px; top:708px; width:980px;">주제 뒤에 <b>website</b>를 붙여 검색</p>
+  <p class="lbl abs" style="left:1120px; top:668px;">toools.design</p>
+  <p class="lbl abs" style="left:1584px; top:668px;">Book of Shapes</p>
   <h2 class="d d-xxl abs" style="left:24px; bottom:-40px;">Bonus</h2>
 </section>
 
 <!-- S7. STATEMENT SPLIT: 캡처 -->
 <section class="slide p03">
   <h2 class="d d-l abs" style="left:48px; top:130px;">Capture</h2>
-  <p class="lead abs" style="left:56px; top:404px;">붙여 넣은 이미지는<br>서브에이전트가 못 본다</p>
-  <figure class="fig bw abs" style="left:800px; top:130px; width:1064px; height:401px;"><img src="img/03/gofullpage-panel.png"></figure>
-  <div class="block-dark abs" style="left:0; top:640px; width:1920px; height:440px;">
-    <div class="abs col" style="left:56px; top:110px; gap:14px; align-items:flex-start;">
+  <p class="lead abs" style="left:56px; top:508px;">붙여 넣은 이미지는<br>서브에이전트가 못 본다</p>
+  <figure class="fig bw abs" style="left:800px; top:130px; width:1064px; height:470px;"><img src="img/03/gofullpage-wide.png"></figure>
+  <div class="block-dark abs" style="left:0; top:690px; width:1920px; height:390px;">
+    <div class="abs row" style="left:56px; top:118px; gap:14px; align-items:flex-start;">
       <span class="tag tg fill" style="color:var(--black);">GoFullPage</span>
       <span class="tag tg">Windows + Shift + S</span>
       <span class="tag tg">Command + Shift + 4</span>
     </div>
-    <p class="lbl abs" style="left:800px; top:110px;">ref/에 저장하고 프롬프트에 경로 적기</p>
-    <pre class="code abs" style="left:800px; top:176px; width:1064px; font-size:32px; padding:40px 44px; background:#1d1c1a;">ref/site1.png   <span class="c">좋은 점, 피할 점</span></pre>
+    <pre class="code abs" style="left:880px; top:118px; width:984px; font-size:30px; padding:28px 36px; background:#1d1c1a;"><span class="c"># ref/에 저장하고 경로 옆에</span>
+ref/site1.png   좋은 점, 피할 점</pre>
   </div>
 </section>
 
@@ -120,109 +124,112 @@
 <section class="slide dark p03">
   <figure class="fig abs" style="left:56px; top:130px; width:520px; height:290px;"><img src="img/sites/oryzo.png"></figure>
   <figure class="fig abs" style="left:56px; top:435px; width:520px; height:290px;"><img src="img/03/annajona-wave.png"></figure>
-  <figure class="fig abs" style="left:56px; top:740px; width:520px; height:290px;"><img src="img/03/nimmobay-map.png"></figure>
-  <span class="tag tg fill abs" style="left:610px; top:250px;">LIKE&nbsp;&nbsp;Oryzo의 스크롤 움직임</span>
-  <span class="tag tg abs" style="left:610px; top:555px;">DISLIKE&nbsp;&nbsp;Anna Jóna의 애니메이션</span>
-  <span class="tag tg abs" style="left:610px; top:860px;">DISLIKE&nbsp;&nbsp;Nimmo Bay의 색과 글꼴</span>
-  <p class="lead abs" style="right:56px; top:300px; text-align:right;">세 프롬프트 모두 이 문장을 넣었다</p>
+  <figure class="fig abs" style="left:56px; top:740px; width:520px; height:290px;"><img src="img/03/nimmobay-coast.png"></figure>
+  <span class="tag tg fill abs" style="left:600px; top:250px;">LIKE&nbsp;Oryzo의 스크롤 움직임</span>
+  <span class="tag tg abs" style="left:600px; top:555px;">DISLIKE&nbsp;Anna Jóna의 애니메이션</span>
+  <span class="tag tg abs" style="left:600px; top:860px;">DISLIKE&nbsp;Nimmo Bay의 색과 글꼴</span>
+  <p class="lead abs" style="right:56px; top:130px; text-align:right;">세 프롬프트 모두 이 문장을 넣었다</p>
   <h2 class="d abs" style="right:56px; bottom:-30px; text-align:right; line-height:.9; font-size:340px;">Do not<br>copy</h2>
 </section>
 
-<!-- S9. TAG GRID: 16개 블록 -->
+<!-- S9. TAG GRID: 16개 블록 (이름은 금지 항목과 글꼴만) -->
 <section class="slide p03">
   <h2 class="d d-xl abs" style="left:40px; top:110px;">16 Blocks</h2>
-  <div class="blk" style="left:56px; top:420px;">참고 자료</div>
-  <div class="blk" style="left:372px; top:420px;">만들 것과 목표</div>
-  <div class="blk" style="left:688px; top:420px;">레이아웃</div>
-  <div class="blk" style="left:1004px; top:420px;">분위기</div>
-  <div class="blk" style="left:56px; top:532px;">색</div>
-  <div class="blk on" style="left:372px; top:532px;">금지 항목</div>
-  <div class="blk on" style="left:688px; top:532px;">글꼴</div>
-  <div class="blk" style="left:1004px; top:532px;">여백과 정렬</div>
-  <div class="blk" style="left:56px; top:644px;">움직임</div>
-  <div class="blk" style="left:372px; top:644px;">문구</div>
-  <div class="blk" style="left:688px; top:644px;">이미지와 영상</div>
-  <div class="blk" style="left:1004px; top:644px;">성능</div>
-  <div class="blk" style="left:56px; top:756px;">주인공 시각 요소</div>
-  <div class="blk" style="left:372px; top:756px;">기술 조건</div>
-  <div class="blk" style="left:688px; top:756px;">스스로 확인</div>
-  <div class="blk" style="left:1004px; top:756px;">진행 방식</div>
-  <p class="d d-xs x" style="left:1364px; top:420px;">Inter</p>
-  <p class="d d-xs x" style="left:1364px; top:498px;">Roboto</p>
-  <p class="d d-xs x" style="left:1364px; top:576px;">Open Sans</p>
-  <p class="d d-xs ko x" style="left:1364px; top:666px;">보라색</p>
-  <p class="d d-xs ko x" style="left:1364px; top:744px;">그라데이션</p>
-  <p class="lead abs" style="left:56px; top:910px;">금지 문장은 스킬이 아니라 사용자가 썼다</p>
+  <div class="blk" style="left:56px; top:430px;">참고 자료</div>
+  <div class="blk" style="left:372px; top:430px;">만들 것과 목표</div>
+  <div class="blk" style="left:688px; top:430px;">레이아웃</div>
+  <div class="blk" style="left:1004px; top:430px;">분위기</div>
+  <div class="blk" style="left:56px; top:542px;">색</div>
+  <div class="blk on" style="left:372px; top:542px;">금지 항목</div>
+  <div class="blk on" style="left:688px; top:542px;">글꼴</div>
+  <div class="blk" style="left:1004px; top:542px;">여백과 정렬</div>
+  <div class="blk" style="left:56px; top:654px;">움직임</div>
+  <div class="blk" style="left:372px; top:654px;">문구</div>
+  <div class="blk" style="left:688px; top:654px;">이미지와 영상</div>
+  <div class="blk" style="left:1004px; top:654px;">성능</div>
+  <div class="blk" style="left:56px; top:766px;">주인공 시각 요소</div>
+  <div class="blk" style="left:372px; top:766px;">기술 조건</div>
+  <div class="blk" style="left:688px; top:766px;">스스로 확인</div>
+  <div class="blk" style="left:1004px; top:766px;">진행 방식</div>
+  <p class="d d-xs x" style="left:1364px; top:150px;">Inter</p>
+  <p class="d d-xs x" style="left:1364px; top:228px;">Roboto</p>
+  <p class="d d-xs x" style="left:1364px; top:306px;">Open Sans</p>
+  <p class="d d-xs ko x" style="left:1364px; top:396px;">보라색</p>
+  <p class="d d-xs ko x" style="left:1364px; top:474px;">그라데이션</p>
+  <p class="lead abs" style="left:56px; top:910px;">금지 목록은 스킬이 아니라 사용자가 직접 썼다</p>
 </section>
 
-<!-- S10. PHOTOGRAPHY: Southside -->
+<!-- S10. FLOW: Southside (참고 URL 하나 → 결과물) -->
 <section class="slide dark p03" data-hdr="none">
-  <figure class="fig abs" style="left:0; top:0; width:1003px; height:563px;"><img src="img/03/southside-card.png" style="object-position:25% center"></figure>
-  <figure class="fig abs" style="left:1033px; top:0; width:887px; height:563px;"><img src="img/03/oryzo-hero.png"><figcaption>Oryzo by Lusion: 스크롤에 따라 움직이는 3D</figcaption></figure>
-  <span class="tag tg abs" style="left:1033px; top:600px;">URL 하나</span>
-  <p class="txt abs" style="left:1033px; top:672px; width:831px;">캔은 <b>이미지 파일 없이 Three.js 코드로</b><br>목표: <b>가까운 펍이나 가게 찾기</b></p>
-  <h2 class="d abs" style="left:24px; bottom:-16px; font-size:360px;">Southside</h2>
+  <figure class="fig abs" style="left:56px; top:134px; width:600px; height:381px;"><img src="img/03/oryzo-hero.png"><figcaption>Oryzo by Lusion</figcaption></figure>
+  <span class="tag tg abs" style="left:56px; top:540px;">참고: URL 하나</span>
+  <div class="rule abs" style="left:696px; top:323px; width:120px;"></div>
+  <div class="arrow" style="left:814px; top:315px;"></div>
+  <figure class="fig abs" style="left:864px; top:60px; width:1000px; height:526px;"><img src="img/03/southside-card.png"></figure>
+  <p class="txt abs" style="left:864px; top:612px; width:1000px;">캔은 <b>이미지 파일 없이 Three.js 코드로</b><br>목표: <b>가까운 펍이나 가게 찾기</b></p>
+  <h2 class="d abs" style="left:24px; bottom:14px; font-size:360px;">Southside</h2>
 </section>
 
 <!-- S11. FLOW: Harbour Lane -->
 <section class="slide p03">
   <h2 class="d d-xl abs" style="left:40px; top:110px;">Harbour Lane</h2>
-  <figure class="fig abs" style="left:56px; top:390px; width:400px; height:190px;"><img src="img/sites/cafetechnica.png"></figure>
+  <figure class="fig abs" style="left:56px; top:390px; width:400px; height:190px;"><img src="img/03/cafetechnica-espresso.png" style="object-position:center 40%"></figure>
   <figure class="fig abs" style="left:56px; top:600px; width:400px; height:190px;"><img src="img/03/lacolombe-cards.png"></figure>
   <figure class="fig abs" style="left:56px; top:810px; width:400px; height:190px;"><img src="img/sites/annajona-2.png"></figure>
-  <div class="abs" style="left:480px; top:450px;"><p class="lbl-s">Café Technica</p><p class="cap">영상 히어로</p></div>
-  <div class="abs" style="left:480px; top:660px;"><p class="lbl-s">La Colombe</p><p class="cap">파랑과 빨강, 카드</p></div>
-  <div class="abs" style="left:480px; top:870px;"><p class="lbl-s">Anna Jóna</p><p class="cap">스토리텔링</p></div>
-  <div class="rule abs" style="left:680px; top:484px; width:22px;"></div>
-  <div class="rule abs" style="left:680px; top:694px; width:22px;"></div>
-  <div class="rule abs" style="left:680px; top:904px; width:22px;"></div>
-  <div class="vrule abs" style="left:700px; top:484px; height:422px;"></div>
-  <div class="rule abs" style="left:700px; top:694px; width:72px;"></div>
-  <div class="arrow" style="left:770px; top:686px;"></div>
-  <figure class="fig abs" style="left:800px; top:469px; width:510px; height:452px;"><img src="../assets/guide1-mov/crops/50-harbour-lane.png"></figure>
-  <span class="tag tg fill abs" style="left:1370px; top:600px;">스크린샷 세 장 + 먼저 분석</span>
-  <p class="lead abs" style="left:1370px; top:674px; width:494px;">목표: 동네 사람이 와서<br>원두 한 봉지 사기</p>
+  <p class="lbl-s abs" style="left:480px; top:473px;">Café Technica: 영상 히어로</p>
+  <p class="lbl-s abs" style="left:480px; top:683px;">La Colombe: 파랑과 빨강, 카드</p>
+  <p class="lbl-s abs" style="left:480px; top:893px;">Anna Jóna: 스토리텔링</p>
+  <div class="rule abs" style="left:790px; top:484px; width:22px;"></div>
+  <div class="rule abs" style="left:790px; top:694px; width:22px;"></div>
+  <div class="rule abs" style="left:790px; top:904px; width:22px;"></div>
+  <div class="vrule abs" style="left:810px; top:484px; height:422px;"></div>
+  <div class="rule abs" style="left:810px; top:694px; width:72px;"></div>
+  <div class="arrow" style="left:880px; top:686px;"></div>
+  <figure class="fig abs" style="left:904px; top:506px; width:510px; height:377px;"><img src="img/03/harbour-lane-tight.png"></figure>
+  <p class="lbl-s abs" style="left:904px; top:899px;">결과물</p>
+  <span class="tag tg fill abs" style="left:1454px; top:600px;">스크린샷 세 장 + 먼저 분석</span>
+  <p class="lead abs" style="left:1454px; top:674px; width:410px;">목표: 동네 사람이 와서<br>원두 한 봉지 사기</p>
 </section>
 
-<!-- S12. VISUAL DISPLAY: Blackwater (이미지 줄 위, 제목 아래로 흘림) -->
+<!-- S12. VISUAL DISPLAY: Blackwater (결과물 크게, 참고 셋, 제목 아래로 흘림) -->
 <section class="slide p03">
-  <figure class="fig contain plain abs" style="left:56px; top:130px; width:495px; height:440px;"><img src="../assets/guide1-mov/crops/52-blackwater-cabins.png"></figure>
-  <figure class="fig abs" style="left:575px; top:130px; width:413px; height:440px;"><img src="img/sites/nimmobay.png"></figure>
-  <figure class="fig abs" style="left:1012px; top:130px; width:413px; height:440px;"><img src="img/sites/vipp-2.png" style="object-position:right center"></figure>
-  <figure class="fig abs" style="left:1449px; top:130px; width:415px; height:440px;"><img src="img/03/amangiri-wall.png"></figure>
+  <figure class="fig abs" style="left:56px; top:130px; width:600px; height:440px;"><img src="img/03/blackwater-tight.png"></figure>
+  <figure class="fig abs" style="left:680px; top:130px; width:380px; height:440px;"><img src="img/sites/nimmobay.png" style="object-position:left center"></figure>
+  <figure class="fig abs" style="left:1084px; top:130px; width:380px; height:440px;"><img src="img/sites/vipp-2.png" style="object-position:right center"></figure>
+  <figure class="fig abs" style="left:1484px; top:130px; width:380px; height:440px;"><img src="img/03/amangiri-tall.png"></figure>
   <p class="lbl-s abs" style="left:56px; top:590px;">결과물</p>
-  <p class="lbl-s abs" style="left:575px; top:590px;">Nimmo Bay: 사진 히어로</p>
-  <p class="lbl-s abs" style="left:1012px; top:590px;">Vipp: 어두운 느낌, 얇은 메뉴 막대</p>
-  <p class="lbl-s abs" style="left:1449px; top:590px;">Aman Amangiri: 큰 사진 카드</p>
+  <p class="lbl-s abs" style="left:680px; top:590px;">Nimmo Bay: 사진 히어로</p>
+  <p class="lbl-s abs" style="left:1084px; top:590px;">Vipp: 어두운 느낌, 얇은 메뉴 막대</p>
+  <p class="lbl-s abs" style="left:1484px; top:590px;">Aman Amangiri: 큰 사진, 넉넉한 여백</p>
   <span class="tag tg fill abs" style="left:56px; top:660px;">링크 세 개 + 내 로고</span>
-  <p class="lead abs" style="left:575px; top:658px;">목표: 빈 날짜 확인 후 예약</p>
+  <p class="lead abs" style="left:680px; top:658px;">목표: 빈 날짜 확인 후 예약</p>
   <h2 class="d abs" style="left:28px; bottom:-40px; font-size:390px;">Blackwater</h2>
 </section>
 
 <!-- S13. PRICING PLAN: 실행 전 준비 -->
 <section class="slide dark p03">
   <h2 class="d d-xl abs" style="left:40px; top:125px;">Set up</h2>
-  <figure class="fig abs top" style="left:880px; top:120px; width:984px; height:402px;"><img src="img/03/frontend-design-tree.png"></figure>
-  <div class="vrule abs" style="left:650px; top:590px; height:290px;"></div>
-  <div class="vrule abs" style="left:1274px; top:590px; height:290px;"></div>
-  <p class="d d-xs abs" style="left:56px; top:600px;">Skill</p>
-  <p class="d d-xs abs" style="left:690px; top:600px;">Opus</p>
-  <p class="d d-xs abs" style="left:1314px; top:600px;">Screenshot</p>
-  <pre class="code sm abs" style="left:56px; top:690px; width:550px;">claude plugin install
+  <figure class="fig bw abs top" style="left:880px; top:120px; width:984px; height:493px;"><img src="img/03/frontend-design-tree-c.png"></figure>
+  <div class="vrule abs" style="left:650px; top:650px; height:240px;"></div>
+  <div class="vrule abs" style="left:1274px; top:650px; height:240px;"></div>
+  <p class="lbl abs" style="left:56px; top:656px;">SKILL</p>
+  <p class="lbl abs" style="left:690px; top:656px;">OPUS</p>
+  <p class="lbl abs" style="left:1314px; top:656px;">SCREENSHOT</p>
+  <pre class="code sm abs" style="left:56px; top:704px; width:550px;">claude plugin install
 frontend-design@claude-plugins-official
 <span class="c"># 계획 먼저, 의뢰가 우선</span></pre>
-  <pre class="code sm abs" style="left:690px; top:690px; width:550px;">/model
-<span class="c"># 서브에이전트도 따라감</span></pre>
-  <pre class="code sm abs" style="left:1314px; top:690px; width:550px;">claude plugin install
+  <pre class="code sm abs" style="left:690px; top:704px; width:550px;">/model   → Opus
+<span class="c"># 기본 서브에이전트도 따라감</span></pre>
+  <pre class="code sm abs" style="left:1314px; top:704px; width:550px;">claude plugin install
 playwright@claude-plugins-official
 <span class="c"># 서브에이전트도 쓸 수 있음</span></pre>
-  <p class="txt abs" style="left:56px; top:932px; width:1200px;">이미지와 영상 생성 도구는 <b>따로 연결</b></p>
+  <p class="txt abs" style="left:56px; top:910px; width:1200px;">이미지와 영상 생성 도구는 <b>따로 연결</b></p>
 </section>
 
 <!-- S14. OUR SERVICES: 템플릿 뼈대 + 루프 -->
 <section class="slide p03">
   <h2 class="d d-l abs" style="left:48px; top:120px;">Template</h2>
-  <p class="lead abs" style="left:960px; top:150px; width:900px;">원문은 이름 한 줄, 템플릿은 절차까지</p>
+  <p class="lead abs" style="left:960px; top:150px; width:900px;">원문 프롬프트는 이름 한 줄,<br>템플릿은 절차까지</p>
   <div class="bar" style="top:360px;"><span class="lbl-s">## 참고 자료</span></div>
   <div class="bar" style="top:456px;"><i></i></div>
   <div class="bar" style="top:552px;"><i></i></div>
@@ -232,25 +239,26 @@ playwright@claude-plugins-official
   <div class="bar on" style="top:936px;"><span class="lbl-s">## 진행 방식</span></div>
   <div class="rule abs" style="left:880px; top:967px; width:80px;"></div>
   <div class="block-dark abs" style="left:960px; top:300px; width:960px; height:780px;"></div>
-  <figure class="fig abs" style="left:1000px; top:380px; width:670px; height:95px;"><img src="img/03/gauntlet-title-only.png"></figure>
-  <p class="lbl-s abs" style="left:1000px; top:500px; color:var(--cream);">Matt Shumer</p>
-  <div class="loop fill" style="left:1000px; top:670px; width:200px;">조각 나누기</div>
-  <div class="loop" style="left:1280px; top:670px; width:240px;">제작 서브에이전트</div>
-  <div class="loop" style="left:1600px; top:670px; width:240px;">새 맥락에서 평가</div>
-  <div class="loop" style="left:1440px; top:790px; width:240px;">가장 큰 차이 하나</div>
-  <svg class="abs" style="left:960px; top:650px;" width="960" height="200" viewBox="960 650 960 200" fill="none" stroke="#F2EBE0" stroke-width="2">
+  <figure class="fig mul abs" style="left:1000px; top:390px; width:654px; height:228px; background:#F2EBE0;"><img src="img/03/gauntlet-title-c.png"></figure>
+  <div class="loop fill" style="left:1000px; top:690px; width:200px;">조각 나누기</div>
+  <div class="loop" style="left:1280px; top:690px; width:240px;">제작 서브에이전트</div>
+  <div class="loop" style="left:1600px; top:690px; width:280px;">참고 사이트와 비교 평가</div>
+  <div class="loop" style="left:1440px; top:810px; width:240px;">가장 큰 차이 하나</div>
+  <svg class="abs" style="left:960px; top:670px;" width="960" height="200" viewBox="960 650 960 200" fill="none" stroke="#F2EBE0" stroke-width="2">
     <defs><marker id="p03ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#F2EBE0" stroke="none"/></marker></defs>
     <path d="M1202 693 H1276" marker-end="url(#p03ah)"/>
     <path d="M1522 693 H1596" marker-end="url(#p03ah)"/>
-    <path d="M1720 718 V813 H1684" marker-end="url(#p03ah)"/>
+    <path d="M1740 718 V813 H1684" marker-end="url(#p03ah)"/>
     <path d="M1438 813 H1400 V720" marker-end="url(#p03ah)"/>
   </svg>
-  <p class="txt abs block-dark" style="left:1000px; top:950px; width:860px;">멈춤: 우리가 이김, 개선 정체, 상한, 사용자 중단</p>
+  <p class="txt abs block-dark" style="left:1000px; top:950px; width:860px;">멈춤: 우리가 이김, 개선 정체, 상한 도달, 사용자 중단</p>
 </section>
 
 <!-- S15. DIAGRAM + BLEED TITLE: 기준 -->
 <section class="slide p03">
-  <figure class="fig bw plain mul abs" style="left:864px; top:110px; width:1000px; height:590px;"><img src="../assets/guide1-mov/crops/12-loop-diagram-setup.png" style="object-position:left center"></figure>
+  <figure class="fig abs" style="left:880px; top:130px; width:984px; height:560px;"><img src="img/03/lusion-hero.png" alt="Lusion"></figure>
+  <div class="rule abs" style="left:856px; top:690px; width:1032px; height:14px;"></div>
+  <p class="lbl-s abs" style="right:56px; top:722px;">QUALITY BAR</p>
   <p class="d d-xs x" style="left:56px; top:150px;">Make it amazing</p>
   <p class="lead abs" style="left:56px; top:250px; width:780px;">기준은 그 분야 최고의 실제 사이트</p>
   <p class="txt abs" style="left:56px; top:310px; width:780px;">닿지 못해도 괜찮다</p>
@@ -261,42 +269,43 @@ playwright@claude-plugins-official
 <!-- S16. NUMERALS: 실행 순서 (다섯 칸 한 줄) -->
 <section class="slide dark p03">
   <h2 class="d d-xxl abs" style="left:40px; top:125px;">Run</h2>
-  <figure class="fig mono abs" style="left:1000px; top:130px; width:420px; height:320px;"><img src="img/03/cafetechnica-espresso.png"><figcaption>ref/site1.png</figcaption></figure>
-  <figure class="fig mono abs" style="left:1444px; top:130px; width:420px; height:320px;"><img src="img/03/lacolombe-matcha.png"><figcaption>ref/site2.png</figcaption></figure>
+  <figure class="fig mono abs top" style="left:720px; top:125px; width:560px; height:340px;"><img src="img/sites/cafetechnica.png"><figcaption>ref/site1.png</figcaption></figure>
+  <figure class="fig mono abs top" style="left:1304px; top:125px; width:560px; height:340px;"><img src="img/sites/lacolombe.png"><figcaption>ref/site2.png</figcaption></figure>
   <div class="rule abs" style="left:56px; top:600px; width:1808px;"></div>
-  <p class="num abs" style="left:56px; top:640px;">1</p>
-  <p class="num abs" style="left:420px; top:640px;">2</p>
-  <p class="num abs" style="left:784px; top:640px;">3</p>
-  <p class="num abs" style="left:1148px; top:640px;">4</p>
-  <p class="num abs" style="left:1512px; top:640px;">5</p>
-  <p class="txt abs" style="left:56px; top:860px; width:330px;"><b>새 폴더에서 claude 실행</b></p>
-  <p class="txt abs" style="left:420px; top:860px; width:330px;"><b>ref/에 스크린샷과 로고 저장</b></p>
-  <p class="txt abs" style="left:784px; top:860px; width:330px;"><b>템플릿 채워 붙여 넣기</b></p>
-  <p class="txt abs" style="left:1148px; top:860px; width:330px;"><b>질문에 답하고 workbench.md 확인</b></p>
-  <p class="txt abs" style="left:1512px; top:860px; width:330px;"><b>브라우저로 열어 직접 확인</b></p>
+  <p class="num abs" style="left:56px; top:650px;">1</p>
+  <p class="num abs" style="left:420px; top:650px;">2</p>
+  <p class="num abs" style="left:784px; top:650px;">3</p>
+  <p class="num abs" style="left:1148px; top:650px;">4</p>
+  <p class="num abs" style="left:1512px; top:650px;">5</p>
+  <p class="txt abs" style="left:56px; top:840px; width:350px;"><b>새 폴더에서 claude 실행</b></p>
+  <p class="txt abs" style="left:420px; top:840px; width:350px;"><b>ref/에 스크린샷과 로고 저장</b></p>
+  <p class="txt abs" style="left:784px; top:840px; width:350px;"><b>템플릿 채워 붙여 넣기</b></p>
+  <p class="txt abs" style="left:1148px; top:840px; width:350px;"><b>질문 답하고 workbench.md 보기</b></p>
+  <p class="txt abs" style="left:1512px; top:840px; width:350px;"><b>브라우저로 열어 직접 확인</b></p>
 </section>
 
 <!-- S17. PANORAMA: 확인 -->
 <section class="slide p03" data-hdr="none">
-  <figure class="fig abs" style="left:0; top:0; width:1920px; height:524px;"><img src="img/03/in-action-band-c.png"></figure>
-  <div class="abs" style="left:1100px; top:584px;"><p class="d d-xs">1440px</p><p class="lbl-s" style="margin-top:10px;">데스크톱</p></div>
-  <div class="abs" style="left:1400px; top:584px;"><p class="d d-xs">390px</p><p class="lbl-s" style="margin-top:10px;">휴대폰</p></div>
-  <ul class="check abs" style="left:1100px; top:710px; width:764px;">
+  <figure class="fig plain mul abs" style="left:0; top:0; width:1920px; height:544px;"><img src="img/03/in-action-band.png" style="filter:grayscale(1) contrast(1.06) brightness(1.12);"></figure>
+  <p class="d d-xs abs" style="left:1100px; top:604px;">1440px</p>
+  <p class="d d-xs abs" style="left:1400px; top:604px;">390px</p>
+  <ul class="check abs" style="left:1100px; top:704px; width:764px;">
     <li>잘림과 끊김 없음</li>
     <li>어두운 배경에서도 읽힘</li>
     <li>금지 항목 없음</li>
   </ul>
-  <p class="lead abs" style="left:1100px; top:960px;">수정 요청은 한 번에 문제 하나</p>
+  <p class="lead abs" style="left:1100px; top:952px;">수정 요청은 한 번에 문제 하나</p>
   <h2 class="d abs" style="left:40px; bottom:-40px; font-size:440px;">Check</h2>
 </section>
 
 <!-- S18. PORTFOLIO: 디자인 시스템 -->
 <section class="slide p03">
   <h2 class="d d-l abs" style="left:40px; top:110px;">Design System</h2>
-  <p class="txt abs" style="left:1364px; top:140px; width:500px;">페이지가 정해지면 <b>규칙을 문서 하나로</b><br>다음 작업은 이 문서부터 읽게 하기</p>
-  <div class="rule abs" style="left:0; top:338px; width:1320px;"></div>
-  <figure class="fig capt abs" style="left:0; top:340px; width:1320px; height:740px;"><img src="img/03/claudedesign-demo.png"><figcaption style="left:56px;">Claude Design: /design-sync</figcaption></figure>
-  <figure class="fig abs" style="left:1364px; top:340px; width:500px; height:360px;"><img src="img/sites/referostyles.png" style="object-position:left center"><figcaption>Refero Styles: DESIGN.md</figcaption></figure>
+  <p class="txt abs" style="left:1364px; top:140px; width:500px;">페이지가 정해지면 <b>규칙을 문서 하나로</b><br>다음 페이지는 이 문서부터 읽게 하기</p>
+  <span class="tag fill abs" style="left:1364px; top:244px;">06</span>
+  <div class="rule abs" style="left:56px; top:338px; width:1264px;"></div>
+  <figure class="fig capt inv abs" style="left:56px; top:340px; width:1264px; height:740px;"><img src="img/03/claudedesign-demo.png"><figcaption>Claude Design</figcaption></figure>
+  <figure class="fig abs" style="left:1364px; top:340px; width:500px; height:360px;"><img src="img/sites/referostyles.png" style="object-position:left center"><figcaption>Refero Styles: DESIGN.md + 전체 캡처</figcaption></figure>
   <figure class="fig abs" style="left:1364px; top:720px; width:500px; height:360px;"><img src="img/sites/brandingstyleguides.png" style="object-position:left center"><figcaption>Branding Style Guides</figcaption></figure>
 </section>
 
@@ -311,10 +320,12 @@ playwright@claude-plugins-official
   </div>
   <div class="rule abs" style="left:56px; top:340px; width:1808px;"></div>
   <p class="lbl-s abs" style="left:56px; top:370px;">SOURCES</p>
-  <div class="abs col" style="left:56px; top:420px; width:1100px; gap:12px;">
+  <div class="abs col" style="left:56px; top:410px; width:1100px; gap:12px;">
+    <p class="cap">The AI Automators, Here's How to Give Claude an Eye for Design (2026년 9월 7일)</p>
+    <p class="cap">Anshu Chimala, How to turn your AI into a world-class designer (2026년 9월 1일)</p>
     <p class="cap">원문: Claude + Design Inspiration: All the Links From the Video (2026년 9월 7일)</p>
     <p class="cap">Matt Shumer, How to Run a Gauntlet Loop (2026년 7월 27일)</p>
-    <p class="cap">frontend-design 스킬, Claude Code 문서, 각 사이트 (2026년 10월 6일 확인)</p>
   </div>
+  <figure class="fig bw abs" style="left:56px; top:580px; width:680px; height:440px;"><img src="../assets/guide1-mov/crops/09-film-slate.png"></figure>
   <h2 class="d abs" style="right:56px; bottom:-50px; font-size:520px;">More</h2>
 </section>

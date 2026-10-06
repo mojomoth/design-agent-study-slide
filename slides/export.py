@@ -14,6 +14,7 @@ from pptx.enum.shapes import MSO_SHAPE, MSO_CONNECTOR
 from pptx.util import Inches, Pt
 from pptx.oxml.xmlchemy import OxmlElement
 from style_deck import PALETTES, palette, title_box, summary_box
+from article_content import article_reading_elements
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent
@@ -66,6 +67,9 @@ def reading_elements(s):
     colors = palette(s)
     if s.get('summary'):
         texts.append(dict(text=s['summary'],**summary_box(s),color=colors['muted'],role='summary'))
+    if 'article_panels' in s:
+        article_shapes, article_texts = article_reading_elements(s, colors)
+        return shapes+article_shapes, texts+article_texts
     if s.get('prompt'):
         if s.get('prompt_layout') == 'bottom':
             shapes.append(dict(kind='line',x=96,y=818,w=1728,h=0,stroke=colors['line']))
@@ -91,7 +95,7 @@ def html_shape(t):
 def html_slide(s, n, total):
     part = s['part']
     title=title_box(s)
-    title_style=f'left:{title["x"]}px;top:{title["y"]}px;width:{title["w"]}px;height:{title["h"]}px;font-size:{title["size"]}px;line-height:{title["line_height"]}'
+    title_style=f'left:{title["x"]}px;top:{title["y"]}px;width:{title["w"]}px;height:{title["h"]}px;font-size:{title["size"]}px;font-weight:{title["weight"]};line-height:{title["line_height"]}'
     body = [f'<section class="slide minimal theme-{s.get("theme","paper")} layout-{s.get("layout","standard")}" data-hdr="none" data-part="{part}" aria-label="{n}. {esc(s["title"])}">']
     display_title = esc(s.get('display_title',s['title'])).replace('\n','<br>')
     body += [f'<p class="eyebrow">{esc(s.get("kicker", ""))}</p>',f'<h1 class="figure-title" style="{title_style}">{display_title}</h1>']
@@ -131,6 +135,13 @@ def ppt_text(slide, value, x, y, w, h, size=32, color='#151515', weight=400, ali
         p.line_spacing=line_height
         for run in p.runs:
             props=run._r.get_or_add_rPr(); props.set('lang','ko-KR')
+            if weight >= 900:
+                # Keep Korean editable with the portable family name. A fine,
+                # matching outline gives its Bold face the Black title weight.
+                outline=OxmlElement('a:ln'); outline.set('w',str(int(Pt(size*.018))))
+                fill=OxmlElement('a:solidFill')
+                ink=OxmlElement('a:srgbClr'); ink.set('val',color.lstrip('#'))
+                fill.append(ink); outline.append(fill); props.insert(0,outline)
             ea=OxmlElement('a:ea'); ea.set('typeface',family); props.append(ea)
     return shape
 
