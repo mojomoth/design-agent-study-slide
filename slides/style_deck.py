@@ -8,6 +8,7 @@ from copy import deepcopy
 PAPER = '#F6EFE2'
 INK = '#141412'
 PALETTES = {
+    'white': dict(bg='#FAFAFA', ink='#24231F', muted='#756F65', faint='#817A6E', line='#CDC4B6'),
     'paper': dict(bg=PAPER, ink='#24231F', muted='#756F65', faint='#817A6E', line='#CDC4B6'),
     'ink': dict(bg=INK, ink=PAPER, muted='#C3BBAE', faint='#ACA497', line='#4E4A43'),
 }

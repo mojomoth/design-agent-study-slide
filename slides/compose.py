@@ -172,11 +172,24 @@ def main():
     for item in slides:
         item['title'] = titles.get(item['title'], item['title'])
     slides[0]['display_title'] = 'Claude의\n디자인 안목'
+    slides.insert(1, dict(
+        title='AI slop', display_title='', part=1, layout='image', theme='white',
+        images=[img('slides/img/ai-slop.jpg', 0, 30, 1920, 960)],
+        source='사용자 첨부 이미지',
+        notes='커버 바로 다음 장에 배치한 AI slop 이미지. 원본 비율과 전체 영역을 유지한다.',
+    ))
+    slides.append(dict(
+        title='AI·SW 마에스트로 디자인 시안 모음', display_title='', part=3,
+        layout='image', theme='white',
+        images=[img('slides/img/ai-sw-design-collection.png', 0, 20, 1920, 980)],
+        source='사용자 첨부 이미지',
+        notes='마지막 장에 배치한 AI·SW 마에스트로 디자인 시안 모음. 원본 비율과 전체 영역을 유지한다.',
+    ))
     result = dict(title='Claude의 디자인 안목', source_order=['SLIDE1.md','NOTE2.md','HOW_DESIGN_FROM_CC.md'],
                   note2_text_source='clone/how-to-turn-your-ai-into-a-world/index.html',
                   slides=slides)
     (OUT/'content.json').write_text(json.dumps(result, ensure_ascii=False, indent=2)+'\n')
-    print(f'content.json: {len(slides)} slides ({len(intro)} + {sum(s["part"]==2 for s in slides)} + {len(cc)})')
+    print(f'content.json: {len(slides)} slides ({sum(s["part"]==1 for s in slides)} + {sum(s["part"]==2 for s in slides)} + {sum(s["part"]==3 for s in slides)})')
 
 
 if __name__ == '__main__':

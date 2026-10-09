@@ -31,6 +31,24 @@
       "display_title": "Claude의\n디자인 안목"
     },
     {
+      "title": "AI slop",
+      "display_title": "",
+      "part": 1,
+      "layout": "image",
+      "theme": "white",
+      "images": [
+        {
+          "src": "slides/img/ai-slop.jpg",
+          "x": 0,
+          "y": 30,
+          "w": 1920,
+          "h": 960
+        }
+      ],
+      "source": "사용자 첨부 이미지",
+      "notes": "커버 바로 다음 장에 배치한 AI slop 이미지. 원본 비율과 전체 영역을 유지한다."
+    },
+    {
       "title": "막연한 요청과 평균적 결과",
       "images": [
         {
@@ -1467,7 +1485,7 @@
       ]
     },
     {
-      "title": "배경의 의도와 대안",
+      "title": "배경을 다양하게",
       "images": [
         {
           "src": "assets/how-to-turn-your-ai-into-a-world/figure-24-65ceb75e-aeb7-411d-99fa-eacaad0dbdae_1456x2424.jpg",
@@ -1492,7 +1510,7 @@
       "prompt_layout": "bottom",
       "theme": "paper",
       "prompt_panel": "none",
-      "summary": "흔한 배경 그라데이션 대신 이미지와 무늬, 단색을 시도해 비교한다.",
+      "summary": "흔한 그라데이션 대신 이미지와 무늬 또는 패턴으로 변경한다",
       "source_blocks": [
         "b162",
         "b163",
@@ -1954,134 +1972,7 @@
       "prompt_panel": "none"
     },
     {
-      "title": "디자인 브리프 구성",
-      "kicker": "03 · PROMPT",
-      "caption": "",
-      "source": "HOW_DESIGN_FROM_CC.md · §4 프롬프트 구성",
-      "notes": "출처: HOW_DESIGN_FROM_CC.md §4, §7. 오른쪽은 Blackwater 사례의 프롬프트 내용을 압축한 개념도이며 실제 도구 화면이 아니다. 참고 자료, 목표 행동, 구성, 분위기, 색, 글꼴, 여백, 움직임, 문구, 이미지·영상, 성능, 기술 조건, 검증 방법, 진행 방식을 한 프롬프트에 담는다. Blackwater의 목표는 빈 날짜 확인과 예약이다. 어둡고 영화 같고 조용한 호숫가, 차콜 배경, 따뜻한 오프화이트 글자, 버튼·링크·가격에만 앰버를 쓴다. 세리프 제목과 넉넉한 여백을 선택한다. 색상 칩의 HEX는 이 설명을 시각화한 예시이지 원문에 적힌 정확한 토큰이 아니다. 왼쪽은 참고 사이트 Nimmo Bay의 실제 캡처다: https://www.nimmobay.com/ . 일반적인 금지 목록을 외우기보다 자신의 의뢰에 필요한 결정을 명시한다.",
-      "images": [
-        {
-          "src": "slides/img/sites/nimmobay.png",
-          "x": 96,
-          "y": 280,
-          "w": 790,
-          "h": 471,
-          "label": "참고 화면",
-          "crop": [
-            0,
-            45,
-            1600,
-            955
-          ]
-        }
-      ],
-      "shapes": [
-        {
-          "kind": "rect",
-          "x": 1050,
-          "y": 235,
-          "w": 700,
-          "h": 650,
-          "fill": "#EFE6D7",
-          "stroke": "transparent"
-        },
-        {
-          "kind": "rect",
-          "x": 1110,
-          "y": 540,
-          "w": 150,
-          "h": 100,
-          "fill": "#242424",
-          "stroke": "#242424"
-        },
-        {
-          "kind": "rect",
-          "x": 1280,
-          "y": 540,
-          "w": 150,
-          "h": 100,
-          "fill": "#F5F1E6",
-          "stroke": "#D8D6CF"
-        },
-        {
-          "kind": "rect",
-          "x": 1450,
-          "y": 540,
-          "w": 150,
-          "h": 100,
-          "fill": "#BD7F36",
-          "stroke": "#BD7F36"
-        }
-      ],
-      "texts": [
-        {
-          "text": "→",
-          "x": 930,
-          "y": 480,
-          "w": 80,
-          "h": 90,
-          "size": 60,
-          "color": "#756F65",
-          "weight": 500
-        },
-        {
-          "text": "BRIEF",
-          "x": 1110,
-          "y": 290,
-          "w": 580,
-          "h": 55,
-          "size": 40,
-          "color": "#756F65",
-          "weight": 500
-        },
-        {
-          "text": "빈 날짜 확인",
-          "x": 1110,
-          "y": 390,
-          "w": 560,
-          "h": 65,
-          "size": 44,
-          "color": "#756F65",
-          "weight": 500
-        },
-        {
-          "text": "어둡고 조용한 호숫가",
-          "x": 1110,
-          "y": 463,
-          "w": 560,
-          "h": 50,
-          "size": 30,
-          "color": "#756F65",
-          "weight": 500
-        },
-        {
-          "text": "세리프 · 넓은 여백",
-          "x": 1110,
-          "y": 710,
-          "w": 560,
-          "h": 60,
-          "size": 36,
-          "color": "#756F65",
-          "weight": 500
-        },
-        {
-          "text": "화면마다 행동 하나",
-          "x": 1110,
-          "y": 790,
-          "w": 560,
-          "h": 50,
-          "size": 30,
-          "color": "#756F65",
-          "weight": 500
-        }
-      ],
-      "summary": "목표 행동부터 색과 여백, 검증 방법까지 미리 정한다.",
-      "part": 3,
-      "theme": "paper",
-      "prompt_panel": "none"
-    },
-    {
-      "title": "스크롤 모션의 응용",
+      "title": "모션 그래픽 응용",
       "kicker": "03 · SOUTHSIDE BREWING",
       "caption": "",
       "source": "HOW_DESIGN_FROM_CC.md · §5.1 Southside Brewing",
@@ -2116,13 +2007,13 @@
           "weight": 500
         }
       ],
-      "summary": "참고 사이트의 스크롤 효과를 맥주 캔에 맞게 바꾼다.",
+      "summary": "참고 사이트의 모션 효과를 타겟 사이트에 맞게 바꾼다.",
       "part": 3,
       "theme": "paper",
       "prompt_panel": "none"
     },
     {
-      "title": "영상, 색, 카드의 조합",
+      "title": "영상, 색, 카드 콘텐츠",
       "kicker": "03 · HARBOUR LANE COFFEE",
       "caption": "",
       "source": "HOW_DESIGN_FROM_CC.md · §5.2 Harbour Lane Coffee",
@@ -2177,13 +2068,13 @@
           "weight": 500
         }
       ],
-      "summary": "영상, 색, 카드의 참고 화면을 나눠 커피 브랜드에 적용한다.",
+      "summary": "영상, 색, 카드 레퍼런스로 콘텐츠에 적용한다.",
       "part": 3,
       "theme": "paper",
       "prompt_panel": "none"
     },
     {
-      "title": "사진, 분위기, 여백의 조합",
+      "title": "사진, 분위기, 여백 조합의 콘텐츠",
       "kicker": "03 · BLACKWATER CABINS",
       "caption": "",
       "source": "HOW_DESIGN_FROM_CC.md · §5.3 Blackwater Cabins",
@@ -2252,7 +2143,7 @@
           "weight": 500
         }
       ],
-      "summary": "사진과 분위기, 카드의 여백을 각각 골라 숙소 페이지를 만든다.",
+      "summary": "사진과 분위기, 카드의 여백을 각각 골라 콘텐츠를 만든다.",
       "part": 3,
       "theme": "paper",
       "prompt_panel": "none"
@@ -2583,6 +2474,24 @@
       "part": 3,
       "theme": "paper",
       "prompt_panel": "none"
+    },
+    {
+      "title": "AI·SW 마에스트로 디자인 시안 모음",
+      "display_title": "",
+      "part": 3,
+      "layout": "image",
+      "theme": "white",
+      "images": [
+        {
+          "src": "slides/img/ai-sw-design-collection.png",
+          "x": 0,
+          "y": 20,
+          "w": 1920,
+          "h": 980
+        }
+      ],
+      "source": "사용자 첨부 이미지",
+      "notes": "마지막 장에 배치한 AI·SW 마에스트로 디자인 시안 모음. 원본 비율과 전체 영역을 유지한다."
     }
   ]
 }
